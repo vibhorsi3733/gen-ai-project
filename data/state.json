@@ -419,6 +419,10 @@
 "first_seen": "2026-11-16",
 "last_seen": "2026-11-16"
 },
+"gh:mongodb:8381898": {
+"first_seen": "2026-11-16",
+"last_seen": "2026-11-16"
+},
 "gh:mongodb:8383063": {
 "first_seen": "2026-11-16",
 "last_seen": "2026-11-16"
@@ -471,6 +475,10 @@
 "first_seen": "2026-11-16",
 "last_seen": "2026-11-16"
 },
+"gh:okta:8377182": {
+"first_seen": "2026-11-16",
+"last_seen": "2026-11-16"
+},
 "gh:pubmatic:5435973008": {
 "first_seen": "2026-11-16",
 "last_seen": "2026-11-16"
@@ -512,6 +520,10 @@
 "last_seen": "2026-11-16"
 },
 "gh:purestorage:8131754": {
+"first_seen": "2026-11-16",
+"last_seen": "2026-11-16"
+},
+"gh:purestorage:8131772": {
 "first_seen": "2026-11-16",
 "last_seen": "2026-11-16"
 },
@@ -772,6 +784,10 @@
 "last_seen": "2026-11-16"
 },
 "gh:zscaler:5210010007": {
+"first_seen": "2026-11-16",
+"last_seen": "2026-11-16"
+},
+"gh:zscaler:5210019007": {
 "first_seen": "2026-11-16",
 "last_seen": "2026-11-16"
 },
@@ -2539,6 +2555,30 @@
 "first_seen": "2026-11-16",
 "last_seen": "2026-11-16"
 },
+"sr:BoschGroup:744000161763598": {
+"first_seen": "2026-11-16",
+"last_seen": "2026-11-16"
+},
+"sr:BoschGroup:744000161763793": {
+"first_seen": "2026-11-16",
+"last_seen": "2026-11-16"
+},
+"sr:BoschGroup:744000161764199": {
+"first_seen": "2026-11-16",
+"last_seen": "2026-11-16"
+},
+"sr:BoschGroup:744000161771200": {
+"first_seen": "2026-11-16",
+"last_seen": "2026-11-16"
+},
+"sr:BoschGroup:744000161772005": {
+"first_seen": "2026-11-16",
+"last_seen": "2026-11-16"
+},
+"sr:BoschGroup:744000161773044": {
+"first_seen": "2026-11-16",
+"last_seen": "2026-11-16"
+},
 "sr:Experian:744000159115439": {
 "first_seen": "2026-11-16",
 "last_seen": "2026-11-16"
@@ -2691,6 +2731,22 @@
 "first_seen": "2026-11-16",
 "last_seen": "2026-11-16"
 },
+"sr:NielsenIQ:744000161743462": {
+"first_seen": "2026-11-16",
+"last_seen": "2026-11-16"
+},
+"sr:NielsenIQ:744000161750975": {
+"first_seen": "2026-11-16",
+"last_seen": "2026-11-16"
+},
+"sr:NielsenIQ:744000161753129": {
+"first_seen": "2026-11-16",
+"last_seen": "2026-11-16"
+},
+"sr:NielsenIQ:744000161764785": {
+"first_seen": "2026-11-16",
+"last_seen": "2026-11-16"
+},
 "sr:ServiceNow:744000143028899": {
 "first_seen": "2026-11-16",
 "last_seen": "2026-11-16"
@@ -2744,6 +2800,10 @@
 "last_seen": "2026-11-16"
 },
 "sr:ServiceNow:744000161736459": {
+"first_seen": "2026-11-16",
+"last_seen": "2026-11-16"
+},
+"sr:ServiceNow:744000161760969": {
 "first_seen": "2026-11-16",
 "last_seen": "2026-11-16"
 },
@@ -3084,6 +3144,10 @@
 "last_seen": "2026-11-16"
 },
 "wk:apna:DFB8159F97": {
+"first_seen": "2026-11-16",
+"last_seen": "2026-11-16"
+},
+"wk:apna:E057E98A07": {
 "first_seen": "2026-11-16",
 "last_seen": "2026-11-16"
 },

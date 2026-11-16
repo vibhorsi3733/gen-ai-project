@@ -183,13 +183,6 @@
  },
  {
   "reason": "key",
-  "title": "Hardware Architect",
-  "company": "Bosch",
-  "source": "SmartRecruiters",
-  "dup_of": "Hardware Architect"
- },
- {
-  "reason": "key",
   "title": "HiL Test Engineer",
   "company": "Bosch",
   "source": "SmartRecruiters",
@@ -694,13 +687,6 @@
  },
  {
   "reason": "key",
-  "title": "Expert",
-  "company": "NielsenIQ",
-  "source": "SmartRecruiters",
-  "dup_of": "Expert"
- },
- {
-  "reason": "key",
   "title": "Expert ",
   "company": "NielsenIQ",
   "source": "SmartRecruiters",
@@ -800,13 +786,6 @@
  {
   "reason": "key",
   "title": "Staff Software Engineer",
-  "company": "Okta",
-  "source": "Greenhouse",
-  "dup_of": "Staff Software Engineer"
- },
- {
-  "reason": "key",
-  "title": "Staff Software Engineer ",
   "company": "Okta",
   "source": "Greenhouse",
   "dup_of": "Staff Software Engineer"
