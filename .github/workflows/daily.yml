@@ -1,0 +1,66 @@
+name: daily-refresh
+
+on:
+  schedule:
+    - cron: "30 0 * * *"   # 06:00 IST every day
+  workflow_dispatch: {}
+  push:
+    branches: [main]
+    paths: ["site/index.html"]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: daily-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+
+      - name: Fetch, de-dup, tag, publish JSON
+        id: pipeline
+        if: github.event_name != 'push'
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          TAG_MODEL: ${{ vars.TAG_MODEL }}
+          ADZUNA_APP_ID: ${{ secrets.ADZUNA_APP_ID }}
+          ADZUNA_APP_KEY: ${{ secrets.ADZUNA_APP_KEY }}
+        run: python -m pipeline.run
+        continue-on-error: true   # guard trips -> keep yesterday's site, but still commit cache + report
+
+      - name: Commit data (also keeps the scheduled workflow from being auto-disabled)
+        if: github.event_name != 'push'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data site/jobs.json site/meta.json
+          git diff --cached --quiet || git commit -m "data: daily refresh $(date -u +%F)"
+          git pull --rebase --autostash && git push
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - id: deploy
+        uses: actions/deploy-pages@v4
+
+      - name: Fail the run if the guard tripped (sends GitHub's failure email)
+        if: steps.pipeline.outcome == 'failure'
+        run: |
+          cat data/run_report.json
+          exit 1

@@ -1,0 +1,229 @@
+"""LLM tagger: role, cities[] and level, with schema-enforced enums.
+
+Cost levers:
+  * content-hash cache (data/tags_cache.json, key includes model + prompt version)
+    -> each daily run only tags NEW or CHANGED posts
+  * batching (BATCH_SIZE posts per call) spreads the instruction tokens over the batch
+  * description excerpt: opening + experience/qualification sentences, capped at EXCERPT_CHARS
+Every call's token usage is appended to data/usage.jsonl, so cost is measured, not estimated.
+"""
+import hashlib
+import json
+import os
+import re
+import time
+from pathlib import Path
+
+import anthropic
+
+from .baseline import baseline_tag
+from .taxonomy import CITIES, LEVELS, ROLES, cities_from_alias
+
+PROMPT_VERSION = "v2"
+MODEL = os.environ.get("TAG_MODEL") or "claude-opus-5-5"
+EFFORT = os.environ.get("TAG_EFFORT") or "low"
+BATCH_SIZE = 10
+EXCERPT_CHARS = 1200
+
+# USD per 1M tokens (input, output). Anthropic first-party prices, Nov 2026.
+PRICES = {
+    "claude-opus-5-5": (4.00, 20.00),
+    "claude-sonnet-5-5": (2.00, 10.00),
+    "claude-haiku-5-5": (0.10, 0.50),
+}
+
+DATA = Path(__file__).resolve().parent.parent / "data"
+CACHE_PATH = DATA / "tags_cache.json"
+USAGE_PATH = DATA / "usage.jsonl"
+
+SYSTEM = f"""You label job postings for an Indian student career platform. For each post return:
+
+role: the job function, one of {ROLES}.
+  Pick by what the person will do day to day, not by the company's industry.
+  Data/Business/MIS analyst -> Data / Analytics / ML. QA, test, DevOps, SRE, security engineering -> Software Engineering.
+  Solutions/sales engineers and pre-sales -> Sales / Business Development. Field sales, telesales, admission counsellor -> Sales / Business Development.
+  Core Engineering means non-software engineering (mechanical, electrical, civil, manufacturing, VLSI/hardware).
+  Use "Other" only if nothing fits.
+
+cities: every work location named, using {CITIES}.
+  Bangalore -> Bengaluru. Gurugram/Gurgaon/Noida/New Delhi -> Delhi NCR. Bombay/Navi Mumbai/Thane -> Mumbai.
+  Remote / work from home -> include Remote. An Indian city not in the list -> Other India.
+  Only "India" or no city given -> India (unspecified). Use only the location field and the text; never guess.
+
+level, one of {LEVELS}:
+  Internship  - an internship or apprenticeship.
+  Fresher     - open to new graduates / 0-1 years (trainee, graduate, entry level, "freshers", "0-1 years").
+  Early career - asks for up to 2 years, or junior/associate/"Engineer I" with no stated requirement.
+  Experienced - asks for 3+ years, or is senior/lead/staff/manager level.
+
+Return exactly one item per input id, echoing the id."""
+
+ITEM_SCHEMA = {
+    "type": "object",
+    "properties": {
+        "id": {"type": "string"},
+        "role": {"type": "string", "enum": ROLES},
+        "cities": {"type": "array", "items": {"type": "string", "enum": CITIES}},
+        "level": {"type": "string", "enum": LEVELS},
+    },
+    "required": ["id", "role", "cities", "level"],
+    "additionalProperties": False,
+}
+OUTPUT_SCHEMA = {
+    "type": "object",
+    "properties": {"items": {"type": "array", "items": ITEM_SCHEMA}},
+    "required": ["items"],
+    "additionalProperties": False,
+}
+
+SIGNAL = re.compile(r"(year|yrs|experience|fresher|graduat|degree|b\.?tech|b\.?e\b|mba|intern|stipend|trainee|"
+                    r"batch|20\d\d|entry|junior|qualification|eligib)", re.I)
+
+
+def excerpt(desc: str) -> str:
+    """Opening 400 chars + sentences carrying level signals, capped at EXCERPT_CHARS.
+    (A plain first-500-chars cut failed: Greenhouse posts open with company boilerplate and the
+    experience requirement sits much further down.)"""
+    desc = " ".join((desc or "").split())
+    head = desc[:400]
+    picked = [s for s in re.split(r"(?<=[.!?•])\s+", desc[400:]) if SIGNAL.search(s) and len(s) < 300]
+    out = head
+    for s in picked:
+        if len(out) + len(s) + 3 > EXCERPT_CHARS:
+            break
+        out += " … " + s
+    return out
+
+
+def content_hash(post: dict) -> str:
+    key = "|".join([post["title"].strip().lower(), post["company"].strip().lower(),
+                    post.get("location", "").strip().lower(), excerpt(post.get("description", "")),
+                    PROMPT_VERSION, MODEL])
+    return hashlib.sha256(key.encode()).hexdigest()[:20]
+
+
+def _load_cache() -> dict:
+    return json.loads(CACHE_PATH.read_text()) if CACHE_PATH.exists() else {}
+
+
+def _save_cache(cache: dict) -> None:
+    DATA.mkdir(exist_ok=True)
+    CACHE_PATH.write_text(json.dumps(cache, indent=0, sort_keys=True))
+
+
+def _render(batch: list[tuple[str, dict]]) -> str:
+    lines = [json.dumps({"id": hid, "title": p["title"], "company": p["company"],
+                         "location": p.get("location", ""), "type": p.get("commitment", ""),
+                         "description": excerpt(p.get("description", ""))}, ensure_ascii=False)
+             for hid, p in batch]
+    return "Label these posts (one JSON object per line):\n" + "\n".join(lines)
+
+
+def _call(client: anthropic.Anthropic, batch: list[tuple[str, dict]], model: str = None) -> dict[str, dict]:
+    model = model or MODEL
+    t0 = time.time()
+    resp = client.messages.create(
+        model=model,
+        max_tokens=8000,
+        system=SYSTEM,
+        output_config={"effort": EFFORT, "format": {"type": "json_schema", "schema": OUTPUT_SCHEMA}},
+        messages=[{"role": "user", "content": _render(batch)}],
+    )
+    u = resp.usage
+    DATA.mkdir(exist_ok=True)
+    with USAGE_PATH.open("a") as f:
+        f.write(json.dumps({"ts": int(time.time()), "model": model, "posts": len(batch),
+                            "input_tokens": u.input_tokens, "output_tokens": u.output_tokens,
+                            "latency_s": round(time.time() - t0, 2), "stop_reason": resp.stop_reason}) + "\n")
+    if resp.stop_reason != "end_turn":
+        raise ValueError(f"stop_reason={resp.stop_reason}")
+    text = next(b.text for b in resp.content if b.type == "text")
+    items = {it["id"]: it for it in json.loads(text)["items"]}
+    want = {hid for hid, _ in batch}
+    if set(items) != want:  # model dropped/duplicated/invented ids -> caller retries per post
+        missing = want - set(items)
+        if len(batch) > 1 and missing:
+            raise ValueError(f"ids mismatch: missing {len(missing)}")
+    for it in items.values():
+        if not it["cities"]:
+            it["cities"] = ["India (unspecified)"]
+    return {k: v for k, v in items.items() if k in want}
+
+
+def tag_posts(posts: list[dict], use_llm: bool = True, workers: int = 4) -> dict:
+    """Mutates posts in place with tag fields. Returns run stats."""
+    from concurrent.futures import ThreadPoolExecutor
+
+    cache = _load_cache()
+    todo = []
+    for p in posts:
+        p["_hash"] = content_hash(p)
+        if p["_hash"] not in cache:
+            todo.append((p["_hash"], p))
+    stats = {"total": len(posts), "cache_hits": len(posts) - len(todo), "llm_tagged": 0, "fallback": 0,
+             "batch_retries": 0}
+
+    use_llm = use_llm and bool(todo) and bool(os.environ.get("ANTHROPIC_API_KEY") or os.environ.get("ANTHROPIC_AUTH_TOKEN"))
+    client = anthropic.Anthropic(max_retries=4) if use_llm else None
+
+    def run_batch(batch):
+        try:
+            return _call(client, batch), 0
+        except Exception as e:  # noqa: BLE001 - retry each post alone, then fall back
+            print(f"batch failed ({str(e)[:120]}); retrying one-by-one")
+            res = {}
+            for item in batch:
+                try:
+                    res.update(_call(client, [item]))
+                except Exception as e2:  # noqa: BLE001
+                    print(f"  post {item[0]} failed: {str(e2)[:120]}")
+            return res, 1
+
+    batches = [todo[i:i + BATCH_SIZE] for i in range(0, len(todo), BATCH_SIZE)]
+    if client:
+        with ThreadPoolExecutor(max_workers=workers) as pool:
+            for n, (batch, (res, retried)) in enumerate(zip(batches, pool.map(run_batch, batches))):
+                stats["batch_retries"] += retried
+                for hid, _ in batch:
+                    if hid in res:
+                        r = res[hid]
+                        cache[hid] = {"role": r["role"], "llm_cities": r["cities"], "level": r["level"],
+                                      "tagged_by": MODEL}
+                        stats["llm_tagged"] += 1
+                if n % 5 == 4:
+                    _save_cache(cache)  # checkpoint
+                    print(f"  tagged {stats['llm_tagged']}/{len(todo)}")
+        _save_cache(cache)
+
+    for p in posts:
+        if p["_hash"] in cache:
+            p.update(cache[p["_hash"]])
+        else:  # keyword fallback; not cached, so the LLM retries it on the next run
+            b = baseline_tag(p)
+            p.update({"role": b["role"], "llm_cities": None, "level": None, "tagged_by": "rules"})
+            stats["fallback"] += 1
+        # deterministic alias map wins when the raw location names known cities
+        alias = cities_from_alias(p.get("location", ""))
+        p["cities"] = alias or p.get("llm_cities") or ["India (unspecified)"]
+        p["city_source"] = "alias" if alias else ("llm" if p.get("llm_cities") else "default")
+        p.pop("_hash", None)
+    return stats
+
+
+def cost_report(model: str | None = None) -> dict:
+    """Actual cost from logged API usage (optionally for one model)."""
+    if not USAGE_PATH.exists():
+        return {}
+    tot_in = tot_out = posts = 0
+    cost = 0.0
+    for line in USAGE_PATH.read_text().splitlines():
+        r = json.loads(line)
+        if model and r["model"] != model:
+            continue
+        pin, pout = PRICES.get(r["model"], (0, 0))
+        cost += r["input_tokens"] / 1e6 * pin + r["output_tokens"] / 1e6 * pout
+        tot_in += r["input_tokens"]
+        tot_out += r["output_tokens"]
+        posts += r["posts"]
+    return {"posts_sent": posts, "input_tokens": tot_in, "output_tokens": tot_out, "total_usd": round(cost, 4),
+            "usd_per_1000_posts": round(cost / posts * 1000, 4) if posts else None}

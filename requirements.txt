@@ -1,0 +1,4 @@
+anthropic>=2.8.0
+pydantic
+requests
+rapidfuzz

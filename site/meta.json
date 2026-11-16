@@ -1,0 +1,16 @@
+{
+ "updated_at": "2026-11-16T08:16:16.248812+00:00",
+ "total_posts": 754,
+ "entry_posts": 754,
+ "intern_or_fresher_posts": 111,
+ "sources": [
+  "Ashby",
+  "Greenhouse",
+  "Lever",
+  "SmartRecruiters",
+  "Workable"
+ ],
+ "boards": 33,
+ "model": "keyword rules (LLM unavailable)",
+ "usd_per_1000_posts": null
+}

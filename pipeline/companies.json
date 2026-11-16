@@ -1,0 +1,167 @@
+[
+ {
+  "ats": "greenhouse",
+  "slug": "databricks",
+  "name": "Databricks"
+ },
+ {
+  "ats": "greenhouse",
+  "slug": "okta",
+  "name": "Okta"
+ },
+ {
+  "ats": "greenhouse",
+  "slug": "zscaler",
+  "name": "Zscaler"
+ },
+ {
+  "ats": "greenhouse",
+  "slug": "mongodb",
+  "name": "MongoDB"
+ },
+ {
+  "ats": "greenhouse",
+  "slug": "purestorage",
+  "name": "Pure Storage"
+ },
+ {
+  "ats": "greenhouse",
+  "slug": "stripe",
+  "name": "Stripe"
+ },
+ {
+  "ats": "greenhouse",
+  "slug": "inmobi",
+  "name": "InMobi"
+ },
+ {
+  "ats": "greenhouse",
+  "slug": "gitlab",
+  "name": "GitLab"
+ },
+ {
+  "ats": "greenhouse",
+  "slug": "sigmoid",
+  "name": "Sigmoid"
+ },
+ {
+  "ats": "greenhouse",
+  "slug": "rubrik",
+  "name": "Rubrik"
+ },
+ {
+  "ats": "greenhouse",
+  "slug": "toast",
+  "name": "Toast"
+ },
+ {
+  "ats": "greenhouse",
+  "slug": "elastic",
+  "name": "Elastic"
+ },
+ {
+  "ats": "greenhouse",
+  "slug": "hackerrank",
+  "name": "HackerRank"
+ },
+ {
+  "ats": "greenhouse",
+  "slug": "sumologic",
+  "name": "Sumo Logic"
+ },
+ {
+  "ats": "greenhouse",
+  "slug": "druva",
+  "name": "Druva"
+ },
+ {
+  "ats": "greenhouse",
+  "slug": "groww",
+  "name": "Groww"
+ },
+ {
+  "ats": "lever",
+  "slug": "paytm",
+  "name": "Paytm"
+ },
+ {
+  "ats": "lever",
+  "slug": "meesho",
+  "name": "Meesho"
+ },
+ {
+  "ats": "lever",
+  "slug": "hevodata",
+  "name": "Hevo Data"
+ },
+ {
+  "ats": "lever",
+  "slug": "zeta",
+  "name": "Zeta"
+ },
+ {
+  "ats": "lever",
+  "slug": "fampay",
+  "name": "FamPay"
+ },
+ {
+  "ats": "lever",
+  "slug": "mindtickle",
+  "name": "Mindtickle"
+ },
+ {
+  "ats": "lever",
+  "slug": "cred",
+  "name": "CRED"
+ },
+ {
+  "ats": "smartrecruiters",
+  "slug": "Swiggy",
+  "name": "Swiggy"
+ },
+ {
+  "ats": "smartrecruiters",
+  "slug": "BoschGroup",
+  "name": "Bosch"
+ },
+ {
+  "ats": "smartrecruiters",
+  "slug": "ServiceNow",
+  "name": "ServiceNow"
+ },
+ {
+  "ats": "smartrecruiters",
+  "slug": "Freshworks",
+  "name": "Freshworks"
+ },
+ {
+  "ats": "smartrecruiters",
+  "slug": "Experian",
+  "name": "Experian"
+ },
+ {
+  "ats": "workable",
+  "slug": "apna",
+  "name": "apna"
+ },
+ {
+  "ats": "ashby",
+  "slug": "sarvam",
+  "name": "Sarvam AI"
+ },
+ {
+  "ats": "smartrecruiters",
+  "slug": "NielsenIQ",
+  "name": "NielsenIQ"
+ },
+ {
+  "ats": "greenhouse",
+  "slug": "zinnia",
+  "name": "Zinnia"
+ },
+ {
+  "ats": "greenhouse",
+  "slug": "pubmatic",
+  "name": "PubMatic"
+ }
+]
