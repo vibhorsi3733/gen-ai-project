@@ -46,6 +46,25 @@ A live page of fresher jobs and internships in India.
 
 No server and no database. At about 1k rows a static JSON file is faster, free and can't go down. The git history doubles as a daily audit log of what changed.
 
+## Skills insights tab
+
+The **Skills insights** tab (`#insights`) shows which skills employers ask for, so a student can decide what to learn and where to apply.
+
+- **Period:** Weekly (last 7 days), Monthly (last 30 days) or a custom date range. Every number is compared with the previous period of the same length.
+- **Filters:** role, level (entry-level / intern + fresher / all) and skill type (technical vs professional).
+- **KPIs:** posts in the period, most asked skill, fastest-rising skill, top hiring city.
+- **Most asked skills:** share of posts mentioning each skill, with its change versus the previous period.
+- **Demand over time:** weekly or monthly share of posts for up to 3 chosen skills.
+- **Skills by location:** a heat map of city × skill, showing either the % of that city's posts or the post count. Cities with fewer than 8 posts are left out, because a handful of posts swings the percentages too much.
+- **All skills table:** sortable and searchable, with top roles, top cities and the companies asking.
+- **Every skill, bar and heat-map cell is clickable.** It opens the Jobs tab filtered to that skill (and city).
+
+How it works:
+- [pipeline/skills.py](pipeline/skills.py) matches each post's title and description against a curated dictionary of about 100 skills, with aliases mapped to one name ("ReactJS" / "React.js" → React).
+- A dictionary, rather than the LLM, keeps names canonical and countable. It's also free and works without an API key.
+- SmartRecruiters and Workable list endpoints don't include descriptions, so they're fetched per job (Workable via `?details=true`, SmartRecruiters via the posting endpoint). Results are cached by id.
+- `data/archive.json` keeps every post ever published, including closed ones, so trends build up day by day. Tracking started on 16 Nov 2026, so earlier weeks only contain posts that were still open then. The page says so under the trend chart.
+
 ## How the design was decided
 
 The design came from two parallel proposals: a data-ingestion plan and an LLM/eval/deploy plan. Each was critiqued against the other before any build. The decisions that changed because of that debate:

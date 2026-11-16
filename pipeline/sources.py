@@ -70,7 +70,8 @@ def greenhouse(slug: str, name: str) -> list[dict]:
             loc = offices
         out.append(dict(id=f"gh:{slug}:{j['id']}", source="Greenhouse", company=name, title=j["title"],
                         location=loc, description=strip_html(j.get("content", "")),
-                        url=j["absolute_url"], posted_at=j.get("updated_at", "")[:10], commitment=""))
+                        url=j["absolute_url"], posted_at=(j.get("first_published") or j.get("updated_at") or "")[:10],
+                        commitment=""))
     return out
 
 
@@ -108,8 +109,19 @@ def smartrecruiters(slug: str, name: str) -> list[dict]:
             return out
 
 
+def smartrecruiters_description(post_id: str) -> str:
+    """The postings list has no description; the per-job endpoint does. Called only for
+    posts that survive the senior filter, and cached by id in run.py (descriptions don't change)."""
+    _, slug, jid = post_id.split(":")
+    j = get(f"https://api.smartrecruiters.com/v1/companies/{slug}/postings/{jid}")
+    sec = (j.get("jobAd") or {}).get("sections") or {}
+    # skip companyDescription: boilerplate would inflate skills the job itself doesn't ask for
+    parts = [(sec.get(k) or {}).get("text", "") for k in ("jobDescription", "qualifications", "additionalInformation")]
+    return strip_html(" ".join(parts))[:4000]
+
+
 def workable(slug: str, name: str) -> list[dict]:
-    data = get(f"https://apply.workable.com/api/v1/widget/accounts/{slug}")
+    data = get(f"https://apply.workable.com/api/v1/widget/accounts/{slug}", params={"details": "true"})
     out = []
     for j in data.get("jobs", []):
         loc = ", ".join(x for x in [j.get("city"), j.get("state"), j.get("country")] if x)

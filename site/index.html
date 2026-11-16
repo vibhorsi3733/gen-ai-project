@@ -4,83 +4,203 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Fresher Jobs India</title>
-<meta name="description" content="Fresher jobs and internships in India, collected from public company career boards, de-duplicated and tagged by role and city with an LLM. Refreshed daily.">
+<meta name="description" content="Fresher jobs and internships in India from public company career boards, tagged by role, city and level, plus the skills employers ask for most. Refreshed daily.">
 <style>
   :root {
-    --bg: #f7f7f5; --card: #ffffff; --text: #1d1d1f; --muted: #6b6b70; --line: #e4e4e0;
-    --accent: #2f5bea; --chip: #eef1fb; --chip-text: #2a3f8f; --intern: #e7f6ec; --intern-text: #1c6b3a;
-    --bar: rgba(247, 247, 245, 0.92);
+    --bg: #f6f7f9; --card: #ffffff; --text: #16191d; --muted: #5d6470; --faint: #8a909a; --line: #e2e5ea;
+    --accent: #2a78d6; --chip: #eef3fb; --chip-text: #22508f; --intern: #e5f4ea; --intern-text: #1b6a39;
+    --bar: rgba(246, 247, 249, 0.92); --track: #edf0f4;
+    --s1: #2a78d6; --s2: #eb6834; --s3: #1baf7a;           /* categorical slots 1-3 (validated all-pairs) */
+    --seq-lo: #eef4fd; --seq-hi: #104281; --seq-strong-text: #ffffff;
+    --tip-bg: #16191d; --tip-text: #f4f5f7;
   }
   @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) {
-      --bg: #121214; --card: #1c1c1f; --text: #ececee; --muted: #9a9aa2; --line: #2c2c31;
-      --accent: #7c9bff; --chip: #23283a; --chip-text: #b8c6ff; --intern: #1d3326; --intern-text: #8fdcaa;
-      --bar: rgba(18, 18, 20, 0.92);
+      --bg: #111316; --card: #1a1d21; --text: #eceef1; --muted: #a2a8b2; --faint: #7b818b; --line: #2b3036;
+      --accent: #5b9cf0; --chip: #1f2a3a; --chip-text: #b6cdf5; --intern: #1b3226; --intern-text: #8fdcaa;
+      --bar: rgba(17, 19, 22, 0.92); --track: #23272d;
+      --s1: #3987e5; --s2: #d95926; --s3: #199e70;
+      --seq-lo: #1c2430; --seq-hi: #86b6ef; --seq-strong-text: #0d1a2b;
+      --tip-bg: #eceef1; --tip-text: #16191d; color-scheme: dark;
     }
+  }
+  :root[data-theme="dark"] {
+    --bg: #111316; --card: #1a1d21; --text: #eceef1; --muted: #a2a8b2; --faint: #7b818b; --line: #2b3036;
+    --accent: #5b9cf0; --chip: #1f2a3a; --chip-text: #b6cdf5; --intern: #1b3226; --intern-text: #8fdcaa;
+    --bar: rgba(17, 19, 22, 0.92); --track: #23272d;
+    --s1: #3987e5; --s2: #d95926; --s3: #199e70;
+    --seq-lo: #1c2430; --seq-hi: #86b6ef; --seq-strong-text: #0d1a2b;
+    --tip-bg: #eceef1; --tip-text: #16191d; color-scheme: dark;
   }
   * { box-sizing: border-box; }
   html { -webkit-text-size-adjust: 100%; }
   body { margin: 0; background: var(--bg); color: var(--text);
          font: 15px/1.45 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
-  .wrap { max-width: 980px; margin: 0 auto;
+  .wrap { max-width: 1120px; margin: 0 auto;
           padding: 24px max(16px, env(safe-area-inset-right)) 64px max(16px, env(safe-area-inset-left)); }
-  h1 { font-size: clamp(20px, 5vw, 26px); line-height: 1.2; margin: 0 0 6px; letter-spacing: -0.01em; }
-  .sub { color: var(--muted); margin: 0 0 16px; font-size: 14px; }
+  h1 { font-size: clamp(20px, 4.6vw, 26px); line-height: 1.2; margin: 0 0 6px; letter-spacing: -0.01em; }
+  h2 { font-size: 16px; margin: 0; letter-spacing: -0.005em; }
+  .sub { color: var(--muted); margin: 0; font-size: 14px; }
+  .num { font-variant-numeric: tabular-nums; }
 
-  /* Sticky filter bar */
-  .bar { position: sticky; top: -1px; z-index: 10; background: var(--bar);
-         -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px);
-         margin: 0 -16px; padding: 10px 16px; border-bottom: 1px solid transparent; }
-  .bar.stuck { border-bottom-color: var(--line); }
-  .controls { display: grid; grid-template-columns: minmax(0, 1.5fr) repeat(3, minmax(0, 1fr)); gap: 8px; }
-  input, select, button { font: inherit; font-size: 16px; /* >=16px stops iOS zoom-on-focus */
-                          min-height: 44px; border-radius: 8px; }
+  /* Tabs */
+  .tabs { display: flex; gap: 4px; margin: 18px 0 0; border-bottom: 1px solid var(--line); }
+  .tab { appearance: none; background: none; border: 0; border-bottom: 2px solid transparent; color: var(--muted);
+         font: inherit; font-weight: 600; padding: 10px 14px; min-height: 44px; cursor: pointer; margin-bottom: -1px; }
+  .tab[aria-selected="true"] { color: var(--text); border-bottom-color: var(--accent); }
+  .tab:hover { color: var(--text); }
+
+  input, select, button { font: inherit; font-size: 16px; min-height: 44px; border-radius: 8px; }
   input, select { width: 100%; min-width: 0; padding: 10px 12px; border: 1px solid var(--line);
                   background: var(--card); color: var(--text); text-overflow: ellipsis; }
-  input:focus-visible, select:focus-visible, button:focus-visible, a:focus-visible {
+  input:focus-visible, select:focus-visible, button:focus-visible, a:focus-visible, [tabindex]:focus-visible {
     outline: 2px solid var(--accent); outline-offset: 1px; }
-  .status { display: flex; align-items: center; justify-content: space-between; gap: 12px;
-            color: var(--muted); font-size: 13px; margin-top: 8px; min-height: 24px; }
-  .clear { background: none; border: 0; color: var(--accent); padding: 0 4px; min-height: 24px; cursor: pointer;
-           font-size: 13px; }
-  .clear[hidden] { display: none; }
 
+  /* ---------- Jobs tab ---------- */
+  .bar { position: sticky; top: -1px; z-index: 10; background: var(--bar);
+         -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px);
+         margin: 0 -16px; padding: 12px 16px 10px; border-bottom: 1px solid transparent; }
+  .bar.stuck { border-bottom-color: var(--line); }
+  .controls { display: grid; grid-template-columns: minmax(0, 1.5fr) repeat(3, minmax(0, 1fr)); gap: 8px; }
+  .status { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; color: var(--muted); font-size: 13px;
+            margin-top: 8px; min-height: 24px; }
+  .status .grow { flex: 1; }
+  .linkbtn { background: none; border: 0; color: var(--accent); padding: 0 4px; min-height: 24px; cursor: pointer; font-size: 13px; }
+  .pill { display: inline-flex; align-items: center; gap: 6px; background: var(--chip); color: var(--chip-text);
+          border-radius: 999px; padding: 2px 4px 2px 10px; font-size: 13px; font-weight: 600; }
+  .pill button { background: none; border: 0; color: inherit; min-height: 24px; width: 24px; cursor: pointer; font-size: 16px; line-height: 1; }
   .list { display: grid; gap: 8px; margin-top: 12px; }
   .job { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px;
          display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 4px 12px; align-items: start;
-         position: relative; content-visibility: auto; contain-intrinsic-size: auto 110px; }
+         position: relative; content-visibility: auto; contain-intrinsic-size: auto 120px; }
   .job:hover { border-color: var(--accent); }
   .job a.title { color: var(--text); font-weight: 600; text-decoration: none; overflow-wrap: anywhere; }
-  .job a.title::after { content: ""; position: absolute; inset: 0; border-radius: 10px; } /* whole card is the tap target */
+  .job a.title::after { content: ""; position: absolute; inset: 0; border-radius: 10px; }
   .job a.title:hover { color: var(--accent); }
   .meta { color: var(--muted); font-size: 13px; grid-column: 1; overflow-wrap: anywhere; }
   .chips { display: flex; flex-wrap: wrap; gap: 6px; grid-column: 1 / -1; margin-top: 6px; }
-  .chip { background: var(--chip); color: var(--chip-text); font-size: 12px; padding: 2px 8px; border-radius: 999px;
-          white-space: nowrap; }
+  .chip { background: var(--chip); color: var(--chip-text); font-size: 12px; padding: 2px 8px; border-radius: 999px; white-space: nowrap; }
   .chip.lvl { font-weight: 600; }
   .chip.intern, .chip.fresh { background: var(--intern); color: var(--intern-text); }
   .chip.exp { background: transparent; border: 1px solid var(--line); color: var(--muted); }
+  .chip.skill { background: transparent; border: 1px solid var(--line); color: var(--muted); }
   .src { color: var(--muted); font-size: 12px; white-space: nowrap; }
   .empty { padding: 40px 16px; text-align: center; color: var(--muted); }
   .more { display: block; width: 100%; margin-top: 12px; padding: 10px; background: var(--card);
           border: 1px solid var(--line); color: var(--text); cursor: pointer; }
   .more:hover { border-color: var(--accent); }
+
+  /* ---------- Insights tab ---------- */
+  .ins-controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-top: 16px; }
+  .seg { display: inline-flex; background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 3px; }
+  .seg button { background: none; border: 0; color: var(--muted); font-size: 14px; font-weight: 600; padding: 6px 12px;
+                min-height: 36px; border-radius: 6px; cursor: pointer; white-space: nowrap; }
+  .seg button[aria-pressed="true"] { background: var(--chip); color: var(--chip-text); }
+  .ins-controls select { width: auto; min-width: 150px; flex: 1 1 150px; max-width: 220px; }
+  .range { display: flex; gap: 6px; align-items: center; flex: 1 1 280px; max-width: 340px; }
+  .range input { flex: 1; }
+  .range span { color: var(--muted); font-size: 13px; }
+  .range[hidden] { display: none; }
+  .basis { color: var(--muted); font-size: 13px; margin: 10px 0 0; }
+
+  .kpis { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; margin-top: 16px; }
+  .kpi { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; min-width: 0; }
+  .kpi .label { color: var(--muted); font-size: 12px; font-weight: 600; letter-spacing: 0.02em; }
+  .kpi .value { font-size: 22px; font-weight: 700; margin-top: 4px; overflow-wrap: break-word; hyphens: auto; line-height: 1.2; }
+  .kpi .note { color: var(--muted); font-size: 13px; margin-top: 2px; }
+
+  .grid2 { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 12px; margin-top: 12px; }
+  .panel { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 16px; min-width: 0; }
+  .panel-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 6px 12px; margin-bottom: 12px; }
+  .panel-head p { color: var(--muted); font-size: 13px; margin: 2px 0 0; }
+  .full { margin-top: 12px; }
+
+  /* top skills bars */
+  .bars { display: grid; gap: 2px; }
+  .brow { display: grid; grid-template-columns: minmax(96px, 34%) minmax(0, 1fr) auto; gap: 10px; align-items: center;
+          padding: 5px 6px; border-radius: 6px; cursor: pointer; background: none; border: 0; color: inherit;
+          font: inherit; text-align: left; min-height: 34px; width: 100%; }
+  .brow:hover, .brow:focus-visible { background: var(--track); }
+  .brow .name { font-size: 13.5px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .brow .track { height: 12px; border-radius: 0 4px 4px 0; position: relative; }
+  .brow .fill { height: 100%; background: var(--s1); border-radius: 0 4px 4px 0; min-width: 2px; }
+  .brow .val { font-size: 13px; color: var(--text); white-space: nowrap; text-align: right; min-width: 92px; }
+  .delta { color: var(--muted); font-size: 12px; margin-left: 6px; }
+
+  /* trend */
+  .pickers { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
+  .pick { display: inline-flex; align-items: center; gap: 6px; background: var(--card); border: 1px solid var(--line); color: var(--text);
+          border-radius: 999px; padding: 4px 10px; font-size: 13px; min-height: 32px; cursor: pointer; }
+  .pick .sw { width: 10px; height: 10px; border-radius: 3px; background: var(--track); border: 1px solid var(--line); }
+  .pick[aria-pressed="true"] { border-color: var(--text); font-weight: 600; }
+  .legend { display: flex; flex-wrap: wrap; gap: 12px; font-size: 12.5px; color: var(--muted); margin-top: 6px; }
+  .legend i { display: inline-block; width: 14px; height: 3px; border-radius: 2px; vertical-align: middle; margin-right: 6px; }
+  #trend { width: 100%; height: 260px; display: block; overflow: visible; }
+  #trend text { fill: var(--muted); font-size: 11px; }
+  #trend .grid line { stroke: var(--line); }
+  #trend .endlab { fill: var(--text); font-size: 11.5px; font-weight: 600; }
+  .caveat { color: var(--faint); font-size: 12px; margin: 8px 0 0; }
+
+  /* heat map */
+  .scroll-x { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  table.heat { border-collapse: separate; border-spacing: 2px; font-size: 12.5px; min-width: 100%; }
+  table.heat th { color: var(--muted); font-weight: 600; text-align: center; padding: 4px; vertical-align: bottom; }
+  table.heat th.col { min-width: 72px; max-width: 96px; line-height: 1.2; font-size: 11.5px; overflow-wrap: anywhere; padding: 4px 3px; }
+  table.heat th.row { text-align: left; white-space: nowrap; position: sticky; left: 0; background: var(--card); z-index: 1; padding-right: 10px; }
+  table.heat th.row small { display: block; color: var(--faint); font-weight: 400; }
+  table.heat td { text-align: center; padding: 0; height: 40px; border-radius: 4px; cursor: pointer; color: var(--text);
+                  font-variant-numeric: tabular-nums; }
+  table.heat td.strong { color: var(--seq-strong-text); font-weight: 600; }
+  table.heat td:hover { outline: 2px solid var(--text); outline-offset: -1px; }
+  .scale { display: flex; align-items: center; gap: 8px; font-size: 12px; color: var(--muted); margin-top: 10px; }
+  .scale .ramp { width: 140px; height: 10px; border-radius: 3px; background: linear-gradient(90deg, var(--seq-lo), var(--seq-hi)); border: 1px solid var(--line); }
+
+  /* table */
+  .tbl-tools { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  .tbl-tools input { max-width: 260px; }
+  table.skills { border-collapse: collapse; width: 100%; font-size: 14px; }
+  table.skills th, table.skills td { text-align: left; padding: 10px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  table.skills th { color: var(--muted); font-size: 12px; font-weight: 600; white-space: nowrap; }
+  table.skills th button { background: none; border: 0; color: inherit; font: inherit; cursor: pointer; padding: 0; min-height: 24px; }
+  table.skills th button[aria-sort]::after { content: " ↕"; color: var(--faint); }
+  table.skills th button[aria-sort="descending"]::after { content: " ↓"; color: var(--text); }
+  table.skills th button[aria-sort="ascending"]::after { content: " ↑"; color: var(--text); }
+  table.skills td.n { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  table.skills th.n { text-align: right; }
+  table.skills .cat { color: var(--muted); font-size: 12.5px; }
+  table.skills .sub2 { color: var(--muted); font-size: 12.5px; }
+  .viewbtn { background: none; border: 1px solid var(--line); color: var(--accent); border-radius: 6px; padding: 4px 10px;
+             min-height: 32px; cursor: pointer; font-size: 13px; white-space: nowrap; }
+  .viewbtn:hover { border-color: var(--accent); }
+
+  .tip { position: fixed; z-index: 50; pointer-events: none; background: var(--tip-bg); color: var(--tip-text);
+         font-size: 12.5px; line-height: 1.4; padding: 8px 10px; border-radius: 8px; max-width: 260px;
+         box-shadow: 0 4px 16px rgba(0,0,0,0.18); }
+  .tip b { font-weight: 600; }
   footer { margin-top: 32px; color: var(--muted); font-size: 12px; }
 
-  /* Tablet: search on its own row, three filters beneath */
+  @media (max-width: 960px) {
+    .grid2 { grid-template-columns: minmax(0, 1fr); }
+    .kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
   @media (max-width: 860px) {
     .controls { grid-template-columns: repeat(3, minmax(0, 1fr)); }
     .controls input { grid-column: 1 / -1; }
   }
-  /* Phone: search full width, filters in two columns, level filter full width (its labels are long) */
   @media (max-width: 560px) {
     .wrap { padding-top: 16px; }
     .sub { font-size: 13px; }
     .controls { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .controls #type { grid-column: 1 / -1; }
     .job { grid-template-columns: minmax(0, 1fr); padding: 12px 14px; }
-    .src { grid-row: 3; }
-    .meta { grid-row: 2; }
+    .src { grid-row: 3; } .meta { grid-row: 2; }
+    .kpi .value { font-size: 16px; }
+    .ins-controls select, .range { max-width: none; flex-basis: 100%; }
+    .seg { width: 100%; } .seg button { flex: 1; }
+    .hide-sm { display: none; }
+    .brow { grid-template-columns: minmax(84px, 38%) minmax(0, 1fr) auto; }
+    .brow .val { min-width: 0; }
+    .panel { padding: 14px 12px; }
   }
   @media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
 </style>
@@ -90,56 +210,153 @@
   <h1>Fresher jobs &amp; internships in India</h1>
   <p class="sub" id="sub">Loading…</p>
 
-  <div class="bar" id="bar">
-    <div class="controls">
-      <input id="q" type="search" placeholder="Search title, company, skills…" autocomplete="off" enterkeyhint="search" aria-label="Search">
-      <select id="role" aria-label="Role"><option value="">All roles</option></select>
-      <select id="city" aria-label="City"><option value="">All cities</option></select>
-      <select id="type" aria-label="Level">
+  <nav class="tabs" role="tablist" aria-label="Views">
+    <button class="tab" role="tab" id="tab-jobs" aria-controls="view-jobs" aria-selected="true">Jobs</button>
+    <button class="tab" role="tab" id="tab-insights" aria-controls="view-insights" aria-selected="false">Skills insights</button>
+  </nav>
+
+  <!-- ================= JOBS ================= -->
+  <section id="view-jobs" role="tabpanel" aria-labelledby="tab-jobs">
+    <div class="bar" id="bar">
+      <div class="controls">
+        <input id="q" type="search" placeholder="Search title, company, skills…" autocomplete="off" enterkeyhint="search" aria-label="Search">
+        <select id="role" aria-label="Role"><option value="">All roles</option></select>
+        <select id="city" aria-label="City"><option value="">All cities</option></select>
+        <select id="type" aria-label="Level">
+          <option value="entry">Entry-level (0-2 yrs)</option>
+          <option value="strict">Intern + fresher</option>
+          <option value="Internship">Internships</option>
+          <option value="all">All levels</option>
+        </select>
+      </div>
+      <div class="status">
+        <span id="count" aria-live="polite"></span>
+        <span id="skillpill"></span>
+        <span class="grow"></span>
+        <button class="linkbtn" id="clear" type="button" hidden>Clear filters</button>
+      </div>
+    </div>
+    <div class="list" id="list"></div>
+    <button class="more" id="more" type="button" hidden>Show more</button>
+  </section>
+
+  <!-- ================= INSIGHTS ================= -->
+  <section id="view-insights" role="tabpanel" aria-labelledby="tab-insights" hidden>
+    <div class="ins-controls">
+      <div class="seg" role="group" aria-label="Period">
+        <button type="button" data-period="7" aria-pressed="false">Weekly</button>
+        <button type="button" data-period="30" aria-pressed="true">Monthly</button>
+        <button type="button" data-period="custom" aria-pressed="false">Custom range</button>
+      </div>
+      <div class="range" id="range" hidden>
+        <input type="date" id="from" aria-label="From date">
+        <span>to</span>
+        <input type="date" id="to" aria-label="To date">
+      </div>
+      <select id="i-role" aria-label="Role"><option value="">All roles</option></select>
+      <select id="i-level" aria-label="Level">
         <option value="entry">Entry-level (0-2 yrs)</option>
         <option value="strict">Intern + fresher</option>
-        <option value="Internship">Internships</option>
         <option value="all">All levels</option>
       </select>
+      <select id="i-cat" aria-label="Skill type">
+        <option value="">All skill types</option>
+        <option value="tech">Technical &amp; tools only</option>
+        <option value="Professional skills">Professional skills only</option>
+      </select>
     </div>
-    <div class="status">
-      <span id="count" aria-live="polite"></span>
-      <button class="clear" id="clear" type="button" hidden>Clear filters</button>
-    </div>
-  </div>
+    <p class="basis" id="basis"></p>
 
-  <div class="list" id="list"></div>
-  <button class="more" id="more" type="button" hidden>Show more</button>
+    <div class="kpis" id="kpis"></div>
+
+    <div class="grid2">
+      <div class="panel">
+        <div class="panel-head">
+          <div><h2>Most asked skills</h2><p>Share of job posts that mention each skill. Click a skill to see its jobs.</p></div>
+        </div>
+        <div class="bars" id="bars"></div>
+      </div>
+      <div class="panel">
+        <div class="panel-head">
+          <div><h2>Demand over time</h2><p>Share of posts asking for each skill, per <span id="gran-word">week</span>. Pick up to 3.</p></div>
+          <div class="seg" role="group" aria-label="Trend granularity">
+            <button type="button" data-gran="week" aria-pressed="true">Weekly</button>
+            <button type="button" data-gran="month" aria-pressed="false">Monthly</button>
+          </div>
+        </div>
+        <div class="pickers" id="pickers"></div>
+        <svg id="trend" role="img" aria-label="Line chart of skill demand over time"></svg>
+        <div class="legend" id="legend"></div>
+        <p class="caveat" id="caveat"></p>
+      </div>
+    </div>
+
+    <div class="panel full">
+      <div class="panel-head">
+        <div><h2>Skills by location</h2><p id="heat-desc">Share of each city's job posts that ask for the skill. Darker = asked more often there. Cities with fewer than 8 posts in the period are left out. Click a cell to see those jobs.</p></div>
+        <div class="seg" role="group" aria-label="Heat map value">
+          <button type="button" data-metric="pct" aria-pressed="true">% of city's posts</button>
+          <button type="button" data-metric="count" aria-pressed="false">Number of posts</button>
+        </div>
+      </div>
+      <div class="scroll-x"><table class="heat" id="heat"></table></div>
+      <div class="scale"><span>Low</span><span class="ramp"></span><span>High</span></div>
+    </div>
+
+    <div class="panel full">
+      <div class="panel-head">
+        <div><h2>All skills</h2><p>Who asks for each skill, where, and how demand moved versus the previous period.</p></div>
+        <div class="tbl-tools"><input id="t-q" type="search" placeholder="Find a skill…" aria-label="Find a skill"></div>
+      </div>
+      <div class="scroll-x">
+        <table class="skills" id="skills"></table>
+      </div>
+      <button class="more" id="t-more" type="button" hidden>Show all skills</button>
+    </div>
+  </section>
 
   <footer id="foot"></footer>
 </div>
+<div class="tip" id="tip" hidden></div>
 
 <script>
 const $ = (id) => document.getElementById(id);
-const PAGE = 40;          // cards rendered per batch: rendering all ~750 at once made typing lag
-let JOBS = [], MATCHES = [], shown = 0;
+const esc = (s) => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const fmtPct = (x) => x >= 0.095 ? `${Math.round(x * 100)}%` : `${(x * 100).toFixed(1)}%`;
+const LEVEL_SETS = { entry: ["Internship", "Fresher", "Early career"], strict: ["Internship", "Fresher"], Internship: ["Internship"] };
+const levelOk = (lvl, type) => !LEVEL_SETS[type] || LEVEL_SETS[type].includes(lvl);
+const LEVEL_CLASS = { "Internship": "intern", "Fresher": "fresh", "Early career": "early", "Experienced": "exp" };
+let JOBS = [], META = {}, INS = { posts: [], categories: {} };
 
-function esc(s) {
-  return String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+/* ---------------- tooltip ---------------- */
+const tip = $("tip");
+function showTip(html, x, y) {
+  tip.innerHTML = html; tip.hidden = false;
+  const r = tip.getBoundingClientRect();
+  let left = x + 14, top = y + 14;
+  if (left + r.width > innerWidth - 8) left = x - r.width - 14;
+  if (top + r.height > innerHeight - 8) top = y - r.height - 14;
+  tip.style.left = `${Math.max(8, left)}px`; tip.style.top = `${Math.max(8, top)}px`;
 }
+const hideTip = () => { tip.hidden = true; };
+addEventListener("scroll", hideTip, { passive: true });
 
-function fillSelect(el, field) {
-  const counts = {};
-  JOBS.forEach(j => [].concat(j[field]).forEach(v => counts[v] = (counts[v] || 0) + 1));
-  Object.keys(counts).sort((a, b) => counts[b] - counts[a]).forEach(v => {
+/* ================= JOBS TAB ================= */
+const PAGE = 40;
+let MATCHES = [], shown = 0, skillFilter = "";
+
+function fillSelect(el, items, counts) {
+  items.forEach(v => {
     const o = document.createElement("option");
-    o.value = v; o.textContent = `${v} (${counts[v]})`;
+    o.value = v; o.textContent = counts ? `${v} (${counts[v]})` : v;
     el.appendChild(o);
   });
 }
-
-const LEVEL_SETS = {
-  entry: ["Internship", "Fresher", "Early career"],
-  strict: ["Internship", "Fresher"],
-  Internship: ["Internship"],
-};
-const levelOk = (lvl, type) => !LEVEL_SETS[type] || LEVEL_SETS[type].includes(lvl);
-const LEVEL_CLASS = { "Internship": "intern", "Fresher": "fresh", "Early career": "early", "Experienced": "exp" };
+function countBy(rows, field) {
+  const c = {};
+  rows.forEach(j => [].concat(j[field]).forEach(v => c[v] = (c[v] || 0) + 1));
+  return c;
+}
 
 const card = (j) => `
   <article class="job">
@@ -150,6 +367,7 @@ const card = (j) => `
       <span class="chip lvl ${LEVEL_CLASS[j.level] || ""}">${esc(j.level)}</span>
       <span class="chip">${esc(j.role)}</span>
       ${j.cities.map(c => `<span class="chip">${esc(c)}</span>`).join("")}
+      ${(j.skills || []).slice(0, 4).map(s => `<span class="chip skill">${esc(s)}</span>`).join("")}
     </div>
   </article>`;
 
@@ -161,34 +379,300 @@ function showMore() {
   $("more").textContent = `Show more (${MATCHES.length - shown} left)`;
 }
 
-function render() {
+function renderJobs() {
   const terms = $("q").value.toLowerCase().split(/\s+/).filter(Boolean);
   const role = $("role").value, city = $("city").value, type = $("type").value;
   MATCHES = JOBS.filter(j =>
-    (!role || j.role === role) &&
-    (!city || j.cities.includes(city)) &&
-    levelOk(j.level, type) &&
-    terms.every(t => j._hay.includes(t))
-  );
+    (!role || j.role === role) && (!city || j.cities.includes(city)) && levelOk(j.level, type) &&
+    (!skillFilter || (j.skills || []).includes(skillFilter)) && terms.every(t => j._hay.includes(t)));
   $("count").textContent = `${MATCHES.length} of ${JOBS.length} posts`;
-  $("clear").hidden = !(terms.length || role || city || type !== "entry");
+  $("skillpill").innerHTML = skillFilter
+    ? `<span class="pill">Skill: ${esc(skillFilter)}<button type="button" id="unskill" aria-label="Remove skill filter">×</button></span>` : "";
+  if (skillFilter) $("unskill").onclick = () => { skillFilter = ""; updateJobs(0); };
+  $("clear").hidden = !(terms.length || role || city || type !== "entry" || skillFilter);
   shown = 0;
-  $("list").innerHTML = MATCHES.length ? "" : `<div class="empty">No posts match. Try clearing a filter.</div>`;
+  $("list").innerHTML = MATCHES.length ? "" : `<div class="empty">No open posts match. Try clearing a filter.</div>`;
   showMore();
 }
 
-function syncUrl() {
-  const p = new URLSearchParams();
-  ["q", "role", "city"].forEach(k => { if ($(k).value) p.set(k, $(k).value); });
-  if ($("type").value !== "entry") p.set("type", $("type").value);
-  history.replaceState(null, "", p.toString() ? `?${p}` : location.pathname);
+let timer;
+const updateJobs = (delay) => { clearTimeout(timer); timer = setTimeout(() => { renderJobs(); syncUrl(); }, delay); };
+
+/* Open the Jobs tab with filters coming from the insights view */
+function openJobs({ skill = "", city = "", role = "" } = {}) {
+  skillFilter = skill;
+  $("q").value = "";
+  $("city").value = [...$("city").options].some(o => o.value === city) ? city : "";
+  $("role").value = [...$("role").options].some(o => o.value === role) ? role : "";
+  const lvl = $("i-level").value; $("type").value = lvl === "all" ? "all" : lvl;
+  setTab("jobs");
+  renderJobs(); syncUrl();
+  scrollTo({ top: 0 });
 }
 
-let timer;
-const update = (delay) => { clearTimeout(timer); timer = setTimeout(() => { render(); syncUrl(); }, delay); };
+/* ================= INSIGHTS TAB ================= */
+const ST = { period: "30", from: "", to: "", gran: "week", metric: "pct", picked: [], sort: { key: "n", dir: -1 }, tShowAll: false };
+const DAY = 86400000;
+const toDate = (s) => new Date(s + "T00:00:00Z");
+const toStr = (d) => d.toISOString().slice(0, 10);
+const addDays = (s, n) => toStr(new Date(toDate(s).getTime() + n * DAY));
+const daysBetween = (a, b) => Math.round((toDate(b) - toDate(a)) / DAY) + 1;
+const fmtDate = (s, opts = { day: "numeric", month: "short" }) => toDate(s).toLocaleDateString("en-IN", { ...opts, timeZone: "UTC" });
+const SERIES = ["var(--s1)", "var(--s2)", "var(--s3)"];
 
-// Opened straight from disk (file://), browsers block fetch(); a <script> tag still loads,
-// so the pipeline also writes data.js (window.JOB_DATA = {jobs, meta}) as a fallback.
+function dataEnd() { return (META.updated_at || new Date().toISOString()).slice(0, 10); }
+function periodRange() {
+  if (ST.period === "custom" && ST.from && ST.to) return ST.from <= ST.to ? [ST.from, ST.to] : [ST.to, ST.from];
+  const end = dataEnd(), n = ST.period === "7" ? 7 : 30;
+  return [addDays(end, -(n - 1)), end];
+}
+function basePosts() {
+  const role = $("i-role").value, lvl = $("i-level").value;
+  return INS.posts.filter(p => (!role || p.r === role) && levelOk(p.l, lvl));
+}
+function skillAllowed(s) {
+  const cat = $("i-cat").value, c = INS.categories[s];
+  if (!cat) return true;
+  if (cat === "tech") return c !== "Professional skills";
+  return c === cat;
+}
+function stats(posts) {
+  const n = posts.length, by = new Map();
+  posts.forEach(p => p.s.forEach(s => {
+    if (!skillAllowed(s)) return;
+    let e = by.get(s); if (!e) by.set(s, e = { skill: s, n: 0, roles: {}, cities: {}, cos: {} });
+    e.n++; e.roles[p.r] = (e.roles[p.r] || 0) + 1; e.cos[p.co] = (e.cos[p.co] || 0) + 1;
+    p.c.forEach(c => e.cities[c] = (e.cities[c] || 0) + 1);
+  }));
+  by.forEach(e => e.pct = n ? e.n / n : 0);
+  return { n, by };
+}
+const topN = (obj, k = 2) => Object.entries(obj).sort((a, b) => b[1] - a[1]).slice(0, k);
+
+function renderInsights() {
+  const [start, end] = periodRange(), len = daysBetween(start, end);
+  const pStart = addDays(start, -len), pEnd = addDays(start, -1);
+  const base = basePosts();
+  const cur = base.filter(p => p.d >= start && p.d <= end);
+  const prev = base.filter(p => p.d >= pStart && p.d <= pEnd);
+  const S = stats(cur), P = stats(prev);
+  const ranked = [...S.by.values()].sort((a, b) => b.n - a.n || a.skill.localeCompare(b.skill));
+  ranked.forEach(e => { const pe = P.by.get(e.skill); e.prevPct = pe ? pe.pct : 0; e.delta = P.n >= 5 ? e.pct - e.prevPct : null; });
+
+  $("basis").textContent = `${S.n} posts published ${fmtDate(start)} – ${fmtDate(end, { day: "numeric", month: "short", year: "numeric" })}` +
+    ` (${len} days), compared with the ${len} days before (${P.n} posts).`;
+
+  renderKpis(S, P, ranked, cur);
+  renderBars(ranked, S);
+  if (!ST.picked.length || ST.picked.some(s => !S.by.has(s))) ST.picked = ranked.slice(0, 3).map(e => e.skill);
+  renderTrend(base, ranked, end);
+  renderHeat(cur, ranked);
+  renderTable(ranked, S);
+}
+
+function renderKpis(S, P, ranked, cur) {
+  const k = [];
+  const d = P.n ? Math.round((S.n - P.n) / P.n * 100) : null;
+  k.push(["Posts in period", S.n.toLocaleString("en-IN"), d == null ? "No earlier data to compare" : `${d >= 0 ? "▲" : "▼"} ${Math.abs(d)}% vs previous period`]);
+  k.push(["Most asked skill", ranked[0] ? ranked[0].skill : "–", ranked[0] ? `in ${fmtPct(ranked[0].pct)} of posts` : "No skills found"]);
+  const risers = ranked.filter(e => e.delta != null && e.n >= 5).sort((a, b) => b.delta - a.delta);
+  k.push(["Fastest rising", risers[0] && risers[0].delta > 0 ? risers[0].skill : "–",
+          risers[0] && risers[0].delta > 0 ? `▲ ${Math.round(risers[0].delta * 100)} pts vs previous period` : "Needs more history"]);
+  const cityC = {}; cur.forEach(p => p.c.forEach(c => { if (c !== "India (unspecified)") cityC[c] = (cityC[c] || 0) + 1; }));
+  const tc = topN(cityC, 1)[0];
+  k.push(["Top hiring city", tc ? tc[0] : "–", tc ? `${fmtPct(tc[1] / S.n)} of posts` : ""]);
+  $("kpis").innerHTML = k.map(([l, v, n]) => `<div class="kpi"><div class="label">${esc(l)}</div><div class="value num">${esc(v)}</div><div class="note num">${esc(n)}</div></div>`).join("");
+}
+
+function renderBars(ranked, S) {
+  const rows = ranked.slice(0, 15);
+  if (!rows.length) { $("bars").innerHTML = `<div class="empty">No posts in this period. Try a longer range.</div>`; return; }
+  const max = rows[0].pct;
+  $("bars").innerHTML = rows.map((e, i) => {
+    const d = e.delta == null ? "" : `<span class="delta">${e.delta > 0.005 ? "▲" : e.delta < -0.005 ? "▼" : "•"} ${Math.abs(Math.round(e.delta * 100))}</span>`;
+    return `<button class="brow" type="button" data-i="${i}">
+      <span class="name" title="${esc(e.skill)}">${esc(e.skill)}</span>
+      <span class="track"><span class="fill" style="display:block;width:${(e.pct / max * 100).toFixed(1)}%"></span></span>
+      <span class="val num">${fmtPct(e.pct)} · ${e.n}${d}</span></button>`;
+  }).join("");
+  $("bars").querySelectorAll(".brow").forEach(b => {
+    const e = rows[+b.dataset.i];
+    const html = () => `<b>${esc(e.skill)}</b><br>${e.n} of ${S.n} posts (${fmtPct(e.pct)})` +
+      (e.delta == null ? "" : `<br>Previous period: ${fmtPct(e.prevPct)}`) +
+      `<br>Top roles: ${topN(e.roles).map(([r]) => esc(r)).join(", ")}<br><i>Click to see these jobs</i>`;
+    b.addEventListener("mousemove", ev => showTip(html(), ev.clientX, ev.clientY));
+    b.addEventListener("mouseleave", hideTip);
+    b.addEventListener("click", () => { hideTip(); openJobs({ skill: e.skill, role: $("i-role").value }); });
+  });
+}
+
+/* ---- trend line chart (hand-built SVG, one y-axis = share of posts) ---- */
+function buckets(end) {
+  const out = [];
+  if (ST.gran === "week") {
+    for (let i = 11; i >= 0; i--) { const e = addDays(end, -7 * i); out.push({ s: addDays(e, -6), e, label: fmtDate(addDays(e, -6)) }); }
+  } else {
+    const d = toDate(end);
+    for (let i = 5; i >= 0; i--) {
+      const m = new Date(Date.UTC(d.getUTCFullYear(), d.getUTCMonth() - i, 1));
+      const me = new Date(Date.UTC(m.getUTCFullYear(), m.getUTCMonth() + 1, 0));
+      out.push({ s: toStr(m), e: toStr(me) > end ? end : toStr(me), label: m.toLocaleDateString("en-IN", { month: "short", timeZone: "UTC" }) });
+    }
+  }
+  return out;
+}
+
+function renderTrend(base, ranked, end) {
+  $("gran-word").textContent = ST.gran;
+  const options = ranked.slice(0, 10).map(e => e.skill);
+  ST.picked.forEach(s => { if (!options.includes(s)) options.push(s); });
+  $("pickers").innerHTML = options.map(s => {
+    const i = ST.picked.indexOf(s);
+    return `<button class="pick" type="button" aria-pressed="${i >= 0}" data-s="${esc(s)}"><span class="sw" style="${i >= 0 ? `background:${SERIES[i]};border-color:${SERIES[i]}` : ""}"></span>${esc(s)}</button>`;
+  }).join("");
+  $("pickers").querySelectorAll(".pick").forEach(b => b.addEventListener("click", () => {
+    const s = b.dataset.s, i = ST.picked.indexOf(s);
+    if (i >= 0) ST.picked.splice(i, 1); else { if (ST.picked.length >= 3) ST.picked.shift(); ST.picked.push(s); }
+    renderTrend(base, ranked, end);
+  }));
+
+  const B = buckets(end).map(b => {
+    const ps = base.filter(p => p.d >= b.s && p.d <= b.e);
+    return { ...b, n: ps.length, v: ST.picked.map(s => ps.length ? ps.filter(p => p.s.includes(s)).length / ps.length : null),
+             k: ST.picked.map(s => ps.filter(p => p.s.includes(s)).length) };
+  });
+  const svg = $("trend"), W = svg.clientWidth || 600, H = 260;
+  const m = { l: 36, r: W < 480 ? 12 : 96, t: 10, b: 26 };
+  const iw = W - m.l - m.r, ih = H - m.t - m.b;
+  const maxV = Math.max(0.05, ...B.flatMap(b => b.v.filter(v => v != null)));
+  const step = maxV > 0.4 ? 0.1 : maxV > 0.2 ? 0.05 : maxV > 0.1 ? 0.025 : 0.01;
+  const yMax = Math.ceil(maxV / step) * step;
+  const x = i => m.l + (B.length === 1 ? iw / 2 : i * iw / (B.length - 1));
+  const y = v => m.t + ih - v / yMax * ih;
+  let g = `<g class="grid">`;
+  for (let v = 0; v <= yMax + 1e-9; v += step) g += `<line x1="${m.l}" x2="${m.l + iw}" y1="${y(v)}" y2="${y(v)}"/><text x="${m.l - 6}" y="${y(v) + 4}" text-anchor="end">${Math.round(v * 100)}%</text>`;
+  g += `</g>`;
+  const every = W < 480 ? 3 : 2;
+  B.forEach((b, i) => { if (ST.gran === "month" || i % every === (B.length - 1) % every) g += `<text x="${x(i)}" y="${H - 6}" text-anchor="middle">${esc(b.label)}</text>`; });
+  ST.picked.forEach((s, si) => {
+    let d = "", pen = false;
+    B.forEach((b, i) => { const v = b.v[si]; if (v == null) { pen = false; return; } d += `${pen ? "L" : "M"}${x(i).toFixed(1)},${y(v).toFixed(1)}`; pen = true; });
+    g += `<path d="${d}" fill="none" stroke="${SERIES[si]}" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>`;
+    const li = B.map(b => b.v[si]).findLastIndex(v => v != null);
+    if (li >= 0) {
+      g += `<circle cx="${x(li)}" cy="${y(B[li].v[si])}" r="4" fill="${SERIES[si]}" stroke="var(--card)" stroke-width="2"/>`;
+      if (W >= 480) g += `<text class="endlab" x="${x(li) + 8}" y="${y(B[li].v[si]) + 4 + si * 0}">${esc(s.length > 13 ? s.slice(0, 12) + "…" : s)}</text>`;
+    }
+  });
+  g += `<line id="xh" y1="${m.t}" y2="${m.t + ih}" stroke="var(--faint)" stroke-dasharray="3 3" visibility="hidden"/>`;
+  g += `<rect x="${m.l}" y="${m.t}" width="${iw}" height="${ih}" fill="transparent" id="hit"/>`;
+  svg.setAttribute("viewBox", `0 0 ${W} ${H}`);
+  svg.innerHTML = g;
+  // de-collide end labels
+  const labs = [...svg.querySelectorAll(".endlab")].sort((a, b) => a.getAttribute("y") - b.getAttribute("y"));
+  for (let i = 1; i < labs.length; i++) { const p = +labs[i - 1].getAttribute("y"), c = +labs[i].getAttribute("y"); if (c - p < 13) labs[i].setAttribute("y", p + 13); }
+  const hit = $("hit"), xh = $("xh");
+  hit.addEventListener("mousemove", ev => {
+    const r = svg.getBoundingClientRect(), px = (ev.clientX - r.left) * W / r.width;
+    const i = Math.max(0, Math.min(B.length - 1, Math.round((px - m.l) / (iw / Math.max(1, B.length - 1)))));
+    xh.setAttribute("x1", x(i)); xh.setAttribute("x2", x(i)); xh.setAttribute("visibility", "visible");
+    const b = B[i];
+    showTip(`<b>${esc(fmtDate(b.s))} – ${esc(fmtDate(b.e))}</b> · ${b.n} posts` +
+      ST.picked.map((s, si) => `<br><span style="color:${SERIES[si]}">■</span> ${esc(s)}: ${b.v[si] == null ? "no posts" : `${fmtPct(b.v[si])} (${b.k[si]})`}`).join("") +
+      (b.n && b.n < 10 ? `<br><i>Few posts this ${ST.gran}: treat with care</i>` : ""), ev.clientX, ev.clientY);
+  });
+  hit.addEventListener("mouseleave", () => { xh.setAttribute("visibility", "hidden"); hideTip(); });
+  $("legend").innerHTML = ST.picked.map((s, si) => `<span><i style="background:${SERIES[si]}"></i>${esc(s)}</span>`).join("");
+  $("caveat").textContent = `Tracking started ${fmtDate(INS.archive_start, { day: "numeric", month: "short", year: "numeric" })}. ` +
+    `Earlier ${ST.gran}s only include posts that were still open on that date, so their counts are lower.`;
+}
+
+/* ---- location heat map ---- */
+const MIN_CITY = 8;   // a city with 5 posts swings 20 pts per post: too noisy to colour
+function renderHeat(cur, ranked) {
+  const cityN = {};
+  cur.forEach(p => p.c.forEach(c => cityN[c] = (cityN[c] || 0) + 1));
+  const cities = Object.entries(cityN).filter(([c, n]) => n >= MIN_CITY).sort((a, b) =>
+    (a[0] === "India (unspecified)") - (b[0] === "India (unspecified)") || b[1] - a[1]).slice(0, 10).map(([c]) => c);
+  const skills = ranked.slice(0, 10).map(e => e.skill);
+  if (!cities.length || !skills.length) { $("heat").innerHTML = `<tr><td class="empty">Not enough posts in this period for a location view.</td></tr>`; return; }
+  const cell = {};
+  cur.forEach(p => p.c.forEach(c => p.s.forEach(s => { const k = c + "|" + s; cell[k] = (cell[k] || 0) + 1; })));
+  const val = (c, s) => ST.metric === "pct" ? (cell[c + "|" + s] || 0) / cityN[c] : (cell[c + "|" + s] || 0);
+  const max = Math.max(...cities.flatMap(c => skills.map(s => val(c, s)))) || 1;
+  let h = `<thead><tr><th></th>${skills.map(s => `<th class="col">${esc(s)}</th>`).join("")}</tr></thead><tbody>`;
+  cities.forEach(c => {
+    h += `<tr><th class="row" scope="row">${esc(c)}<small>${cityN[c]} posts</small></th>`;
+    skills.forEach(s => {
+      const v = val(c, s), t = v / max, k = cell[c + "|" + s] || 0;
+      const label = ST.metric === "pct" ? (k ? fmtPct(v) : "–") : (k || "–");
+      h += `<td class="${t > 0.55 ? "strong" : ""}" style="background:color-mix(in oklab, var(--seq-hi) ${(t * 100).toFixed(0)}%, var(--seq-lo))"
+              data-c="${esc(c)}" data-s="${esc(s)}" data-k="${k}" data-n="${cityN[c]}" tabindex="0">${label}</td>`;
+    });
+    h += `</tr>`;
+  });
+  $("heat").innerHTML = h + `</tbody>`;
+  $("heat").querySelectorAll("td[data-c]").forEach(td => {
+    const { c, s, k, n } = td.dataset;
+    td.addEventListener("mousemove", ev => showTip(`<b>${esc(s)} in ${esc(c)}</b><br>${k} of ${n} posts (${fmtPct(k / n)})<br><i>Click to see these jobs</i>`, ev.clientX, ev.clientY));
+    td.addEventListener("mouseleave", hideTip);
+    const go = () => { hideTip(); openJobs({ skill: s, city: c, role: $("i-role").value }); };
+    td.addEventListener("click", go);
+    td.addEventListener("keydown", e => { if (e.key === "Enter") go(); });
+  });
+}
+
+/* ---- full skills table ---- */
+function renderTable(ranked, S) {
+  const q = $("t-q").value.trim().toLowerCase();
+  const { key, dir } = ST.sort;
+  let rows = ranked.filter(e => !q || e.skill.toLowerCase().includes(q) || (INS.categories[e.skill] || "").toLowerCase().includes(q));
+  const keyf = { skill: e => e.skill.toLowerCase(), cat: e => INS.categories[e.skill] || "", n: e => e.n, delta: e => e.delta ?? -9 };
+  rows.sort((a, b) => { const A = keyf[key](a), B = keyf[key](b); return (A < B ? -1 : A > B ? 1 : 0) * dir || b.n - a.n; });
+  const total = rows.length;
+  if (!ST.tShowAll) rows = rows.slice(0, 20);
+  const th = (k, label, cls = "") => `<th class="${cls}"><button type="button" data-k="${k}" aria-sort="${key === k ? (dir < 0 ? "descending" : "ascending") : "none"}">${label}</button></th>`;
+  $("skills").innerHTML = `<thead><tr>${th("skill", "Skill")}${th("cat", "Type", "hide-sm")}${th("n", "Posts", "n")}${th("delta", "Change", "n")}
+      <th class="hide-sm">Top roles</th><th class="hide-sm">Top cities</th><th class="hide-sm">Companies asking</th><th></th></tr></thead><tbody>` +
+    (rows.length ? rows.map(e => `<tr>
+      <td><b>${esc(e.skill)}</b></td>
+      <td class="cat hide-sm">${esc(INS.categories[e.skill] || "")}</td>
+      <td class="n">${e.n} <span class="sub2">(${fmtPct(e.pct)})</span></td>
+      <td class="n">${e.delta == null ? `<span class="sub2">–</span>` : Math.round(e.delta * 100) === 0 ? `<span class="sub2">no change</span>` : `${e.delta > 0 ? "▲" : "▼"} ${Math.abs(Math.round(e.delta * 100))} pts`}</td>
+      <td class="sub2 hide-sm">${topN(e.roles).map(([r]) => esc(r)).join("<br>")}</td>
+      <td class="sub2 hide-sm">${topN(e.cities).map(([c, n]) => `${esc(c)} (${n})`).join("<br>")}</td>
+      <td class="sub2 hide-sm">${topN(e.cos, 3).map(([c, n]) => `${esc(c)} (${n})`).join(", ")}</td>
+      <td><button class="viewbtn" type="button" data-s="${esc(e.skill)}">View jobs</button></td></tr>`).join("")
+     : `<tr><td colspan="8" class="empty">No skill matches “${esc(q)}”.</td></tr>`) + `</tbody>`;
+  $("skills").querySelectorAll("th button").forEach(b => b.addEventListener("click", () => {
+    const k = b.dataset.k; ST.sort = { key: k, dir: ST.sort.key === k ? -ST.sort.dir : (k === "skill" || k === "cat" ? 1 : -1) }; renderTable(ranked, S);
+  }));
+  $("skills").querySelectorAll(".viewbtn").forEach(b => b.addEventListener("click", () => openJobs({ skill: b.dataset.s, role: $("i-role").value })));
+  $("t-more").hidden = ST.tShowAll || total <= 20;
+  $("t-more").textContent = `Show all ${total} skills`;
+}
+
+/* ================= tabs + url ================= */
+function setTab(name) {
+  const ins = name === "insights";
+  $("tab-jobs").setAttribute("aria-selected", !ins); $("tab-insights").setAttribute("aria-selected", ins);
+  $("view-jobs").hidden = ins; $("view-insights").hidden = !ins;
+  if (location.hash !== (ins ? "#insights" : "")) history.replaceState(null, "", (ins ? "#insights" : location.pathname) + (ins ? "" : location.search));
+  if (ins) renderInsights();
+}
+function syncUrl() {
+  if (!$("view-jobs").hidden) {
+    const p = new URLSearchParams();
+    ["q", "role", "city"].forEach(k => { if ($(k).value) p.set(k, $(k).value); });
+    if ($("type").value !== "entry") p.set("type", $("type").value);
+    if (skillFilter) p.set("skill", skillFilter);
+    history.replaceState(null, "", p.toString() ? `?${p}` : location.pathname);
+  }
+}
+
+/* ================= data loading ================= */
+// Opened from disk (file://) browsers block fetch(); a <script> tag still loads, so the
+// pipeline also writes data.js (window.JOB_DATA = {jobs, meta, insights}) as a fallback.
 function loadScriptData() {
   return new Promise((resolve, reject) => {
     const s = document.createElement("script");
@@ -198,14 +682,11 @@ function loadScriptData() {
     document.head.appendChild(s);
   });
 }
-
 async function loadData() {
   try {
-    const [jobs, meta] = await Promise.all([
-      fetch("jobs.json", { cache: "no-store" }).then(r => r.json()),
-      fetch("meta.json", { cache: "no-store" }).then(r => r.json()),
-    ]);
-    return { jobs, meta };
+    const get = (f) => fetch(f, { cache: "no-store" }).then(r => { if (!r.ok) throw new Error(f); return r.json(); });
+    const [jobs, meta, insights] = await Promise.all([get("jobs.json"), get("meta.json"), get("insights.json")]);
+    return { jobs, meta, insights };
   } catch (e) {
     return loadScriptData();
   }
@@ -213,36 +694,65 @@ async function loadData() {
 
 async function main() {
   try {
-    const { jobs, meta } = await loadData();
-    JOBS = jobs.map(j => ({ ...j, _hay: `${j.title} ${j.company} ${j.location} ${j.role} ${j.cities.join(" ")} ${j.level}`.toLowerCase() }));
-    const when = new Date(meta.updated_at).toLocaleString("en-IN", { timeZone: "Asia/Kolkata", dateStyle: "medium", timeStyle: "short" });
-    $("sub").textContent = `${meta.intern_or_fresher_posts} internship & fresher posts · ${meta.entry_posts} entry-level (0-2 yrs) · ` +
-      `from ${meta.boards} company career boards · updated ${when} IST · refreshes daily`;
-    $("foot").textContent = `Sources: ${meta.sources.join(", ")}. Posts come from companies' public career-board APIs. ` +
-      `Role, city and level tags are generated by ${meta.model}` +
-      (meta.usd_per_1000_posts != null ? ` · measured tagging cost $${meta.usd_per_1000_posts} per 1,000 posts.` : ".") +
-      ` Always confirm details on the original post.`;
-    fillSelect($("role"), "role");
-    fillSelect($("city"), "cities");
+    const d = await loadData();
+    META = d.meta; INS = d.insights || INS;
+    JOBS = d.jobs.map(j => ({ ...j, _hay: `${j.title} ${j.company} ${j.location} ${j.role} ${j.cities.join(" ")} ${j.level} ${(j.skills || []).join(" ")}`.toLowerCase() }));
+    const when = new Date(META.updated_at).toLocaleString("en-IN", { timeZone: "Asia/Kolkata", dateStyle: "medium", timeStyle: "short" });
+    $("sub").textContent = `${META.intern_or_fresher_posts} internship & fresher posts · ${META.entry_posts} entry-level (0-2 yrs) · ` +
+      `from ${META.boards} company career boards · updated ${when} IST · refreshes daily`;
+    $("foot").textContent = `Sources: ${META.sources.join(", ")}. Posts come from companies' public career-board APIs. ` +
+      `Role, city and level tags are generated by ${META.model}` +
+      (META.usd_per_1000_posts != null ? ` · measured tagging cost $${META.usd_per_1000_posts} per 1,000 posts.` : ".") +
+      ` Skills are matched from each post's text against a fixed list. Always confirm details on the original post.`;
+
+    const rc = countBy(JOBS, "role"), cc = countBy(JOBS, "cities");
+    fillSelect($("role"), Object.keys(rc).sort((a, b) => rc[b] - rc[a]), rc);
+    fillSelect($("city"), Object.keys(cc).sort((a, b) => cc[b] - cc[a]), cc);
+    const ir = countBy(INS.posts, "r");
+    fillSelect($("i-role"), Object.keys(ir).sort((a, b) => ir[b] - ir[a]));
+
     const p = new URLSearchParams(location.search);
     ["q", "role", "city", "type"].forEach(k => { if (p.get(k)) $(k).value = p.get(k); });
+    skillFilter = p.get("skill") || "";
 
-    $("q").addEventListener("input", () => update(150));          // debounce typing
-    ["role", "city", "type"].forEach(k => $(k).addEventListener("change", () => update(0)));
-    $("q").addEventListener("keydown", e => { if (e.key === "Enter") e.target.blur(); }); // close mobile keyboard
-    $("clear").addEventListener("click", () => {
-      $("q").value = $("role").value = $("city").value = ""; $("type").value = "entry"; update(0);
-    });
+    // jobs events
+    $("q").addEventListener("input", () => updateJobs(150));
+    ["role", "city", "type"].forEach(k => $(k).addEventListener("change", () => updateJobs(0)));
+    $("q").addEventListener("keydown", e => { if (e.key === "Enter") e.target.blur(); });
+    $("clear").addEventListener("click", () => { $("q").value = $("role").value = $("city").value = ""; $("type").value = "entry"; skillFilter = ""; updateJobs(0); });
     $("more").addEventListener("click", showMore);
-
-    // Auto-load the next batch as the user nears the end of the list
     if ("IntersectionObserver" in window) {
-      new IntersectionObserver(es => { if (es[0].isIntersecting && !$("more").hidden) showMore(); },
-                               { rootMargin: "600px" }).observe($("more"));
-      new IntersectionObserver(([e]) => $("bar").classList.toggle("stuck", e.intersectionRatio < 1),
-                               { threshold: [1], rootMargin: "-1px 0px 0px 0px" }).observe($("bar"));
+      new IntersectionObserver(es => { if (es[0].isIntersecting && !$("more").hidden) showMore(); }, { rootMargin: "600px" }).observe($("more"));
+      new IntersectionObserver(([e]) => $("bar").classList.toggle("stuck", e.intersectionRatio < 1), { threshold: [1], rootMargin: "-1px 0px 0px 0px" }).observe($("bar"));
     }
-    render();
+
+    // insights events
+    $("to").value = dataEnd(); $("from").value = addDays(dataEnd(), -29);
+    $("to").max = $("from").max = dataEnd();
+    document.querySelectorAll("[data-period]").forEach(b => b.addEventListener("click", () => {
+      ST.period = b.dataset.period;
+      document.querySelectorAll("[data-period]").forEach(x => x.setAttribute("aria-pressed", x === b));
+      $("range").hidden = ST.period !== "custom";
+      ST.from = $("from").value; ST.to = $("to").value; renderInsights();
+    }));
+    ["from", "to"].forEach(k => $(k).addEventListener("change", () => { ST.from = $("from").value; ST.to = $("to").value; renderInsights(); }));
+    document.querySelectorAll("[data-gran]").forEach(b => b.addEventListener("click", () => {
+      ST.gran = b.dataset.gran; document.querySelectorAll("[data-gran]").forEach(x => x.setAttribute("aria-pressed", x === b)); renderInsights();
+    }));
+    document.querySelectorAll("[data-metric]").forEach(b => b.addEventListener("click", () => {
+      ST.metric = b.dataset.metric; document.querySelectorAll("[data-metric]").forEach(x => x.setAttribute("aria-pressed", x === b)); renderInsights();
+    }));
+    ["i-role", "i-level", "i-cat"].forEach(k => $(k).addEventListener("change", () => { ST.picked = []; renderInsights(); }));
+    $("t-q").addEventListener("input", () => { clearTimeout(timer); timer = setTimeout(renderInsights, 150); });
+    $("t-more").addEventListener("click", () => { ST.tShowAll = true; renderInsights(); });
+    let rw; addEventListener("resize", () => { clearTimeout(rw); rw = setTimeout(() => { if (!$("view-insights").hidden) renderInsights(); }, 150); });
+
+    $("tab-jobs").addEventListener("click", () => { setTab("jobs"); syncUrl(); });
+    $("tab-insights").addEventListener("click", () => setTab("insights"));
+    addEventListener("hashchange", () => setTab(location.hash === "#insights" ? "insights" : "jobs"));
+
+    renderJobs();
+    if (location.hash === "#insights") setTab("insights");
   } catch (e) {
     $("sub").textContent = "Could not load the job data. Run `python -m pipeline.run` first, or serve the folder: python -m http.server -d site 8000";
     console.error(e);

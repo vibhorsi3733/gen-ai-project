@@ -12,8 +12,11 @@ import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
+from concurrent.futures import ThreadPoolExecutor
+
 from .dedup import dedupe
-from .sources import fetch_all
+from .skills import SKILL_CATEGORY, extract_skills
+from .sources import fetch_all, smartrecruiters_description
 from .tagger import MODEL, cost_report, tag_posts
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -21,7 +24,7 @@ DATA, SITE = ROOT / "data", ROOT / "site"
 MIN_ENTRY = 150         # below this, keep yesterday's site instead of publishing a broken one
 MAX_DROP = 0.40         # or if the entry-level count falls more than 40% vs the last good run
 
-SENIOR = re.compile(r"\b(senior|sr\.?|lead|staff|principal|director|head|leader|vp|architect|manager|mgr|tl|stl)\b", re.I)
+SENIOR = re.compile(r"(?<![a-z])(senior|sr\.?|lead|staff|principal|director|head|leader|vp|architect|manager|mgr|tl|stl)\b", re.I)
 PLACEHOLDER = re.compile(r"(don.t see|general application|talent (pool|community)|future opportunit|expression of interest|open application)", re.I)
 MGMT_TRAINEE = re.compile(r"\b((management|graduate) trainee|associate product manager|apm)\b", re.I)  # fresher roles despite "manager"
 YEARS = re.compile(r"\b([3-9]|1[0-9])\s*\+?\s*(-|to)?\s*\d*\s*(years|yrs)", re.I)
@@ -41,6 +44,52 @@ def rule_fresher(p: dict) -> bool:
 
 def load(path: Path, default):
     return json.loads(path.read_text()) if path.exists() else default
+
+
+def enrich_descriptions(posts: list[dict]) -> None:
+    """SmartRecruiters lists come without descriptions (~40% of posts). Fetch them per job,
+    only for posts that reached this stage, cached by id so each day only new posts cost a request."""
+    cache_path = DATA / "desc_cache.json"
+    cache = load(cache_path, {})
+    todo = [p for p in posts if p["id"].startswith("sr:") and not p.get("description") and p["id"] not in cache]
+
+    def fetch(p):
+        try:
+            return p["id"], smartrecruiters_description(p["id"])
+        except Exception as e:  # noqa: BLE001 - a missing description only costs us skills for that post
+            print(f"  description fetch failed for {p['id']}: {str(e)[:80]}")
+            return p["id"], None
+
+    with ThreadPoolExecutor(max_workers=4) as pool:
+        for pid, text in pool.map(fetch, todo):
+            if text is not None:
+                cache[pid] = text
+    live = {p["id"] for p in posts}
+    cache = {k: v for k, v in cache.items() if k in live}  # forget closed posts so the file stays small
+    DATA.mkdir(exist_ok=True)
+    cache_path.write_text(json.dumps(cache, ensure_ascii=False))
+    for p in posts:
+        if not p.get("description") and p["id"] in cache:
+            p["description"] = cache[p["id"]]
+    print(f"descriptions: fetched {len(todo)} new SmartRecruiters descriptions")
+
+
+def update_archive(posts: list[dict], today: str, fetched_ids: set[str]) -> list[dict]:
+    """Every post ever published, kept after it closes, so weekly/monthly skill trends build up
+    over time. Without it, history would only contain posts that happen to still be open."""
+    path = DATA / "archive.json"
+    arch = load(path, {})
+    published = {p["id"] for p in posts}
+    # Still listed by its board but now filtered out (e.g. a rule change) -> not a closed job, remove it.
+    arch = {k: v for k, v in arch.items() if k in published or k not in fetched_ids}
+    for p in posts:
+        arch[p["id"]] = {
+            "id": p["id"], "company": p["company"], "title": p["title"], "url": p["url"],
+            "role": p["role"], "cities": p["cities"], "level": p["level"], "skills": p["skills"],
+            "posted": p.get("posted_at") or p["first_seen"], "first_seen": p["first_seen"], "last_seen": today,
+        }
+    path.write_text(json.dumps(arch, ensure_ascii=False, indent=0, sort_keys=True))
+    return list(arch.values())
 
 
 def main(use_llm: bool = True) -> int:
@@ -73,6 +122,10 @@ def main(use_llm: bool = True) -> int:
     drop = {id(p) for p in placeholder + senior}
     posts = [p for p in posts if id(p) not in drop]
     print(f"dropped {len(senior)} senior titles + {len(placeholder)} placeholder posts; {len(posts)} go to the tagger")
+
+    enrich_descriptions(posts)
+    for p in posts:
+        p["skills"] = extract_skills(p["title"], p.get("description", ""))
 
     stats = tag_posts(posts, use_llm=use_llm)
     stats["senior_title_dropped"] = len(senior)
@@ -113,7 +166,7 @@ def main(use_llm: bool = True) -> int:
         return 1
 
     public_fields = ["id", "source", "company", "title", "location", "url", "posted_at", "role", "cities",
-                     "city_source", "level", "rule_fresher", "tagged_by", "first_seen"]
+                     "city_source", "level", "skills", "rule_fresher", "tagged_by", "first_seen"]
     out = [{k: p.get(k) for k in public_fields} for p in posts]
     rank = {"Internship": 0, "Fresher": 1, "Early career": 2, "Experienced": 3}
     out.sort(key=lambda p: (rank[p["level"]], p["first_seen"], p["company"]))
@@ -128,10 +181,19 @@ def main(use_llm: bool = True) -> int:
         "model": model_label,
         "usd_per_1000_posts": cost.get("usd_per_1000_posts"),
     }, indent=1))
+    # Skills insights: every post ever published (open + closed), compact keys to keep the file small.
+    archive = update_archive(posts, today, {p["id"] for p in raw})
+    insights = {
+        "archive_start": min(a["first_seen"] for a in archive),
+        "categories": SKILL_CATEGORY,
+        "posts": [{"co": a["company"], "t": a["title"], "u": a["url"], "r": a["role"], "c": a["cities"], "l": a["level"],
+                   "s": a["skills"], "d": a["posted"], "open": a["last_seen"] == today} for a in archive],
+    }
+    (SITE / "insights.json").write_text(json.dumps(insights, ensure_ascii=False, separators=(",", ":")))
     # Same data as a script, so index.html also works when opened from disk (file:// blocks fetch).
     meta = json.loads((SITE / "meta.json").read_text())
-    (SITE / "data.js").write_text("window.JOB_DATA = " + json.dumps({"jobs": out, "meta": meta}, ensure_ascii=False,
-                                                                     separators=(",", ":")) + ";\n")
+    (SITE / "data.js").write_text("window.JOB_DATA = " + json.dumps({"jobs": out, "meta": meta, "insights": insights},
+                                                                     ensure_ascii=False, separators=(",", ":")) + ";\n")
     (DATA / "posts.json").write_text(json.dumps(posts, ensure_ascii=False))
     (DATA / "state.json").write_text(json.dumps(state, indent=0, sort_keys=True))
     print(f"published {len(out)} posts: {len(entry)} entry-level, {len(strict)} intern/fresher")
