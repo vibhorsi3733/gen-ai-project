@@ -183,6 +183,13 @@
  },
  {
   "reason": "key",
+  "title": "Hardware Architect",
+  "company": "Bosch",
+  "source": "SmartRecruiters",
+  "dup_of": "Hardware Architect"
+ },
+ {
+  "reason": "key",
   "title": "HiL Test Engineer",
   "company": "Bosch",
   "source": "SmartRecruiters",
