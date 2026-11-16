@@ -1,4 +1,4 @@
-OPEname: daily-refresh
+name: daily-refresh
 
 on:
   schedule:
