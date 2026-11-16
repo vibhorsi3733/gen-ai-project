@@ -2,47 +2,87 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Fresher Jobs India</title>
 <meta name="description" content="Fresher jobs and internships in India, collected from public company career boards, de-duplicated and tagged by role and city with an LLM. Refreshed daily.">
 <style>
   :root {
     --bg: #f7f7f5; --card: #ffffff; --text: #1d1d1f; --muted: #6b6b70; --line: #e4e4e0;
     --accent: #2f5bea; --chip: #eef1fb; --chip-text: #2a3f8f; --intern: #e7f6ec; --intern-text: #1c6b3a;
+    --bar: rgba(247, 247, 245, 0.92);
   }
   @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) {
       --bg: #121214; --card: #1c1c1f; --text: #ececee; --muted: #9a9aa2; --line: #2c2c31;
       --accent: #7c9bff; --chip: #23283a; --chip-text: #b8c6ff; --intern: #1d3326; --intern-text: #8fdcaa;
+      --bar: rgba(18, 18, 20, 0.92);
     }
   }
   * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
   body { margin: 0; background: var(--bg); color: var(--text);
          font: 15px/1.45 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
-  .wrap { max-width: 980px; margin: 0 auto; padding: 24px 16px 64px; }
-  h1 { font-size: 24px; margin: 0 0 4px; letter-spacing: -0.01em; }
-  .sub { color: var(--muted); margin: 0 0 20px; font-size: 14px; }
-  .controls { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 8px; margin-bottom: 12px; }
-  @media (max-width: 680px) { .controls { grid-template-columns: 1fr 1fr; } .controls input { grid-column: 1 / -1; } }
-  input, select { width: 100%; padding: 10px 12px; border: 1px solid var(--line); border-radius: 8px;
-                  background: var(--card); color: var(--text); font: inherit; }
-  input:focus, select:focus { outline: 2px solid var(--accent); outline-offset: -1px; }
-  .count { color: var(--muted); font-size: 13px; margin: 8px 0 12px; }
-  .list { display: grid; gap: 8px; }
+  .wrap { max-width: 980px; margin: 0 auto;
+          padding: 24px max(16px, env(safe-area-inset-right)) 64px max(16px, env(safe-area-inset-left)); }
+  h1 { font-size: clamp(20px, 5vw, 26px); line-height: 1.2; margin: 0 0 6px; letter-spacing: -0.01em; }
+  .sub { color: var(--muted); margin: 0 0 16px; font-size: 14px; }
+
+  /* Sticky filter bar */
+  .bar { position: sticky; top: -1px; z-index: 10; background: var(--bar);
+         -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px);
+         margin: 0 -16px; padding: 10px 16px; border-bottom: 1px solid transparent; }
+  .bar.stuck { border-bottom-color: var(--line); }
+  .controls { display: grid; grid-template-columns: minmax(0, 1.5fr) repeat(3, minmax(0, 1fr)); gap: 8px; }
+  input, select, button { font: inherit; font-size: 16px; /* >=16px stops iOS zoom-on-focus */
+                          min-height: 44px; border-radius: 8px; }
+  input, select { width: 100%; min-width: 0; padding: 10px 12px; border: 1px solid var(--line);
+                  background: var(--card); color: var(--text); text-overflow: ellipsis; }
+  input:focus-visible, select:focus-visible, button:focus-visible, a:focus-visible {
+    outline: 2px solid var(--accent); outline-offset: 1px; }
+  .status { display: flex; align-items: center; justify-content: space-between; gap: 12px;
+            color: var(--muted); font-size: 13px; margin-top: 8px; min-height: 24px; }
+  .clear { background: none; border: 0; color: var(--accent); padding: 0 4px; min-height: 24px; cursor: pointer;
+           font-size: 13px; }
+  .clear[hidden] { display: none; }
+
+  .list { display: grid; gap: 8px; margin-top: 12px; }
   .job { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px;
-         display: grid; grid-template-columns: 1fr auto; gap: 4px 12px; align-items: start; }
-  .job a.title { color: var(--text); font-weight: 600; text-decoration: none; }
-  .job a.title:hover { color: var(--accent); text-decoration: underline; }
-  .meta { color: var(--muted); font-size: 13px; grid-column: 1; }
+         display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 4px 12px; align-items: start;
+         position: relative; content-visibility: auto; contain-intrinsic-size: auto 110px; }
+  .job:hover { border-color: var(--accent); }
+  .job a.title { color: var(--text); font-weight: 600; text-decoration: none; overflow-wrap: anywhere; }
+  .job a.title::after { content: ""; position: absolute; inset: 0; border-radius: 10px; } /* whole card is the tap target */
+  .job a.title:hover { color: var(--accent); }
+  .meta { color: var(--muted); font-size: 13px; grid-column: 1; overflow-wrap: anywhere; }
   .chips { display: flex; flex-wrap: wrap; gap: 6px; grid-column: 1 / -1; margin-top: 6px; }
-  .chip { background: var(--chip); color: var(--chip-text); font-size: 12px; padding: 2px 8px; border-radius: 999px; }
+  .chip { background: var(--chip); color: var(--chip-text); font-size: 12px; padding: 2px 8px; border-radius: 999px;
+          white-space: nowrap; }
   .chip.lvl { font-weight: 600; }
   .chip.intern, .chip.fresh { background: var(--intern); color: var(--intern-text); }
   .chip.exp { background: transparent; border: 1px solid var(--line); color: var(--muted); }
   .src { color: var(--muted); font-size: 12px; white-space: nowrap; }
-  .empty { padding: 40px; text-align: center; color: var(--muted); }
+  .empty { padding: 40px 16px; text-align: center; color: var(--muted); }
+  .more { display: block; width: 100%; margin-top: 12px; padding: 10px; background: var(--card);
+          border: 1px solid var(--line); color: var(--text); cursor: pointer; }
+  .more:hover { border-color: var(--accent); }
   footer { margin-top: 32px; color: var(--muted); font-size: 12px; }
-  footer a { color: var(--muted); }
+
+  /* Tablet: search on its own row, three filters beneath */
+  @media (max-width: 860px) {
+    .controls { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .controls input { grid-column: 1 / -1; }
+  }
+  /* Phone: search full width, filters in two columns, level filter full width (its labels are long) */
+  @media (max-width: 560px) {
+    .wrap { padding-top: 16px; }
+    .sub { font-size: 13px; }
+    .controls { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .controls #type { grid-column: 1 / -1; }
+    .job { grid-template-columns: minmax(0, 1fr); padding: 12px 14px; }
+    .src { grid-row: 3; }
+    .meta { grid-row: 2; }
+  }
+  @media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
 </style>
 </head>
 <body>
@@ -50,26 +90,34 @@
   <h1>Fresher jobs &amp; internships in India</h1>
   <p class="sub" id="sub">Loading…</p>
 
-  <div class="controls">
-    <input id="q" type="search" placeholder="Search title, company, skills…" autocomplete="off" aria-label="Search">
-    <select id="role" aria-label="Role"><option value="">All roles</option></select>
-    <select id="city" aria-label="City"><option value="">All cities</option></select>
-    <select id="type" aria-label="Level">
-      <option value="entry">Entry-level (intern / fresher / 0-2 yrs)</option>
-      <option value="strict">Internships + freshers only</option>
-      <option value="Internship">Internships only</option>
-      <option value="all">Everything (incl. experienced)</option>
-    </select>
+  <div class="bar" id="bar">
+    <div class="controls">
+      <input id="q" type="search" placeholder="Search title, company, skills…" autocomplete="off" enterkeyhint="search" aria-label="Search">
+      <select id="role" aria-label="Role"><option value="">All roles</option></select>
+      <select id="city" aria-label="City"><option value="">All cities</option></select>
+      <select id="type" aria-label="Level">
+        <option value="entry">Entry-level (0-2 yrs)</option>
+        <option value="strict">Intern + fresher</option>
+        <option value="Internship">Internships</option>
+        <option value="all">All levels</option>
+      </select>
+    </div>
+    <div class="status">
+      <span id="count" aria-live="polite"></span>
+      <button class="clear" id="clear" type="button" hidden>Clear filters</button>
+    </div>
   </div>
-  <div class="count" id="count"></div>
+
   <div class="list" id="list"></div>
+  <button class="more" id="more" type="button" hidden>Show more</button>
 
   <footer id="foot"></footer>
 </div>
 
 <script>
 const $ = (id) => document.getElementById(id);
-let JOBS = [];
+const PAGE = 40;          // cards rendered per batch: rendering all ~750 at once made typing lag
+let JOBS = [], MATCHES = [], shown = 0;
 
 function esc(s) {
   return String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
@@ -93,36 +141,51 @@ const LEVEL_SETS = {
 const levelOk = (lvl, type) => !LEVEL_SETS[type] || LEVEL_SETS[type].includes(lvl);
 const LEVEL_CLASS = { "Internship": "intern", "Fresher": "fresh", "Early career": "early", "Experienced": "exp" };
 
+const card = (j) => `
+  <article class="job">
+    <a class="title" href="${esc(j.url)}" target="_blank" rel="noopener noreferrer">${esc(j.title)}</a>
+    <span class="src">${esc(j.source)}</span>
+    <div class="meta">${esc(j.company)} · ${esc(j.location || "Location not given")}</div>
+    <div class="chips">
+      <span class="chip lvl ${LEVEL_CLASS[j.level] || ""}">${esc(j.level)}</span>
+      <span class="chip">${esc(j.role)}</span>
+      ${j.cities.map(c => `<span class="chip">${esc(c)}</span>`).join("")}
+    </div>
+  </article>`;
+
+function showMore() {
+  const next = MATCHES.slice(shown, shown + PAGE);
+  $("list").insertAdjacentHTML("beforeend", next.map(card).join(""));
+  shown += next.length;
+  $("more").hidden = shown >= MATCHES.length;
+  $("more").textContent = `Show more (${MATCHES.length - shown} left)`;
+}
+
 function render() {
   const terms = $("q").value.toLowerCase().split(/\s+/).filter(Boolean);
   const role = $("role").value, city = $("city").value, type = $("type").value;
-  const out = JOBS.filter(j =>
+  MATCHES = JOBS.filter(j =>
     (!role || j.role === role) &&
     (!city || j.cities.includes(city)) &&
     levelOk(j.level, type) &&
     terms.every(t => j._hay.includes(t))
   );
-  $("count").textContent = `${out.length} of ${JOBS.length} posts`;
-  if (!out.length) { $("list").innerHTML = `<div class="empty">No posts match. Try clearing a filter.</div>`; return; }
-  $("list").innerHTML = out.map(j => `
-    <article class="job">
-      <a class="title" href="${esc(j.url)}" target="_blank" rel="noopener noreferrer">${esc(j.title)}</a>
-      <span class="src">${esc(j.source)}</span>
-      <div class="meta">${esc(j.company)} · ${esc(j.location || "Location not given")}</div>
-      <div class="chips">
-        <span class="chip">${esc(j.role)}</span>
-        ${j.cities.map(c => `<span class="chip">${esc(c)}</span>`).join("")}
-        <span class="chip lvl ${LEVEL_CLASS[j.level] || ""}">${esc(j.level)}</span>
-        ${j.first_seen ? `<span class="chip">Seen ${esc(j.first_seen)}</span>` : ""}
-      </div>
-    </article>`).join("");
+  $("count").textContent = `${MATCHES.length} of ${JOBS.length} posts`;
+  $("clear").hidden = !(terms.length || role || city || type !== "entry");
+  shown = 0;
+  $("list").innerHTML = MATCHES.length ? "" : `<div class="empty">No posts match. Try clearing a filter.</div>`;
+  showMore();
 }
 
 function syncUrl() {
   const p = new URLSearchParams();
-  ["q", "role", "city", "type"].forEach(k => { if ($(k).value) p.set(k, $(k).value); });
+  ["q", "role", "city"].forEach(k => { if ($(k).value) p.set(k, $(k).value); });
+  if ($("type").value !== "entry") p.set("type", $("type").value);
   history.replaceState(null, "", p.toString() ? `?${p}` : location.pathname);
 }
+
+let timer;
+const update = (delay) => { clearTimeout(timer); timer = setTimeout(() => { render(); syncUrl(); }, delay); };
 
 // Opened straight from disk (file://), browsers block fetch(); a <script> tag still loads,
 // so the pipeline also writes data.js (window.JOB_DATA = {jobs, meta}) as a fallback.
@@ -155,15 +218,30 @@ async function main() {
     const when = new Date(meta.updated_at).toLocaleString("en-IN", { timeZone: "Asia/Kolkata", dateStyle: "medium", timeStyle: "short" });
     $("sub").textContent = `${meta.intern_or_fresher_posts} internship & fresher posts · ${meta.entry_posts} entry-level (0-2 yrs) · ` +
       `from ${meta.boards} company career boards · updated ${when} IST · refreshes daily`;
-    $("foot").innerHTML = `Sources: ${meta.sources.map(esc).join(", ")}. Posts come from companies' public career-board APIs. ` +
-      `Role, city and level tags are generated by ${esc(meta.model)}` +
+    $("foot").textContent = `Sources: ${meta.sources.join(", ")}. Posts come from companies' public career-board APIs. ` +
+      `Role, city and level tags are generated by ${meta.model}` +
       (meta.usd_per_1000_posts != null ? ` · measured tagging cost $${meta.usd_per_1000_posts} per 1,000 posts.` : ".") +
       ` Always confirm details on the original post.`;
     fillSelect($("role"), "role");
     fillSelect($("city"), "cities");
     const p = new URLSearchParams(location.search);
     ["q", "role", "city", "type"].forEach(k => { if (p.get(k)) $(k).value = p.get(k); });
-    ["q", "role", "city", "type"].forEach(k => $(k).addEventListener("input", () => { render(); syncUrl(); }));
+
+    $("q").addEventListener("input", () => update(150));          // debounce typing
+    ["role", "city", "type"].forEach(k => $(k).addEventListener("change", () => update(0)));
+    $("q").addEventListener("keydown", e => { if (e.key === "Enter") e.target.blur(); }); // close mobile keyboard
+    $("clear").addEventListener("click", () => {
+      $("q").value = $("role").value = $("city").value = ""; $("type").value = "entry"; update(0);
+    });
+    $("more").addEventListener("click", showMore);
+
+    // Auto-load the next batch as the user nears the end of the list
+    if ("IntersectionObserver" in window) {
+      new IntersectionObserver(es => { if (es[0].isIntersecting && !$("more").hidden) showMore(); },
+                               { rootMargin: "600px" }).observe($("more"));
+      new IntersectionObserver(([e]) => $("bar").classList.toggle("stuck", e.intersectionRatio < 1),
+                               { threshold: [1], rootMargin: "-1px 0px 0px 0px" }).observe($("bar"));
+    }
     render();
   } catch (e) {
     $("sub").textContent = "Could not load the job data. Run `python -m pipeline.run` first, or serve the folder: python -m http.server -d site 8000";
