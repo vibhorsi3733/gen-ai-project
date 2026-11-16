@@ -124,12 +124,33 @@ function syncUrl() {
   history.replaceState(null, "", p.toString() ? `?${p}` : location.pathname);
 }
 
-async function main() {
+// Opened straight from disk (file://), browsers block fetch(); a <script> tag still loads,
+// so the pipeline also writes data.js (window.JOB_DATA = {jobs, meta}) as a fallback.
+function loadScriptData() {
+  return new Promise((resolve, reject) => {
+    const s = document.createElement("script");
+    s.src = "data.js";
+    s.onload = () => window.JOB_DATA ? resolve(window.JOB_DATA) : reject(new Error("data.js has no JOB_DATA"));
+    s.onerror = () => reject(new Error("could not load data.js"));
+    document.head.appendChild(s);
+  });
+}
+
+async function loadData() {
   try {
     const [jobs, meta] = await Promise.all([
       fetch("jobs.json", { cache: "no-store" }).then(r => r.json()),
       fetch("meta.json", { cache: "no-store" }).then(r => r.json()),
     ]);
+    return { jobs, meta };
+  } catch (e) {
+    return loadScriptData();
+  }
+}
+
+async function main() {
+  try {
+    const { jobs, meta } = await loadData();
     JOBS = jobs.map(j => ({ ...j, _hay: `${j.title} ${j.company} ${j.location} ${j.role} ${j.cities.join(" ")} ${j.level}`.toLowerCase() }));
     const when = new Date(meta.updated_at).toLocaleString("en-IN", { timeZone: "Asia/Kolkata", dateStyle: "medium", timeStyle: "short" });
     $("sub").textContent = `${meta.intern_or_fresher_posts} internship & fresher posts · ${meta.entry_posts} entry-level (0-2 yrs) · ` +
@@ -145,7 +166,7 @@ async function main() {
     ["q", "role", "city", "type"].forEach(k => $(k).addEventListener("input", () => { render(); syncUrl(); }));
     render();
   } catch (e) {
-    $("sub").textContent = "Could not load jobs.json.";
+    $("sub").textContent = "Could not load the job data. Run `python -m pipeline.run` first, or serve the folder: python -m http.server -d site 8000";
     console.error(e);
   }
 }

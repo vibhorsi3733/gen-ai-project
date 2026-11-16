@@ -128,6 +128,10 @@ def main(use_llm: bool = True) -> int:
         "model": model_label,
         "usd_per_1000_posts": cost.get("usd_per_1000_posts"),
     }, indent=1))
+    # Same data as a script, so index.html also works when opened from disk (file:// blocks fetch).
+    meta = json.loads((SITE / "meta.json").read_text())
+    (SITE / "data.js").write_text("window.JOB_DATA = " + json.dumps({"jobs": out, "meta": meta}, ensure_ascii=False,
+                                                                     separators=(",", ":")) + ";\n")
     (DATA / "posts.json").write_text(json.dumps(posts, ensure_ascii=False))
     (DATA / "state.json").write_text(json.dumps(state, indent=0, sort_keys=True))
     print(f"published {len(out)} posts: {len(entry)} entry-level, {len(strict)} intern/fresher")
