@@ -131,6 +131,10 @@
 "first_seen": "2026-11-16",
 "last_seen": "2026-11-16"
 },
+"gh:databricks:8637736002": {
+"first_seen": "2026-11-16",
+"last_seen": "2026-11-16"
+},
 "gh:databricks:8688851002": {
 "first_seen": "2026-11-16",
 "last_seen": "2026-11-16"
@@ -387,6 +391,10 @@
 "first_seen": "2026-11-16",
 "last_seen": "2026-11-16"
 },
+"gh:mongodb:8208074": {
+"first_seen": "2026-11-16",
+"last_seen": "2026-11-16"
+},
 "gh:mongodb:8221290": {
 "first_seen": "2026-11-16",
 "last_seen": "2026-11-16"
@@ -532,6 +540,10 @@
 "last_seen": "2026-11-16"
 },
 "gh:purestorage:8305829": {
+"first_seen": "2026-11-16",
+"last_seen": "2026-11-16"
+},
+"gh:purestorage:8330275": {
 "first_seen": "2026-11-16",
 "last_seen": "2026-11-16"
 },
