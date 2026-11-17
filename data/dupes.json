@@ -120,17 +120,10 @@
  },
  {
   "reason": "key",
-  "title": "Data Scientist",
+  "title": "Embedded SW engineer - EPT2",
   "company": "Bosch",
   "source": "SmartRecruiters",
-  "dup_of": "Data Scientist"
- },
- {
-  "reason": "key",
-  "title": "ECT2_Test Automation for Mobile APP_COB",
-  "company": "Bosch",
-  "source": "SmartRecruiters",
-  "dup_of": "ECT2_Test Automation for Mobile APP_COB"
+  "dup_of": "Embedded SW engineer - EPT2"
  },
  {
   "reason": "key",
@@ -183,13 +176,6 @@
  },
  {
   "reason": "key",
-  "title": "Hardware Architect",
-  "company": "Bosch",
-  "source": "SmartRecruiters",
-  "dup_of": "Hardware Architect"
- },
- {
-  "reason": "key",
   "title": "HiL Test Engineer",
   "company": "Bosch",
   "source": "SmartRecruiters",
@@ -208,20 +194,6 @@
   "company": "Bosch",
   "source": "SmartRecruiters",
   "dup_of": "IN_RBAI_Maintenance Engineer_Charcon_Mechanical"
- },
- {
-  "reason": "key",
-  "title": "IN_RBIC_Asst.Manager/Dy.Manager_Customer Project Manager",
-  "company": "Bosch",
-  "source": "SmartRecruiters",
-  "dup_of": "IN_RBIC_Asst.Manager/Dy.Manager_Customer Project Manager"
- },
- {
-  "reason": "key",
-  "title": "IN_RBIC_Asst.Manager/Dy.Manager_Customer Project Manager",
-  "company": "Bosch",
-  "source": "SmartRecruiters",
-  "dup_of": "IN_RBIC_Asst.Manager/Dy.Manager_Customer Project Manager"
  },
  {
   "reason": "key",
@@ -278,6 +250,27 @@
   "company": "Bosch",
   "source": "SmartRecruiters",
   "dup_of": "Manual & Automation Testing"
+ },
+ {
+  "reason": "key",
+  "title": "Mech Design Engineer (Specialist)- Machine Building, Station Design & Industrial Conveyors",
+  "company": "Bosch",
+  "source": "SmartRecruiters",
+  "dup_of": "Mech Design Engineer (Specialist)- Machine Building, Station Design & Industrial Conveyors"
+ },
+ {
+  "reason": "key",
+  "title": "Mech Design Engineer (Specialist)- Machine Building, Station Design & Industrial Conveyors",
+  "company": "Bosch",
+  "source": "SmartRecruiters",
+  "dup_of": "Mech Design Engineer (Specialist)- Machine Building, Station Design & Industrial Conveyors"
+ },
+ {
+  "reason": "key",
+  "title": "Mech Design Engineer (Specialist)- Machine Building, Station Design & Industrial Conveyors",
+  "company": "Bosch",
+  "source": "SmartRecruiters",
+  "dup_of": "Mech Design Engineer (Specialist)- Machine Building, Station Design & Industrial Conveyors"
  },
  {
   "reason": "key",
@@ -603,20 +596,6 @@
  },
  {
   "reason": "key",
-  "title": "Lead Analyst - Programmatic Buying",
-  "company": "InMobi",
-  "source": "Greenhouse",
-  "dup_of": "Lead Analyst - Programmatic Buying"
- },
- {
-  "reason": "key",
-  "title": "Lead Executive Assistant",
-  "company": "InMobi",
-  "source": "Greenhouse",
-  "dup_of": "Lead - Executive Assistant"
- },
- {
-  "reason": "key",
   "title": "Manager : HR COE",
   "company": "Meesho",
   "source": "Lever",
@@ -694,13 +673,6 @@
  },
  {
   "reason": "key",
-  "title": "Senior Manager, Engineering",
-  "company": "NielsenIQ",
-  "source": "SmartRecruiters",
-  "dup_of": "Senior Manager, Engineering"
- },
- {
-  "reason": "key",
   "title": "Principal Software Engineer",
   "company": "Okta",
   "source": "Greenhouse",
@@ -712,6 +684,13 @@
   "company": "Okta",
   "source": "Greenhouse",
   "dup_of": "Principal Software Engineer"
+ },
+ {
+  "reason": "key",
+  "title": "Senior Site Reliability Engineer",
+  "company": "Okta",
+  "source": "Greenhouse",
+  "dup_of": "Senior Site Reliability Engineer"
  },
  {
   "reason": "key",
@@ -859,13 +838,6 @@
   "company": "Pure Storage",
   "source": "Greenhouse",
   "dup_of": "MTS-Exa   "
- },
- {
-  "reason": "key",
-  "title": "Member of Technical Staff - FlashArray",
-  "company": "Pure Storage",
-  "source": "Greenhouse",
-  "dup_of": "Member of Technical Staff - FlashArray"
  },
  {
   "reason": "key",
@@ -1226,6 +1198,20 @@
  },
  {
   "reason": "key",
+  "title": "Growth Manager I",
+  "company": "Swiggy",
+  "source": "SmartRecruiters",
+  "dup_of": "Growth Manager I"
+ },
+ {
+  "reason": "key",
+  "title": "Growth Manager II",
+  "company": "Swiggy",
+  "source": "SmartRecruiters",
+  "dup_of": "Growth Manager II"
+ },
+ {
+  "reason": "key",
   "title": "Growth Manager II",
   "company": "Swiggy",
   "source": "SmartRecruiters",
@@ -1499,27 +1485,6 @@
  },
  {
   "reason": "key",
-  "title": "Sales Manager I",
-  "company": "Swiggy",
-  "source": "SmartRecruiters",
-  "dup_of": "Sales Manager I"
- },
- {
-  "reason": "key",
-  "title": "Sales Manager II",
-  "company": "Swiggy",
-  "source": "SmartRecruiters",
-  "dup_of": "Sales Manager II"
- },
- {
-  "reason": "key",
-  "title": "Sales Manager II",
-  "company": "Swiggy",
-  "source": "SmartRecruiters",
-  "dup_of": "Sales Manager II"
- },
- {
-  "reason": "key",
   "title": "Sales Manager II",
   "company": "Swiggy",
   "source": "SmartRecruiters",
@@ -1636,13 +1601,6 @@
   "company": "Zscaler",
   "source": "Greenhouse",
   "dup_of": " Senior Staff Software Development Engineer "
- },
- {
-  "reason": "key",
-  "title": "Sr. Staff Software Development Engineer",
-  "company": "Zscaler",
-  "source": "Greenhouse",
-  "dup_of": "Sr. Staff Software Development Engineer"
  },
  {
   "reason": "key",
