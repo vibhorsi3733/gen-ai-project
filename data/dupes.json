@@ -1,13 +1,6 @@
 [
  {
   "reason": "key",
-  "title": "Airbag - Senior Developer ",
-  "company": "Bosch",
-  "source": "SmartRecruiters",
-  "dup_of": "Airbag - Senior Developer "
- },
- {
-  "reason": "key",
   "title": "Application Engineering ADAS",
   "company": "Bosch",
   "source": "SmartRecruiters",
@@ -71,13 +64,6 @@
  },
  {
   "reason": "key",
-  "title": "BGSW_2026_Sr.SAP_EWM-MFS_Consultant",
-  "company": "Bosch",
-  "source": "SmartRecruiters",
-  "dup_of": "BGSW_2026_Sr.SAP_EWM-MFS_Consultant"
- },
- {
-  "reason": "key",
   "title": "Build & Artifact_Engineer_EPS1",
   "company": "Bosch",
   "source": "SmartRecruiters",
@@ -113,10 +99,10 @@
  },
  {
   "reason": "key",
-  "title": "Data Scientist",
+  "title": "D365 F&O Technical Consultant",
   "company": "Bosch",
   "source": "SmartRecruiters",
-  "dup_of": "Data Scientist"
+  "dup_of": "D365 F&O Technical Consultant"
  },
  {
   "reason": "key",
@@ -169,10 +155,24 @@
  },
  {
   "reason": "key",
-  "title": "GenAI/Agentic AI specialists",
+  "title": "Hardware Engineer",
   "company": "Bosch",
   "source": "SmartRecruiters",
-  "dup_of": "GenAI/Agentic AI specialists"
+  "dup_of": "Hardware Engineer"
+ },
+ {
+  "reason": "key",
+  "title": "Hardware Engineer",
+  "company": "Bosch",
+  "source": "SmartRecruiters",
+  "dup_of": "Hardware Engineer"
+ },
+ {
+  "reason": "key",
+  "title": "Hardware Engineer",
+  "company": "Bosch",
+  "source": "SmartRecruiters",
+  "dup_of": "Hardware Engineer"
  },
  {
   "reason": "key",
@@ -274,17 +274,10 @@
  },
  {
   "reason": "key",
-  "title": "Mechanical Design Engineer (Specialist) - Design of a Servo Motor for Industrial application",
+  "title": "Power BI Developer",
   "company": "Bosch",
   "source": "SmartRecruiters",
-  "dup_of": "Mechanical Design Engineer (Specialist) - Design of a Servo Motor for Industrial application"
- },
- {
-  "reason": "key",
-  "title": "Mechanical Design Engineer (Specialist) - Design of an Industrial welding controller",
-  "company": "Bosch",
-  "source": "SmartRecruiters",
-  "dup_of": "Mechanical Design Engineer (Specialist) - Design of an Industrial welding controller"
+  "dup_of": "Power BI Developer"
  },
  {
   "reason": "key",
@@ -295,10 +288,10 @@
  },
  {
   "reason": "key",
-  "title": "STIBO Sr. Developer",
+  "title": "Product Data & Change Management specialist (Power tools)",
   "company": "Bosch",
   "source": "SmartRecruiters",
-  "dup_of": "STIBO Sr. Developer"
+  "dup_of": "Product Data & Change Management specialist (Power tools)"
  },
  {
   "reason": "key",
@@ -379,10 +372,31 @@
  },
  {
   "reason": "key",
+  "title": "ServiceNow Automation Developer",
+  "company": "Bosch",
+  "source": "SmartRecruiters",
+  "dup_of": "ServiceNow Automation Developer"
+ },
+ {
+  "reason": "key",
   "title": "Software System Designer for ESC control unit of Pneumatic Braking",
   "company": "Bosch",
   "source": "SmartRecruiters",
   "dup_of": "Software System Designer for ESC control unit of Pneumatic Braking"
+ },
+ {
+  "reason": "key",
+  "title": "Specialist Hardware Engineer",
+  "company": "Bosch",
+  "source": "SmartRecruiters",
+  "dup_of": "Specialist Hardware Engineer"
+ },
+ {
+  "reason": "key",
+  "title": "Specialist Hardware Engineer",
+  "company": "Bosch",
+  "source": "SmartRecruiters",
+  "dup_of": "Specialist Hardware Engineer"
  },
  {
   "reason": "key",
@@ -432,6 +446,34 @@
   "company": "Bosch",
   "source": "SmartRecruiters",
   "dup_of": "System Architect"
+ },
+ {
+  "reason": "key",
+  "title": "System Requirement Engineer",
+  "company": "Bosch",
+  "source": "SmartRecruiters",
+  "dup_of": "System Requirement Engineer"
+ },
+ {
+  "reason": "key",
+  "title": "System Requirement Engineer",
+  "company": "Bosch",
+  "source": "SmartRecruiters",
+  "dup_of": "System Requirement Engineer"
+ },
+ {
+  "reason": "key",
+  "title": "System Requirement Engineer",
+  "company": "Bosch",
+  "source": "SmartRecruiters",
+  "dup_of": "System Requirement Engineer"
+ },
+ {
+  "reason": "key",
+  "title": "System Requirement Engineer",
+  "company": "Bosch",
+  "source": "SmartRecruiters",
+  "dup_of": "System Requirement Engineer"
  },
  {
   "reason": "key",
@@ -624,13 +666,6 @@
  },
  {
   "reason": "key",
-  "title": "Senior Engineer - GTM Tech",
-  "company": "MongoDB",
-  "source": "Greenhouse",
-  "dup_of": "Senior Engineer - GTM Tech"
- },
- {
-  "reason": "key",
   "title": "Software Engineer 3",
   "company": "MongoDB",
   "source": "Greenhouse",
@@ -670,6 +705,13 @@
   "company": "NielsenIQ",
   "source": "SmartRecruiters",
   "dup_of": "Research Analyst"
+ },
+ {
+  "reason": "key",
+  "title": "Engineering Manager  ",
+  "company": "Okta",
+  "source": "Greenhouse",
+  "dup_of": "Engineering Manager  "
  },
  {
   "reason": "key",
@@ -855,10 +897,17 @@
  },
  {
   "reason": "key",
-  "title": "Member of Technical Staff, Kernel",
+  "title": "Member of Technical Staff, FA Files",
   "company": "Pure Storage",
   "source": "Greenhouse",
-  "dup_of": "Member of Technical Staff, Kernel"
+  "dup_of": "Member of Technical Staff, FA Files"
+ },
+ {
+  "reason": "key",
+  "title": "Member of Technical Staff, Flash Array (Files)",
+  "company": "Pure Storage",
+  "source": "Greenhouse",
+  "dup_of": "Member of Technical Staff - Flash Array (Files)"
  },
  {
   "reason": "key",
@@ -876,7 +925,7 @@
  },
  {
   "reason": "key",
-  "title": "Member of Technical Staff, Kernel ",
+  "title": "Member of Technical Staff, Kernel",
   "company": "Pure Storage",
   "source": "Greenhouse",
   "dup_of": "Member of Technical Staff, Kernel"
@@ -995,10 +1044,38 @@
  },
  {
   "reason": "key",
+  "title": "Strategy and Analytics Business Partner",
+  "company": "Stripe",
+  "source": "Greenhouse",
+  "dup_of": "Strategy and Analytics Business Partner"
+ },
+ {
+  "reason": "key",
   "title": "Senior Product Manager I",
   "company": "Sumo Logic",
   "source": "Greenhouse",
   "dup_of": "Senior Product Manager I"
+ },
+ {
+  "reason": "key",
+  "title": "Account Manager",
+  "company": "Swiggy",
+  "source": "SmartRecruiters",
+  "dup_of": "Account Manager"
+ },
+ {
+  "reason": "key",
+  "title": "Account Manager",
+  "company": "Swiggy",
+  "source": "SmartRecruiters",
+  "dup_of": "Account Manager"
+ },
+ {
+  "reason": "key",
+  "title": "Account Manager",
+  "company": "Swiggy",
+  "source": "SmartRecruiters",
+  "dup_of": "Account Manager"
  },
  {
   "reason": "key",
@@ -1205,6 +1282,20 @@
  },
  {
   "reason": "key",
+  "title": "Growth Manager I",
+  "company": "Swiggy",
+  "source": "SmartRecruiters",
+  "dup_of": "Growth Manager I"
+ },
+ {
+  "reason": "key",
+  "title": "Growth Manager II",
+  "company": "Swiggy",
+  "source": "SmartRecruiters",
+  "dup_of": "Growth Manager II"
+ },
+ {
+  "reason": "key",
   "title": "Growth Manager II",
   "company": "Swiggy",
   "source": "SmartRecruiters",
@@ -1244,20 +1335,6 @@
   "company": "Swiggy",
   "source": "SmartRecruiters",
   "dup_of": "Key Account Manager I"
- },
- {
-  "reason": "key",
-  "title": "Sales Manager",
-  "company": "Swiggy",
-  "source": "SmartRecruiters",
-  "dup_of": "Sales Manager"
- },
- {
-  "reason": "key",
-  "title": "Sales Manager",
-  "company": "Swiggy",
-  "source": "SmartRecruiters",
-  "dup_of": "Sales Manager"
  },
  {
   "reason": "key",
@@ -1509,13 +1586,6 @@
   "title": "Sales Manager II",
   "company": "Swiggy",
   "source": "SmartRecruiters",
-  "dup_of": "Sales Manager II"
- },
- {
-  "reason": "key",
-  "title": "Sales Manager II",
-  "company": "Swiggy",
-  "source": "SmartRecruiters",
   "dup_of": "Sales Manager - II"
  },
  {
@@ -1576,10 +1646,31 @@
  },
  {
   "reason": "key",
+  "title": "Escalation Engineer - ZIA/ZPA",
+  "company": "Zscaler",
+  "source": "Greenhouse",
+  "dup_of": "Escalation Engineer - ZIA/ZPA"
+ },
+ {
+  "reason": "key",
   "title": "Principal Software Development Engineer - Rust ",
   "company": "Zscaler",
   "source": "Greenhouse",
   "dup_of": "Principal Software Development Engineer - Rust"
+ },
+ {
+  "reason": "key",
+  "title": "Senior Software Development Engineer",
+  "company": "Zscaler",
+  "source": "Greenhouse",
+  "dup_of": "Senior Software Development Engineer"
+ },
+ {
+  "reason": "key",
+  "title": "Senior Staff Software Development Engineer",
+  "company": "Zscaler",
+  "source": "Greenhouse",
+  "dup_of": " Senior Staff Software Development Engineer "
  },
  {
   "reason": "key",
