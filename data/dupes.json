@@ -43,20 +43,6 @@
  },
  {
   "reason": "key",
-  "title": "Autosar Architect (Classic + Adaptive) - AS",
-  "company": "Bosch",
-  "source": "SmartRecruiters",
-  "dup_of": "Autosar Architect (Classic + Adaptive) - AS"
- },
- {
-  "reason": "key",
-  "title": "Autosar Architect (Classic + Adaptive) - AS",
-  "company": "Bosch",
-  "source": "SmartRecruiters",
-  "dup_of": "Autosar Architect (Classic + Adaptive) - AS"
- },
- {
-  "reason": "key",
   "title": "BGSW_2026_Sr.SAP_EWM-MFS_Consultant",
   "company": "Bosch",
   "source": "SmartRecruiters",
@@ -183,6 +169,13 @@
  },
  {
   "reason": "key",
+  "title": "IN_Bosch Rexroth India_Engineer / Executive_Design",
+  "company": "Bosch",
+  "source": "SmartRecruiters",
+  "dup_of": "IN_Bosch Rexroth India_Engineer / Executive_Design"
+ },
+ {
+  "reason": "key",
   "title": "IN_RBAI_Engineer_FA Testing & Inspection Maintenance",
   "company": "Bosch",
   "source": "SmartRecruiters",
@@ -194,13 +187,6 @@
   "company": "Bosch",
   "source": "SmartRecruiters",
   "dup_of": "IN_RBAI_Maintenance Engineer_Charcon_Mechanical"
- },
- {
-  "reason": "key",
-  "title": "IT Operation Specialist",
-  "company": "Bosch",
-  "source": "SmartRecruiters",
-  "dup_of": "IT Operation Specialist"
  },
  {
   "reason": "key",
@@ -225,13 +211,6 @@
  },
  {
   "reason": "key",
-  "title": "Lead Hardware Engineer",
-  "company": "Bosch",
-  "source": "SmartRecruiters",
-  "dup_of": "Lead Hardware Engineer"
- },
- {
-  "reason": "key",
   "title": "Linux kernel developer_BSH",
   "company": "Bosch",
   "source": "SmartRecruiters",
@@ -243,34 +222,6 @@
   "company": "Bosch",
   "source": "SmartRecruiters",
   "dup_of": "Manual & Automation Testing"
- },
- {
-  "reason": "key",
-  "title": "Manual & Automation Testing",
-  "company": "Bosch",
-  "source": "SmartRecruiters",
-  "dup_of": "Manual & Automation Testing"
- },
- {
-  "reason": "key",
-  "title": "Mech Design Engineer (Specialist)- Machine Building, Station Design & Industrial Conveyors",
-  "company": "Bosch",
-  "source": "SmartRecruiters",
-  "dup_of": "Mech Design Engineer (Specialist)- Machine Building, Station Design & Industrial Conveyors"
- },
- {
-  "reason": "key",
-  "title": "Mech Design Engineer (Specialist)- Machine Building, Station Design & Industrial Conveyors",
-  "company": "Bosch",
-  "source": "SmartRecruiters",
-  "dup_of": "Mech Design Engineer (Specialist)- Machine Building, Station Design & Industrial Conveyors"
- },
- {
-  "reason": "key",
-  "title": "Mech Design Engineer (Specialist)- Machine Building, Station Design & Industrial Conveyors",
-  "company": "Bosch",
-  "source": "SmartRecruiters",
-  "dup_of": "Mech Design Engineer (Specialist)- Machine Building, Station Design & Industrial Conveyors"
  },
  {
   "reason": "key",
@@ -344,17 +295,17 @@
  },
  {
   "reason": "key",
+  "title": "Senior Engineer - Data Modelling and Data Backend",
+  "company": "Bosch",
+  "source": "SmartRecruiters",
+  "dup_of": "Senior Engineer - Data Modelling and Data Backend"
+ },
+ {
+  "reason": "key",
   "title": "Senior Python Developer_EDC3",
   "company": "Bosch",
   "source": "SmartRecruiters",
   "dup_of": "Senior Python Developer_EDC3"
- },
- {
-  "reason": "key",
-  "title": "Senior Software Engineer (Python) - Automation & Developer Platforms",
-  "company": "Bosch",
-  "source": "SmartRecruiters",
-  "dup_of": "Senior Software Engineer (Python) - Automation & Developer Platforms"
  },
  {
   "reason": "key",
@@ -379,10 +330,17 @@
  },
  {
   "reason": "key",
-  "title": "Software System Designer for ESC control unit of Pneumatic Braking",
+  "title": "ServiceNow Developer – KM & VA",
   "company": "Bosch",
   "source": "SmartRecruiters",
-  "dup_of": "Software System Designer for ESC control unit of Pneumatic Braking"
+  "dup_of": "ServiceNow Developer – KM & VA"
+ },
+ {
+  "reason": "key",
+  "title": "ServiceNow Developer – Service Catalog & Employee Portal",
+  "company": "Bosch",
+  "source": "SmartRecruiters",
+  "dup_of": "ServiceNow Developer – Service Catalog & Employee Portal"
  },
  {
   "reason": "key",
@@ -491,6 +449,27 @@
  },
  {
   "reason": "key",
+  "title": "VM Brakes -  Algorithm Software Developer [ Indian OEM]",
+  "company": "Bosch",
+  "source": "SmartRecruiters",
+  "dup_of": "VM Brakes -  Algorithm Software Developer [ Indian OEM]"
+ },
+ {
+  "reason": "key",
+  "title": "VM Brakes - ASW Algorithm Software Developer [Indian OEM]-",
+  "company": "Bosch",
+  "source": "SmartRecruiters",
+  "dup_of": "VM Brakes - ASW Algorithm Software Developer [Indian OEM]-"
+ },
+ {
+  "reason": "key",
+  "title": "VM Brakes BSW CAN Developer [Indian OEM]",
+  "company": "Bosch",
+  "source": "SmartRecruiters",
+  "dup_of": "VM Brakes BSW CAN Developer [Indian OEM]"
+ },
+ {
+  "reason": "key",
   "title": "Deployment Strategist",
   "company": "Databricks",
   "source": "Greenhouse",
@@ -509,13 +488,6 @@
   "company": "Databricks",
   "source": "Greenhouse",
   "dup_of": "Senior Software Engineer (Backend)"
- },
- {
-  "reason": "key",
-  "title": "Senior Solutions Architect",
-  "company": "Databricks",
-  "source": "Greenhouse",
-  "dup_of": "Senior Solutions Architect"
  },
  {
   "reason": "key",
@@ -659,13 +631,6 @@
  },
  {
   "reason": "key",
-  "title": "Senior Engineer - GTM Tech",
-  "company": "MongoDB",
-  "source": "Greenhouse",
-  "dup_of": "Senior Engineer - GTM Tech"
- },
- {
-  "reason": "key",
   "title": "Software Engineer 3",
   "company": "MongoDB",
   "source": "Greenhouse",
@@ -684,20 +649,6 @@
   "company": "MongoDB",
   "source": "Greenhouse",
   "dup_of": "Staff Engineer"
- },
- {
-  "reason": "key",
-  "title": "Expert",
-  "company": "NielsenIQ",
-  "source": "SmartRecruiters",
-  "dup_of": "Expert"
- },
- {
-  "reason": "key",
-  "title": "Expert ",
-  "company": "NielsenIQ",
-  "source": "SmartRecruiters",
-  "dup_of": "Expert"
  },
  {
   "reason": "key",
@@ -729,10 +680,10 @@
  },
  {
   "reason": "key",
-  "title": "Senior Site Reliability Engineer",
+  "title": "Principal Software Engineer ",
   "company": "Okta",
   "source": "Greenhouse",
-  "dup_of": "Senior Site Reliability Engineer"
+  "dup_of": "Principal Software Engineer"
  },
  {
   "reason": "key",
@@ -743,10 +694,10 @@
  },
  {
   "reason": "key",
-  "title": "Senior Software Engineer",
+  "title": "Senior Site Reliability Engineer",
   "company": "Okta",
   "source": "Greenhouse",
-  "dup_of": "Senior Software Engineer"
+  "dup_of": "Senior Site Reliability Engineer"
  },
  {
   "reason": "key",
@@ -764,10 +715,10 @@
  },
  {
   "reason": "key",
-  "title": "Senior Software Engineer - Fullstack ",
+  "title": "Senior Software Engineer",
   "company": "Okta",
   "source": "Greenhouse",
-  "dup_of": "Senior Software Engineer - Fullstack"
+  "dup_of": "Senior Software Engineer"
  },
  {
   "reason": "key",
@@ -775,6 +726,13 @@
   "company": "Okta",
   "source": "Greenhouse",
   "dup_of": "Staff Site Reliability Engineer"
+ },
+ {
+  "reason": "key",
+  "title": "Staff Software Engineer",
+  "company": "Okta",
+  "source": "Greenhouse",
+  "dup_of": "Staff Software Engineer"
  },
  {
   "reason": "key",
@@ -904,10 +862,10 @@
  },
  {
   "reason": "key",
-  "title": "Member of Technical Staff, Flash Array (Files)",
+  "title": "Member of Technical Staff, FA Files",
   "company": "Pure Storage",
   "source": "Greenhouse",
-  "dup_of": "Member of Technical Staff - Flash Array (Files)"
+  "dup_of": "Member of Technical Staff, FA Files"
  },
  {
   "reason": "key",
@@ -995,24 +953,17 @@
  },
  {
   "reason": "key",
+  "title": "Sr Software Engineer",
+  "company": "ServiceNow",
+  "source": "SmartRecruiters",
+  "dup_of": "Sr Software Engineer"
+ },
+ {
+  "reason": "key",
   "title": "Sr Staff Software Engineer",
   "company": "ServiceNow",
   "source": "SmartRecruiters",
   "dup_of": "Sr Staff Software Engineer"
- },
- {
-  "reason": "key",
-  "title": "Staff Software Engineer",
-  "company": "ServiceNow",
-  "source": "SmartRecruiters",
-  "dup_of": "Staff Software Engineer"
- },
- {
-  "reason": "key",
-  "title": "Staff Software Engineer",
-  "company": "ServiceNow",
-  "source": "SmartRecruiters",
-  "dup_of": "Staff Software Engineer"
  },
  {
   "reason": "key",
@@ -1289,10 +1240,10 @@
  },
  {
   "reason": "key",
-  "title": "Growth Manager II",
+  "title": "Growth Manager I",
   "company": "Swiggy",
   "source": "SmartRecruiters",
-  "dup_of": "Growth Manager II"
+  "dup_of": "Growth Manager I"
  },
  {
   "reason": "key",
@@ -1310,17 +1261,10 @@
  },
  {
   "reason": "key",
-  "title": "Key Account Manager ",
+  "title": "Growth Manager II",
   "company": "Swiggy",
   "source": "SmartRecruiters",
-  "dup_of": "Key Account Manager "
- },
- {
-  "reason": "key",
-  "title": "Key Account Manager ",
-  "company": "Swiggy",
-  "source": "SmartRecruiters",
-  "dup_of": "Key Account Manager "
+  "dup_of": "Growth Manager II"
  },
  {
   "reason": "key",
@@ -1380,13 +1324,6 @@
  },
  {
   "reason": "key",
-  "title": "Sales Manager",
-  "company": "Swiggy",
-  "source": "SmartRecruiters",
-  "dup_of": "Sales Manager"
- },
- {
-  "reason": "key",
   "title": "Sales Manager ",
   "company": "Swiggy",
   "source": "SmartRecruiters",
@@ -1422,13 +1359,6 @@
  },
  {
   "reason": "key",
-  "title": "Sales Manager - II",
-  "company": "Swiggy",
-  "source": "SmartRecruiters",
-  "dup_of": "Sales Manager - II"
- },
- {
-  "reason": "key",
   "title": "Sales Manager I",
   "company": "Swiggy",
   "source": "SmartRecruiters",
@@ -1461,34 +1391,6 @@
   "company": "Swiggy",
   "source": "SmartRecruiters",
   "dup_of": "Sales Manager I"
- },
- {
-  "reason": "key",
-  "title": "Sales Manager I",
-  "company": "Swiggy",
-  "source": "SmartRecruiters",
-  "dup_of": "Sales Manager I"
- },
- {
-  "reason": "key",
-  "title": "Sales Manager I",
-  "company": "Swiggy",
-  "source": "SmartRecruiters",
-  "dup_of": "Sales Manager I"
- },
- {
-  "reason": "key",
-  "title": "Sales Manager I",
-  "company": "Swiggy",
-  "source": "SmartRecruiters",
-  "dup_of": "Sales Manager I"
- },
- {
-  "reason": "key",
-  "title": "Sales Manager I",
-  "company": "Swiggy",
-  "source": "SmartRecruiters",
-  "dup_of": "Sales Manager - I"
  },
  {
   "reason": "key",
@@ -1591,27 +1493,6 @@
  {
   "reason": "key",
   "title": "Sales Manager II",
-  "company": "Swiggy",
-  "source": "SmartRecruiters",
-  "dup_of": "Sales Manager II"
- },
- {
-  "reason": "key",
-  "title": "Sales Manager II",
-  "company": "Swiggy",
-  "source": "SmartRecruiters",
-  "dup_of": "Sales Manager II"
- },
- {
-  "reason": "key",
-  "title": "Sales Manager II",
-  "company": "Swiggy",
-  "source": "SmartRecruiters",
-  "dup_of": "Sales Manager II"
- },
- {
-  "reason": "key",
-  "title": "Sales Manager II ",
   "company": "Swiggy",
   "source": "SmartRecruiters",
   "dup_of": "Sales Manager II"
@@ -1639,10 +1520,17 @@
  },
  {
   "reason": "key",
+  "title": "Account Executive - Majors",
+  "company": "Zscaler",
+  "source": "Greenhouse",
+  "dup_of": "Account Executive  - Majors"
+ },
+ {
+  "reason": "key",
   "title": "Account Executive, Majors",
   "company": "Zscaler",
   "source": "Greenhouse",
-  "dup_of": "Account Executive - Majors"
+  "dup_of": "Account Executive  - Majors"
  },
  {
   "reason": "key",
@@ -1706,6 +1594,13 @@
   "company": "Zscaler",
   "source": "Greenhouse",
   "dup_of": "Sr. Staff Software Development Engineer"
+ },
+ {
+  "reason": "key",
+  "title": "Staff Software Development Engineer",
+  "company": "Zscaler",
+  "source": "Greenhouse",
+  "dup_of": "Staff Software Development Engineer"
  },
  {
   "reason": "key",
