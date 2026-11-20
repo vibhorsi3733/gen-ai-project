@@ -1,15 +1,15 @@
 {
- "at": "2026-11-20T07:34:53.320157+00:00",
+ "at": "2026-11-20T09:17:22.428019+00:00",
  "sources": {
   "greenhouse:databricks": {
    "ok": true,
-   "total": 900,
-   "india": 78
+   "total": 898,
+   "india": 77
   },
   "greenhouse:okta": {
    "ok": true,
-   "total": 366,
-   "india": 104
+   "total": 365,
+   "india": 103
   },
   "greenhouse:zscaler": {
    "ok": true,
@@ -33,8 +33,8 @@
   },
   "greenhouse:inmobi": {
    "ok": true,
-   "total": 78,
-   "india": 49
+   "total": 77,
+   "india": 48
   },
   "greenhouse:gitlab": {
    "ok": true,
@@ -113,13 +113,13 @@
   },
   "lever:cred": {
    "ok": true,
-   "total": 12,
-   "india": 11
+   "total": 10,
+   "india": 9
   },
   "smartrecruiters:Swiggy": {
    "ok": true,
-   "total": 176,
-   "india": 176
+   "total": 179,
+   "india": 179
   },
   "smartrecruiters:BoschGroup": {
    "ok": true,
@@ -128,8 +128,8 @@
   },
   "smartrecruiters:ServiceNow": {
    "ok": true,
-   "total": 82,
-   "india": 82
+   "total": 81,
+   "india": 81
   },
   "smartrecruiters:Freshworks": {
    "ok": true,
@@ -138,8 +138,8 @@
   },
   "smartrecruiters:Experian": {
    "ok": true,
-   "total": 40,
-   "india": 40
+   "total": 41,
+   "india": 41
   },
   "workable:apna": {
    "ok": true,
@@ -153,13 +153,13 @@
   },
   "smartrecruiters:NielsenIQ": {
    "ok": true,
-   "total": 79,
-   "india": 79
+   "total": 78,
+   "india": 78
   },
   "greenhouse:zinnia": {
    "ok": true,
-   "total": 21,
-   "india": 12
+   "total": 22,
+   "india": 13
   },
   "greenhouse:pubmatic": {
    "ok": true,
@@ -174,16 +174,19 @@
   }
  },
  "tagging": {
-  "total": 744,
+  "total": 738,
   "cache_hits": 0,
   "llm_tagged": 0,
-  "fallback": 744,
+  "fallback": 738,
   "batch_retries": 0,
-  "senior_title_dropped": 1173,
+  "llm_status": "no API key",
+  "senior_title_dropped": 1176,
   "placeholder_dropped": 1
  },
- "entry_level": 744,
- "intern_or_fresher": 122,
- "published": 744,
+ "entry_level": 738,
+ "intern_or_fresher": 120,
+ "published": 738,
+ "carried_over": 0,
+ "failing_sources": {},
  "guard": null
 }

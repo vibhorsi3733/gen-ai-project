@@ -680,16 +680,16 @@
 "title": "Sales Specialist - Lakebase",
 "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8477547002"
 },
-"gh:databricks:8637736002": {
+"gh:databricks:8630011002": {
 "cities": [
-"Remote"
+"India (unspecified)"
 ],
 "company": "Databricks",
 "first_seen": "2026-11-16",
-"id": "gh:databricks:8637736002",
+"id": "gh:databricks:8630011002",
 "last_seen": "2026-11-20",
 "level": "Early career",
-"posted": "2026-07-30",
+"posted": "2026-07-28",
 "role": "Data / Analytics / ML",
 "skills": [
 "Python",
@@ -706,7 +706,7 @@
 "Project management"
 ],
 "title": "Deployment Strategist",
-"url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8637736002"
+"url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8630011002"
 },
 "gh:databricks:8688851002": {
 "cities": [
@@ -7496,9 +7496,7 @@
 "level": "Early career",
 "posted": "2026-09-29",
 "role": "Product Management",
-"skills": [
-"Accounting (Tally / GST)"
-],
+"skills": [],
 "title": "Product Management - Payment Product | Experience : 5-8 yrs",
 "url": "https://jobs.lever.co/paytm/dcc0e5d5-79c9-4021-84be-a435f54c71d3"
 },
