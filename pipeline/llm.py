@@ -10,7 +10,12 @@ Both providers get the same system prompt and the same JSON schema, so tags are 
 import os
 import time
 
-DEFAULTS = {"anthropic": "claude-opus-5-5", "gemini": "gemini-3.8-flash"}
+DEFAULTS = {"anthropic": "claude-opus-5-5", "gemini": "gemini-3.6-flash"}
+# Tried in order when the chosen Gemini model is overloaded (503/504). On 2026-11-20 gemini-3.8-flash
+# and 3.7-flash returned 504/503 for minutes, 3.6-flash flickered, and the lite models answered in 2-4 s. (3.5-flash is deprecated
+# and routed to 3.6-flash, so it is not a real fallback.)
+WORKERS = {"anthropic": 4, "gemini": 2}   # Gemini free tier has a low requests-per-minute limit
+GEMINI_FALLBACKS = ["gemini-3.6-flash", "gemini-3.8-flash", "gemini-3.5-flash-lite"]   # lite: last resort, answered in ~2 s
 KEY_VARS = {"anthropic": ("ANTHROPIC_API_KEY", "ANTHROPIC_AUTH_TOKEN"), "gemini": ("GEMINI_API_KEY", "GOOGLE_API_KEY")}
 EFFORT = os.environ.get("TAG_EFFORT") or "low"   # Claude: output_config.effort; Gemini: thinking_level
 
@@ -53,9 +58,38 @@ def _client(provider: str):
             from google import genai
             from google.genai import types
             key = os.environ.get("GEMINI_API_KEY") or os.environ.get("GOOGLE_API_KEY")
+            # 90 s per request and 3 attempts: an overloaded model answers 504 after ~60 s, and the
+            # first version (5 attempts, no timeout) stalled a run for minutes per batch.
             _clients[provider] = genai.Client(api_key=key, http_options=types.HttpOptions(
-                retry_options=types.HttpRetryOptions(attempts=5, http_status_codes=[408, 429, 500, 502, 503, 504])))
+                timeout=90_000,
+                retry_options=types.HttpRetryOptions(attempts=4, initial_delay=5.0, max_delay=60.0,  # free tier: per-minute limits
+                                                     http_status_codes=[408, 429, 500, 502, 503])))
     return _clients[provider]
+
+
+def pick_available(model: str) -> tuple[str | None, str]:
+    """For Gemini: probe the chosen model with a tiny request and fall back along GEMINI_FALLBACKS
+    if it is overloaded, so the whole run uses one model that actually answers. Claude: unchanged.
+    Returns (model or None, note). Auth/quota errors are raised so the caller treats them as fatal."""
+    if provider_of(model) != "gemini":
+        return model, ""
+    from google import genai
+    from google.genai import errors, types
+    key = os.environ.get("GEMINI_API_KEY") or os.environ.get("GOOGLE_API_KEY")
+    probe = genai.Client(api_key=key, http_options=types.HttpOptions(timeout=30_000))
+    tried = []
+    for m in [model] + [f for f in GEMINI_FALLBACKS if f != model]:
+        try:
+            probe.models.generate_content(model=m, contents="Reply with OK",
+                                          config=types.GenerateContentConfig(max_output_tokens=50))
+            return m, (f"{', '.join(tried)} unavailable -> using {m}" if tried else "")
+        except errors.ServerError as e:      # 5xx: overloaded / deadline -> try the next model
+            tried.append(f"{m} ({e.code})")
+        except Exception as e:  # noqa: BLE001 - timeouts surface as httpx errors
+            if isinstance(e, errors.ClientError):
+                raise
+            tried.append(f"{m} ({type(e).__name__})")
+    return None, f"all Gemini models busy: {', '.join(tried)}"
 
 
 def generate_json(model: str, system: str, user: str, schema: dict, max_tokens: int = 8000) -> dict:
@@ -114,7 +148,9 @@ def is_fatal(e: Exception) -> bool:
                 return True
             if e.code == 400:   # bad key (Gemini answers 400, not 401) or a rejected schema: same for every call
                 return True
-            if e.code == 429 and ("per day" in msg or "perday" in msg or "billing" in msg):
+            # Only a DAILY quota is fatal. Per-minute 429s carry the same "check your plan and billing"
+            # text, so matching on "billing" stopped whole runs for a limit that clears in seconds.
+            if e.code == 429 and ("perday" in msg.replace(" ", "").replace("_", "") or "daily" in msg):
                 return True
     except ImportError:
         pass

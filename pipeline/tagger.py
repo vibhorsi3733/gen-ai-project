@@ -32,7 +32,7 @@ PRICES = {
     "claude-haiku-5-5": (0.10, 0.50),
     "gemini-3.8-flash": (0.75, 3.75),   # introductory until 2026-12-31; $1.50 / $7.50 from 2027-01-01
     "gemini-3.6-flash": (0.75, 3.75),   # same introductory schedule
-    "gemini-2.5-flash": (0.30, 2.50),
+    "gemini-3.5-flash-lite": (0.30, 2.50),
 }
 
 DATA = Path(__file__).resolve().parent.parent / "data"
@@ -148,18 +148,41 @@ def tag_posts(posts: list[dict], use_llm: bool = True, workers: int = 4) -> dict
     """Mutates posts in place with tag fields. Returns run stats."""
     from concurrent.futures import ThreadPoolExecutor
 
+    global MODEL
     cache = _load_cache()
-    todo = []
-    for p in posts:
-        p["_hash"] = content_hash(p)
-        if p["_hash"] not in cache:
-            todo.append((p["_hash"], p))
+
+    def pending():
+        out = []
+        for p in posts:
+            p["_hash"] = content_hash(p)
+            if p["_hash"] not in cache:
+                out.append((p["_hash"], p))
+        return out
+
+    todo = pending()
+    note, probe_error = PROVIDER_NOTE, None
+    if use_llm and PROVIDER and todo:
+        # Gemini: make sure the model answers before tagging; fall back if it is overloaded.
+        try:
+            chosen, why = llm.pick_available(MODEL)
+        except Exception as e:  # noqa: BLE001 - bad key etc.: handled like any fatal error below
+            chosen, why, probe_error = MODEL, "", e
+        if chosen is None:
+            probe_error = RuntimeError(why)
+        elif chosen != MODEL:
+            print(f"model switch: {why}")
+            MODEL, note = chosen, f"{note}; {why}"
+            todo = pending()  # cache is keyed by model
     stats = {"total": len(posts), "cache_hits": len(posts) - len(todo), "llm_tagged": 0, "fallback": 0,
              "batch_retries": 0}
 
-    stats["llm_status"] = ("disabled (--no-llm)" if not use_llm else PROVIDER_NOTE if not PROVIDER
-                           else "nothing new to tag" if not todo else f"ok: {MODEL} ({PROVIDER_NOTE})")
+    stats["llm_status"] = ("disabled (--no-llm)" if not use_llm else note if not PROVIDER
+                           else "nothing new to tag" if not todo else f"ok: {MODEL} ({note})")
     stats["model"] = MODEL
+    if probe_error is not None and (llm.is_fatal(probe_error) or isinstance(probe_error, RuntimeError)):
+        stats["llm_status"] = f"unavailable: {str(probe_error)[:160]}"
+        print(f"LLM unavailable ({str(probe_error)[:160]}); using keyword tags for this run")
+        use_llm = False
     client = use_llm and bool(todo) and PROVIDER is not None
     unavailable = threading.Event()  # set on a bad key / no credit / unknown model -> stop calling
 
@@ -189,7 +212,7 @@ def tag_posts(posts: list[dict], use_llm: bool = True, workers: int = 4) -> dict
         # First batch alone: a bad key or empty balance fails here once, not hundreds of times.
         first = [(batches[0], run_batch(batches[0]))]
         rest = batches[1:] if not unavailable.is_set() else []
-        with ThreadPoolExecutor(max_workers=workers) as pool:
+        with ThreadPoolExecutor(max_workers=min(workers, llm.WORKERS.get(PROVIDER, workers))) as pool:
             results = itertools.chain(first, zip(rest, pool.map(run_batch, rest)))  # lazy: checkpoints still fire
             for n, (batch, (res, retried)) in enumerate(results):
                 stats["batch_retries"] += retried

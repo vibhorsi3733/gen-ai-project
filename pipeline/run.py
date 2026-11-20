@@ -18,7 +18,7 @@ from concurrent.futures import ThreadPoolExecutor
 from .dedup import dedupe
 from .skills import SKILL_CATEGORY, extract_skills
 from .sources import fetch_all, smartrecruiters_description
-from .tagger import MODEL, cost_report, tag_posts
+from .tagger import cost_report, tag_posts
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA, SITE = ROOT / "data", ROOT / "site"
@@ -159,7 +159,8 @@ def main(use_llm: bool = True) -> int:
 
     entry = [p for p in posts if p["level"] != "Experienced"]
     strict = [p for p in posts if p["level"] in ("Internship", "Fresher")]
-    model_label = MODEL if stats["fallback"] < len(posts) else "keyword rules (LLM unavailable)"
+    used_model = stats.get("model")  # may differ from tagger.MODEL at import if Gemini fell back
+    model_label = used_model if (used_model and stats["fallback"] < len(posts)) else "keyword rules (LLM unavailable)"
     last_meta = load(SITE / "meta.json", {})
     # Only compare like with like: a rules-tagged run marks every non-senior post entry-level,
     # so the first LLM run after it would look like a big "drop" and wrongly trip the guard.
@@ -188,7 +189,7 @@ def main(use_llm: bool = True) -> int:
     out.sort(key=lambda p: (rank[p["level"]], p["first_seen"], p["company"]))
     SITE.mkdir(exist_ok=True)
     (SITE / "jobs.json").write_text(json.dumps(out, ensure_ascii=False, separators=(",", ":")))
-    cost = cost_report(MODEL) if MODEL else {}
+    cost = cost_report(used_model) if used_model else {}
     sources = sorted({p["source"] for p in posts})
     (SITE / "meta.json").write_text(json.dumps({
         "updated_at": now.isoformat(), "total_posts": len(posts), "entry_posts": len(entry),
