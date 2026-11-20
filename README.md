@@ -128,6 +128,19 @@ Method ([eval/](eval/)):
 
 Full table and every disagreement: [eval/RESULTS.md](eval/RESULTS.md).
 
+**Claude (Opus 5.5) is expected to tag more accurately than Gemini Flash-Lite. Gemini was used only because no Anthropic API key was available. With `ANTHROPIC_API_KEY` set, the pipeline switches to Claude automatically, and `python -m eval.run_models claude-opus-5-5` measures it on the same 50 posts.**
+
+| Field | Gemini 3.5 Flash-Lite via API (measured) | Claude agents reading the full JD (measured, optimistic) | Claude Opus 5.5 via API (assumption, not measured) |
+|---|---|---|---|
+| Role | 80% | 98–100% | ~88–95% |
+| City | 98% | 100% | ~98–100% |
+| Level | 74% | 94–96% | ~85–92% |
+| Role + city | 78% | 98–100% | ~88–95% |
+| Cost / 1,000 posts | $0.33 | not an API run | ~$3.32, plus thinking tokens |
+
+- **Middle column:** each Claude reviewer scored against the final labels. It is optimistic, because those labels were built from the same two reviewers.
+- **Right column:** an assumption, to be replaced by a measured number once an Anthropic key is available.
+
 ## Cost per 1,000 posts
 
 Cost is **measured, not estimated**. Every API call appends `input_tokens` and `output_tokens` to `data/usage.jsonl`. Thinking tokens are billed as output on both providers and are included. `cost_report()` multiplies by list prices per million input / output tokens: Gemini 3.6 / 3.8 Flash $0.75 / $3.75 (introductory until 31 Dec 2026, then $1.50 / $7.50), Gemini 3.5 Flash-Lite $0.30 / $2.50, Claude Opus 5.5 $4 / $20.
