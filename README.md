@@ -60,8 +60,13 @@ The **Skills insights** tab (`#insights`) shows which skills employers ask for, 
 - **Every skill, bar and heat-map cell is clickable.** It opens the Jobs tab filtered to that skill (and city).
 
 How it works:
-- [pipeline/skills.py](pipeline/skills.py) matches each post's title and description against a curated dictionary of about 100 skills, with aliases mapped to one name ("ReactJS" / "React.js" → React).
-- A dictionary, rather than the LLM, keeps names canonical and countable. It's also free and works without an API key.
+- **Skills come from reading the JD, not the whole page.** [pipeline/skills.py](pipeline/skills.py) splits the description into sentences and drops company boilerplate ("About us", products, customers, benefits, legal text). It then matches a curated dictionary of about 85 skills, with aliases mapped to one name ("ReactJS" / "React.js" → React). Each skill keeps the sentence it came from.
+- **The LLM judges those candidates** in the same call that tags role, city and level. It keeps the skills the job asks for, drops those about the company or with another meaning ("networking" with people), and may add one the scan missed.
+- **Two safety rules** (`final_skills`):
+  - a technical skill the post never mentions is dropped, so there are no invented skills;
+  - if the LLM returns nothing while the scan found two or more skills, the scan's skills are used, because that's an omission rather than a judgment.
+- **Without a key**, the dictionary over the JD sentences is used on its own.
+- `python -m eval.skills_audit` writes [eval/SKILLS_AUDIT.md](eval/SKILLS_AUDIT.md) and `eval/skills_review.csv`. They cover each sampled post's skills from the old method, the JD scan and the LLM, with the evidence sentence and automatic flags (boilerplate-only, technical skill on a non-technical role). Mark `correct` y/n in the CSV and re-run to get a precision figure.
 - SmartRecruiters and Workable list endpoints don't include descriptions, so they're fetched per job (Workable via `?details=true`, SmartRecruiters via the posting endpoint). Results are cached by id.
 - `data/archive.json` keeps every post ever published, including closed ones, so trends build up day by day. Tracking started on 16 Nov 2026, so earlier weeks only contain posts that were still open then. The page says so under the trend chart.
 
@@ -94,6 +99,10 @@ The design came from two parallel proposals: a data-ingestion plan and an LLM/ev
 8. **Placeholder and team-lead posts got through.** "Don't see what you're looking for?" and "Backend – TL/STL" were caught while drawing the eval sample. I added a placeholder filter and added TL/STL/Head/Mgr to the senior filter. "Associate Product Manager" is exempted, because it's a fresher role.
 9. **The guard would have blocked the first LLM run.** The keyword fallback marks every non-senior post entry-level. The first LLM run would mark some of them Experienced, which looks like a > 40 % drop. The drop check now only compares runs tagged the same way.
 10. **An empty repo variable broke model selection.** In Actions, an unset `vars.TAG_MODEL` arrives as `""`, not unset. Fixed with `os.environ.get(...) or default`.
+11. **Recruiters were shown "Azure".** Skills were matched over the whole page. Every MongoDB post opens with "MongoDB Atlas … available across AWS, Google Cloud, and Microsoft Azure", so every MongoDB recruiter got AWS, Azure and GCP. The fix: skills now come from the JD's own sentences, with boilerplate removed and the LLM judging each candidate. AWS / Azure / GCP lost about 20 false matches each.
+12. **The boilerplate filter then deleted real requirements.** HTML was flattened into one line, so a whole bullet list became a single 3,936-character "sentence". It contained "our customers" and was dropped, taking Python and Java with it. The fix: list items and paragraphs are kept as separate segments, and long blocks are never dropped whole.
+13. **The first LLM prompt under-extracted.** "Prefer fewer skills" made the lite model drop SQL for a BI Developer. The fix: the LLM judges keyword candidates instead of extracting freely, and an empty answer with 2+ candidates counts as an omission. Bare-word aliases were tightened too: "algorithm" in a mission statement and "a data structure" in a video editor's duties no longer mean DSA.
+14. **The Gemini free tier allows 20 requests per day per model.** At 10 posts per request, a full run needs about 75 requests. Gemini now uses 50-post batches (about 15 requests for a full run, 1–2 on a normal day), retries a failed batch in halves, and falls back to another model when one's daily quota or capacity runs out (3.8/3.7-flash returned 503/504 for long stretches).
 
 ## Accuracy: 50 hand-checked posts
 

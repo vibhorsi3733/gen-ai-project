@@ -36,8 +36,12 @@ INDIA_WORDS = re.compile(
 def strip_html(s: str) -> str:
     s = html.unescape(html.unescape(s or ""))  # Greenhouse double-encodes
     s = re.sub(r"<(script|style)[^>]*>.*?</\1>", " ", s, flags=re.S | re.I)
+    # Block tags become " • " so list items and paragraphs stay separate sentences. Flattening them
+    # merged a whole requirements list into one 4,000-char "sentence" that the boilerplate filter dropped.
+    s = re.sub(r"<\s*(li|p|br|h[1-6]|div|tr)\b[^>]*>", " • ", s, flags=re.I)
     s = re.sub(r"<[^>]+>", " ", s)
-    return " ".join(html.unescape(s).split())
+    s = " ".join(html.unescape(s).split())
+    return re.sub(r"(?:\s*•\s*)+", " • ", s).strip(" •")
 
 
 def get(url: str, **kw):

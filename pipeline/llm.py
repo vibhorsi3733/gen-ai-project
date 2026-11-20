@@ -85,11 +85,14 @@ def pick_available(model: str) -> tuple[str | None, str]:
             return m, (f"{', '.join(tried)} unavailable -> using {m}" if tried else "")
         except errors.ServerError as e:      # 5xx: overloaded / deadline -> try the next model
             tried.append(f"{m} ({e.code})")
+        except errors.ClientError as e:
+            if e.code == 429:                # free tier: 20 requests/day PER MODEL -> next model has its own quota
+                tried.append(f"{m} (429 quota)")
+                continue
+            raise                            # bad key etc.: fatal, caller falls back to keyword tags
         except Exception as e:  # noqa: BLE001 - timeouts surface as httpx errors
-            if isinstance(e, errors.ClientError):
-                raise
             tried.append(f"{m} ({type(e).__name__})")
-    return None, f"all Gemini models busy: {', '.join(tried)}"
+    return None, f"no Gemini model available (busy or daily quota used): {', '.join(tried)}"
 
 
 def generate_json(model: str, system: str, user: str, schema: dict, max_tokens: int = 8000) -> dict:

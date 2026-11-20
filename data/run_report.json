@@ -1,5 +1,5 @@
 {
- "at": "2026-11-20T09:17:22.428019+00:00",
+ "at": "2026-11-20T09:45:54.588144+00:00",
  "sources": {
   "greenhouse:databricks": {
    "ok": true,
@@ -128,8 +128,8 @@
   },
   "smartrecruiters:ServiceNow": {
    "ok": true,
-   "total": 81,
-   "india": 81
+   "total": 79,
+   "india": 79
   },
   "smartrecruiters:Freshworks": {
    "ok": true,
@@ -153,8 +153,8 @@
   },
   "smartrecruiters:NielsenIQ": {
    "ok": true,
-   "total": 78,
-   "india": 78
+   "total": 77,
+   "india": 77
   },
   "greenhouse:zinnia": {
    "ok": true,
@@ -163,7 +163,7 @@
   },
   "greenhouse:pubmatic": {
    "ok": true,
-   "total": 78,
+   "total": 79,
    "india": 31
   },
   "adzuna": {
@@ -174,18 +174,19 @@
   }
  },
  "tagging": {
-  "total": 738,
+  "total": 737,
   "cache_hits": 0,
-  "llm_tagged": 0,
-  "fallback": 738,
+  "llm_tagged": 737,
+  "fallback": 0,
   "batch_retries": 0,
-  "llm_status": "no API key",
-  "senior_title_dropped": 1176,
+  "llm_status": "ok: gemini-3.5-flash-lite (gemini key found; gemini-3.6-flash (429 quota), gemini-3.8-flash (429 quota) unavailable -> using gemini-3.5-flash-lite)",
+  "model": "gemini-3.5-flash-lite",
+  "senior_title_dropped": 1174,
   "placeholder_dropped": 1
  },
- "entry_level": 738,
- "intern_or_fresher": 120,
- "published": 738,
+ "entry_level": 212,
+ "intern_or_fresher": 83,
+ "published": 737,
  "carried_over": 0,
  "failing_sources": {},
  "guard": null

@@ -14,9 +14,17 @@ from pathlib import Path
 from pipeline import llm, tagger
 from pipeline.baseline import baseline_tag
 from pipeline.taxonomy import cities_from_alias
+from pipeline.skills import final_skills
 
 ROOT = Path(__file__).resolve().parent.parent
 sample = json.loads((ROOT / "eval/sample_posts.json").read_text())
+# SmartRecruiters posts were sampled before their descriptions were fetched; use the same cached
+# descriptions production uses, so the eval sees what the pipeline sees.
+_desc = ROOT / "data/desc_cache.json"
+_desc = json.loads(_desc.read_text()) if _desc.exists() else {}
+for p in sample:
+    if not p.get("description") and p["id"] in _desc:
+        p["description"] = _desc[p["id"]]
 
 base = {}
 for p in sample:
@@ -37,12 +45,17 @@ for model in models:
         try:
             res = tagger._call(batch, model=model)
         except Exception as e:  # noqa: BLE001
+            if llm.is_fatal(e):
+                raise SystemExit(f"{model}: {str(e)[:300]}")
             print(f"{model} batch {i} failed: {e}; per-post retry")
             res = {}
             for it in batch:
                 res.update(tagger._call([it], model=model))
         for pid, r in res.items():
             alias = cities_from_alias(next(p for p in sample if p["id"] == pid)["location"])
-            preds[pid] = {"role": r["role"], "llm_cities": r["cities"], "cities": alias or r["cities"], "level": r["level"]}
+            post = next(p for p in sample if p["id"] == pid)
+            skills, _ = final_skills(r.get("skills", []), post["title"], post.get("description", ""), post["company"])
+            preds[pid] = {"role": r["role"], "llm_cities": r["cities"], "cities": alias or r["cities"], "level": r["level"],
+                          "skills": skills}
     (ROOT / f"eval/preds_{model}.json").write_text(json.dumps(preds, indent=1))
     print(f"{model}: {len(preds)}/{len(sample)} tagged in {time.time() - t0:.0f}s")

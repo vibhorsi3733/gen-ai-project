@@ -24,7 +24,8 @@ SKILLS: dict[str, dict[str, list[str]]] = {
         "PHP": [r"php"],
         "Ruby": [r"ruby", r"rails"],
         "Bash / Shell": [r"bash", r"shell script\w*", r"unix shell"],
-        "DSA": [r"data structures?", r"algorithms?", r"\bdsa\b"],
+        "DSA": [r"data structures", r"\bdsa\b", r"algorithms? (?:and|&) data structures?", r"(?:design|analysis) of algorithms",
+                r"algorithmic problem[- ]solving"],   # bare "algorithm" matched mission statements
         "OOP": [r"object[- ]oriented", r"\boops?\b"],
     },
     "Web & mobile": {
@@ -119,7 +120,82 @@ _COMPILED = [(s, re.compile(r"(?<![\w+#])(?:" + "|".join(alts) + r")(?![\w+#])",
              for d in SKILLS.values() for s, alts in d.items()]
 
 
-def extract_skills(title: str, description: str) -> list[str]:
-    """Canonical skills mentioned in the title or description, in dictionary order."""
+ALL_SKILLS = list(SKILL_CATEGORY)
+
+# Sentences that describe the COMPANY, its products, benefits or legal text, not the job.
+# Bug this fixes: every MongoDB post opens with "MongoDB Atlas ... is available across AWS, Google
+# Cloud, and Microsoft Azure", so recruiters were tagged AWS / Azure / GCP.
+_BOILER = re.compile(
+    r"(about (?:us|the company|the team)\b|who we are|our (?:mission|platform|products?|customers|clients|"
+    r"offices|culture|values|story)|customers? (?:worldwide|include|around)|\bover \d[\d,]* (?:customers|employees)|"
+    r"offices (?:worldwide|in|across)|founded in|headquartered|fortune \d+|backed by|leading (?:provider|platform)|"
+    r"equal (?:employment )?opportunity|we (?:are an?|celebrate|value) (?:equal|diverse|inclusive)|"
+    r"benefits|perks|insurance|paid (?:time off|leave)|parental leave|wellness|stock options|esops?|"
+    r"reasonable accommodation|privacy (?:policy|notice)|background (?:check|verification)|recruitment fraud|"
+    r"do not (?:ask|charge)|never (?:ask|charge)s? .* (?:fee|money)|is (?:an? )?(?:global|leading|world)|"
+    r"(?:platform|product) is available)", re.I)
+
+
+def jd_sentences(description: str, company: str = "") -> list[str]:
+    """The job description split into sentences, with company/benefit/legal boilerplate removed.
+    A sentence that names the company and describes it ("MongoDB is…", "At Bosch we…") is dropped too."""
+    text = " ".join((description or "").split())
+    sents = [s.strip() for s in re.split(r"(?<=[.!?•])\s+|\s+[•·▪●]\s+|\s-\s(?=[A-Z])", text) if len(s.strip()) > 3]
+    co = re.escape(company.strip().split()[0]) if company.strip() else None
+    out = []
+    for s in sents:
+        if len(s) > 500:   # a long block (e.g. a flattened list) is never dropped whole
+            out.append(s)
+            continue
+        if _BOILER.search(s):
+            continue
+        if co and re.search(rf"\b{co}\b", s, re.I) and re.search(
+                r"\b(is|are|was|has|have|offers?|provides?|builds?|helps?|serves?|powers?|runs?|leads?)\b", s, re.I) \
+                and not re.search(r"\b(you|your|candidate|role|will)\b", s, re.I):
+            continue
+        out.append(s)
+    return out
+
+
+def skill_evidence(title: str, description: str, company: str = "") -> dict[str, str]:
+    """{skill: the title or JD sentence that mentions it}, boilerplate excluded."""
+    found = {}
+    for s, rx in _COMPILED:
+        if rx.search(title or ""):
+            found[s] = f"[title] {title}"
+    for sent in jd_sentences(description, company):
+        for s, rx in _COMPILED:
+            if s not in found and rx.search(sent):
+                found[s] = sent[:240]
+    return {s: found[s] for s in ALL_SKILLS if s in found}   # dictionary order
+
+
+def mentioned_anywhere(title: str, description: str) -> set[str]:
+    """Every dictionary skill that appears anywhere in the post (boilerplate included).
+    Used only to ground LLM output: a technical skill the text never mentions is dropped."""
     text = f"{title}\n{description or ''}"
-    return [s for s, rx in _COMPILED if rx.search(text)]
+    return {s for s, rx in _COMPILED if rx.search(text)}
+
+
+def extract_skills(title: str, description: str, company: str = "") -> list[str]:
+    """Keyword fallback (no LLM): canonical skills in the title or the JD's non-boilerplate sentences.
+    A skill that is the employer's own name (MongoDB at MongoDB, Databricks at Databricks) is skipped:
+    every one of their posts mentions it, recruiters included. The LLM path can still keep it."""
+    own = {s for s, rx in _COMPILED if company and rx.search(company)}
+    return [s for s in skill_evidence(title, description, company) if s not in own]
+
+
+def final_skills(llm_skills: list[str] | None, title: str, description: str, company: str = "") -> tuple[list[str], str]:
+    """The skills shown on a job card, and where they came from. Used by the pipeline and the eval alike.
+      * LLM answer, grounded: a technical skill the post never mentions is dropped (no invented skills).
+      * LLM returned nothing although the JD scan found 2+ skills -> treated as an omission (the lite model
+        did this on 5 of 50 posts: SQL missing for a BI Developer), so the scan's skills are used.
+      * No LLM answer -> the JD scan (boilerplate already excluded)."""
+    rules = extract_skills(title, description, company)
+    if llm_skills is None:
+        return rules, "rules"
+    seen = mentioned_anywhere(title, description)
+    kept = [s for s in llm_skills if s in seen or SKILL_CATEGORY.get(s) == "Professional skills"]
+    if not kept and len(rules) >= 2:
+        return rules, "rules (LLM returned none)"
+    return kept, "llm"

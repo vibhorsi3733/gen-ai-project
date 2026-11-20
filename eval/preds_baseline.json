@@ -1,0 +1,353 @@
+{
+ "sr:Experian:744000161059610": {
+  "role": "Data / Analytics / ML",
+  "cities": [
+   "Hyderabad"
+  ],
+  "level": null
+ },
+ "sr:Swiggy:6000000001568408": {
+  "role": "Marketing",
+  "cities": [
+   "India (unspecified)"
+  ],
+  "level": null
+ },
+ "lv:cred:a65bef0e-0f4c-40af-b662-9313f255189e": {
+  "role": "Sales / Business Development",
+  "cities": [
+   "Bengaluru"
+  ],
+  "level": null
+ },
+ "gh:pubmatic:5466677008": {
+  "role": "Data / Analytics / ML",
+  "cities": [
+   "Pune"
+  ],
+  "level": null
+ },
+ "gh:groww:4714061101": {
+  "role": "Design (UI/UX/Graphic)",
+  "cities": [
+   "Bengaluru"
+  ],
+  "level": null
+ },
+ "gh:inmobi:7747785": {
+  "role": "Data / Analytics / ML",
+  "cities": [
+   "India (unspecified)"
+  ],
+  "level": null
+ },
+ "lv:paytm:dcc0e5d5-79c9-4021-84be-a435f54c71d3": {
+  "role": "Product Management",
+  "cities": [
+   "Delhi NCR"
+  ],
+  "level": null
+ },
+ "wk:apna:EDEA1176E8": {
+  "role": "Data / Analytics / ML",
+  "cities": [
+   "Bengaluru"
+  ],
+  "level": null
+ },
+ "ab:sarvam:2dcb062d-e42b-408d-be15-59ddde900984": {
+  "role": "Data / Analytics / ML",
+  "cities": [
+   "Bengaluru"
+  ],
+  "level": null
+ },
+ "gh:elastic:8289153": {
+  "role": "Marketing",
+  "cities": [
+   "Bengaluru"
+  ],
+  "level": null
+ },
+ "gh:gitlab:8869167002": {
+  "role": "HR / Recruiting",
+  "cities": [
+   "Remote"
+  ],
+  "level": null
+ },
+ "lv:zeta:4a278744-a77e-4c34-91e5-6247ec99fe11": {
+  "role": "Software Engineering",
+  "cities": [
+   "Mumbai"
+  ],
+  "level": null
+ },
+ "lv:fampay:01750a61-a53b-433f-8d8c-bfb5a18417f8": {
+  "role": "Data / Analytics / ML",
+  "cities": [
+   "Bengaluru"
+  ],
+  "level": null
+ },
+ "gh:stripe:8262032": {
+  "role": "Finance / Accounting",
+  "cities": [
+   "Bengaluru"
+  ],
+  "level": null
+ },
+ "gh:sigmoid:8741978002": {
+  "role": "Software Engineering",
+  "cities": [
+   "Bengaluru"
+  ],
+  "level": null
+ },
+ "lv:mindtickle:6c638c17-cd92-490a-9e0a-00a2492332fc": {
+  "role": "Data / Analytics / ML",
+  "cities": [
+   "Bengaluru",
+   "Pune"
+  ],
+  "level": null
+ },
+ "gh:sumologic:8305995": {
+  "role": "Sales / Business Development",
+  "cities": [
+   "Delhi NCR"
+  ],
+  "level": null
+ },
+ "sr:ServiceNow:744000159787259": {
+  "role": "Sales / Business Development",
+  "cities": [
+   "Bengaluru"
+  ],
+  "level": null
+ },
+ "gh:druva:8857583002": {
+  "role": "Sales / Business Development",
+  "cities": [
+   "Pune"
+  ],
+  "level": null
+ },
+ "gh:mongodb:8143980": {
+  "role": "Software Engineering",
+  "cities": [
+   "Bengaluru"
+  ],
+  "level": null
+ },
+ "gh:toast:8230746": {
+  "role": "Finance / Accounting",
+  "cities": [
+   "Chennai"
+  ],
+  "level": null
+ },
+ "sr:BoschGroup:744000157755948": {
+  "role": "Other",
+  "cities": [
+   "Bengaluru"
+  ],
+  "level": null
+ },
+ "gh:hackerrank:8155938": {
+  "role": "Software Engineering",
+  "cities": [
+   "Bengaluru"
+  ],
+  "level": null
+ },
+ "gh:purestorage:8131754": {
+  "role": "Data / Analytics / ML",
+  "cities": [
+   "Bengaluru"
+  ],
+  "level": null
+ },
+ "sr:NielsenIQ:744000159370550": {
+  "role": "Other",
+  "cities": [
+   "India (unspecified)"
+  ],
+  "level": null
+ },
+ "gh:zscaler:5272056007": {
+  "role": "Sales / Business Development",
+  "cities": [
+   "Mumbai"
+  ],
+  "level": null
+ },
+ "gh:zinnia:4726335006": {
+  "role": "Data / Analytics / ML",
+  "cities": [
+   "Delhi NCR"
+  ],
+  "level": null
+ },
+ "gh:rubrik:8305308": {
+  "role": "Data / Analytics / ML",
+  "cities": [
+   "Bengaluru"
+  ],
+  "level": null
+ },
+ "lv:meesho:f4e2e8e1-6863-4fe0-85fb-7840189cad3f": {
+  "role": "Software Engineering",
+  "cities": [
+   "Bengaluru"
+  ],
+  "level": null
+ },
+ "gh:okta:8323989": {
+  "role": "Finance / Accounting",
+  "cities": [
+   "Bengaluru"
+  ],
+  "level": null
+ },
+ "lv:hevodata:86fd190d-754d-45b6-9f04-59585dc6d15b": {
+  "role": "Sales / Business Development",
+  "cities": [
+   "Pune"
+  ],
+  "level": null
+ },
+ "gh:databricks:8630011002": {
+  "role": "Data / Analytics / ML",
+  "cities": [
+   "India (unspecified)"
+  ],
+  "level": null
+ },
+ "sr:Freshworks:744000144466115": {
+  "role": "Other",
+  "cities": [
+   "Chennai"
+  ],
+  "level": null
+ },
+ "sr:Experian:744000159304482": {
+  "role": "Sales / Business Development",
+  "cities": [
+   "Mumbai"
+  ],
+  "level": null
+ },
+ "sr:Swiggy:6000000001433948": {
+  "role": "Content / Writing",
+  "cities": [
+   "Mumbai"
+  ],
+  "level": null
+ },
+ "lv:cred:09022710-e79a-4cf0-8060-df0e1cd64263": {
+  "role": "Sales / Business Development",
+  "cities": [
+   "Bengaluru"
+  ],
+  "level": null
+ },
+ "gh:pubmatic:5435973008": {
+  "role": "Other",
+  "cities": [
+   "Delhi NCR"
+  ],
+  "level": null
+ },
+ "gh:groww:5000706101": {
+  "role": "Content / Writing",
+  "cities": [
+   "Bengaluru"
+  ],
+  "level": null
+ },
+ "gh:inmobi:8207330": {
+  "role": "Data / Analytics / ML",
+  "cities": [
+   "Bengaluru"
+  ],
+  "level": null
+ },
+ "lv:paytm:cca996fb-c2b7-46a7-8280-c793670aa81f": {
+  "role": "Customer Support / Success",
+  "cities": [
+   "Mumbai"
+  ],
+  "level": null
+ },
+ "wk:apna:F3523C51BC": {
+  "role": "Sales / Business Development",
+  "cities": [
+   "India (unspecified)"
+  ],
+  "level": null
+ },
+ "ab:sarvam:786e9a1b-e52d-4075-932d-66e4ad8e06c2": {
+  "role": "Consulting / Strategy",
+  "cities": [
+   "Bengaluru"
+  ],
+  "level": null
+ },
+ "gh:elastic:8263255": {
+  "role": "Marketing",
+  "cities": [
+   "Bengaluru"
+  ],
+  "level": null
+ },
+ "gh:gitlab:8775507002": {
+  "role": "Software Engineering",
+  "cities": [
+   "Bengaluru"
+  ],
+  "level": null
+ },
+ "lv:zeta:38accd53-250f-4e8f-b635-261f31f78b65": {
+  "role": "Data / Analytics / ML",
+  "cities": [
+   "Hyderabad"
+  ],
+  "level": null
+ },
+ "lv:fampay:9b8d4eaa-cd29-4aec-8dcc-a33fd78d5657": {
+  "role": "Software Engineering",
+  "cities": [
+   "Bengaluru"
+  ],
+  "level": null
+ },
+ "gh:stripe:7975698": {
+  "role": "Operations / Supply Chain",
+  "cities": [
+   "Bengaluru"
+  ],
+  "level": null
+ },
+ "gh:sigmoid:4808098002": {
+  "role": "Software Engineering",
+  "cities": [
+   "Bengaluru"
+  ],
+  "level": null
+ },
+ "lv:mindtickle:e5f69583-dd88-4b86-af6b-5582df1548d8": {
+  "role": "Consulting / Strategy",
+  "cities": [
+   "Pune"
+  ],
+  "level": null
+ },
+ "sr:ServiceNow:744000161219059": {
+  "role": "Other",
+  "cities": [
+   "Hyderabad"
+  ],
+  "level": null
+ }
+}

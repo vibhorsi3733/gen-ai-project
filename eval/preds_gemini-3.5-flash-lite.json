@@ -1,0 +1,876 @@
+{
+ "sr:Experian:744000161059610": {
+  "role": "Software Engineering",
+  "llm_cities": [
+   "Hyderabad",
+   "India (unspecified)"
+  ],
+  "cities": [
+   "Hyderabad"
+  ],
+  "level": "Experienced",
+  "skills": [
+   "REST APIs",
+   "SQL",
+   "Generative AI / LLMs",
+   "Data analysis",
+   "Linux",
+   "Testing / QA",
+   "Problem solving",
+   "Stakeholder management"
+  ],
+  "skills_source": "rules (LLM returned none)"
+ },
+ "sr:Swiggy:6000000001568408": {
+  "role": "Sales / Business Development",
+  "llm_cities": [
+   "Other India"
+  ],
+  "cities": [
+   "Other India"
+  ],
+  "level": "Experienced",
+  "skills": [],
+  "skills_source": "llm"
+ },
+ "lv:cred:a65bef0e-0f4c-40af-b662-9313f255189e": {
+  "role": "Sales / Business Development",
+  "llm_cities": [
+   "Bengaluru"
+  ],
+  "cities": [
+   "Bengaluru"
+  ],
+  "level": "Early career",
+  "skills": [],
+  "skills_source": "llm"
+ },
+ "gh:pubmatic:5466677008": {
+  "role": "Data / Analytics / ML",
+  "llm_cities": [
+   "Pune"
+  ],
+  "cities": [
+   "Pune"
+  ],
+  "level": "Experienced",
+  "skills": [
+   "Python",
+   "Excel",
+   "Statistics",
+   "Machine Learning",
+   "Generative AI / LLMs",
+   "Data analysis",
+   "MySQL",
+   "Communication",
+   "Problem solving"
+  ],
+  "skills_source": "llm"
+ },
+ "gh:groww:4714061101": {
+  "role": "Product Management",
+  "llm_cities": [
+   "Bengaluru"
+  ],
+  "cities": [
+   "Bengaluru"
+  ],
+  "level": "Experienced",
+  "skills": [],
+  "skills_source": "llm"
+ },
+ "gh:inmobi:7747785": {
+  "role": "Software Engineering",
+  "llm_cities": [
+   "Other India"
+  ],
+  "cities": [
+   "Other India"
+  ],
+  "level": "Early career",
+  "skills": [
+   "Python",
+   "Java",
+   "Scala",
+   "REST APIs",
+   "Microservices",
+   "SQL",
+   "Spark",
+   "ETL / Data pipelines",
+   "AWS",
+   "Azure",
+   "GCP",
+   "Docker",
+   "Kubernetes",
+   "CI/CD",
+   "Git",
+   "Kafka"
+  ],
+  "skills_source": "llm"
+ },
+ "lv:paytm:dcc0e5d5-79c9-4021-84be-a435f54c71d3": {
+  "role": "Product Management",
+  "llm_cities": [
+   "Delhi NCR"
+  ],
+  "cities": [
+   "Delhi NCR"
+  ],
+  "level": "Experienced",
+  "skills": [],
+  "skills_source": "llm"
+ },
+ "wk:apna:EDEA1176E8": {
+  "role": "Operations / Supply Chain",
+  "llm_cities": [
+   "Bengaluru"
+  ],
+  "cities": [
+   "Bengaluru"
+  ],
+  "level": "Fresher",
+  "skills": [
+   "Python",
+   "Excel",
+   "MS Office"
+  ],
+  "skills_source": "rules (LLM returned none)"
+ },
+ "ab:sarvam:2dcb062d-e42b-408d-be15-59ddde900984": {
+  "role": "Data / Analytics / ML",
+  "llm_cities": [
+   "Bengaluru"
+  ],
+  "cities": [
+   "Bengaluru"
+  ],
+  "level": "Experienced",
+  "skills": [
+   "Machine Learning",
+   "Generative AI / LLMs",
+   "PyTorch / TensorFlow",
+   "ETL / Data pipelines"
+  ],
+  "skills_source": "llm"
+ },
+ "gh:elastic:8289153": {
+  "role": "Operations / Supply Chain",
+  "llm_cities": [
+   "Bengaluru"
+  ],
+  "cities": [
+   "Bengaluru"
+  ],
+  "level": "Early career",
+  "skills": [
+   "CRM (Salesforce etc.)",
+   "Teamwork",
+   "Project management"
+  ],
+  "skills_source": "llm"
+ },
+ "gh:gitlab:8869167002": {
+  "role": "HR / Recruiting",
+  "llm_cities": [
+   "Remote",
+   "Other India"
+  ],
+  "cities": [
+   "Remote"
+  ],
+  "level": "Early career",
+  "skills": [
+   "Communication",
+   "Problem solving",
+   "Stakeholder management"
+  ],
+  "skills_source": "llm"
+ },
+ "lv:zeta:4a278744-a77e-4c34-91e5-6247ec99fe11": {
+  "role": "Operations / Supply Chain",
+  "llm_cities": [
+   "Mumbai"
+  ],
+  "cities": [
+   "Mumbai"
+  ],
+  "level": "Experienced",
+  "skills": [],
+  "skills_source": "llm"
+ },
+ "lv:fampay:01750a61-a53b-433f-8d8c-bfb5a18417f8": {
+  "role": "Software Engineering",
+  "llm_cities": [
+   "Bengaluru"
+  ],
+  "cities": [
+   "Bengaluru"
+  ],
+  "level": "Experienced",
+  "skills": [
+   "Python",
+   "Java",
+   "Scala",
+   "SQL",
+   "Spark",
+   "ETL / Data pipelines",
+   "AWS",
+   "CI/CD",
+   "Git",
+   "Stakeholder management"
+  ],
+  "skills_source": "llm"
+ },
+ "gh:stripe:8262032": {
+  "role": "Finance / Accounting",
+  "llm_cities": [
+   "Bengaluru"
+  ],
+  "cities": [
+   "Bengaluru"
+  ],
+  "level": "Experienced",
+  "skills": [
+   "SQL",
+   "Accounting (Tally / GST)",
+   "Communication",
+   "Problem solving"
+  ],
+  "skills_source": "llm"
+ },
+ "gh:sigmoid:8741978002": {
+  "role": "Software Engineering",
+  "llm_cities": [
+   "Bengaluru"
+  ],
+  "cities": [
+   "Bengaluru"
+  ],
+  "level": "Early career",
+  "skills": [
+   "Python",
+   "JavaScript",
+   "TypeScript",
+   "DSA",
+   "React",
+   "Node.js",
+   "HTML / CSS",
+   "Flask / FastAPI",
+   "REST APIs",
+   "GraphQL",
+   "Microservices",
+   "AWS",
+   "Azure",
+   "GCP",
+   "Docker",
+   "Kubernetes",
+   "CI/CD",
+   "Testing / QA",
+   "PostgreSQL",
+   "MongoDB",
+   "Redis",
+   "Kafka",
+   "NoSQL",
+   "Communication",
+   "Project management"
+  ],
+  "skills_source": "llm"
+ },
+ "lv:mindtickle:6c638c17-cd92-490a-9e0a-00a2492332fc": {
+  "role": "Customer Support / Success",
+  "llm_cities": [
+   "Bengaluru",
+   "Pune"
+  ],
+  "cities": [
+   "Bengaluru",
+   "Pune"
+  ],
+  "level": "Experienced",
+  "skills": [
+   "Stakeholder management"
+  ],
+  "skills_source": "llm"
+ },
+ "gh:sumologic:8305995": {
+  "role": "Customer Support / Success",
+  "llm_cities": [
+   "Delhi NCR"
+  ],
+  "cities": [
+   "Delhi NCR"
+  ],
+  "level": "Experienced",
+  "skills": [
+   "SQL",
+   "AWS",
+   "Azure",
+   "GCP",
+   "Kubernetes",
+   "Networking",
+   "Cybersecurity",
+   "Teamwork",
+   "Customer handling"
+  ],
+  "skills_source": "llm"
+ },
+ "sr:ServiceNow:744000159787259": {
+  "role": "Sales / Business Development",
+  "llm_cities": [
+   "Bengaluru"
+  ],
+  "cities": [
+   "Bengaluru"
+  ],
+  "level": "Experienced",
+  "skills": [
+   "Problem solving",
+   "Negotiation"
+  ],
+  "skills_source": "rules (LLM returned none)"
+ },
+ "gh:druva:8857583002": {
+  "role": "Sales / Business Development",
+  "llm_cities": [
+   "Pune"
+  ],
+  "cities": [
+   "Pune"
+  ],
+  "level": "Experienced",
+  "skills": [
+   "SQL",
+   "AWS",
+   "Azure",
+   "Linux",
+   "Networking",
+   "Cybersecurity",
+   "Customer handling"
+  ],
+  "skills_source": "llm"
+ },
+ "gh:mongodb:8143980": {
+  "role": "Software Engineering",
+  "llm_cities": [
+   "Bengaluru"
+  ],
+  "cities": [
+   "Bengaluru"
+  ],
+  "level": "Experienced",
+  "skills": [
+   "Python",
+   "Java",
+   "Spring Boot",
+   "Microservices",
+   "SQL",
+   "Generative AI / LLMs",
+   "AWS",
+   "Azure",
+   "GCP",
+   "Docker",
+   "Kubernetes",
+   "CI/CD",
+   "Git",
+   "NoSQL",
+   "Communication",
+   "Problem solving",
+   "Teamwork",
+   "Stakeholder management",
+   "Project management"
+  ],
+  "skills_source": "llm"
+ },
+ "gh:toast:8230746": {
+  "role": "Finance / Accounting",
+  "llm_cities": [
+   "Chennai"
+  ],
+  "cities": [
+   "Chennai"
+  ],
+  "level": "Early career",
+  "skills": [
+   "Excel",
+   "MS Office",
+   "Accounting (Tally / GST)",
+   "Problem solving"
+  ],
+  "skills_source": "llm"
+ },
+ "sr:BoschGroup:744000157755948": {
+  "role": "Other",
+  "llm_cities": [
+   "Bengaluru",
+   "India (unspecified)"
+  ],
+  "cities": [
+   "Bengaluru"
+  ],
+  "level": "Experienced",
+  "skills": [
+   "Excel",
+   "Statistics",
+   "Testing / QA",
+   "MS Office",
+   "Communication",
+   "Stakeholder management",
+   "Project management"
+  ],
+  "skills_source": "rules (LLM returned none)"
+ },
+ "gh:hackerrank:8155938": {
+  "role": "Software Engineering",
+  "llm_cities": [
+   "Bengaluru"
+  ],
+  "cities": [
+   "Bengaluru"
+  ],
+  "level": "Experienced",
+  "skills": [
+   "JavaScript",
+   "TypeScript",
+   "REST APIs",
+   "Docker",
+   "Kubernetes",
+   "CI/CD",
+   "Git",
+   "Testing / QA",
+   "Communication",
+   "Problem solving"
+  ],
+  "skills_source": "llm"
+ },
+ "gh:purestorage:8131754": {
+  "role": "Software Engineering",
+  "llm_cities": [
+   "Bengaluru"
+  ],
+  "cities": [
+   "Bengaluru"
+  ],
+  "level": "Experienced",
+  "skills": [
+   "Python",
+   "Java",
+   "C++",
+   "DSA",
+   "OOP",
+   "ETL / Data pipelines",
+   "Linux",
+   "Communication"
+  ],
+  "skills_source": "llm"
+ },
+ "sr:NielsenIQ:744000159370550": {
+  "role": "Other",
+  "llm_cities": [
+   "Other India",
+   "India (unspecified)"
+  ],
+  "cities": [
+   "Other India",
+   "India (unspecified)"
+  ],
+  "level": "Experienced",
+  "skills": [],
+  "skills_source": "llm"
+ },
+ "gh:zscaler:5272056007": {
+  "role": "Sales / Business Development",
+  "llm_cities": [
+   "Mumbai"
+  ],
+  "cities": [
+   "Mumbai"
+  ],
+  "level": "Experienced",
+  "skills": [
+   "Machine Learning",
+   "Teamwork",
+   "Project management"
+  ],
+  "skills_source": "llm"
+ },
+ "gh:zinnia:4726335006": {
+  "role": "Operations / Supply Chain",
+  "llm_cities": [
+   "Delhi NCR"
+  ],
+  "cities": [
+   "Delhi NCR"
+  ],
+  "level": "Early career",
+  "skills": [
+   "Excel",
+   "Communication"
+  ],
+  "skills_source": "llm"
+ },
+ "gh:rubrik:8305308": {
+  "role": "Finance / Accounting",
+  "llm_cities": [
+   "Bengaluru"
+  ],
+  "cities": [
+   "Bengaluru"
+  ],
+  "level": "Internship",
+  "skills": [
+   "Excel",
+   "MS Office",
+   "Accounting (Tally / GST)",
+   "Communication"
+  ],
+  "skills_source": "llm"
+ },
+ "lv:meesho:f4e2e8e1-6863-4fe0-85fb-7840189cad3f": {
+  "role": "Software Engineering",
+  "llm_cities": [
+   "Bengaluru"
+  ],
+  "cities": [
+   "Bengaluru"
+  ],
+  "level": "Experienced",
+  "skills": [
+   "CI/CD",
+   "Cybersecurity",
+   "Teamwork"
+  ],
+  "skills_source": "llm"
+ },
+ "gh:okta:8323989": {
+  "role": "Finance / Accounting",
+  "llm_cities": [
+   "Bengaluru"
+  ],
+  "cities": [
+   "Bengaluru"
+  ],
+  "level": "Experienced",
+  "skills": [
+   "Excel",
+   "Machine Learning",
+   "MS Office",
+   "Accounting (Tally / GST)",
+   "Communication",
+   "Problem solving",
+   "Teamwork",
+   "Customer handling"
+  ],
+  "skills_source": "llm"
+ },
+ "lv:hevodata:86fd190d-754d-45b6-9f04-59585dc6d15b": {
+  "role": "Sales / Business Development",
+  "llm_cities": [
+   "Pune"
+  ],
+  "cities": [
+   "Pune"
+  ],
+  "level": "Experienced",
+  "skills": [
+   "ETL / Data pipelines"
+  ],
+  "skills_source": "llm"
+ },
+ "gh:databricks:8630011002": {
+  "role": "Consulting / Strategy",
+  "llm_cities": [
+   "India (unspecified)"
+  ],
+  "cities": [
+   "India (unspecified)"
+  ],
+  "level": "Experienced",
+  "skills": [
+   "Python",
+   "Java",
+   "SQL",
+   "Machine Learning",
+   "Generative AI / LLMs",
+   "ETL / Data pipelines",
+   "Testing / QA",
+   "Communication",
+   "Customer handling",
+   "Project management"
+  ],
+  "skills_source": "llm"
+ },
+ "sr:Freshworks:744000144466115": {
+  "role": "Operations / Supply Chain",
+  "llm_cities": [
+   "Chennai",
+   "India (unspecified)"
+  ],
+  "cities": [
+   "Chennai"
+  ],
+  "level": "Experienced",
+  "skills": [],
+  "skills_source": "llm"
+ },
+ "sr:Experian:744000159304482": {
+  "role": "Sales / Business Development",
+  "llm_cities": [
+   "Mumbai",
+   "India (unspecified)"
+  ],
+  "cities": [
+   "Mumbai"
+  ],
+  "level": "Experienced",
+  "skills": [],
+  "skills_source": "llm"
+ },
+ "sr:Swiggy:6000000001433948": {
+  "role": "Content / Writing",
+  "llm_cities": [
+   "Mumbai",
+   "India (unspecified)"
+  ],
+  "cities": [
+   "Mumbai"
+  ],
+  "level": "Experienced",
+  "skills": [],
+  "skills_source": "llm"
+ },
+ "lv:cred:09022710-e79a-4cf0-8060-df0e1cd64263": {
+  "role": "Sales / Business Development",
+  "llm_cities": [
+   "Bengaluru"
+  ],
+  "cities": [
+   "Bengaluru"
+  ],
+  "level": "Early career",
+  "skills": [],
+  "skills_source": "llm"
+ },
+ "gh:pubmatic:5435973008": {
+  "role": "Sales / Business Development",
+  "llm_cities": [
+   "Delhi NCR"
+  ],
+  "cities": [
+   "Delhi NCR"
+  ],
+  "level": "Experienced",
+  "skills": [
+   "Excel",
+   "Communication",
+   "Problem solving"
+  ],
+  "skills_source": "llm"
+ },
+ "gh:groww:5000706101": {
+  "role": "Content / Writing",
+  "llm_cities": [
+   "Bengaluru"
+  ],
+  "cities": [
+   "Bengaluru"
+  ],
+  "level": "Early career",
+  "skills": [
+   "English proficiency",
+   "Hindi / regional language"
+  ],
+  "skills_source": "llm"
+ },
+ "gh:inmobi:8207330": {
+  "role": "Other",
+  "llm_cities": [
+   "Bengaluru"
+  ],
+  "cities": [
+   "Bengaluru"
+  ],
+  "level": "Experienced",
+  "skills": [
+   "Generative AI / LLMs",
+   "Negotiation"
+  ],
+  "skills_source": "llm"
+ },
+ "lv:paytm:cca996fb-c2b7-46a7-8280-c793670aa81f": {
+  "role": "Customer Support / Success",
+  "llm_cities": [
+   "Mumbai"
+  ],
+  "cities": [
+   "Mumbai"
+  ],
+  "level": "Early career",
+  "skills": [
+   "CRM (Salesforce etc.)",
+   "Communication",
+   "Problem solving",
+   "Teamwork"
+  ],
+  "skills_source": "llm"
+ },
+ "wk:apna:F3523C51BC": {
+  "role": "Sales / Business Development",
+  "llm_cities": [
+   "Other India"
+  ],
+  "cities": [
+   "Other India"
+  ],
+  "level": "Fresher",
+  "skills": [],
+  "skills_source": "llm"
+ },
+ "ab:sarvam:786e9a1b-e52d-4075-932d-66e4ad8e06c2": {
+  "role": "Consulting / Strategy",
+  "llm_cities": [
+   "Bengaluru"
+  ],
+  "cities": [
+   "Bengaluru"
+  ],
+  "level": "Early career",
+  "skills": [
+   "Stakeholder management"
+  ],
+  "skills_source": "llm"
+ },
+ "gh:elastic:8263255": {
+  "role": "Marketing",
+  "llm_cities": [
+   "Bengaluru"
+  ],
+  "cities": [
+   "Bengaluru"
+  ],
+  "level": "Early career",
+  "skills": [
+   "Excel",
+   "Tableau",
+   "CRM (Salesforce etc.)",
+   "Communication",
+   "Project management"
+  ],
+  "skills_source": "llm"
+ },
+ "gh:gitlab:8775507002": {
+  "role": "Software Engineering",
+  "llm_cities": [
+   "Bengaluru"
+  ],
+  "cities": [
+   "Bengaluru"
+  ],
+  "level": "Early career",
+  "skills": [
+   "Rust",
+   "Ruby",
+   "Docker",
+   "Kubernetes",
+   "CI/CD",
+   "PostgreSQL",
+   "Communication"
+  ],
+  "skills_source": "llm"
+ },
+ "lv:zeta:38accd53-250f-4e8f-b635-261f31f78b65": {
+  "role": "Software Engineering",
+  "llm_cities": [
+   "Hyderabad"
+  ],
+  "cities": [
+   "Hyderabad"
+  ],
+  "level": "Early career",
+  "skills": [
+   "AWS",
+   "Kubernetes",
+   "Cybersecurity"
+  ],
+  "skills_source": "llm"
+ },
+ "lv:fampay:9b8d4eaa-cd29-4aec-8dcc-a33fd78d5657": {
+  "role": "Software Engineering",
+  "llm_cities": [
+   "Bengaluru"
+  ],
+  "cities": [
+   "Bengaluru"
+  ],
+  "level": "Experienced",
+  "skills": [
+   "Node.js",
+   "Kubernetes"
+  ],
+  "skills_source": "llm"
+ },
+ "gh:stripe:7975698": {
+  "role": "Customer Support / Success",
+  "llm_cities": [
+   "Bengaluru"
+  ],
+  "cities": [
+   "Bengaluru"
+  ],
+  "level": "Early career",
+  "skills": [
+   "Excel",
+   "Communication",
+   "Problem solving",
+   "Customer handling"
+  ],
+  "skills_source": "llm"
+ },
+ "gh:sigmoid:4808098002": {
+  "role": "Software Engineering",
+  "llm_cities": [
+   "Bengaluru"
+  ],
+  "cities": [
+   "Bengaluru"
+  ],
+  "level": "Experienced",
+  "skills": [
+   "Python",
+   "Java",
+   "C++",
+   "Scala",
+   "OOP",
+   "Spark",
+   "Testing / QA",
+   "Snowflake / BigQuery",
+   "Communication",
+   "Project management"
+  ],
+  "skills_source": "llm"
+ },
+ "lv:mindtickle:e5f69583-dd88-4b86-af6b-5582df1548d8": {
+  "role": "Content / Writing",
+  "llm_cities": [
+   "Pune"
+  ],
+  "cities": [
+   "Pune"
+  ],
+  "level": "Experienced",
+  "skills": [],
+  "skills_source": "llm"
+ },
+ "sr:ServiceNow:744000161219059": {
+  "role": "Software Engineering",
+  "llm_cities": [
+   "Hyderabad",
+   "India (unspecified)"
+  ],
+  "cities": [
+   "Hyderabad"
+  ],
+  "level": "Experienced",
+  "skills": [],
+  "skills_source": "llm"
+ }
+}

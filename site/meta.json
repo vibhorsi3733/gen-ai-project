@@ -1,8 +1,8 @@
 {
- "updated_at": "2026-11-20T09:17:22.428019+00:00",
- "total_posts": 738,
- "entry_posts": 738,
- "intern_or_fresher_posts": 120,
+ "updated_at": "2026-11-20T09:45:54.588144+00:00",
+ "total_posts": 737,
+ "entry_posts": 212,
+ "intern_or_fresher_posts": 83,
  "sources": [
   "Ashby",
   "Greenhouse",
@@ -11,6 +11,6 @@
   "Workable"
  ],
  "boards": 33,
- "model": "keyword rules (LLM unavailable)",
- "usd_per_1000_posts": null
+ "model": "gemini-3.5-flash-lite",
+ "usd_per_1000_posts": 0.3354
 }

@@ -1,0 +1,10165 @@
+{
+"011054ead8428c79867a": {
+"level": "Experienced",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [
+"Python",
+"Java",
+"JavaScript",
+"TypeScript",
+"C#",
+"Node.js",
+"Microservices",
+"Kubernetes",
+"Kafka",
+"Communication"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"014b85da8b8a381a7142": {
+"level": "Experienced",
+"llm_cities": [
+"Other India"
+],
+"llm_skills": [],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"02481fc5555820e4515a": {
+"level": "Early career",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Negotiation"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"0274253263bafa8e94a2": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"Java",
+"JavaScript",
+"TypeScript",
+"REST APIs",
+"Generative AI / LLMs",
+"Azure",
+"CI/CD",
+"Git",
+"Testing / QA",
+"Project management"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"02ee50791cee29f32a5b": {
+"level": "Early career",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [
+"CRM (Salesforce etc.)",
+"Negotiation",
+"Presentation"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"032ff3f7cec720ce1986": {
+"level": "Internship",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Java",
+"JavaScript",
+"Scala",
+"Ruby",
+"Communication",
+"Problem solving"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"035b1fda4889677f021c": {
+"level": "Fresher",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [
+"Data analysis",
+"Problem solving"
+],
+"role": "Operations / Supply Chain",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"037982fffe7011636a01": {
+"level": "Experienced",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [
+"Machine Learning"
+],
+"role": "Product Management",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"039493e01caa5f69de1b": {
+"level": "Experienced",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [],
+"role": "Product Management",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"04101679c0513d17640d": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"CRM (Salesforce etc.)",
+"Google Analytics"
+],
+"role": "Marketing",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"04cc6853cf3b17c88976": {
+"level": "Experienced",
+"llm_cities": [
+"Pune"
+],
+"llm_skills": [
+"Python",
+"Django",
+"SQL",
+"Excel",
+"Pandas / NumPy",
+"AWS",
+"Azure",
+"GCP",
+"Docker",
+"CI/CD",
+"PostgreSQL",
+"MongoDB",
+"Redis"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"04d40e11b20cbfba92db": {
+"level": "Fresher",
+"llm_cities": [
+"Other India"
+],
+"llm_skills": [
+"CRM (Salesforce etc.)",
+"Teamwork",
+"Negotiation"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"0580146fffaed911036a": {
+"level": "Experienced",
+"llm_cities": [
+"Pune"
+],
+"llm_skills": [
+"Excel"
+],
+"role": "Customer Support / Success",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"05b1a17b9dd33bde147a": {
+"level": "Early career",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Hindi / regional language",
+"Problem solving"
+],
+"role": "Operations / Supply Chain",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"06eed4f4845bdc1629aa": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"JavaScript",
+"REST APIs",
+"Git"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"06f145ff9e974d8c4088": {
+"level": "Fresher",
+"llm_cities": [
+"Other India"
+],
+"llm_skills": [
+"Communication",
+"Teamwork"
+],
+"role": "Content / Writing",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"06ff18e52d3cdedca0ca": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Excel",
+"CRM (Salesforce etc.)",
+"SAP / ERP",
+"Communication",
+"Negotiation",
+"Presentation"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"070fb96ab622b4bd8720": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"SAP / ERP",
+"Problem solving",
+"Project management"
+],
+"role": "Core Engineering (Mech/Civil/Electrical)",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"08001229f63aee5d66d7": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"Bash / Shell",
+"Docker",
+"Linux",
+"Git",
+"Networking",
+"Cybersecurity"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"0822987c0493e293abe1": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"MS Office",
+"Communication",
+"Project management"
+],
+"role": "Operations / Supply Chain",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"08eaa0fa7a5512119f16": {
+"level": "Experienced",
+"llm_cities": [
+"Pune"
+],
+"llm_skills": [
+"Python",
+"SQL",
+"Statistics",
+"Machine Learning",
+"Spark",
+"Data analysis",
+"Azure",
+"GCP",
+"Git",
+"Snowflake / BigQuery",
+"Communication",
+"Problem solving",
+"Stakeholder management",
+"Project management"
+],
+"role": "Data / Analytics / ML",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"0930d18c92165fa50845": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"Java",
+"AWS",
+"GCP",
+"Docker",
+"Kubernetes",
+"Linux",
+"CI/CD",
+"Terraform",
+"Redis",
+"Kafka"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"099543f7d45699fd6348": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"JavaScript",
+"React",
+"Angular",
+"Vue",
+"HTML / CSS",
+"Spring Boot",
+"Microservices",
+"SQL",
+"Problem solving"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"09ef7d55650612c497a2": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"SAP / ERP"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"0b137415e0f045b515be": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"Docker",
+"CI/CD",
+"Git",
+"Project management"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"0b8548175b605548223e": {
+"level": "Internship",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [
+"MS Office",
+"Communication"
+],
+"role": "HR / Recruiting",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"0b854c5148a0c859c97f": {
+"level": "Fresher",
+"llm_cities": [
+"Kolkata"
+],
+"llm_skills": [
+"Stakeholder management"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"0b9d02a036bd76e4099b": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"SAP / ERP"
+],
+"role": "Other",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"0ca892b8e6be4faf8fd3": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [],
+"role": "Content / Writing",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"0cf41470cd03bb6d9aac": {
+"level": "Experienced",
+"llm_cities": [
+"India (unspecified)"
+],
+"llm_skills": [
+"Cybersecurity",
+"Stakeholder management"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"0d27214f50f777f36a0c": {
+"level": "Experienced",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [
+"Stakeholder management"
+],
+"role": "Marketing",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"0d42285a6aa6078f0861": {
+"level": "Experienced",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [
+"Figma",
+"Adobe Creative Suite"
+],
+"role": "Design (UI/UX/Graphic)",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"0d468df641344eb738fe": {
+"level": "Experienced",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [
+"Stakeholder management"
+],
+"role": "Data / Analytics / ML",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"0e2d158d7c7f8bdae1b2": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"SQL",
+"Excel",
+"Communication",
+"Stakeholder management",
+"Negotiation"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"0eb08887eb3d4712b9a5": {
+"level": "Experienced",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [
+"SQL"
+],
+"role": "Product Management",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"0ef5f2e5cb981c9a9bd2": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"ETL / Data pipelines"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"1044d0415fc4fdd5f86a": {
+"level": "Experienced",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [
+"SQL",
+"Testing / QA",
+"CRM (Salesforce etc.)",
+"MS Office"
+],
+"role": "Marketing",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"1117b726cc905b44c680": {
+"level": "Fresher",
+"llm_cities": [
+"Other India"
+],
+"llm_skills": [
+"CRM (Salesforce etc.)",
+"Negotiation"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"11d5a83b722cb0979fa8": {
+"level": "Fresher",
+"llm_cities": [
+"Remote",
+"India (unspecified)"
+],
+"llm_skills": [
+"Hindi / regional language"
+],
+"role": "Content / Writing",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"1321a12d4e90cca33695": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [],
+"role": "Core Engineering (Mech/Civil/Electrical)",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"135d0cc4313035bcd79e": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [],
+"role": "Design (UI/UX/Graphic)",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"13cab7db1d55fb3e1943": {
+"level": "Early career",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Power BI",
+"Problem solving"
+],
+"role": "Core Engineering (Mech/Civil/Electrical)",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"13cbba7e37bcda545bf8": {
+"level": "Early career",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Excel",
+"Accounting (Tally / GST)",
+"Problem solving"
+],
+"role": "Operations / Supply Chain",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"13d1c04f0bc95aa24438": {
+"level": "Experienced",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [
+"Figma",
+"Communication"
+],
+"role": "Design (UI/UX/Graphic)",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"1406886c96e6bf1baeaa": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru",
+"Pune"
+],
+"llm_skills": [
+"C#",
+"Go",
+"Bash / Shell",
+"Linux",
+"Networking",
+"Redis",
+"Communication",
+"Customer handling"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"142da6b9c14a6cc82110": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"JavaScript",
+"C#",
+"Angular",
+"HTML / CSS",
+"REST APIs",
+"SQL",
+"Git",
+"MySQL",
+"Problem solving",
+"Project management"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"14315e530691a60b4ee0": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"SQL",
+"Excel",
+"Accounting (Tally / GST)",
+"Problem solving",
+"Customer handling",
+"Project management"
+],
+"role": "Operations / Supply Chain",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"143312db023b1ead6ce9": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Statistics",
+"Communication",
+"Stakeholder management"
+],
+"role": "Core Engineering (Mech/Civil/Electrical)",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"14a1e097cb4447fd68ed": {
+"level": "Experienced",
+"llm_cities": [
+"Mumbai"
+],
+"llm_skills": [
+"SAP / ERP",
+"Accounting (Tally / GST)"
+],
+"role": "Finance / Accounting",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"15866288c0aa5dfdd400": {
+"level": "Experienced",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [
+"Python",
+"REST APIs",
+"Machine Learning",
+"Generative AI / LLMs",
+"Docker",
+"Linux",
+"CI/CD",
+"Networking"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"159a221929c434270ea0": {
+"level": "Early career",
+"llm_cities": [
+"Delhi NCR",
+"Bengaluru"
+],
+"llm_skills": [
+"SQL"
+],
+"role": "Product Management",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"15ab51c85a45a1f1f653": {
+"level": "Early career",
+"llm_cities": [
+"Remote"
+],
+"llm_skills": [
+"CRM (Salesforce etc.)",
+"MS Office",
+"English proficiency",
+"Hindi / regional language"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"15de9fe766501bf49967": {
+"level": "Early career",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Excel",
+"Accounting (Tally / GST)",
+"Communication",
+"Hindi / regional language"
+],
+"role": "HR / Recruiting",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"1600735f48e653a444a3": {
+"level": "Experienced",
+"llm_cities": [
+"Chennai"
+],
+"llm_skills": [
+"Python",
+"SQL",
+"Azure",
+"Linux",
+"Snowflake / BigQuery",
+"Jira",
+"Communication",
+"Problem solving",
+"Teamwork",
+"Project management"
+],
+"role": "Customer Support / Success",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"163e1421d8f20e76e141": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [],
+"role": "HR / Recruiting",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"1775b817bdaa2b83ad3f": {
+"level": "Early career",
+"llm_cities": [
+"Hyderabad"
+],
+"llm_skills": [
+"Negotiation"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"17a251ba2d06ee5eb563": {
+"level": "Early career",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Rust",
+"Ruby",
+"Docker",
+"Kubernetes",
+"CI/CD",
+"PostgreSQL",
+"Communication"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"17b467e95e2e174059bf": {
+"level": "Experienced",
+"llm_cities": [
+"Hyderabad"
+],
+"llm_skills": [
+"Python",
+"TypeScript",
+"Microservices",
+"ETL / Data pipelines",
+"AWS",
+"Azure",
+"GCP",
+"Docker",
+"Kubernetes",
+"Linux",
+"CI/CD",
+"Terraform",
+"Networking",
+"Communication",
+"Stakeholder management"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"181492464d0f339507aa": {
+"level": "Early career",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [],
+"role": "Customer Support / Success",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"182aca82afaa424f4e4e": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [],
+"role": "Design (UI/UX/Graphic)",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"189265afeef26228470d": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"SAP / ERP",
+"Problem solving"
+],
+"role": "Core Engineering (Mech/Civil/Electrical)",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"18b3792ec88a69ac5766": {
+"level": "Fresher",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [
+"Negotiation"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"18e5798af34dc5763184": {
+"level": "Early career",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"CRM (Salesforce etc.)",
+"Customer handling"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"18f9d633340c8f48d337": {
+"level": "Experienced",
+"llm_cities": [
+"Other India"
+],
+"llm_skills": [
+"Python",
+"JavaScript",
+"Bash / Shell",
+"Linux",
+"Communication",
+"Presentation",
+"Customer handling"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"193019cd299dd7589691": {
+"level": "Experienced",
+"llm_cities": [
+"Mumbai"
+],
+"llm_skills": [
+"Problem solving",
+"Stakeholder management"
+],
+"role": "Product Management",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"194b6c433767c4f730df": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Generative AI / LLMs",
+"Figma",
+"Adobe Creative Suite",
+"Problem solving",
+"Project management"
+],
+"role": "Design (UI/UX/Graphic)",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"195a531fa0aa858fdde4": {
+"level": "Fresher",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [
+"CRM (Salesforce etc.)",
+"Negotiation",
+"Presentation"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"199d196983e040d32e65": {
+"level": "Early career",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Power BI",
+"Statistics",
+"Problem solving"
+],
+"role": "Core Engineering (Mech/Civil/Electrical)",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"19a51428444be76c7d3b": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"Git",
+"Jira"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"19f8a96fb610df638ec1": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"C++",
+"OOP",
+"Linux",
+"Testing / QA",
+"Problem solving"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"1a38d388084b4cd77ef4": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"Java",
+"C++",
+"DSA",
+"OOP",
+"ETL / Data pipelines",
+"Linux",
+"Communication"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"1aabe0c89f247bb2c44d": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"AWS",
+"Azure",
+"GCP",
+"Kubernetes",
+"Linux",
+"CI/CD",
+"Terraform"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"1bef0c5bb39eb184db04": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"GCP",
+"Linux",
+"Terraform",
+"PostgreSQL",
+"MySQL",
+"Kafka",
+"Snowflake / BigQuery"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"1cf0db86cefbc24781aa": {
+"level": "Experienced",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [
+"Communication",
+"Problem solving",
+"Stakeholder management"
+],
+"role": "Operations / Supply Chain",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"1dbf09b19c7f120bf0eb": {
+"level": "Experienced",
+"llm_cities": [
+"Other India"
+],
+"llm_skills": [
+"Azure",
+"Linux",
+"Networking",
+"Problem solving"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"1de477150155795c9a23": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"C++",
+"Docker",
+"Kubernetes",
+"Linux",
+"Networking",
+"Cybersecurity"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"1f061687ace58fa3fc51": {
+"level": "Early career",
+"llm_cities": [
+"Chennai"
+],
+"llm_skills": [
+"Negotiation"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"1f16af3eaeb88665468e": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"SAP / ERP",
+"Communication",
+"Stakeholder management"
+],
+"role": "Consulting / Strategy",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"201345f0c3d0877bdc81": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Testing / QA"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"217a67277e1f1906602f": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"JavaScript",
+"React",
+"Node.js",
+"AWS",
+"Customer handling"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"21ad1f98c06d863d7409": {
+"level": "Early career",
+"llm_cities": [
+"Other India"
+],
+"llm_skills": [
+"Negotiation",
+"Customer handling"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"220af04ea683621458af": {
+"level": "Internship",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [],
+"role": "Marketing",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"22351856eb345282a01e": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Java",
+"C++",
+"Linux"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"22960fa06a50fd2cfefd": {
+"level": "Early career",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [
+"Problem solving"
+],
+"role": "Marketing",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"23459e9c1bb265113aa5": {
+"level": "Early career",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"CRM (Salesforce etc.)",
+"MS Office",
+"English proficiency",
+"Hindi / regional language"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"23eb13c28ac156e15922": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [],
+"role": "Core Engineering (Mech/Civil/Electrical)",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"243d4ce6d52b74e6b5fb": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [],
+"role": "Customer Support / Success",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"249ad700bec42197b57b": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru",
+"Delhi NCR"
+],
+"llm_skills": [
+"Negotiation"
+],
+"role": "HR / Recruiting",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"262b37df4665dac30ccc": {
+"level": "Experienced",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [
+"Cybersecurity"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"268e65ce21cfeeff9d82": {
+"level": "Experienced",
+"llm_cities": [
+"Other India"
+],
+"llm_skills": [
+"Machine Learning",
+"Generative AI / LLMs",
+"ETL / Data pipelines",
+"AWS",
+"Azure",
+"GCP",
+"CI/CD",
+"Problem solving"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"26c72ec654fb4622b2e4": {
+"level": "Experienced",
+"llm_cities": [
+"Hyderabad"
+],
+"llm_skills": [
+"Data analysis",
+"Docker",
+"Negotiation"
+],
+"role": "Finance / Accounting",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"26caab9a02fdd04c368d": {
+"level": "Early career",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [
+"CRM (Salesforce etc.)",
+"Customer handling"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"26ed09d2cb852b719602": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"SAP / ERP"
+],
+"role": "Other",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"272eb13fa9093c9d98d1": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"274732cadff37600d566": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Communication"
+],
+"role": "Core Engineering (Mech/Civil/Electrical)",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"27549f4730cdc080900d": {
+"level": "Experienced",
+"llm_cities": [
+"Hyderabad"
+],
+"llm_skills": [],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"27c43b8fc95640388a55": {
+"level": "Experienced",
+"llm_cities": [
+"Other India"
+],
+"llm_skills": [
+"Bash / Shell",
+"Docker",
+"Linux",
+"CI/CD",
+"Networking",
+"Cybersecurity"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"284d93bb9e9799481e65": {
+"level": "Experienced",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [
+"Problem solving",
+"Negotiation",
+"Project management"
+],
+"role": "Product Management",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"293a00c4438fc6fd7d51": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Communication",
+"Problem solving",
+"Customer handling"
+],
+"role": "Finance / Accounting",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"294d6054cf0cec8ac6c1": {
+"level": "Experienced",
+"llm_cities": [
+"Other India"
+],
+"llm_skills": [],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"2969573e91aa887ef24f": {
+"level": "Experienced",
+"llm_cities": [
+"Other India"
+],
+"llm_skills": [
+"AWS",
+"Azure",
+"GCP",
+"Kubernetes",
+"Linux",
+"CI/CD",
+"Terraform",
+"Networking",
+"Cybersecurity"
+],
+"role": "Operations / Supply Chain",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"296df60d0233e7f679cd": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Excel",
+"Problem solving"
+],
+"role": "Core Engineering (Mech/Civil/Electrical)",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"29c35b38d4f7861c31c5": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Stakeholder management"
+],
+"role": "Marketing",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"2a9c0aebc40c1b17ab27": {
+"level": "Experienced",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [],
+"role": "Product Management",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"2ac716f00d57094eb72d": {
+"level": "Experienced",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [
+"Problem solving",
+"Project management"
+],
+"role": "HR / Recruiting",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"2b66caf149d6ef47af51": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru",
+"Chennai"
+],
+"llm_skills": [
+"CRM (Salesforce etc.)",
+"English proficiency",
+"Hindi / regional language"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"2c058c32040449e342b3": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"HTML / CSS"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"2c144c5038a13b5a6149": {
+"level": "Experienced",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [
+"Python",
+"Machine Learning",
+"Generative AI / LLMs",
+"ETL / Data pipelines",
+"Docker",
+"Kubernetes",
+"CI/CD",
+"Git"
+],
+"role": "Data / Analytics / ML",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"2c740e7eb87dc8b8f051": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"C#",
+"REST APIs",
+"SQL",
+"Azure",
+"CI/CD",
+"Communication",
+"Problem solving",
+"Teamwork",
+"Project management"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"2c969461bb7f407317c2": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Problem solving"
+],
+"role": "Customer Support / Success",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"2cd96643c3c5902ab604": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"C++",
+"Git"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"2d540779d6c4f6a2341c": {
+"level": "Early career",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [
+"CRM (Salesforce etc.)",
+"Negotiation",
+"Presentation"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"2d8875e5fd9ba3512dc4": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Problem solving"
+],
+"role": "HR / Recruiting",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"2d8dd976c70e356f515a": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Java",
+"Spring Boot",
+"AWS",
+"CI/CD",
+"Git",
+"CRM (Salesforce etc.)",
+"Communication",
+"Stakeholder management",
+"Project management"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"2de0ab06a42b2ca13337": {
+"level": "Fresher",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Stakeholder management"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"2e56383656dc61edd86b": {
+"level": "Early career",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [
+"Generative AI / LLMs"
+],
+"role": "Product Management",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"2e984c2d13ce73eb32d1": {
+"level": "Experienced",
+"llm_cities": [
+"Mumbai"
+],
+"llm_skills": [
+"SAP / ERP",
+"Accounting (Tally / GST)",
+"Negotiation"
+],
+"role": "Finance / Accounting",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"2eaf665cd8e549118854": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"JavaScript",
+"Node.js",
+"Machine Learning",
+"Deep Learning",
+"Generative AI / LLMs",
+"NLP",
+"PyTorch / TensorFlow",
+"ETL / Data pipelines"
+],
+"role": "Data / Analytics / ML",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"2ed56b92189b07825073": {
+"level": "Experienced",
+"llm_cities": [
+"Pune"
+],
+"llm_skills": [
+"Python",
+"OOP",
+"REST APIs",
+"SQL",
+"Excel",
+"Power BI",
+"Generative AI / LLMs",
+"Pandas / NumPy",
+"Azure",
+"Stakeholder management"
+],
+"role": "Data / Analytics / ML",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"2efdce128dcd6a5032dc": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Problem solving",
+"Stakeholder management",
+"Presentation"
+],
+"role": "Core Engineering (Mech/Civil/Electrical)",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"2f31823dfe13a9d67443": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [],
+"role": "Consulting / Strategy",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"2f93571e5650732f9b86": {
+"level": "Experienced",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [
+"Problem solving"
+],
+"role": "HR / Recruiting",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"2fed99a16adc559a409d": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"SQL"
+],
+"role": "Finance / Accounting",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"30023040b18a664efe0e": {
+"level": "Experienced",
+"llm_cities": [
+"Mumbai"
+],
+"llm_skills": [
+"Communication",
+"Problem solving",
+"Stakeholder management"
+],
+"role": "Operations / Supply Chain",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"300737abceed090a2559": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"DSA",
+"Networking"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"307ffeb426213b929bf4": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"SQL",
+"Machine Learning",
+"Generative AI / LLMs",
+"Stakeholder management"
+],
+"role": "Product Management",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"319800899e8e39121364": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [],
+"role": "Consulting / Strategy",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"337fc837f3cd7de3f061": {
+"level": "Experienced",
+"llm_cities": [
+"Other India"
+],
+"llm_skills": [],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"3491919249f947dd128e": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"C++",
+"OOP",
+"Linux",
+"CI/CD",
+"Git",
+"Testing / QA",
+"Project management"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"34941339ecc613e28c58": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"SQL",
+"Generative AI / LLMs",
+"SAP / ERP",
+"Accounting (Tally / GST)",
+"Communication",
+"Problem solving",
+"Project management"
+],
+"role": "Finance / Accounting",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"3564b89cf0241cf7c234": {
+"level": "Experienced",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [
+"Java",
+"Go",
+"DSA",
+"AWS",
+"Azure",
+"GCP",
+"Docker",
+"Kubernetes"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"35b1b300de1bad7025f7": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"Statistics",
+"Machine Learning",
+"Deep Learning",
+"Generative AI / LLMs",
+"PyTorch / TensorFlow",
+"Pandas / NumPy",
+"Spark"
+],
+"role": "Data / Analytics / ML",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"35da24d5bd1e46c082f4": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Statistics",
+"Communication",
+"Negotiation"
+],
+"role": "Core Engineering (Mech/Civil/Electrical)",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"3606bdd141524bd1f9e7": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"JavaScript",
+"Node.js",
+"REST APIs",
+"Azure",
+"Networking",
+"Communication",
+"Problem solving"
+],
+"role": "Customer Support / Success",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"363bd3b799a483d0d637": {
+"level": "Experienced",
+"llm_cities": [
+"India (unspecified)"
+],
+"llm_skills": [
+"Python",
+"Java",
+"Scala",
+"SQL",
+"Spark",
+"ETL / Data pipelines",
+"Kafka",
+"Communication",
+"Problem solving"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"368cdb2d4c73085d4f93": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"SAP / ERP"
+],
+"role": "Finance / Accounting",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"36c1710875a7f75fcac7": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Communication",
+"Negotiation"
+],
+"role": "Operations / Supply Chain",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"36cfb4a65498027392f1": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [],
+"role": "Core Engineering (Mech/Civil/Electrical)",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"36df4d2ace00112ae2bd": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"MS Office",
+"Communication",
+"English proficiency",
+"Problem solving",
+"Stakeholder management",
+"Project management"
+],
+"role": "Other",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"389b6d6d57f91fecd5f5": {
+"level": "Experienced",
+"llm_cities": [
+"Pune"
+],
+"llm_skills": [
+"SQL",
+"AWS",
+"Azure",
+"Linux",
+"Networking",
+"Cybersecurity",
+"Customer handling"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"389c9e256babc2dfc649": {
+"level": "Experienced",
+"llm_cities": [
+"Other India"
+],
+"llm_skills": [
+"Python",
+"Java",
+"JavaScript",
+"C++",
+"C#",
+"PHP",
+"Ruby",
+"Node.js",
+"Communication",
+"Problem solving",
+"Teamwork",
+"Customer handling"
+],
+"role": "Customer Support / Success",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"394c874eea84568618eb": {
+"level": "Experienced",
+"llm_cities": [
+"Pune"
+],
+"llm_skills": [
+"Communication",
+"Negotiation"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"3956bca7b228649cd0cb": {
+"level": "Experienced",
+"llm_cities": [
+"Mumbai"
+],
+"llm_skills": [
+"Excel",
+"MS Office",
+"Communication",
+"Project management"
+],
+"role": "Operations / Supply Chain",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"39764861bc6a069942c8": {
+"level": "Experienced",
+"llm_cities": [
+"Pune"
+],
+"llm_skills": [],
+"role": "Operations / Supply Chain",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"39e7fd4663bcc8bf3663": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"SQL",
+"Statistics",
+"Generative AI / LLMs"
+],
+"role": "Data / Analytics / ML",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"3a4496e815351eb42de0": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"Java",
+"SQL",
+"Excel",
+"Power BI",
+"Statistics",
+"Generative AI / LLMs",
+"ETL / Data pipelines",
+"CI/CD",
+"MySQL"
+],
+"role": "Data / Analytics / ML",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"3b2a63b35c287c958461": {
+"level": "Experienced",
+"llm_cities": [
+"Remote",
+"India (unspecified)"
+],
+"llm_skills": [],
+"role": "Data / Analytics / ML",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"3b74a9d3217f3727638d": {
+"level": "Fresher",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Negotiation"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"3bcf2e10421c446e49b1": {
+"level": "Experienced",
+"llm_cities": [
+"Other India"
+],
+"llm_skills": [
+"Communication",
+"Stakeholder management",
+"Presentation",
+"Project management"
+],
+"role": "Other",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"3c3a69ae174595bd4d0a": {
+"level": "Fresher",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"Docker",
+"Linux",
+"CI/CD",
+"Git",
+"Testing / QA"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"3c74107bbd23c9008860": {
+"level": "Fresher",
+"llm_cities": [
+"Other India"
+],
+"llm_skills": [
+"CRM (Salesforce etc.)",
+"Teamwork",
+"Negotiation"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"3c8e687b51c59d8833bb": {
+"level": "Experienced",
+"llm_cities": [
+"Other India"
+],
+"llm_skills": [
+"Python",
+"Java",
+"CI/CD",
+"Testing / QA",
+"Project management"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"3d787868b72cf32b13d2": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"3de4f3dc6312926bb44b": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"Java",
+"JavaScript",
+"TypeScript",
+"React",
+"Angular",
+"Node.js",
+"HTML / CSS",
+"REST APIs",
+"Docker",
+"Kubernetes",
+"CI/CD",
+"Git",
+"Project management"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"3e4d71abcf6f0303dd10": {
+"level": "Experienced",
+"llm_cities": [
+"Chennai"
+],
+"llm_skills": [
+"SQL",
+"Power BI",
+"ETL / Data pipelines",
+"Azure"
+],
+"role": "Data / Analytics / ML",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"3eccd9077707044803c7": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Ruby",
+"Docker",
+"Terraform"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"3f2848edaaccb89b2c1c": {
+"level": "Experienced",
+"llm_cities": [
+"Other India"
+],
+"llm_skills": [],
+"role": "HR / Recruiting",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"3f6918aeeee1aa523ebc": {
+"level": "Experienced",
+"llm_cities": [
+"Other India"
+],
+"llm_skills": [
+"C++",
+"Problem solving",
+"Teamwork"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"3f7b385714d24b8f6566": {
+"level": "Early career",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Communication"
+],
+"role": "Core Engineering (Mech/Civil/Electrical)",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"3fb7f6b2916815769d52": {
+"level": "Experienced",
+"llm_cities": [
+"Other India"
+],
+"llm_skills": [
+"SQL",
+"Excel",
+"Power BI",
+"Linux",
+"MS Office",
+"Communication",
+"Negotiation"
+],
+"role": "Operations / Supply Chain",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"3fe757be3329477f5447": {
+"level": "Early career",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Communication",
+"Problem solving"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"3ffd8721b95269bd5edf": {
+"level": "Experienced",
+"llm_cities": [
+"Other India"
+],
+"llm_skills": [
+"AWS",
+"Azure",
+"GCP",
+"Linux",
+"Terraform",
+"Networking",
+"Communication",
+"Problem solving",
+"Customer handling",
+"Project management"
+],
+"role": "Customer Support / Success",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"402684ffc07a3ad6cf62": {
+"level": "Experienced",
+"llm_cities": [
+"Pune",
+"Chennai"
+],
+"llm_skills": [
+"Python",
+"JavaScript",
+"PHP",
+"REST APIs",
+"Microservices",
+"SQL",
+"AWS",
+"Azure",
+"GCP",
+"Docker",
+"Kubernetes",
+"CI/CD",
+"Git",
+"Testing / QA",
+"PostgreSQL",
+"Jira",
+"Communication",
+"Project management"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"404966a5284784a63826": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru",
+"Delhi NCR"
+],
+"llm_skills": [
+"Python",
+"Bash / Shell",
+"SQL",
+"Docker",
+"Kubernetes",
+"Linux",
+"Networking",
+"NoSQL",
+"Communication",
+"Problem solving",
+"Customer handling"
+],
+"role": "Customer Support / Success",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"406f701eba39dc3c5b2c": {
+"level": "Experienced",
+"llm_cities": [
+"Other India"
+],
+"llm_skills": [
+"Communication",
+"Problem solving"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"428e4b4aca7942d48f37": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Communication",
+"Stakeholder management",
+"Negotiation"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"42f01dbe825420bb631e": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"JavaScript",
+"SAP / ERP",
+"Problem solving",
+"Project management"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"4334b7cb33d2fee08409": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Cybersecurity"
+],
+"role": "Consulting / Strategy",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"43553ddfdba94c88b7c6": {
+"level": "Fresher",
+"llm_cities": [
+"Kolkata"
+],
+"llm_skills": [
+"Negotiation"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"43c2a518b35211875140": {
+"level": "Experienced",
+"llm_cities": [
+"Chennai"
+],
+"llm_skills": [
+"MS Office",
+"Figma",
+"Adobe Creative Suite",
+"Communication"
+],
+"role": "Design (UI/UX/Graphic)",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"43ea2be0968c72d73750": {
+"level": "Experienced",
+"llm_cities": [
+"Pune"
+],
+"llm_skills": [
+"Python",
+"Excel",
+"Statistics",
+"Machine Learning",
+"Generative AI / LLMs",
+"Data analysis",
+"MySQL",
+"Communication",
+"Problem solving"
+],
+"role": "Data / Analytics / ML",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"4465cd475d9ccff100fc": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Java",
+"OOP",
+"Angular",
+"Spring Boot",
+"REST APIs",
+"SQL",
+"AWS",
+"Azure",
+"Docker",
+"Kubernetes",
+"CI/CD",
+"Testing / QA",
+"Problem solving"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"44d260440ef62fb1c66c": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Testing / QA",
+"SEO / SEM",
+"Problem solving"
+],
+"role": "Core Engineering (Mech/Civil/Electrical)",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"45363077df17efc3ee51": {
+"level": "Experienced",
+"llm_cities": [
+"Mumbai"
+],
+"llm_skills": [
+"Python",
+"Statistics",
+"Machine Learning"
+],
+"role": "Data / Analytics / ML",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"45766511866c7fe36552": {
+"level": "Experienced",
+"llm_cities": [
+"Pune"
+],
+"llm_skills": [
+"C#",
+"Go",
+"Bash / Shell",
+"Linux",
+"Networking",
+"Redis",
+"Communication",
+"Customer handling"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"45bb745a6ee2e9c5f855": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [],
+"role": "Customer Support / Success",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"45ed2a7e747f5b19dd72": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Power BI",
+"SAP / ERP",
+"Accounting (Tally / GST)",
+"Communication"
+],
+"role": "Finance / Accounting",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"461b49a70d484f3e73e3": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"SQL",
+"Excel",
+"Data analysis",
+"SAP / ERP",
+"Jira",
+"Communication",
+"Problem solving"
+],
+"role": "Customer Support / Success",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"461ba524a298cf6d0e4d": {
+"level": "Early career",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [
+"SQL",
+"Generative AI / LLMs",
+"Testing / QA",
+"Figma",
+"Stakeholder management",
+"Project management"
+],
+"role": "Product Management",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"463b33c58c184edaec79": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Adobe Creative Suite"
+],
+"role": "Design (UI/UX/Graphic)",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"4691052371825dbe6781": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"SQL",
+"Excel",
+"Tableau",
+"Statistics",
+"Machine Learning",
+"Data analysis",
+"Snowflake / BigQuery",
+"CRM (Salesforce etc.)",
+"MS Office",
+"Stakeholder management"
+],
+"role": "Data / Analytics / ML",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"46e980dacd1e68edd207": {
+"level": "Internship",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python"
+],
+"role": "Product Management",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"47f6e275d8b27229e3be": {
+"level": "Experienced",
+"llm_cities": [
+"Delhi NCR",
+"Bengaluru"
+],
+"llm_skills": [
+"Problem solving",
+"Stakeholder management"
+],
+"role": "Marketing",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"48471a82987639a4045d": {
+"level": "Experienced",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [
+"AWS"
+],
+"role": "Finance / Accounting",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"49246488a5233cc444d2": {
+"level": "Experienced",
+"llm_cities": [
+"Pune"
+],
+"llm_skills": [
+"Data analysis"
+],
+"role": "Core Engineering (Mech/Civil/Electrical)",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"493c5e6567a646b4010e": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Java",
+"JavaScript",
+"React",
+"Angular",
+"Vue",
+"HTML / CSS",
+"Spring Boot",
+"Microservices",
+"Problem solving"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"49841d0d88d1bbdb4fbb": {
+"level": "Experienced",
+"llm_cities": [
+"Mumbai"
+],
+"llm_skills": [
+"Problem solving"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"49d01c54c5a6fd71ce80": {
+"level": "Internship",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Excel",
+"Communication",
+"Problem solving"
+],
+"role": "Customer Support / Success",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"4a3bc55dcb5ca89cb8ae": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Communication",
+"Problem solving"
+],
+"role": "Customer Support / Success",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"4a57ba7ef7317b3e20bb": {
+"level": "Experienced",
+"llm_cities": [
+"Mumbai"
+],
+"llm_skills": [
+"Problem solving"
+],
+"role": "Customer Support / Success",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"4aa0d62b374a13d0c253": {
+"level": "Early career",
+"llm_cities": [
+"Remote"
+],
+"llm_skills": [
+"CRM (Salesforce etc.)",
+"MS Office",
+"English proficiency",
+"Hindi / regional language"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"4ab8fd7c1a68690f4ca7": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Networking",
+"SAP / ERP",
+"Problem solving",
+"Stakeholder management",
+"Project management"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"4b6c8ea81f4b0036cc1f": {
+"level": "Fresher",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [],
+"role": "Content / Writing",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"4bd94d85a844e7825c8c": {
+"level": "Experienced",
+"llm_cities": [
+"Other India"
+],
+"llm_skills": [
+"Networking"
+],
+"role": "Consulting / Strategy",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"4c1123270aca596394d6": {
+"level": "Fresher",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"CRM (Salesforce etc.)",
+"MS Office",
+"English proficiency",
+"Hindi / regional language"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"4db07ca3e0832347c35c": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Generative AI / LLMs",
+"Communication"
+],
+"role": "Operations / Supply Chain",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"4e0f0eb096e16e1aee5c": {
+"level": "Experienced",
+"llm_cities": [
+"Pune"
+],
+"llm_skills": [
+"ETL / Data pipelines"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"4e6de6867c6063b8ed01": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"Java",
+"DSA",
+"OOP",
+"Problem solving"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"4e72f9436fb455947f17": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Communication",
+"Teamwork"
+],
+"role": "Core Engineering (Mech/Civil/Electrical)",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"4ec2da703773108b8c7e": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"JavaScript",
+"C#",
+"Angular",
+"HTML / CSS",
+"REST APIs",
+"SQL",
+"Git",
+"MySQL",
+"Problem solving",
+"Project management"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"4ed4216493f3db631df8": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"SAP / ERP",
+"Accounting (Tally / GST)"
+],
+"role": "Finance / Accounting",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"4ed81cfbbb2e1e85ec42": {
+"level": "Experienced",
+"llm_cities": [
+"Other India"
+],
+"llm_skills": [
+"SAP / ERP",
+"MS Office",
+"Communication",
+"Negotiation",
+"Project management"
+],
+"role": "Operations / Supply Chain",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"4f160a8defb65311dccc": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"JavaScript",
+"Go",
+"React",
+"HTML / CSS",
+"REST APIs",
+"Microservices",
+"SQL",
+"Git",
+"MongoDB",
+"Problem solving"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"4f5466fa3bf6deb3830f": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Java",
+"Generative AI / LLMs",
+"NoSQL",
+"Communication",
+"Problem solving",
+"Teamwork"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"4f96bd32dc600ba29993": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"REST APIs",
+"Customer handling"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"50b06abbd71e8d9ac260": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Java",
+"JavaScript",
+"TypeScript",
+"Angular",
+"HTML / CSS",
+"Spring Boot",
+"SQL",
+"Azure",
+"Docker",
+"CI/CD",
+"Git",
+"Testing / QA",
+"MongoDB",
+"NoSQL",
+"Project management"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"50d38759040cc7756ab7": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"SAP / ERP"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"5144cc00f2dc6a9bca4c": {
+"level": "Fresher",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Excel",
+"MS Office",
+"Accounting (Tally / GST)",
+"Communication",
+"Problem solving"
+],
+"role": "Finance / Accounting",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"517332c4cd71ce5a5ef7": {
+"level": "Experienced",
+"llm_cities": [
+"Other India"
+],
+"llm_skills": [
+"C++",
+"Problem solving",
+"Teamwork"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"51c58c9ed50d99684599": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"C++",
+"OOP",
+"Machine Learning",
+"Computer Vision",
+"PyTorch / TensorFlow",
+"ETL / Data pipelines",
+"AWS",
+"Azure",
+"GCP",
+"Docker",
+"Linux",
+"Git",
+"Snowflake / BigQuery"
+],
+"role": "Data / Analytics / ML",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"51f770108a28cde74d69": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Negotiation"
+],
+"role": "HR / Recruiting",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"52e8b89fb4f3305523be": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"AWS",
+"Azure",
+"Networking",
+"Problem solving",
+"Teamwork",
+"Project management"
+],
+"role": "Customer Support / Success",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"5344f38e88c5c365677b": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Machine Learning",
+"Generative AI / LLMs",
+"PyTorch / TensorFlow",
+"ETL / Data pipelines",
+"AWS",
+"Azure",
+"GCP",
+"Docker",
+"Kubernetes",
+"CI/CD",
+"Git",
+"Terraform",
+"Kafka",
+"Problem solving"
+],
+"role": "Data / Analytics / ML",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"53695a5a0403c3a3ec9e": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"Power BI",
+"Statistics",
+"Machine Learning",
+"Deep Learning",
+"Pandas / NumPy",
+"Azure",
+"MS Office",
+"Jira",
+"Communication",
+"Stakeholder management",
+"Project management"
+],
+"role": "Other",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"5376096c5a75a148946a": {
+"level": "Experienced",
+"llm_cities": [
+"Chennai"
+],
+"llm_skills": [
+"Java",
+"Scala",
+"Bash / Shell",
+"OOP",
+"SQL",
+"Spark",
+"Azure",
+"Linux",
+"CI/CD",
+"Git",
+"Snowflake / BigQuery",
+"Jira",
+"Communication",
+"Problem solving",
+"Project management"
+],
+"role": "Data / Analytics / ML",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"540f1b4a6ca55f71633c": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Excel",
+"Power BI",
+"Data analysis"
+],
+"role": "Core Engineering (Mech/Civil/Electrical)",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"54fad8107d54810e4480": {
+"level": "Internship",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"Java",
+"C++",
+"Scala"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"559f073737946395b5b6": {
+"level": "Fresher",
+"llm_cities": [
+"Other India"
+],
+"llm_skills": [
+"CRM (Salesforce etc.)",
+"Negotiation"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"55a773e0c413c192fa50": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"SQL",
+"Power BI",
+"Tableau",
+"ETL / Data pipelines",
+"AWS",
+"Azure",
+"GCP"
+],
+"role": "Data / Analytics / ML",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"55d09343b5f8b410b92b": {
+"level": "Early career",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [
+"CRM (Salesforce etc.)",
+"Hindi / regional language",
+"Negotiation",
+"Presentation"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"56102ebbda10572fb319": {
+"level": "Experienced",
+"llm_cities": [
+"Mumbai"
+],
+"llm_skills": [],
+"role": "Other",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"563d126a11e95f8d825d": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Linux",
+"Communication",
+"Customer handling"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"56473d1d733c9c71c220": {
+"level": "Experienced",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [
+"SAP / ERP",
+"Stakeholder management",
+"Negotiation"
+],
+"role": "Operations / Supply Chain",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"56907854651f797734a8": {
+"level": "Experienced",
+"llm_cities": [
+"Other India"
+],
+"llm_skills": [
+"Cybersecurity"
+],
+"role": "HR / Recruiting",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"56cc34b9ccb199520642": {
+"level": "Experienced",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [
+"SQL",
+"Excel",
+"CRM (Salesforce etc.)"
+],
+"role": "Marketing",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"57205e98a9e26fea06c3": {
+"level": "Experienced",
+"llm_cities": [
+"Pune"
+],
+"llm_skills": [],
+"role": "Consulting / Strategy",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"58071e130b39ca659f4e": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Docker",
+"Kubernetes",
+"Linux",
+"CI/CD",
+"Terraform",
+"SAP / ERP",
+"Jira",
+"Communication",
+"Problem solving"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"586da992b63208695fed": {
+"level": "Experienced",
+"llm_cities": [
+"Delhi NCR",
+"Bengaluru"
+],
+"llm_skills": [
+"Excel"
+],
+"role": "Marketing",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"589c134057d91706c6ca": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru",
+"Remote"
+],
+"llm_skills": [
+"CRM (Salesforce etc.)",
+"Communication",
+"Negotiation",
+"Customer handling"
+],
+"role": "Other",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"59021b01945c4ce68c94": {
+"level": "Early career",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Rust",
+"Ruby",
+"Docker",
+"CI/CD",
+"Cybersecurity"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"5964018e1f6e219c8b2b": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru",
+"Pune"
+],
+"llm_skills": [
+"Stakeholder management"
+],
+"role": "Customer Support / Success",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"59b56f81546c072b89c7": {
+"level": "Early career",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"ETL / Data pipelines",
+"Snowflake / BigQuery"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"59ff723ba797d1483ca2": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"SQL",
+"Git",
+"Testing / QA",
+"Jira"
+],
+"role": "Content / Writing",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"5a8b0f1ab4f88a4357df": {
+"level": "Early career",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Power BI",
+"Problem solving"
+],
+"role": "Core Engineering (Mech/Civil/Electrical)",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"5a98a4fcedb9560c3d0a": {
+"level": "Early career",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Data analysis",
+"Cybersecurity",
+"Problem solving"
+],
+"role": "Data / Analytics / ML",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"5adc314df19e9a4cbf75": {
+"level": "Experienced",
+"llm_cities": [
+"Mumbai"
+],
+"llm_skills": [
+"Jira",
+"Communication",
+"Stakeholder management",
+"Customer handling",
+"Project management"
+],
+"role": "Product Management",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"5b5068b1202dabf27e1e": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"JavaScript",
+"TypeScript",
+"REST APIs",
+"Generative AI / LLMs",
+"AWS",
+"CI/CD",
+"Git",
+"Problem solving"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"5c52ae4012eafd102714": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Accounting (Tally / GST)",
+"Problem solving"
+],
+"role": "Finance / Accounting",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"5ca4ff44606f272c667c": {
+"level": "Experienced",
+"llm_cities": [
+"Pune"
+],
+"llm_skills": [
+"CRM (Salesforce etc.)",
+"Problem solving"
+],
+"role": "Customer Support / Success",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"5cc6eceded049c7175e1": {
+"level": "Experienced",
+"llm_cities": [
+"Hyderabad"
+],
+"llm_skills": [
+"Kubernetes"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"5ccf5b234058916221ad": {
+"level": "Experienced",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [],
+"role": "Data / Analytics / ML",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"5eec9c8409e1edde35b3": {
+"level": "Experienced",
+"llm_cities": [
+"Other India"
+],
+"llm_skills": [
+"Python",
+"C++",
+"Machine Learning",
+"Pandas / NumPy",
+"CI/CD",
+"Git",
+"Project management"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"5f360c694bc3b43f1dff": {
+"level": "Fresher",
+"llm_cities": [
+"Ahmedabad"
+],
+"llm_skills": [
+"CRM (Salesforce etc.)",
+"Negotiation"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"5f45c256525fc939e0f1": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Excel",
+"SAP / ERP",
+"MS Office",
+"Accounting (Tally / GST)",
+"Communication",
+"Customer handling"
+],
+"role": "Finance / Accounting",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"5f58115aa56336f4f707": {
+"level": "Experienced",
+"llm_cities": [
+"Pune"
+],
+"llm_skills": [
+"Cybersecurity",
+"Customer handling"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"5f9ba7e316ac2a9eb408": {
+"level": "Experienced",
+"llm_cities": [
+"Other India"
+],
+"llm_skills": [
+"C++",
+"Linux"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"5ff2333c1144ae30bb1c": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"Java",
+"JavaScript",
+"Azure",
+"CI/CD",
+"Git",
+"Testing / QA",
+"Jira",
+"Project management"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"609a210cdf22258d0ee6": {
+"level": "Early career",
+"llm_cities": [
+"Pune"
+],
+"llm_skills": [
+"CRM (Salesforce etc.)",
+"Communication",
+"Problem solving",
+"Stakeholder management",
+"Negotiation"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"610d6aa86e7ca78d347f": {
+"level": "Experienced",
+"llm_cities": [
+"Other India"
+],
+"llm_skills": [
+"Python",
+"Excel",
+"SAP / ERP",
+"MS Office",
+"Problem solving",
+"Stakeholder management"
+],
+"role": "Operations / Supply Chain",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"61389f5f14def909c75c": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Excel",
+"MS Office",
+"Accounting (Tally / GST)",
+"Communication",
+"Problem solving",
+"Teamwork",
+"Customer handling"
+],
+"role": "Finance / Accounting",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"6148a7b427837ea5be71": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Tableau",
+"Communication",
+"Problem solving"
+],
+"role": "Other",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"61548bd5c39fd1135fcf": {
+"level": "Early career",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"61652496e417ba9209fe": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"C++",
+"Testing / QA",
+"Communication",
+"Problem solving",
+"Teamwork",
+"Stakeholder management",
+"Project management"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"6173f76a761eea5d41ab": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"ETL / Data pipelines",
+"Kafka",
+"CRM (Salesforce etc.)",
+"SAP / ERP",
+"Communication"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"618375afa62947d20751": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [],
+"role": "Operations / Supply Chain",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"6184d5bee35e02cde263": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"Machine Learning",
+"Deep Learning",
+"Generative AI / LLMs",
+"Communication"
+],
+"role": "Data / Analytics / ML",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"61f08c6bf356f6fda2cf": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"SAP / ERP",
+"Accounting (Tally / GST)",
+"Communication",
+"Problem solving"
+],
+"role": "Other",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"62a51801f81ea4fd3426": {
+"level": "Experienced",
+"llm_cities": [
+"Pune"
+],
+"llm_skills": [
+"Excel",
+"Power BI",
+"Stakeholder management"
+],
+"role": "Operations / Supply Chain",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"62a58f6230dc25612262": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Java",
+"OOP",
+"CI/CD",
+"Git",
+"Testing / QA",
+"Jira",
+"Communication",
+"Project management"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"6317c5f1ea8b785b5385": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"SAP / ERP"
+],
+"role": "Other",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"6328a1f24ff4863069f3": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru",
+"Mumbai"
+],
+"llm_skills": [
+"Microservices",
+"ETL / Data pipelines",
+"AWS",
+"Azure",
+"GCP",
+"PostgreSQL",
+"MySQL",
+"Communication",
+"Stakeholder management",
+"Negotiation",
+"Customer handling"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"649c22744e3ec398dccf": {
+"level": "Experienced",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [
+"Teamwork",
+"Project management"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"653ca2c2543afd263b27": {
+"level": "Experienced",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [
+"Communication",
+"Negotiation"
+],
+"role": "HR / Recruiting",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"655ff229a85985e87c8f": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"Microservices",
+"SQL",
+"Generative AI / LLMs",
+"AWS",
+"Azure",
+"GCP",
+"Docker",
+"Kubernetes",
+"Linux",
+"CI/CD",
+"Terraform",
+"Networking",
+"Problem solving",
+"Teamwork"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"65b43f56f7fe93481467": {
+"level": "Early career",
+"llm_cities": [
+"Kolkata"
+],
+"llm_skills": [
+"Negotiation"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"65d2f35ea4bf9cb811f2": {
+"level": "Experienced",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [
+"Excel",
+"Communication",
+"Problem solving"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"6634497726b391c40ccb": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Jira",
+"Communication"
+],
+"role": "HR / Recruiting",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"6646c5b911ec8ee8bdbf": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"Cybersecurity",
+"Testing / QA"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"66ed05043d9c432ef134": {
+"level": "Fresher",
+"llm_cities": [
+"Mumbai"
+],
+"llm_skills": [
+"Communication",
+"Teamwork"
+],
+"role": "Content / Writing",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"672fc8bc24697530297b": {
+"level": "Fresher",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"English proficiency",
+"Hindi / regional language"
+],
+"role": "Content / Writing",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"678717850ae97569df7d": {
+"level": "Experienced",
+"llm_cities": [
+"Pune"
+],
+"llm_skills": [
+"Excel",
+"SAP / ERP",
+"Accounting (Tally / GST)",
+"Communication",
+"Problem solving"
+],
+"role": "Finance / Accounting",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"67be639a75b06dfa363c": {
+"level": "Experienced",
+"llm_cities": [
+"Other India"
+],
+"llm_skills": [
+"Adobe Creative Suite",
+"Communication",
+"Problem solving",
+"Teamwork"
+],
+"role": "Design (UI/UX/Graphic)",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"67dd44f6ac2042004329": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"Java",
+"Scala",
+"DSA",
+"Microservices",
+"SQL",
+"Statistics",
+"Machine Learning",
+"Generative AI / LLMs",
+"PyTorch / TensorFlow",
+"Pandas / NumPy",
+"Spark",
+"ETL / Data pipelines",
+"Data analysis",
+"Azure",
+"GCP",
+"Snowflake / BigQuery",
+"Communication",
+"Problem solving",
+"Teamwork",
+"Project management"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"6807fc3232679b1a2edc": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru",
+"Mumbai"
+],
+"llm_skills": [
+"Spark",
+"Data analysis",
+"CRM (Salesforce etc.)"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"68409d7df78d043f02b6": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"SQL",
+"Data analysis",
+"Communication",
+"Stakeholder management",
+"Presentation"
+],
+"role": "Data / Analytics / ML",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"684983b10cfa9b87454b": {
+"level": "Early career",
+"llm_cities": [
+"Remote",
+"India (unspecified)"
+],
+"llm_skills": [
+"Presentation"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"6853705b95fb5c636f29": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"Java",
+"JavaScript",
+"Azure",
+"CI/CD",
+"Git",
+"Testing / QA",
+"Jira",
+"Project management"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"685e5d3cd1beb68b74d5": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"699b868a046a164b9221": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"Flask / FastAPI",
+"REST APIs",
+"SQL",
+"Generative AI / LLMs",
+"Git",
+"PostgreSQL"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"6a51f05029a793aab4ad": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [],
+"role": "Data / Analytics / ML",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"6acad905e3b153f33b85": {
+"level": "Fresher",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"Java",
+"TypeScript",
+"DSA",
+"OOP",
+"REST APIs",
+"ETL / Data pipelines",
+"Problem solving"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"6b0fcc9d7a1817ad82a8": {
+"level": "Experienced",
+"llm_cities": [
+"Pune"
+],
+"llm_skills": [
+"Statistics",
+"Data analysis",
+"Problem solving",
+"Presentation"
+],
+"role": "Core Engineering (Mech/Civil/Electrical)",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"6b1708b1c22df2c9ce71": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Machine Learning"
+],
+"role": "Product Management",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"6b688dd9bceb31a016eb": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"DSA",
+"SQL"
+],
+"role": "Data / Analytics / ML",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"6c0ecc5fe5e4d4312277": {
+"level": "Experienced",
+"llm_cities": [
+"Pune"
+],
+"llm_skills": [],
+"role": "Core Engineering (Mech/Civil/Electrical)",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"6c513e265b64e387fa57": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Excel",
+"Problem solving"
+],
+"role": "Core Engineering (Mech/Civil/Electrical)",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"6c7b6308ee2514f3e06a": {
+"level": "Experienced",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [
+"Python",
+"SQL",
+"Excel",
+"Tableau",
+"CRM (Salesforce etc.)"
+],
+"role": "Finance / Accounting",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"6cce62741a3579007ab1": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"C++",
+"Cybersecurity",
+"Project management"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"6cdc79051e324654df7e": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Stakeholder management"
+],
+"role": "Other",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"6d194494a8e18fc5df2d": {
+"level": "Early career",
+"llm_cities": [
+"Other India"
+],
+"llm_skills": [
+"Python",
+"Java",
+"Go",
+"Scala",
+"Bash / Shell",
+"AWS",
+"Azure",
+"GCP",
+"Kubernetes",
+"Linux",
+"CI/CD",
+"Git",
+"Terraform",
+"Kafka"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"6d77503e9d60edd21918": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"CI/CD",
+"Cybersecurity",
+"Teamwork"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"6df94accf572f9f91c53": {
+"level": "Experienced",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [
+"Cybersecurity",
+"Negotiation"
+],
+"role": "Operations / Supply Chain",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"6e124c3f89099cea6231": {
+"level": "Fresher",
+"llm_cities": [
+"Pune"
+],
+"llm_skills": [
+"Communication",
+"Problem solving"
+],
+"role": "Customer Support / Success",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"6e364b6de40280493f98": {
+"level": "Experienced",
+"llm_cities": [
+"Other India"
+],
+"llm_skills": [
+"Python",
+"Android",
+"iOS",
+"AWS",
+"Linux",
+"CI/CD",
+"Testing / QA",
+"Jira",
+"Communication"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"6e6431365cd4f54b7c13": {
+"level": "Early career",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"MS Office",
+"Communication",
+"Stakeholder management"
+],
+"role": "HR / Recruiting",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"6e712925def4211d405b": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"CRM (Salesforce etc.)"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"6e9174a106570fa06c46": {
+"level": "Fresher",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [],
+"role": "Other",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"6f2bbc82d25f547d03c5": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"JavaScript",
+"TypeScript",
+"DSA",
+"React",
+"Node.js",
+"HTML / CSS",
+"Flask / FastAPI",
+"REST APIs",
+"GraphQL",
+"Microservices",
+"AWS",
+"Azure",
+"GCP",
+"Docker",
+"Kubernetes",
+"CI/CD",
+"Testing / QA",
+"PostgreSQL",
+"MongoDB",
+"Redis",
+"Kafka",
+"NoSQL",
+"Communication",
+"Project management"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"6f771bfc0f7648946f53": {
+"level": "Early career",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"CRM (Salesforce etc.)",
+"MS Office",
+"English proficiency",
+"Hindi / regional language"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"6fa0b6c3227a4fa2f56e": {
+"level": "Early career",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [
+"Excel",
+"Communication"
+],
+"role": "Operations / Supply Chain",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"6fd503350e00a73dee03": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Machine Learning",
+"Spark"
+],
+"role": "Data / Analytics / ML",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"703417607702261393f1": {
+"level": "Fresher",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [],
+"role": "HR / Recruiting",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"7060ad4d49641e283b7a": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"C++",
+"Docker",
+"Git",
+"Testing / QA",
+"Communication",
+"Problem solving",
+"Teamwork",
+"Project management"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"70a798dce90265036a2f": {
+"level": "Experienced",
+"llm_cities": [
+"Pune"
+],
+"llm_skills": [
+"Git",
+"Jira"
+],
+"role": "Customer Support / Success",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"7138cd69a7f5e4e13090": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Figma",
+"Adobe Creative Suite"
+],
+"role": "Design (UI/UX/Graphic)",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"715dea987690ff7bce6a": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [],
+"role": "Content / Writing",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"723b640b39780f0d09aa": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Java",
+"JavaScript",
+"REST APIs",
+"ETL / Data pipelines",
+"Linux",
+"Git",
+"Testing / QA",
+"SAP / ERP",
+"Communication",
+"Problem solving",
+"Project management"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"723ea2241665ffba0c8e": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Project management"
+],
+"role": "Core Engineering (Mech/Civil/Electrical)",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"7256745834ca711095e9": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Java",
+"Generative AI / LLMs",
+"Git",
+"SAP / ERP",
+"Communication"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"72995142341d17c5c01e": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"SAP / ERP"
+],
+"role": "Core Engineering (Mech/Civil/Electrical)",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"732937e703357322e36c": {
+"level": "Experienced",
+"llm_cities": [
+"Chennai"
+],
+"llm_skills": [
+"Python",
+"SQL",
+"Machine Learning",
+"Deep Learning",
+"Generative AI / LLMs",
+"NLP",
+"PyTorch / TensorFlow",
+"Pandas / NumPy",
+"Data analysis",
+"Git",
+"Snowflake / BigQuery",
+"Problem solving",
+"Presentation"
+],
+"role": "Data / Analytics / ML",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"740bd42935ac786e3839": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"Java",
+"JavaScript",
+"C++",
+"C#",
+"PHP",
+"Ruby",
+"Node.js",
+"Linux",
+"Networking",
+"Communication",
+"Problem solving",
+"Teamwork",
+"Customer handling"
+],
+"role": "Customer Support / Success",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"753bbb97c024353a0e83": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Communication",
+"Problem solving"
+],
+"role": "HR / Recruiting",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"754fbe217617014efe98": {
+"level": "Internship",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"ETL / Data pipelines",
+"Cybersecurity",
+"Communication",
+"Problem solving"
+],
+"role": "Product Management",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"7550ddb5ee3432362835": {
+"level": "Early career",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"CRM (Salesforce etc.)",
+"Customer handling"
+],
+"role": "Customer Support / Success",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"758bcec452245944b983": {
+"level": "Experienced",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [],
+"role": "Product Management",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"766f20194e2eb7e48822": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"ETL / Data pipelines"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"76ccb87cd8c49681e70c": {
+"level": "Early career",
+"llm_cities": [
+"Pune"
+],
+"llm_skills": [
+"Excel",
+"Communication",
+"Presentation"
+],
+"role": "Operations / Supply Chain",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"771fd9409b82218c93dd": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Communication",
+"Problem solving",
+"Stakeholder management"
+],
+"role": "Product Management",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"77fbc2df2e415a29209c": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"793ff9985af1f2be941a": {
+"level": "Early career",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Linux",
+"Communication",
+"Problem solving",
+"Customer handling"
+],
+"role": "Customer Support / Success",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"79457c287eea65f5717a": {
+"level": "Experienced",
+"llm_cities": [
+"Other India"
+],
+"llm_skills": [
+"SAP / ERP",
+"Hindi / regional language",
+"Negotiation"
+],
+"role": "Operations / Supply Chain",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"7a19d2a271a9d1b0869c": {
+"level": "Experienced",
+"llm_cities": [
+"Other India"
+],
+"llm_skills": [
+"Communication",
+"Teamwork"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"7af551a861f9f56e8d98": {
+"level": "Experienced",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [
+"Generative AI / LLMs",
+"Problem solving",
+"Stakeholder management"
+],
+"role": "Product Management",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"7b5ecf3890fc598b3140": {
+"level": "Early career",
+"llm_cities": [
+"Other India"
+],
+"llm_skills": [
+"Problem solving"
+],
+"role": "Core Engineering (Mech/Civil/Electrical)",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"7b8dc4ad575aed4beccf": {
+"level": "Fresher",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"CRM (Salesforce etc.)",
+"Problem solving",
+"Teamwork"
+],
+"role": "Marketing",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"7c8ac8166884637e5345": {
+"level": "Experienced",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [
+"Problem solving"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"7d32895186b533797ef4": {
+"level": "Experienced",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [
+"Negotiation",
+"Presentation"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"7d3ed1b8c07c9de5db94": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Excel",
+"Data analysis",
+"Problem solving"
+],
+"role": "HR / Recruiting",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"7d7621b92187c7a7c0e0": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Java",
+"Ruby",
+"Microservices",
+"MySQL",
+"MongoDB",
+"Communication"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"7db27c2faa9db8d06ff4": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Cybersecurity"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"7e92eeec0e8ed08cda9e": {
+"level": "Early career",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [
+"Negotiation"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"7ec1645fef674f15d2f3": {
+"level": "Early career",
+"llm_cities": [
+"Mumbai"
+],
+"llm_skills": [],
+"role": "Customer Support / Success",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"7f497781f539778e9ebd": {
+"level": "Early career",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"Problem solving"
+],
+"role": "Core Engineering (Mech/Civil/Electrical)",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"7fd273b57c53ec4b3fa3": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"C++",
+"OOP",
+"Statistics",
+"CI/CD",
+"Git",
+"Communication",
+"Presentation"
+],
+"role": "Data / Analytics / ML",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"7fe621cd3d029a056424": {
+"level": "Experienced",
+"llm_cities": [
+"Mumbai"
+],
+"llm_skills": [
+"SAP / ERP",
+"Accounting (Tally / GST)"
+],
+"role": "Finance / Accounting",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"805bf5016edef04f4826": {
+"level": "Early career",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Statistics",
+"Machine Learning",
+"Deep Learning",
+"Generative AI / LLMs",
+"PyTorch / TensorFlow"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"8065284297ad3c371747": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"SAP / ERP",
+"Accounting (Tally / GST)",
+"Communication",
+"Presentation",
+"Project management"
+],
+"role": "Other",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"806ae6c869bf9573ba84": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Problem solving",
+"Negotiation"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"80f88cd1e64554125649": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"DSA",
+"Generative AI / LLMs",
+"Git",
+"Communication",
+"Problem solving",
+"Presentation",
+"Project management"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"815496a7ac14cf0a0501": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [],
+"role": "Core Engineering (Mech/Civil/Electrical)",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"81a326d9eaab68d9f638": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"AWS",
+"PostgreSQL",
+"Problem solving"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"82cceb75174238a4ad76": {
+"level": "Experienced",
+"llm_cities": [
+"Pune"
+],
+"llm_skills": [],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"832c104c438bacf469c4": {
+"level": "Early career",
+"llm_cities": [
+"Mumbai"
+],
+"llm_skills": [
+"Negotiation"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"834d87413657ec6a683d": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Excel",
+"Statistics",
+"MS Office",
+"Communication",
+"Stakeholder management",
+"Project management"
+],
+"role": "Other",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"83586ace1d2d90ef62fb": {
+"level": "Experienced",
+"llm_cities": [
+"Remote"
+],
+"llm_skills": [
+"CI/CD",
+"Customer handling",
+"Project management"
+],
+"role": "Customer Support / Success",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"83eb381999f5fdaf6f3c": {
+"level": "Early career",
+"llm_cities": [
+"Ahmedabad"
+],
+"llm_skills": [
+"Communication",
+"Problem solving",
+"Presentation"
+],
+"role": "Core Engineering (Mech/Civil/Electrical)",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"8412714a7f92576e5ecd": {
+"level": "Experienced",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [
+"Communication",
+"Problem solving"
+],
+"role": "Other",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"84278e108639146956c1": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [],
+"role": "HR / Recruiting",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"84677cfb04af3528512f": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"JavaScript",
+"Ruby",
+"AWS",
+"GCP",
+"Docker",
+"Kubernetes",
+"CI/CD",
+"Git",
+"Cybersecurity"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"84b156249eed1cc181b0": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Communication"
+],
+"role": "Core Engineering (Mech/Civil/Electrical)",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"84d28c3d31ffab562013": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"C++",
+"C#",
+"Bash / Shell",
+"CI/CD"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"8555038187072760e9da": {
+"level": "Early career",
+"llm_cities": [
+"Mumbai"
+],
+"llm_skills": [
+"Communication",
+"Negotiation"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"85b387f8c835eed80cf1": {
+"level": "Early career",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [
+"Problem solving"
+],
+"role": "Customer Support / Success",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"86443a5c203ea2cb3278": {
+"level": "Experienced",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [
+"Communication"
+],
+"role": "HR / Recruiting",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"86933becc9267d1607b4": {
+"level": "Fresher",
+"llm_cities": [
+"Other India"
+],
+"llm_skills": [
+"CRM (Salesforce etc.)",
+"Negotiation"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"86f1322454cb3d6ae593": {
+"level": "Experienced",
+"llm_cities": [
+"Mumbai",
+"Bengaluru"
+],
+"llm_skills": [],
+"role": "Other",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"870050a586ccb6fc7770": {
+"level": "Early career",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"JavaScript",
+"Generative AI / LLMs",
+"Communication",
+"Problem solving",
+"Stakeholder management",
+"Customer handling"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"870592f28cf503f3b939": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"C++",
+"Customer handling"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"8770a7511c75905b59ec": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"SQL",
+"Excel",
+"SAP / ERP",
+"Accounting (Tally / GST)",
+"Problem solving",
+"Stakeholder management"
+],
+"role": "Finance / Accounting",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"877627db0633ded20005": {
+"level": "Early career",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [
+"Negotiation"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"87d8f80fafcb69d0a139": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Figma",
+"Communication",
+"Presentation"
+],
+"role": "Design (UI/UX/Graphic)",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"883b6323865cbfcfd67d": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru",
+"Mumbai"
+],
+"llm_skills": [
+"Teamwork",
+"Negotiation"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"885b5c9ae1e6f231827a": {
+"level": "Early career",
+"llm_cities": [
+"Hyderabad"
+],
+"llm_skills": [],
+"role": "Customer Support / Success",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"887f7a7dffb0ed0df7e3": {
+"level": "Experienced",
+"llm_cities": [
+"Mumbai"
+],
+"llm_skills": [
+"Teamwork",
+"Project management"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"892e1fdcacba0abe6b58": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Java",
+"OOP",
+"Angular",
+"Spring Boot",
+"REST APIs",
+"SQL",
+"AWS",
+"Azure",
+"Docker",
+"Kubernetes",
+"CI/CD",
+"Testing / QA",
+"Problem solving"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"897577bd1d6a7167e46f": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"SAP / ERP"
+],
+"role": "HR / Recruiting",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"89d40fda8b734e45cbea": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"8b0b19fc9a3c2561e7b3": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"SQL",
+"Excel",
+"Power BI",
+"Tableau",
+"CRM (Salesforce etc.)",
+"Problem solving",
+"Stakeholder management"
+],
+"role": "Data / Analytics / ML",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"8bc9f3ccf68fd2c89043": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Testing / QA",
+"Problem solving",
+"Teamwork"
+],
+"role": "Core Engineering (Mech/Civil/Electrical)",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"8be49b4274033991c8cf": {
+"level": "Fresher",
+"llm_cities": [
+"Mumbai"
+],
+"llm_skills": [],
+"role": "Customer Support / Success",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"8c868d4c1c17bf14f823": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"Linux",
+"Networking",
+"Problem solving",
+"Teamwork",
+"Project management"
+],
+"role": "Customer Support / Success",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"8cc40f2cef6f3b872b59": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Java",
+"JavaScript",
+"Node.js",
+"HTML / CSS",
+"REST APIs",
+"Project management"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"8cf3e925894237fd3df3": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Testing / QA",
+"SAP / ERP"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"8d14093e50bc3419b8dd": {
+"level": "Early career",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [],
+"role": "Product Management",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"8d1bb100f3a9c90ef6ad": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru",
+"Other India"
+],
+"llm_skills": [
+"Networking",
+"Problem solving"
+],
+"role": "Customer Support / Success",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"8d1d293388ef95f10e73": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"Java",
+"JavaScript",
+"C++",
+"C#",
+"PHP",
+"Ruby",
+"Node.js",
+"Communication",
+"Problem solving",
+"Teamwork",
+"Customer handling"
+],
+"role": "Customer Support / Success",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"8d2c59465f181490d1f0": {
+"level": "Early career",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [],
+"role": "Core Engineering (Mech/Civil/Electrical)",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"8d3bcb85c3dad6da08eb": {
+"level": "Fresher",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"Excel",
+"MS Office"
+],
+"role": "Data / Analytics / ML",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"8de32b0dfc4c9dace4db": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"SQL",
+"Accounting (Tally / GST)",
+"Communication",
+"Problem solving"
+],
+"role": "Finance / Accounting",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"8e08c676404f924e2bd9": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Docker",
+"Kubernetes",
+"Linux",
+"CI/CD",
+"Git",
+"Networking"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"8fac99f0ea26a72367ae": {
+"level": "Experienced",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [],
+"role": "Product Management",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"8fb3a5acc3f568a7d294": {
+"level": "Early career",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"8fb5192ba0dd55b34810": {
+"level": "Internship",
+"llm_cities": [
+"Mumbai"
+],
+"llm_skills": [
+"Communication"
+],
+"role": "Content / Writing",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"90146da9c7473a90639e": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"Flask / FastAPI",
+"Generative AI / LLMs",
+"Kubernetes",
+"PostgreSQL",
+"Redis"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"90647e724c907b3587fd": {
+"level": "Experienced",
+"llm_cities": [
+"Mumbai"
+],
+"llm_skills": [],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"909b8224f1d55102bbe1": {
+"level": "Experienced",
+"llm_cities": [
+"Pune"
+],
+"llm_skills": [],
+"role": "Core Engineering (Mech/Civil/Electrical)",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"90afd565b66b49b2d5f5": {
+"level": "Experienced",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [],
+"role": "HR / Recruiting",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"90cbaee19847efcfb410": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru",
+"Chennai"
+],
+"llm_skills": [
+"Python",
+"Kubernetes"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"911709079991e9fe5f1a": {
+"level": "Early career",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"SQL",
+"Excel",
+"Power BI",
+"Tableau",
+"Accounting (Tally / GST)"
+],
+"role": "Finance / Accounting",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"9131bfe14be6bfd3d128": {
+"level": "Early career",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [
+"Excel",
+"CRM (Salesforce etc.)",
+"Hindi / regional language",
+"Negotiation"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"9136d7b67e1b0c7550f4": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Excel",
+"MS Office",
+"Communication"
+],
+"role": "HR / Recruiting",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"914dde71c5d64e2aaa57": {
+"level": "Experienced",
+"llm_cities": [
+"Mumbai"
+],
+"llm_skills": [
+"Problem solving",
+"Teamwork",
+"Negotiation"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"922972043293aa76bca6": {
+"level": "Experienced",
+"llm_cities": [
+"Mumbai"
+],
+"llm_skills": [
+"Excel",
+"MS Office",
+"Stakeholder management",
+"Presentation",
+"Project management"
+],
+"role": "HR / Recruiting",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"9270d0e00c6d23b4de15": {
+"level": "Experienced",
+"llm_cities": [
+"Other India"
+],
+"llm_skills": [
+"Git",
+"Stakeholder management"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"927a57e7960cd88d4747": {
+"level": "Early career",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [
+"Problem solving",
+"Stakeholder management"
+],
+"role": "Operations / Supply Chain",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"9366f4308b37e13b8e5c": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Excel",
+"MS Office",
+"Communication",
+"Stakeholder management"
+],
+"role": "HR / Recruiting",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"937f35cc011d250ee284": {
+"level": "Early career",
+"llm_cities": [
+"Other India"
+],
+"llm_skills": [
+"Statistics",
+"Testing / QA",
+"Problem solving",
+"Customer handling",
+"Project management"
+],
+"role": "Operations / Supply Chain",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"9413d24891d464a0a1a2": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"Java",
+"C++",
+"Scala",
+"OOP",
+"Spark",
+"Testing / QA",
+"Snowflake / BigQuery",
+"Communication",
+"Project management"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"9430eca83d63b3e20032": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"JavaScript",
+"TypeScript",
+"Node.js",
+"HTML / CSS",
+"REST APIs",
+"CI/CD",
+"Git",
+"Problem solving"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"946c91f57249f2b7896f": {
+"level": "Early career",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [
+"Negotiation"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"94cd0c18da002a77f587": {
+"level": "Early career",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"Ruby",
+"Customer handling"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"95c63538dd50c1e75e5d": {
+"level": "Experienced",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [
+"Stakeholder management"
+],
+"role": "Marketing",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"968a65200c5bf12b4c55": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"JavaScript",
+"Communication",
+"Problem solving",
+"Customer handling",
+"Project management"
+],
+"role": "Other",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"96b3d9792bc309a9ca85": {
+"level": "Internship",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [],
+"role": "HR / Recruiting",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"971232a6b44b8a777270": {
+"level": "Early career",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Bash / Shell",
+"Docker",
+"Kubernetes",
+"Linux",
+"CI/CD",
+"Terraform",
+"MySQL",
+"MongoDB"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"9791f2b343edf5590f50": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"Networking",
+"Testing / QA",
+"Communication"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"97e62d4bfd08d8ce8c0d": {
+"level": "Early career",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [
+"Excel",
+"Problem solving",
+"Stakeholder management",
+"Negotiation"
+],
+"role": "HR / Recruiting",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"98f17b84a6709415ad35": {
+"level": "Experienced",
+"llm_cities": [
+"Other India"
+],
+"llm_skills": [
+"SAP / ERP",
+"Communication",
+"Project management"
+],
+"role": "Other",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"9918cc487698871d423d": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Figma",
+"Adobe Creative Suite"
+],
+"role": "Design (UI/UX/Graphic)",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"992760f87ba93b836918": {
+"level": "Early career",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"CRM (Salesforce etc.)",
+"MS Office",
+"English proficiency",
+"Hindi / regional language"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"9931a3d110fa9711562a": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"995e815eaf0e14202aed": {
+"level": "Experienced",
+"llm_cities": [
+"Pune"
+],
+"llm_skills": [
+"Stakeholder management",
+"Project management"
+],
+"role": "Product Management",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"9988f6b0fb76cf22faf3": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Networking"
+],
+"role": "Customer Support / Success",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"99ed71e6532563697d39": {
+"level": "Fresher",
+"llm_cities": [
+"Remote",
+"India (unspecified)"
+],
+"llm_skills": [],
+"role": "Content / Writing",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"9ad81c4e9b5d489c6f24": {
+"level": "Experienced",
+"llm_cities": [
+"Other India"
+],
+"llm_skills": [
+"Python",
+"C#",
+"SQL"
+],
+"role": "Other",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"9b5c44546f029dbf7c7d": {
+"level": "Early career",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Hindi / regional language",
+"Problem solving"
+],
+"role": "Operations / Supply Chain",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"9b71de31ead4f4475d03": {
+"level": "Fresher",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [
+"Stakeholder management"
+],
+"role": "Operations / Supply Chain",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"9bc7998d9ac92b627521": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"SQL",
+"Excel",
+"Statistics",
+"Snowflake / BigQuery",
+"Communication",
+"Problem solving"
+],
+"role": "Data / Analytics / ML",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"9bd0ec91bd3613dc2ad1": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"MS Office"
+],
+"role": "HR / Recruiting",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"9c29b36240d2aa031ab5": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"9d79724928483c980b0e": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Networking"
+],
+"role": "Customer Support / Success",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"9de5b9dc9fd3e6553c84": {
+"level": "Early career",
+"llm_cities": [
+"Mumbai",
+"Delhi NCR"
+],
+"llm_skills": [
+"Excel",
+"Problem solving",
+"Stakeholder management"
+],
+"role": "Operations / Supply Chain",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"9ec3153a9eb9da5ea142": {
+"level": "Experienced",
+"llm_cities": [
+"Delhi NCR",
+"Mumbai",
+"Bengaluru"
+],
+"llm_skills": [],
+"role": "Product Management",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"9ecd4fbd4e510a9e8bf9": {
+"level": "Experienced",
+"llm_cities": [
+"Pune"
+],
+"llm_skills": [
+"SAP / ERP",
+"Accounting (Tally / GST)",
+"Communication",
+"Problem solving"
+],
+"role": "Finance / Accounting",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"9fcb6c49c944282fb432": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"SAP / ERP"
+],
+"role": "Core Engineering (Mech/Civil/Electrical)",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"9ffb69ac1a447d8817d8": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"AWS",
+"Azure",
+"Docker",
+"Kubernetes",
+"Linux",
+"Terraform",
+"Customer handling"
+],
+"role": "Customer Support / Success",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"a08348b7a39c7e869608": {
+"level": "Experienced",
+"llm_cities": [
+"Pune"
+],
+"llm_skills": [
+"Accounting (Tally / GST)",
+"Problem solving"
+],
+"role": "Finance / Accounting",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"a121b5f7ca544d4388cf": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru",
+"Mumbai",
+"Hyderabad",
+"Delhi NCR"
+],
+"llm_skills": [
+"SQL",
+"Excel",
+"Stakeholder management"
+],
+"role": "Marketing",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"a1b1ea66263a6b40c465": {
+"level": "Internship",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [],
+"role": "HR / Recruiting",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"a255ff8d48d79b3349ea": {
+"level": "Experienced",
+"llm_cities": [
+"Mumbai"
+],
+"llm_skills": [
+"Python",
+"SQL",
+"Statistics",
+"Machine Learning",
+"Spark",
+"Git",
+"Testing / QA",
+"Snowflake / BigQuery"
+],
+"role": "Data / Analytics / ML",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"a2988ff9ec650dfae414": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"SAP / ERP",
+"Communication"
+],
+"role": "Operations / Supply Chain",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"a2a0f8509d91d475b0e0": {
+"level": "Experienced",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [],
+"role": "Marketing",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"a338bc1e2beaec441a87": {
+"level": "Fresher",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"a346e3108cffde85b749": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Linux",
+"Networking",
+"Problem solving"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"a36c7322e2ffddac91d6": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"SAP / ERP"
+],
+"role": "Core Engineering (Mech/Civil/Electrical)",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"a38ea5e036647dcc58e7": {
+"level": "Experienced",
+"llm_cities": [
+"Pune"
+],
+"llm_skills": [
+"Statistics",
+"Problem solving",
+"Teamwork",
+"Customer handling",
+"Project management"
+],
+"role": "Customer Support / Success",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"a3a4c72c45754d143c27": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru",
+"Chennai"
+],
+"llm_skills": [
+"Machine Learning"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"a3d352abd16d70cc150d": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"SQL",
+"Excel",
+"ETL / Data pipelines",
+"Data analysis",
+"CRM (Salesforce etc.)",
+"Communication",
+"Problem solving"
+],
+"role": "Data / Analytics / ML",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"a427732cd0b3bba2e9af": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Communication",
+"Teamwork"
+],
+"role": "Core Engineering (Mech/Civil/Electrical)",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"a4eee3f7ae37f04c85e1": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Communication",
+"Problem solving",
+"Teamwork"
+],
+"role": "Core Engineering (Mech/Civil/Electrical)",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"a4f9dcba0597be1a9b10": {
+"level": "Experienced",
+"llm_cities": [
+"Other India"
+],
+"llm_skills": [
+"C++",
+"Jira"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"a560a8b8dd12f8fd9bf0": {
+"level": "Experienced",
+"llm_cities": [
+"India (unspecified)"
+],
+"llm_skills": [
+"SQL",
+"Accounting (Tally / GST)",
+"Communication"
+],
+"role": "Operations / Supply Chain",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"a58f7d2e0474c27cbecd": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [],
+"role": "Core Engineering (Mech/Civil/Electrical)",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"a5d53df6c7cce74c1edb": {
+"level": "Experienced",
+"llm_cities": [
+"Hyderabad"
+],
+"llm_skills": [
+"AWS",
+"Azure",
+"GCP",
+"Cybersecurity",
+"Problem solving"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"a5e0f03c0e815da33c60": {
+"level": "Fresher",
+"llm_cities": [
+"Mumbai"
+],
+"llm_skills": [
+"Figma",
+"Adobe Creative Suite",
+"Teamwork"
+],
+"role": "Design (UI/UX/Graphic)",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"a62d0306927f9629e7dd": {
+"level": "Experienced",
+"llm_cities": [
+"Other India"
+],
+"llm_skills": [
+"OOP",
+"SAP / ERP",
+"Communication",
+"Teamwork",
+"Customer handling"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"a665abc7820952b1b50e": {
+"level": "Fresher",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"Java",
+"JavaScript",
+"TypeScript",
+"REST APIs",
+"Generative AI / LLMs",
+"AWS",
+"Azure",
+"GCP",
+"CI/CD",
+"Git",
+"SAP / ERP",
+"Communication",
+"Problem solving",
+"Stakeholder management"
+],
+"role": "Consulting / Strategy",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"a6a1dc130ba310fce67e": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru",
+"Chennai"
+],
+"llm_skills": [
+"Python",
+"Machine Learning",
+"Kubernetes"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"a785241e8ad8c91e7097": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [],
+"role": "Data / Analytics / ML",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"a7c2348d0ac7e4c94a54": {
+"level": "Experienced",
+"llm_cities": [
+"Remote",
+"Chennai"
+],
+"llm_skills": [
+"Teamwork",
+"Project management"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"a7ebe2c86aa1a2dec256": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Negotiation",
+"Presentation"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"a8770a1527c989b7f61a": {
+"level": "Early career",
+"llm_cities": [
+"Other India"
+],
+"llm_skills": [
+"Excel",
+"SAP / ERP",
+"MS Office",
+"Accounting (Tally / GST)"
+],
+"role": "Finance / Accounting",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"a8875f5b9b33c67163f3": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [],
+"role": "Core Engineering (Mech/Civil/Electrical)",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"a95c9a23e0b7adb5020f": {
+"level": "Experienced",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [
+"Customer handling"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"a9b8bd5be6010e69f74a": {
+"level": "Experienced",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [
+"JavaScript",
+"React",
+"CI/CD",
+"Git",
+"CRM (Salesforce etc.)"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"aa3cecba7771dc8ab4b8": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"SQL",
+"Excel",
+"Communication",
+"Problem solving",
+"Negotiation",
+"Customer handling"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"aa584d212656f513e9dc": {
+"level": "Fresher",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [
+"Machine Learning"
+],
+"role": "Operations / Supply Chain",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"aa87b551908c6f13575e": {
+"level": "Fresher",
+"llm_cities": [
+"Pune"
+],
+"llm_skills": [
+"Stakeholder management"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"aa87fd5be79d4e6e6f88": {
+"level": "Fresher",
+"llm_cities": [
+"Mumbai"
+],
+"llm_skills": [
+"Adobe Creative Suite"
+],
+"role": "Content / Writing",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"aa9c498f99f29e5fbb01": {
+"level": "Early career",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Generative AI / LLMs",
+"Problem solving"
+],
+"role": "Product Management",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"aaa5f1c447c961879125": {
+"level": "Fresher",
+"llm_cities": [
+"Other India"
+],
+"llm_skills": [
+"Python",
+"Statistics",
+"MS Office",
+"Communication",
+"Problem solving"
+],
+"role": "Data / Analytics / ML",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"aae2139f85376bbe367d": {
+"level": "Experienced",
+"llm_cities": [
+"India (unspecified)"
+],
+"llm_skills": [
+"Python",
+"Java",
+"SQL",
+"ETL / Data pipelines",
+"Communication",
+"Customer handling",
+"Project management"
+],
+"role": "Product Management",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"aaf9b40d79e1c68696e0": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"React",
+"Flask / FastAPI",
+"REST APIs",
+"SQL",
+"Azure",
+"Docker",
+"CI/CD",
+"Git",
+"Testing / QA",
+"NoSQL",
+"Snowflake / BigQuery",
+"Communication",
+"Problem solving",
+"Project management"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"abcda9365f02b96f90ee": {
+"level": "Fresher",
+"llm_cities": [
+"Remote",
+"India (unspecified)"
+],
+"llm_skills": [
+"MS Office",
+"Communication",
+"Hindi / regional language",
+"Problem solving"
+],
+"role": "Operations / Supply Chain",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"ac0f759be9434d285686": {
+"level": "Fresher",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"C++",
+"OOP",
+"Git",
+"Testing / QA",
+"Problem solving",
+"Teamwork"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"ac0fb66f7199c4972eda": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Go",
+"AWS",
+"Azure",
+"GCP",
+"Docker",
+"Kubernetes",
+"Terraform",
+"Teamwork",
+"Customer handling"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"ac71ee1ffcb3b9a0680f": {
+"level": "Early career",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Negotiation"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"ac7bad64a75b74252a90": {
+"level": "Early career",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [
+"CRM (Salesforce etc.)",
+"Negotiation",
+"Presentation"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"acbe0d925bb9d4ad178c": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru",
+"Other India"
+],
+"llm_skills": [
+"Excel"
+],
+"role": "Operations / Supply Chain",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"ad9fc13310cb78720174": {
+"level": "Experienced",
+"llm_cities": [
+"Other India"
+],
+"llm_skills": [
+"Linux",
+"CI/CD",
+"Git",
+"Jira",
+"Problem solving"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"ada2b617b955f6beb30d": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"SAP / ERP",
+"Jira",
+"Project management"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"adb5653c8d101d0a9896": {
+"level": "Fresher",
+"llm_cities": [
+"Mumbai"
+],
+"llm_skills": [
+"SEO / SEM"
+],
+"role": "Content / Writing",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"addc1ba3e435f5fbeaa3": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"ETL / Data pipelines",
+"Snowflake / BigQuery"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"ae5fd54878a809ce4c4a": {
+"level": "Experienced",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [
+"Stakeholder management"
+],
+"role": "Product Management",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"ae79ff56ff32fed0d036": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"CRM (Salesforce etc.)"
+],
+"role": "Design (UI/UX/Graphic)",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"aeda67f561ccff3d38d0": {
+"level": "Early career",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"Statistics",
+"Machine Learning",
+"Pandas / NumPy",
+"Spark",
+"AWS",
+"Linux"
+],
+"role": "Data / Analytics / ML",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"af7708ed7b920fe498e2": {
+"level": "Early career",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"CRM (Salesforce etc.)",
+"Negotiation",
+"Presentation"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"af7f0c795c8fa126e771": {
+"level": "Experienced",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [
+"Presentation"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"afa3cd225369c6c66f05": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Java",
+"JavaScript",
+"REST APIs",
+"Generative AI / LLMs",
+"NLP"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"b020b49063a823103223": {
+"level": "Experienced",
+"llm_cities": [
+"Delhi NCR",
+"Mumbai",
+"Bengaluru"
+],
+"llm_skills": [
+"Stakeholder management",
+"Negotiation"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"b09ac8e9808b633638f3": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"REST APIs"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"b14b6235660dc2fcf472": {
+"level": "Early career",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Stakeholder management"
+],
+"role": "Consulting / Strategy",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"b19888fca747e6ec3cfd": {
+"level": "Early career",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [
+"Python",
+"SQL",
+"Tableau",
+"Spark",
+"Problem solving",
+"Stakeholder management"
+],
+"role": "Data / Analytics / ML",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"b2416a49a84ab19e5937": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Excel",
+"CRM (Salesforce etc.)",
+"Communication",
+"Hindi / regional language",
+"Problem solving",
+"Customer handling"
+],
+"role": "Operations / Supply Chain",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"b29c72cb992907d58993": {
+"level": "Early career",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [
+"Negotiation"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"b2dce6043c37e7bd4339": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"CI/CD",
+"Networking",
+"Testing / QA",
+"Problem solving"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"b30f09a15cec0084dfa7": {
+"level": "Early career",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [],
+"role": "Core Engineering (Mech/Civil/Electrical)",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"b3174ede065c00c9438a": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Power BI",
+"SAP / ERP",
+"Accounting (Tally / GST)",
+"Communication"
+],
+"role": "Finance / Accounting",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"b3464c4f703de9931887": {
+"level": "Internship",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Excel",
+"MS Office",
+"Communication",
+"Stakeholder management"
+],
+"role": "HR / Recruiting",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"b38c19bcc26f860393ed": {
+"level": "Fresher",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Communication"
+],
+"role": "Customer Support / Success",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"b50bc265edb13cfbc30e": {
+"level": "Experienced",
+"llm_cities": [
+"Other India"
+],
+"llm_skills": [],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"b53574b0620b034778b6": {
+"level": "Experienced",
+"llm_cities": [
+"Chennai"
+],
+"llm_skills": [
+"Excel",
+"MS Office",
+"Accounting (Tally / GST)",
+"Problem solving",
+"Teamwork"
+],
+"role": "Finance / Accounting",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"b6993521179eb4c160d0": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"Go",
+"Machine Learning",
+"AWS",
+"Azure",
+"GCP",
+"Docker",
+"Kubernetes",
+"Linux",
+"CI/CD",
+"Git",
+"Jira",
+"Communication"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"b71644db846beb4c80c3": {
+"level": "Fresher",
+"llm_cities": [
+"Other India"
+],
+"llm_skills": [
+"CRM (Salesforce etc.)",
+"Negotiation"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"b76dfacdf391ed1a81e5": {
+"level": "Experienced",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [],
+"role": "HR / Recruiting",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"b79766956e340522c218": {
+"level": "Experienced",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [
+"Excel",
+"MS Office",
+"Communication",
+"Problem solving"
+],
+"role": "Content / Writing",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"b80f9168def05f95b713": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"DSA",
+"REST APIs",
+"SQL",
+"AWS",
+"Azure",
+"GCP",
+"Docker",
+"Kubernetes",
+"CI/CD",
+"PostgreSQL",
+"MySQL",
+"Kafka",
+"NoSQL"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"b8d88325e151c465e04b": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"SAP / ERP",
+"Accounting (Tally / GST)"
+],
+"role": "Finance / Accounting",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"b930c4c339d2873f3e11": {
+"level": "Experienced",
+"llm_cities": [
+"Pune"
+],
+"llm_skills": [
+"Statistics",
+"Communication"
+],
+"role": "Core Engineering (Mech/Civil/Electrical)",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"b9830549128849f13781": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"C++",
+"DSA",
+"Generative AI / LLMs",
+"Git",
+"Communication",
+"Problem solving",
+"Presentation",
+"Project management"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"b9ab2e23e230124772d1": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Excel",
+"Jira",
+"Communication",
+"Problem solving",
+"Stakeholder management"
+],
+"role": "Finance / Accounting",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"ba29d58c4169f52923da": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"Flask / FastAPI",
+"Statistics",
+"Machine Learning",
+"Generative AI / LLMs",
+"NLP",
+"PyTorch / TensorFlow",
+"AWS",
+"Azure",
+"GCP",
+"Communication"
+],
+"role": "Data / Analytics / ML",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"ba3c7e55243d73a0edcf": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Communication"
+],
+"role": "Operations / Supply Chain",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"baf27ebabfaa32be90ef": {
+"level": "Early career",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [
+"Excel",
+"Communication"
+],
+"role": "HR / Recruiting",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"bafda8d434f6d4724929": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"HTML / CSS",
+"Communication",
+"Problem solving",
+"Project management"
+],
+"role": "Marketing",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"bb002c99bc8ce31fedca": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"SAP / ERP"
+],
+"role": "Other",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"bb23ed1f85736c5679f3": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"JavaScript",
+"REST APIs",
+"Git"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"bb86ae5001ea8686e7da": {
+"level": "Experienced",
+"llm_cities": [
+"Mumbai"
+],
+"llm_skills": [],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"bc5cd45336cb4a7b3856": {
+"level": "Early career",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"SAP / ERP"
+],
+"role": "Core Engineering (Mech/Civil/Electrical)",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"bce71dc4130eae453299": {
+"level": "Early career",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [
+"Problem solving",
+"Customer handling"
+],
+"role": "Customer Support / Success",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"bd00b5fc3d8aeda474d5": {
+"level": "Early career",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"bd08ead41a6320c4eb2b": {
+"level": "Experienced",
+"llm_cities": [
+"Mumbai"
+],
+"llm_skills": [
+"MS Office",
+"Communication",
+"Problem solving",
+"Teamwork"
+],
+"role": "Consulting / Strategy",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"bd67a0973b5c5dbbda1e": {
+"level": "Internship",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [
+"Excel",
+"Stakeholder management"
+],
+"role": "HR / Recruiting",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"bd9ffc3d45750e9af594": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [],
+"role": "Customer Support / Success",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"bda75c12d69d13804196": {
+"level": "Fresher",
+"llm_cities": [
+"Other India"
+],
+"llm_skills": [
+"CRM (Salesforce etc.)",
+"Teamwork",
+"Negotiation"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"bdad01571ddded90e017": {
+"level": "Early career",
+"llm_cities": [
+"Other India"
+],
+"llm_skills": [
+"Negotiation",
+"Customer handling"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"bddf56837ca544b5f34a": {
+"level": "Experienced",
+"llm_cities": [
+"Other India"
+],
+"llm_skills": [
+"REST APIs",
+"Azure",
+"Communication",
+"Problem solving",
+"Project management"
+],
+"role": "Consulting / Strategy",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"bdfa27aa99586447b206": {
+"level": "Experienced",
+"llm_cities": [
+"Mumbai"
+],
+"llm_skills": [
+"Stakeholder management",
+"Project management"
+],
+"role": "Operations / Supply Chain",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"be07bf8296841635ef96": {
+"level": "Early career",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"Swift",
+"Bash / Shell",
+"Jira",
+"Communication",
+"Problem solving"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"be116bc27833390d274d": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"C++",
+"CI/CD",
+"Git",
+"Testing / QA",
+"Communication",
+"Project management"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"be6cf31addabc5bcf2d1": {
+"level": "Internship",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"be7bbce4ecb9bc1125c6": {
+"level": "Internship",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"bf0f963645f07b66f226": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"JavaScript",
+"TypeScript",
+"REST APIs",
+"Docker",
+"Kubernetes",
+"CI/CD",
+"Git",
+"Testing / QA",
+"Communication",
+"Problem solving"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"bf98bb699a112ab60a77": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"Java",
+"TypeScript",
+"React",
+"REST APIs",
+"Git"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"c01cadaeea9b494d359f": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"SQL",
+"Machine Learning",
+"Spark",
+"AWS"
+],
+"role": "Product Management",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"c053dce3417ef8880b41": {
+"level": "Early career",
+"llm_cities": [
+"Other India"
+],
+"llm_skills": [],
+"role": "Core Engineering (Mech/Civil/Electrical)",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"c06fe6adc14798b224fb": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Bash / Shell",
+"Linux",
+"Git",
+"Communication"
+],
+"role": "Core Engineering (Mech/Civil/Electrical)",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"c07b8200bfe6a22ce308": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [],
+"role": "Core Engineering (Mech/Civil/Electrical)",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"c08040976622054d6bfe": {
+"level": "Early career",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [
+"Git",
+"CRM (Salesforce etc.)",
+"Communication",
+"Teamwork"
+],
+"role": "HR / Recruiting",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"c0d95ab510955d7e4b33": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Git",
+"Jira",
+"Communication",
+"Teamwork"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"c137b8c2e38bfde1ffcd": {
+"level": "Early career",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Communication",
+"English proficiency",
+"Problem solving",
+"Customer handling"
+],
+"role": "HR / Recruiting",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"c13cdebd8cb84715816a": {
+"level": "Experienced",
+"llm_cities": [
+"Other India"
+],
+"llm_skills": [],
+"role": "Other",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"c1691947ea5df105ad10": {
+"level": "Early career",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [
+"Problem solving"
+],
+"role": "Marketing",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"c1fe2a0a8d2683b921d8": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"SAP / ERP",
+"Problem solving",
+"Stakeholder management"
+],
+"role": "Core Engineering (Mech/Civil/Electrical)",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"c268179c164faf33fc20": {
+"level": "Experienced",
+"llm_cities": [
+"Remote"
+],
+"llm_skills": [
+"CI/CD",
+"Stakeholder management",
+"Negotiation",
+"Customer handling"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"c2f18c6e1d912e5dd351": {
+"level": "Early career",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"Git",
+"Cybersecurity"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"c30b7bb407f6e4a2e523": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Java",
+"C++",
+"Project management"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"c3535834ab54addbb9fb": {
+"level": "Internship",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Excel",
+"MS Office",
+"Accounting (Tally / GST)",
+"Communication"
+],
+"role": "Finance / Accounting",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"c3c23cca2ab72d4c582d": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Generative AI / LLMs",
+"Cybersecurity",
+"Communication",
+"Stakeholder management",
+"Project management"
+],
+"role": "Consulting / Strategy",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"c3e62582f45720230952": {
+"level": "Early career",
+"llm_cities": [
+"Other India"
+],
+"llm_skills": [
+"MS Office",
+"Problem solving"
+],
+"role": "Operations / Supply Chain",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"c415de489e82b6312759": {
+"level": "Experienced",
+"llm_cities": [
+"Mumbai"
+],
+"llm_skills": [],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"c48d16b6d7bcc6e8c951": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"SQL",
+"ETL / Data pipelines",
+"Data analysis",
+"Communication",
+"Stakeholder management"
+],
+"role": "Data / Analytics / ML",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"c4a095bfe59196bb4834": {
+"level": "Early career",
+"llm_cities": [
+"Pune"
+],
+"llm_skills": [
+"SQL",
+"ETL / Data pipelines"
+],
+"role": "Customer Support / Success",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"c4bff1758d800e3096db": {
+"level": "Experienced",
+"llm_cities": [
+"Other India"
+],
+"llm_skills": [
+"Communication",
+"Stakeholder management"
+],
+"role": "Consulting / Strategy",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"c4cff4bac77c9e82b0f8": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [],
+"role": "Core Engineering (Mech/Civil/Electrical)",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"c504a7598c6f35855e9d": {
+"level": "Internship",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"AWS",
+"Azure",
+"GCP",
+"Communication",
+"Problem solving",
+"Project management"
+],
+"role": "Product Management",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"c6d689bfc8a1fdc52edb": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"TypeScript",
+"React",
+"Flask / FastAPI",
+"REST APIs",
+"ETL / Data pipelines",
+"Azure",
+"Docker",
+"CI/CD",
+"Git",
+"Customer handling",
+"Project management"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"c6f6c7588f34b8b4a2a4": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Machine Learning",
+"Generative AI / LLMs",
+"Stakeholder management"
+],
+"role": "Consulting / Strategy",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"c75a6534da566aa40795": {
+"level": "Experienced",
+"llm_cities": [
+"Other India"
+],
+"llm_skills": [
+"SAP / ERP"
+],
+"role": "Finance / Accounting",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"c77728955682cd915763": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"JavaScript",
+"TypeScript",
+"Kotlin",
+"React",
+"Node.js",
+"Next.js",
+"Android",
+"iOS",
+"Generative AI / LLMs",
+"Kubernetes",
+"PostgreSQL"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"c801d2f5e8b9d9bd2d98": {
+"level": "Fresher",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Problem solving"
+],
+"role": "Operations / Supply Chain",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"c846b954d47429e7a308": {
+"level": "Internship",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"Java",
+"C++",
+"Scala",
+"OOP"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"c8d4592c8c328a7f9d32": {
+"level": "Early career",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Excel",
+"Tableau",
+"CRM (Salesforce etc.)",
+"Communication",
+"Project management"
+],
+"role": "Marketing",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"c94d9fb4bd008e3f8e28": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Problem solving"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"c99cc3b3292b4113d782": {
+"level": "Early career",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [
+"CRM (Salesforce etc.)",
+"MS Office",
+"English proficiency",
+"Hindi / regional language"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"ca2a72a7b2fabc6e3ec7": {
+"level": "Experienced",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [
+"SQL",
+"Excel"
+],
+"role": "Marketing",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"ca5b881ea33177c752f7": {
+"level": "Fresher",
+"llm_cities": [
+"Remote",
+"India (unspecified)"
+],
+"llm_skills": [
+"English proficiency"
+],
+"role": "Content / Writing",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"ca8edeee1ba9d551ded3": {
+"level": "Early career",
+"llm_cities": [
+"Pune"
+],
+"llm_skills": [
+"Figma",
+"Adobe Creative Suite"
+],
+"role": "Content / Writing",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"cbee5981a1624dad6cc0": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"Java",
+"JavaScript",
+"C#",
+"PHP",
+"Ruby",
+"Node.js",
+"HTML / CSS",
+"Android",
+"iOS",
+"AWS",
+"Azure",
+"GCP",
+"Cybersecurity",
+"Communication"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"cbfb252b67b00f85a09b": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"Java",
+"JavaScript",
+"TypeScript",
+"React",
+"Angular",
+"Vue",
+"HTML / CSS",
+"Spring Boot",
+"Django",
+"Flask / FastAPI",
+"REST APIs",
+"AWS",
+"Azure",
+"GCP",
+"Docker",
+"Kubernetes",
+"Linux",
+"CI/CD",
+"Git",
+"PostgreSQL",
+"MySQL",
+"MongoDB",
+"Redis",
+"NoSQL",
+"Communication",
+"Problem solving",
+"Project management"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"cc953baf35d3969627a5": {
+"level": "Early career",
+"llm_cities": [
+"Other India"
+],
+"llm_skills": [
+"Testing / QA"
+],
+"role": "Operations / Supply Chain",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"cca81654eeec2b28e77b": {
+"level": "Experienced",
+"llm_cities": [
+"Mumbai"
+],
+"llm_skills": [
+"CRM (Salesforce etc.)",
+"Communication",
+"Problem solving",
+"Teamwork"
+],
+"role": "Customer Support / Success",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"ccfb1175f15b9f8e06ca": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Figma",
+"Adobe Creative Suite"
+],
+"role": "Design (UI/UX/Graphic)",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"cd4d6a6f115aba8b57c9": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru",
+"India (unspecified)"
+],
+"llm_skills": [
+"Ruby",
+"GraphQL",
+"Microservices",
+"ETL / Data pipelines",
+"AWS",
+"Docker",
+"Kubernetes",
+"MySQL",
+"MongoDB",
+"Snowflake / BigQuery",
+"Communication",
+"Stakeholder management",
+"Negotiation"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"cd98a50bd2d946db6c89": {
+"level": "Fresher",
+"llm_cities": [
+"Ahmedabad"
+],
+"llm_skills": [
+"English proficiency"
+],
+"role": "Core Engineering (Mech/Civil/Electrical)",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"cdac7f38ad91473d152f": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"REST APIs",
+"CI/CD",
+"CRM (Salesforce etc.)"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"ce03efd8ac4c38796c96": {
+"level": "Experienced",
+"llm_cities": [
+"Pune"
+],
+"llm_skills": [
+"Python",
+"Bash / Shell",
+"SQL",
+"Pandas / NumPy",
+"Spark",
+"ETL / Data pipelines",
+"Azure",
+"Docker",
+"Kubernetes",
+"Linux",
+"CI/CD",
+"Git",
+"PostgreSQL",
+"Snowflake / BigQuery",
+"Jira",
+"Communication",
+"Problem solving",
+"Project management"
+],
+"role": "Data / Analytics / ML",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"ce3a33c88e277814c698": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [],
+"role": "Customer Support / Success",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"ce53c06819e5df349dba": {
+"level": "Experienced",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [
+"AWS",
+"Azure",
+"GCP",
+"Cybersecurity",
+"Stakeholder management",
+"Negotiation"
+],
+"role": "Operations / Supply Chain",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"cebe9226950eba8fb08f": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Communication"
+],
+"role": "Core Engineering (Mech/Civil/Electrical)",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"cef1770887009c9387a9": {
+"level": "Fresher",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [],
+"role": "Core Engineering (Mech/Civil/Electrical)",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"cf25d8558cdafdde73dc": {
+"level": "Early career",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [
+"CRM (Salesforce etc.)",
+"Communication",
+"Problem solving",
+"Stakeholder management"
+],
+"role": "Customer Support / Success",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"cf497e74976c6b55d857": {
+"level": "Experienced",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [],
+"role": "Product Management",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"cf595459a11b3f5f09df": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru",
+"Delhi NCR"
+],
+"llm_skills": [
+"SQL",
+"Data analysis",
+"SAP / ERP",
+"Jira",
+"Problem solving",
+"Stakeholder management",
+"Project management"
+],
+"role": "Operations / Supply Chain",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"cfbbdeb37dc764840748": {
+"level": "Experienced",
+"llm_cities": [
+"Other India"
+],
+"llm_skills": [
+"Machine Learning",
+"Generative AI / LLMs",
+"ETL / Data pipelines"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"cff876367b865a1c9547": {
+"level": "Experienced",
+"llm_cities": [
+"Pune",
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"Django",
+"Flask / FastAPI",
+"SQL",
+"Machine Learning",
+"Generative AI / LLMs",
+"ETL / Data pipelines",
+"Data analysis",
+"Snowflake / BigQuery",
+"CRM (Salesforce etc.)",
+"Jira"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"cffac3d719668a558f2d": {
+"level": "Early career",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"AWS",
+"Azure",
+"GCP",
+"Docker",
+"Kubernetes",
+"CI/CD",
+"Git",
+"Terraform"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"d010552eee6f1fecf560": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Machine Learning",
+"PyTorch / TensorFlow"
+],
+"role": "Data / Analytics / ML",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"d010b9f9a0a453be39ba": {
+"level": "Early career",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"ETL / Data pipelines",
+"PostgreSQL",
+"Kafka",
+"Snowflake / BigQuery",
+"Jira",
+"Customer handling"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"d04447013ac138733f4e": {
+"level": "Experienced",
+"llm_cities": [
+"Mumbai"
+],
+"llm_skills": [
+"Problem solving"
+],
+"role": "Customer Support / Success",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"d0888b503b2f25984ba3": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Git",
+"Communication",
+"Stakeholder management"
+],
+"role": "HR / Recruiting",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"d088d97faff900b30198": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"C#",
+"Stakeholder management"
+],
+"role": "Other",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"d0ae3d20d55402fb5910": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"C++",
+"Machine Learning",
+"Deep Learning",
+"Communication",
+"Problem solving"
+],
+"role": "Data / Analytics / ML",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"d0d786ba621b7ca876e5": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Communication",
+"Project management"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"d1f6c78470d8aec438ec": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"SQL",
+"Excel",
+"Power BI",
+"Data analysis",
+"Communication",
+"Problem solving"
+],
+"role": "Operations / Supply Chain",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"d2ae237ab8f7ea2f8ee7": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"JavaScript",
+"REST APIs",
+"Git"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"d343c84fdf16dc03c0a8": {
+"level": "Experienced",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [
+"Python",
+"Machine Learning",
+"Generative AI / LLMs",
+"NLP",
+"Pandas / NumPy",
+"Data analysis"
+],
+"role": "Data / Analytics / ML",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"d3afdca4173b01afddd0": {
+"level": "Early career",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"d3b6459d0f5e143bda2e": {
+"level": "Experienced",
+"llm_cities": [
+"Other India"
+],
+"llm_skills": [
+"MS Office"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"d44da2b66ea186f7c871": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Jira",
+"Problem solving",
+"Stakeholder management",
+"Project management"
+],
+"role": "Data / Analytics / ML",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"d49ea5ce7f589df52c20": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"GCP",
+"Kubernetes",
+"CI/CD",
+"Teamwork"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"d514673f6b57ea8caaae": {
+"level": "Early career",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"SQL",
+"Power BI",
+"Tableau",
+"ETL / Data pipelines",
+"Data analysis",
+"CRM (Salesforce etc.)",
+"Problem solving"
+],
+"role": "Data / Analytics / ML",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"d517f270166ff4f29681": {
+"level": "Experienced",
+"llm_cities": [
+"Chennai"
+],
+"llm_skills": [
+"Communication"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"d51b28f6e6f17e9a54db": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"SAP / ERP",
+"Communication",
+"Problem solving",
+"Stakeholder management",
+"Negotiation"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"d539f65280af8db9d9cd": {
+"level": "Experienced",
+"llm_cities": [
+"Other India"
+],
+"llm_skills": [
+"Negotiation",
+"Customer handling"
+],
+"role": "Other",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"d5940217a184fc78879d": {
+"level": "Experienced",
+"llm_cities": [
+"Hyderabad"
+],
+"llm_skills": [
+"REST APIs",
+"SQL",
+"Data analysis",
+"Linux",
+"Testing / QA",
+"Problem solving",
+"Stakeholder management"
+],
+"role": "Data / Analytics / ML",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"d5f5500c52ccb6eb4b98": {
+"level": "Experienced",
+"llm_cities": [
+"Other India"
+],
+"llm_skills": [
+"Excel",
+"MS Office",
+"Communication",
+"English proficiency",
+"Teamwork",
+"Customer handling"
+],
+"role": "Consulting / Strategy",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"d629e59a11170ebf5994": {
+"level": "Fresher",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Java",
+"JavaScript",
+"Scala",
+"Ruby",
+"Communication",
+"Problem solving"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"d6429874f916fddef3c4": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"Statistics",
+"Machine Learning",
+"Deep Learning",
+"Generative AI / LLMs",
+"NLP",
+"PyTorch / TensorFlow",
+"AWS",
+"Azure",
+"GCP",
+"Negotiation"
+],
+"role": "Data / Analytics / ML",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"d66599a222fea34e888c": {
+"level": "Experienced",
+"llm_cities": [
+"Mumbai"
+],
+"llm_skills": [
+"Negotiation",
+"Presentation"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"d729f73cc22d02a1db85": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"Statistics",
+"Machine Learning",
+"Generative AI / LLMs",
+"Pandas / NumPy"
+],
+"role": "Data / Analytics / ML",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"d77403c1637eb24686a7": {
+"level": "Experienced",
+"llm_cities": [
+"Other India"
+],
+"llm_skills": [
+"SAP / ERP",
+"Communication",
+"English proficiency",
+"Project management",
+"Teamwork"
+],
+"role": "Other",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"d77af8961e64e064a9a4": {
+"level": "Internship",
+"llm_cities": [
+"Delhi NCR",
+"Other India"
+],
+"llm_skills": [
+"MS Office",
+"Communication"
+],
+"role": "HR / Recruiting",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"d7b259dbe0f9c04a35a9": {
+"level": "Early career",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"Java",
+"C++",
+"Scala",
+"Microservices",
+"AWS",
+"Azure",
+"GCP",
+"Docker",
+"Kubernetes",
+"Communication",
+"Problem solving",
+"Teamwork"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"d82151af3d330de4a2b1": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru",
+"Hyderabad",
+"Other India"
+],
+"llm_skills": [
+"SAP / ERP",
+"Teamwork"
+],
+"role": "Other",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"d85d6e7be8a1c76cbc9f": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"SAP / ERP",
+"Stakeholder management"
+],
+"role": "Other",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"d85df13c648d2cc1a0dd": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"SQL",
+"Power BI",
+"Spark",
+"ETL / Data pipelines",
+"Azure",
+"CI/CD",
+"Networking"
+],
+"role": "Data / Analytics / ML",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"d8606cd314db1cb373da": {
+"level": "Early career",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Negotiation"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"d868a990e9c0025f154e": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"C++",
+"Docker",
+"Linux",
+"CI/CD",
+"Git",
+"Testing / QA",
+"Jira",
+"Project management"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"d92ad43ccb21a815239f": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Go",
+"DSA",
+"REST APIs",
+"Microservices",
+"MySQL",
+"MongoDB",
+"Kafka"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"d9aa5a6d3354c48ceb3d": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Communication",
+"Problem solving"
+],
+"role": "HR / Recruiting",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"d9e2c2c3aca5c02ae18d": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [],
+"role": "HR / Recruiting",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"daad16e2b6362deec92f": {
+"level": "Early career",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"db030fb7b94e78d47274": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Node.js",
+"Kubernetes"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"db2c80289bc15dd07745": {
+"level": "Fresher",
+"llm_cities": [
+"Other India"
+],
+"llm_skills": [
+"SAP / ERP"
+],
+"role": "Core Engineering (Mech/Civil/Electrical)",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"db31071f96c00f48964e": {
+"level": "Experienced",
+"llm_cities": [
+"Pune"
+],
+"llm_skills": [
+"Excel",
+"Power BI",
+"CRM (Salesforce etc.)",
+"SAP / ERP",
+"MS Office",
+"Communication",
+"Problem solving"
+],
+"role": "Operations / Supply Chain",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"db5d8c6078c747aaf1da": {
+"level": "Fresher",
+"llm_cities": [
+"Mumbai"
+],
+"llm_skills": [],
+"role": "Customer Support / Success",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"dbc7c3411a3c83e0db7b": {
+"level": "Fresher",
+"llm_cities": [
+"Other India"
+],
+"llm_skills": [
+"SEO / SEM"
+],
+"role": "Content / Writing",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"dc250b1be2aaf942f059": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"AWS",
+"Kubernetes",
+"Linux",
+"Networking",
+"Customer handling"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"dc397783772b58fb554b": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [],
+"role": "Consulting / Strategy",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"dc5bede53a881cf00799": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Excel",
+"SAP / ERP",
+"MS Office",
+"Communication",
+"Problem solving",
+"Teamwork"
+],
+"role": "Core Engineering (Mech/Civil/Electrical)",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"dc84da9add12eab52352": {
+"level": "Early career",
+"llm_cities": [
+"Chennai"
+],
+"llm_skills": [
+"Excel",
+"Communication"
+],
+"role": "Finance / Accounting",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"dc8ff330c493a7d37893": {
+"level": "Early career",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [
+"Excel",
+"Data analysis",
+"MS Office",
+"Communication"
+],
+"role": "Operations / Supply Chain",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"dce4ddad341f8e0e5d44": {
+"level": "Fresher",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"Java",
+"TypeScript",
+"DSA",
+"OOP",
+"REST APIs",
+"ETL / Data pipelines",
+"Snowflake / BigQuery",
+"Problem solving"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"dd3379b24b53d30fa751": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Excel",
+"SAP / ERP",
+"Problem solving",
+"Project management"
+],
+"role": "Finance / Accounting",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"dd6d7c12fc8b7af09de4": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Git",
+"Jira"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"ddb94ab1fc642b62bdac": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Machine Learning",
+"Generative AI / LLMs",
+"PyTorch / TensorFlow",
+"ETL / Data pipelines"
+],
+"role": "Data / Analytics / ML",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"ddd3be8985c64a4a7986": {
+"level": "Early career",
+"llm_cities": [
+"Hyderabad"
+],
+"llm_skills": [
+"Java",
+"Microservices",
+"SQL",
+"PostgreSQL",
+"Redis"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"df1143aaa847ee81738b": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [],
+"role": "HR / Recruiting",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"df29e3057ecdd2168aeb": {
+"level": "Experienced",
+"llm_cities": [
+"Pune",
+"Bengaluru"
+],
+"llm_skills": [
+"Cybersecurity"
+],
+"role": "Other",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"df39c17f86b99cf17bc4": {
+"level": "Experienced",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [
+"Snowflake / BigQuery",
+"Google Analytics",
+"SEO / SEM",
+"Problem solving"
+],
+"role": "Marketing",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"df4131470e9f35dfdb5c": {
+"level": "Fresher",
+"llm_cities": [
+"Delhi NCR",
+"Bengaluru",
+"Pune",
+"Chennai",
+"Hyderabad",
+"Ahmedabad",
+"Other India",
+"Mumbai",
+"Kolkata"
+],
+"llm_skills": [],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"df8b582e7f5085fce15d": {
+"level": "Experienced",
+"llm_cities": [
+"Mumbai"
+],
+"llm_skills": [
+"Excel",
+"Testing / QA",
+"MS Office",
+"Communication",
+"Problem solving",
+"Stakeholder management",
+"Customer handling"
+],
+"role": "Operations / Supply Chain",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"dfb40d9a7e028609dcfb": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Java",
+"OOP",
+"Testing / QA",
+"Communication",
+"Project management"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"dfbf99a13ac51c428304": {
+"level": "Early career",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [
+"Python",
+"TypeScript",
+"Rust",
+"React",
+"Next.js",
+"Flask / FastAPI",
+"Generative AI / LLMs",
+"ETL / Data pipelines",
+"Docker",
+"Kubernetes",
+"CI/CD",
+"Communication"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"dffbfa1da95f9a025cdf": {
+"level": "Early career",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Statistics",
+"Machine Learning",
+"Deep Learning",
+"PyTorch / TensorFlow"
+],
+"role": "Data / Analytics / ML",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"e12c3b49f4811db451c3": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [],
+"role": "Other",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"e154ff29a6b33a3cbc51": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Linux",
+"Networking",
+"Problem solving"
+],
+"role": "Customer Support / Success",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"e1651e16cd6cfcedf669": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru",
+"Other India"
+],
+"llm_skills": [
+"Linux",
+"Networking",
+"Communication",
+"Problem solving",
+"Customer handling"
+],
+"role": "Customer Support / Success",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"e169905275dbf11080d6": {
+"level": "Early career",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [],
+"role": "Customer Support / Success",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"e1bcd453a36350089137": {
+"level": "Early career",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"JavaScript",
+"SQL",
+"Testing / QA",
+"Project management"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"e27e3003b4ab0ef3f1cc": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [],
+"role": "Core Engineering (Mech/Civil/Electrical)",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"e284b32a626812c46e9a": {
+"level": "Early career",
+"llm_cities": [
+"Pune"
+],
+"llm_skills": [
+"Negotiation",
+"Customer handling"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"e43bdb078cfae2903cb6": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"JavaScript",
+"TypeScript",
+"React",
+"HTML / CSS"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"e44d613360d1bf38cfef": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru",
+"Chennai"
+],
+"llm_skills": [
+"Node.js",
+"Machine Learning",
+"Generative AI / LLMs"
+],
+"role": "Data / Analytics / ML",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"e4e30ea3988458384ae3": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Android",
+"iOS",
+"Jira",
+"Communication",
+"Customer handling"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"e56db7e4c8333e3fc4c2": {
+"level": "Experienced",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [
+"Python",
+"TypeScript",
+"Generative AI / LLMs",
+"Docker",
+"Kubernetes",
+"CI/CD",
+"Jira"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"e5a41df54d8aea951796": {
+"level": "Early career",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [
+"CRM (Salesforce etc.)",
+"Negotiation",
+"Presentation"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"e5dff870276659f730d1": {
+"level": "Early career",
+"llm_cities": [
+"Other India"
+],
+"llm_skills": [
+"Excel",
+"Power BI",
+"SAP / ERP",
+"English proficiency"
+],
+"role": "Operations / Supply Chain",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"e65672c99d4e7bf9da60": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"SAP / ERP",
+"Stakeholder management"
+],
+"role": "Finance / Accounting",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"e6eef5d6749276083c37": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"JavaScript",
+"REST APIs",
+"CI/CD",
+"Git"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"e76204e3f99cd65fefb4": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"CRM (Salesforce etc.)",
+"Communication",
+"Problem solving"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"e7b5bf803d2f2318576d": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru",
+"Delhi NCR"
+],
+"llm_skills": [
+"Machine Learning"
+],
+"role": "Product Management",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"e81a3f9dc2b90e163206": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"C++",
+"Machine Learning",
+"Generative AI / LLMs",
+"CI/CD",
+"Cybersecurity"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"e8541cd768cb49c2e019": {
+"level": "Experienced",
+"llm_cities": [
+"Other India"
+],
+"llm_skills": [
+"SAP / ERP",
+"MS Office",
+"Communication",
+"Problem solving",
+"Negotiation",
+"Project management"
+],
+"role": "Operations / Supply Chain",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"e8b9966d0820087dfb18": {
+"level": "Early career",
+"llm_cities": [
+"Other India"
+],
+"llm_skills": [
+"Python",
+"Java",
+"Scala",
+"REST APIs",
+"Microservices",
+"SQL",
+"Machine Learning",
+"Generative AI / LLMs",
+"Spark",
+"ETL / Data pipelines",
+"AWS",
+"Azure",
+"GCP",
+"Docker",
+"Kubernetes",
+"CI/CD",
+"Git",
+"Kafka"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"e9228cf47165d6f4f27b": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Stakeholder management",
+"Project management"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"ea27dfb9e11fba623738": {
+"level": "Experienced",
+"llm_cities": [
+"Chennai"
+],
+"llm_skills": [
+"Python",
+"Bash / Shell",
+"SQL",
+"Machine Learning",
+"Testing / QA",
+"Project management"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"ebdb202a426c3d3d1676": {
+"level": "Experienced",
+"llm_cities": [
+"Remote",
+"India (unspecified)"
+],
+"llm_skills": [
+"Hindi / regional language"
+],
+"role": "Content / Writing",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"ebe845bb065825603d9b": {
+"level": "Experienced",
+"llm_cities": [
+"Mumbai",
+"Delhi NCR",
+"Bengaluru"
+],
+"llm_skills": [
+"Azure",
+"CRM (Salesforce etc.)",
+"Stakeholder management"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"ec1d51450be49b6537f9": {
+"level": "Experienced",
+"llm_cities": [
+"Other India"
+],
+"llm_skills": [
+"SQL",
+"AWS",
+"Azure",
+"GCP",
+"Kubernetes",
+"Networking",
+"Cybersecurity",
+"Teamwork",
+"Customer handling"
+],
+"role": "Customer Support / Success",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"ec2321c4ae399e86e726": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"JavaScript",
+"Azure",
+"CI/CD",
+"Testing / QA",
+"Jira",
+"Project management"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"ec8534eea150d7c5eef2": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"Java",
+"React",
+"REST APIs",
+"Microservices",
+"SQL",
+"Machine Learning",
+"Generative AI / LLMs",
+"PyTorch / TensorFlow",
+"Spark",
+"ETL / Data pipelines",
+"Data analysis",
+"AWS",
+"Azure",
+"GCP",
+"Docker",
+"CI/CD",
+"Snowflake / BigQuery",
+"Communication",
+"Problem solving",
+"Project management"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"ecb4fe49e53f9b3db69d": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [],
+"role": "HR / Recruiting",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"ecde0bd98f04f646bf97": {
+"level": "Experienced",
+"llm_cities": [
+"Pune"
+],
+"llm_skills": [],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"edc34268ddda50d1cae6": {
+"level": "Experienced",
+"llm_cities": [
+"Mumbai"
+],
+"llm_skills": [
+"Problem solving"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"ee2401e73fa4e0f07db1": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"SQL",
+"Excel",
+"Power BI",
+"English proficiency",
+"Problem solving"
+],
+"role": "Data / Analytics / ML",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"ee292015cf4d1a7348fc": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Excel",
+"Data analysis"
+],
+"role": "HR / Recruiting",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"ee32766fea885701b5d3": {
+"level": "Early career",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"CRM (Salesforce etc.)",
+"Negotiation",
+"Presentation"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"ee7aa2db9b948b0641a7": {
+"level": "Fresher",
+"llm_cities": [
+"Other India"
+],
+"llm_skills": [
+"Statistics",
+"Machine Learning",
+"Deep Learning",
+"Computer Vision",
+"Data analysis"
+],
+"role": "Data / Analytics / ML",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"ee9b148f287391da6f92": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"C#",
+"Machine Learning",
+"Generative AI / LLMs",
+"PyTorch / TensorFlow",
+"AWS",
+"Azure",
+"CI/CD",
+"Git",
+"Jira",
+"Project management"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"ee9bc2bf1ec0d129e096": {
+"level": "Early career",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Excel",
+"MS Office",
+"Communication",
+"Stakeholder management",
+"Negotiation"
+],
+"role": "Operations / Supply Chain",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"eed4b3d9b69df11674d7": {
+"level": "Early career",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Negotiation"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"efa15b7374655c850abd": {
+"level": "Fresher",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"Java",
+"TypeScript",
+"DSA",
+"OOP",
+"REST APIs",
+"ETL / Data pipelines",
+"Problem solving"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"efc2f06dbd41c7b92958": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"CRM (Salesforce etc.)"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"f018047476b2bff43e10": {
+"level": "Fresher",
+"llm_cities": [
+"Delhi NCR",
+"Other India"
+],
+"llm_skills": [
+"CRM (Salesforce etc.)"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"f0264a49f27da5dcb5bf": {
+"level": "Experienced",
+"llm_cities": [
+"Other India"
+],
+"llm_skills": [
+"Kubernetes",
+"Linux",
+"Terraform"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"f02b256d9895ca056c23": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"C++",
+"Problem solving"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"f048d5ebce575f1a410c": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Networking",
+"SAP / ERP",
+"Negotiation"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"f08d86d472ea22797d18": {
+"level": "Early career",
+"llm_cities": [
+"Other India"
+],
+"llm_skills": [
+"Negotiation"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"f0e034fb821a80381d41": {
+"level": "Experienced",
+"llm_cities": [
+"Delhi NCR",
+"Bengaluru"
+],
+"llm_skills": [
+"Stakeholder management",
+"Customer handling",
+"Project management"
+],
+"role": "Product Management",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"f17712a0393e9838f0ad": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [],
+"role": "Other",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"f1fdd5c043b2d8d2ef32": {
+"level": "Early career",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [
+"Communication",
+"Problem solving",
+"Stakeholder management"
+],
+"role": "Customer Support / Success",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"f222438e673d9fcc8f11": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"HTML / CSS",
+"REST APIs",
+"Docker",
+"Linux",
+"CI/CD",
+"Git",
+"Testing / QA"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"f29622757f14dbef450d": {
+"level": "Early career",
+"llm_cities": [
+"Bengaluru",
+"Delhi NCR"
+],
+"llm_skills": [
+"Communication",
+"English proficiency",
+"Negotiation",
+"Customer handling",
+"Project management"
+],
+"role": "Consulting / Strategy",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"f2b68d3cf03940447dbb": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"C#",
+"Bash / Shell",
+"Linux",
+"CI/CD",
+"Communication",
+"Customer handling",
+"Project management"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"f2dff3000b6255baa14e": {
+"level": "Early career",
+"llm_cities": [
+"Other India"
+],
+"llm_skills": [
+"Communication",
+"English proficiency"
+],
+"role": "HR / Recruiting",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"f2e7e3a05140d99eadab": {
+"level": "Experienced",
+"llm_cities": [
+"Pune"
+],
+"llm_skills": [],
+"role": "Other",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"f365160cfbd2665ed627": {
+"level": "Early career",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [
+"Java",
+"JavaScript",
+"React",
+"Node.js",
+"Microservices",
+"Git",
+"Stakeholder management",
+"Negotiation"
+],
+"role": "HR / Recruiting",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"f38e0e6ab3f935df244f": {
+"level": "Early career",
+"llm_cities": [
+"Hyderabad"
+],
+"llm_skills": [
+"Excel",
+"Power BI",
+"Tableau",
+"Stakeholder management"
+],
+"role": "Operations / Supply Chain",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"f38e968ffeb8f16b5be5": {
+"level": "Fresher",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"REST APIs",
+"Generative AI / LLMs",
+"Teamwork",
+"Project management"
+],
+"role": "Customer Support / Success",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"f39a56a0791604a39140": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Statistics",
+"Accounting (Tally / GST)",
+"Stakeholder management"
+],
+"role": "Finance / Accounting",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"f3ecb0959984fe454c86": {
+"level": "Experienced",
+"llm_cities": [
+"Other India"
+],
+"llm_skills": [
+"SQL",
+"Power BI",
+"ETL / Data pipelines",
+"Snowflake / BigQuery",
+"SAP / ERP",
+"Communication",
+"Stakeholder management"
+],
+"role": "Data / Analytics / ML",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"f45440ecd393642eb9de": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"JavaScript",
+"TypeScript",
+"Microservices",
+"SQL",
+"Generative AI / LLMs",
+"AWS",
+"Azure",
+"GCP",
+"Kubernetes",
+"CI/CD",
+"Git",
+"Cybersecurity",
+"Testing / QA",
+"MongoDB",
+"Communication"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"f4e8726333d4d169985a": {
+"level": "Fresher",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [
+"Excel",
+"CRM (Salesforce etc.)",
+"Hindi / regional language",
+"Negotiation"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"f4ed0e3b66f0d3914c15": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"OOP",
+"Data analysis",
+"Teamwork"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"f4f0346e0f5cdc763888": {
+"level": "Fresher",
+"llm_cities": [
+"Other India"
+],
+"llm_skills": [
+"Power BI",
+"Machine Learning",
+"Generative AI / LLMs"
+],
+"role": "Data / Analytics / ML",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"f4f55f8376a805649af1": {
+"level": "Experienced",
+"llm_cities": [
+"Other India"
+],
+"llm_skills": [
+"MS Office",
+"Communication"
+],
+"role": "Core Engineering (Mech/Civil/Electrical)",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"f5403f8f1ae49a1783fa": {
+"level": "Early career",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [
+"MS Office",
+"Communication"
+],
+"role": "HR / Recruiting",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"f563d39d2c91b62da3fc": {
+"level": "Experienced",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [
+"Negotiation"
+],
+"role": "Other",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"f5be19111864a28511bf": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Data analysis",
+"Project management"
+],
+"role": "Core Engineering (Mech/Civil/Electrical)",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"f5cb4c8e63ad59213de6": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"Java",
+"Scala",
+"SQL",
+"Spark",
+"ETL / Data pipelines",
+"AWS",
+"CI/CD",
+"Git",
+"Stakeholder management"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"f61083264204c0b1096f": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Generative AI / LLMs",
+"Negotiation"
+],
+"role": "Other",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"f639465481aa857f8e60": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Teamwork",
+"Project management"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"f6ca037f2951f5993c11": {
+"level": "Internship",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [
+"Excel",
+"Stakeholder management"
+],
+"role": "HR / Recruiting",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"f778495b53f91473b993": {
+"level": "Early career",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Machine Learning",
+"Problem solving"
+],
+"role": "Core Engineering (Mech/Civil/Electrical)",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"f7c28d8fa2b9c43cfc09": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Communication",
+"Stakeholder management",
+"Negotiation"
+],
+"role": "HR / Recruiting",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"f7ef7590eefda1a89ff9": {
+"level": "Experienced",
+"llm_cities": [
+"Mumbai",
+"Bengaluru",
+"Delhi NCR"
+],
+"llm_skills": [
+"SAP / ERP",
+"Accounting (Tally / GST)",
+"Negotiation"
+],
+"role": "Finance / Accounting",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"f8159c44264ed5b2a298": {
+"level": "Experienced",
+"llm_cities": [
+"Mumbai"
+],
+"llm_skills": [
+"Communication",
+"Stakeholder management"
+],
+"role": "Content / Writing",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"f8469951c655da3f2392": {
+"level": "Experienced",
+"llm_cities": [
+"Pune"
+],
+"llm_skills": [
+"Statistics",
+"Communication",
+"Stakeholder management",
+"Project management"
+],
+"role": "Core Engineering (Mech/Civil/Electrical)",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"f8e5a225a85e6137333b": {
+"level": "Early career",
+"llm_cities": [
+"Kolkata"
+],
+"llm_skills": [
+"Negotiation",
+"Customer handling"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"f8f4027c15f2858ee215": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"C++",
+"OOP",
+"Android",
+"CI/CD",
+"Git",
+"Testing / QA",
+"Problem solving",
+"Project management"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"f9678df432031cfc54e6": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Cybersecurity"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"f9a978beb29a1780e1e2": {
+"level": "Experienced",
+"llm_cities": [
+"Other India"
+],
+"llm_skills": [
+"Excel",
+"SAP / ERP",
+"MS Office"
+],
+"role": "Operations / Supply Chain",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"f9a9efb7bf755607e5c9": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Stakeholder management",
+"Project management"
+],
+"role": "Product Management",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"f9b5cd32e839c3203600": {
+"level": "Experienced",
+"llm_cities": [
+"Other India"
+],
+"llm_skills": [
+"C++",
+"Jira"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"f9ca5fa58400d62335ed": {
+"level": "Experienced",
+"llm_cities": [
+"Other India"
+],
+"llm_skills": [
+"Python",
+"Testing / QA",
+"Communication"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"fa4232b3f945109f4bf9": {
+"level": "Fresher",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"JavaScript",
+"Go",
+"React",
+"HTML / CSS",
+"REST APIs",
+"Microservices",
+"SQL",
+"Git",
+"MongoDB",
+"Problem solving"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"fa5a939a6f4dedd357a6": {
+"level": "Fresher",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [],
+"role": "Content / Writing",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"fabc00975ac9d786bd0f": {
+"level": "Experienced",
+"llm_cities": [
+"Mumbai"
+],
+"llm_skills": [
+"Problem solving"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"fadde2346e97b134d84e": {
+"level": "Fresher",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"Java",
+"JavaScript",
+"C#",
+"SQL",
+"CI/CD",
+"Git",
+"Testing / QA",
+"Jira",
+"Communication",
+"Problem solving"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"fae2fc82cec6607b5672": {
+"level": "Experienced",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [
+"Python",
+"SQL",
+"Excel",
+"Power BI",
+"Tableau",
+"CRM (Salesforce etc.)",
+"Communication",
+"Problem solving"
+],
+"role": "Data / Analytics / ML",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"fafab2abbe4df47be6d4": {
+"level": "Experienced",
+"llm_cities": [
+"Mumbai"
+],
+"llm_skills": [
+"Excel",
+"Customer handling"
+],
+"role": "Operations / Supply Chain",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"fb1dbc01837a0655f3dc": {
+"level": "Fresher",
+"llm_cities": [
+"Pune"
+],
+"llm_skills": [
+"Communication"
+],
+"role": "Customer Support / Success",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"fb5e12b9d8d2775df94e": {
+"level": "Experienced",
+"llm_cities": [
+"Mumbai"
+],
+"llm_skills": [
+"Communication",
+"Stakeholder management"
+],
+"role": "HR / Recruiting",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"fbaeb2a291901ebbf716": {
+"level": "Early career",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [
+"CRM (Salesforce etc.)"
+],
+"role": "Marketing",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"fbe4b7d6e9dccf2fd7db": {
+"level": "Early career",
+"llm_cities": [
+"Remote"
+],
+"llm_skills": [
+"CRM (Salesforce etc.)",
+"MS Office",
+"English proficiency",
+"Hindi / regional language"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"fcacc8e1d4eca2645505": {
+"level": "Early career",
+"llm_cities": [
+"Other India"
+],
+"llm_skills": [
+"Negotiation"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"fd9a68c5e8d36f93bb22": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Python",
+"Machine Learning",
+"Deep Learning",
+"Generative AI / LLMs",
+"Computer Vision",
+"ETL / Data pipelines"
+],
+"role": "Data / Analytics / ML",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"fda8b809b1a4d0b2ce8f": {
+"level": "Experienced",
+"llm_cities": [
+"Chennai",
+"Pune"
+],
+"llm_skills": [
+"Java",
+"Scala",
+"Bash / Shell",
+"OOP",
+"SQL",
+"Spark",
+"Azure",
+"Linux",
+"CI/CD",
+"Git",
+"Snowflake / BigQuery",
+"Jira",
+"Communication",
+"Problem solving",
+"Project management"
+],
+"role": "Data / Analytics / ML",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"fdc013fa5f9e883769e0": {
+"level": "Early career",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"fdcffb9679054a2afac3": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Excel",
+"SAP / ERP",
+"Accounting (Tally / GST)",
+"Communication"
+],
+"role": "Finance / Accounting",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"fe47105a1ab85e2d7050": {
+"level": "Experienced",
+"llm_cities": [
+"Other India"
+],
+"llm_skills": [
+"Communication",
+"Problem solving"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"fe688187b6f9739e49c3": {
+"level": "Early career",
+"llm_cities": [
+"Delhi NCR"
+],
+"llm_skills": [
+"Jira"
+],
+"role": "Software Engineering",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"ff0a3d5b55ef84435f86": {
+"level": "Fresher",
+"llm_cities": [
+"Other India"
+],
+"llm_skills": [
+"Negotiation"
+],
+"role": "Sales / Business Development",
+"tagged_by": "gemini-3.5-flash-lite"
+},
+"ff41ad0fc7c4b259a170": {
+"level": "Experienced",
+"llm_cities": [
+"Bengaluru"
+],
+"llm_skills": [
+"Statistics",
+"Communication"
+],
+"role": "Core Engineering (Mech/Civil/Electrical)",
+"tagged_by": "gemini-3.5-flash-lite"
+}
+}

@@ -1,15 +1,16 @@
-"""LLM tagger: role, cities[] and level, with schema-enforced enums.
+"""LLM tagger: role, cities[], level and skills[] from reading the JD, with schema-enforced enums.
 
 Cost levers:
   * content-hash cache (data/tags_cache.json, key includes model + prompt version)
     -> each daily run only tags NEW or CHANGED posts
   * batching (BATCH_SIZE posts per call) spreads the instruction tokens over the batch
-  * description excerpt: opening + experience/qualification sentences, capped at EXCERPT_CHARS
+  * JD excerpt: company/benefit boilerplate removed, then opening + level/skill sentences, capped at EXCERPT_CHARS
 Every call's token usage is appended to data/usage.jsonl, so cost is measured, not estimated.
 """
 import hashlib
 import itertools
 import json
+import os
 import re
 import threading
 import time
@@ -17,13 +18,16 @@ from pathlib import Path
 
 from . import llm
 from .baseline import baseline_tag
+from .skills import ALL_SKILLS, extract_skills, final_skills, jd_sentences
 from .taxonomy import CITIES, LEVELS, ROLES, cities_from_alias
 
-PROMPT_VERSION = "v2"
+PROMPT_VERSION = "v4"   # v4: LLM judges keyword candidates from the JD (v3 free extraction missed SQL/Python)
 # Claude or Gemini, whichever key is present (see llm.resolve). None -> keyword tags only.
 PROVIDER, MODEL, PROVIDER_NOTE = llm.resolve()
-BATCH_SIZE = 10
-EXCERPT_CHARS = 1200
+# Gemini free tier allows 20 requests/day per model: 50 posts per request keeps a full run (~750 posts)
+# at ~15 requests and a normal day at 1-2. Claude has no such cap, so smaller batches are fine.
+BATCH_SIZE = int(os.environ.get("TAG_BATCH_SIZE") or (50 if PROVIDER == "gemini" else 10))
+EXCERPT_CHARS = 2400   # skills need the requirements section, not just the opening
 
 # USD per 1M tokens (input, output), list prices Nov 2026. Thinking tokens bill as output on both.
 PRICES = {
@@ -59,6 +63,15 @@ level, one of {LEVELS}:
   Early career - asks for up to 2 years, or junior/associate/"Engineer I" with no stated requirement.
   Experienced - asks for 3+ years, or is senior/lead/staff/manager level.
 
+skills: what THIS JOB asks the candidate to know or will use, chosen only from {ALL_SKILLS}.
+  Each post comes with "candidate_skills": skills a keyword scan found in its JD. For each candidate:
+    KEEP it if the responsibilities or requirements ask for it (required or "nice to have").
+    DROP it if the text is about the company, its products, customers or general tech stack (a recruiter at a
+    cloud company does NOT need AWS), or if the word means something else ("networking" with people,
+    "algorithm" in a mission statement, "presentation" of a product).
+  ADD a skill from the list only if the JD clearly asks for it and the scan missed it.
+  Include a professional skill (Communication, Negotiation, ...) only if the post asks for it.
+
 Return exactly one item per input id, echoing the id."""
 
 ITEM_SCHEMA = {
@@ -68,8 +81,9 @@ ITEM_SCHEMA = {
         "role": {"type": "string", "enum": ROLES},
         "cities": {"type": "array", "items": {"type": "string", "enum": CITIES}},
         "level": {"type": "string", "enum": LEVELS},
+        "skills": {"type": "array", "items": {"type": "string", "enum": ALL_SKILLS}},
     },
-    "required": ["id", "role", "cities", "level"],
+    "required": ["id", "role", "cities", "level", "skills"],
     "additionalProperties": False,
 }
 OUTPUT_SCHEMA = {
@@ -80,27 +94,33 @@ OUTPUT_SCHEMA = {
 }
 
 SIGNAL = re.compile(r"(year|yrs|experience|fresher|graduat|degree|b\.?tech|b\.?e\b|mba|intern|stipend|trainee|"
-                    r"batch|20\d\d|entry|junior|qualification|eligib)", re.I)
+                    r"batch|20\d\d|entry|junior|qualification|eligib|skill|knowledge|proficien|familiar|"
+                    r"must|required|requirement|you will|responsib|tools?|experience with)", re.I)
 
 
-def excerpt(desc: str) -> str:
-    """Opening 400 chars + sentences carrying level signals, capped at EXCERPT_CHARS.
-    (A plain first-500-chars cut failed: Greenhouse posts open with company boilerplate and the
-    experience requirement sits much further down.)"""
-    desc = " ".join((desc or "").split())
-    head = desc[:400]
-    picked = [s for s in re.split(r"(?<=[.!?•])\s+", desc[400:]) if SIGNAL.search(s) and len(s) < 300]
-    out = head
-    for s in picked:
-        if len(out) + len(s) + 3 > EXCERPT_CHARS:
-            break
-        out += " … " + s
-    return out
+def excerpt(desc: str, company: str = "") -> str:
+    """The JD with company/benefit/legal boilerplate removed (jd_sentences), then: the first ~1,200
+    characters plus sentences carrying level or skill signals, capped at EXCERPT_CHARS.
+    (First version sent the raw first 400 characters: that is mostly "About <company>", which is how
+    MongoDB recruiters ended up with AWS/Azure/GCP and why the experience line was often missed.)"""
+    sents = jd_sentences(desc, company)
+    out, rest = "", []
+    for s in sents:
+        if len(out) < 1200:
+            out += (" " if out else "") + s
+        else:
+            rest.append(s)
+    for s in rest:
+        if SIGNAL.search(s) and len(s) < 400:
+            if len(out) + len(s) + 3 > EXCERPT_CHARS:
+                break
+            out += " … " + s
+    return out[:EXCERPT_CHARS]
 
 
 def content_hash(post: dict) -> str:
     key = "|".join([post["title"].strip().lower(), post["company"].strip().lower(),
-                    post.get("location", "").strip().lower(), excerpt(post.get("description", "")),
+                    post.get("location", "").strip().lower(), excerpt(post.get("description", ""), post["company"]),
                     PROMPT_VERSION, MODEL or "none"])
     return hashlib.sha256(key.encode()).hexdigest()[:20]
 
@@ -117,14 +137,16 @@ def _save_cache(cache: dict) -> None:
 def _render(batch: list[tuple[str, dict]]) -> str:
     lines = [json.dumps({"id": hid, "title": p["title"], "company": p["company"],
                          "location": p.get("location", ""), "type": p.get("commitment", ""),
-                         "description": excerpt(p.get("description", ""))}, ensure_ascii=False)
+                         "description": excerpt(p.get("description", ""), p["company"]),
+                         "candidate_skills": extract_skills(p["title"], p.get("description", ""), p["company"])},
+                        ensure_ascii=False)
              for hid, p in batch]
     return "Label these posts (one JSON object per line):\n" + "\n".join(lines)
 
 
 def _call(batch: list[tuple[str, dict]], model: str = None) -> dict[str, dict]:
     model = model or MODEL
-    r = llm.generate_json(model, SYSTEM, _render(batch), OUTPUT_SCHEMA)
+    r = llm.generate_json(model, SYSTEM, _render(batch), OUTPUT_SCHEMA, max_tokens=4000 + 250 * len(batch))
     DATA.mkdir(exist_ok=True)
     with USAGE_PATH.open("a") as f:
         f.write(json.dumps({"ts": int(time.time()), "provider": r["provider"], "model": model, "posts": len(batch),
@@ -191,21 +213,21 @@ def tag_posts(posts: list[dict], use_llm: bool = True, workers: int = 4) -> dict
             return {}, 0
         try:
             return _call(batch), 0
-        except Exception as e:  # noqa: BLE001 - retry each post alone, then fall back
+        except Exception as e:  # noqa: BLE001 - split and retry, then fall back
             if llm.is_fatal(e):
                 if not unavailable.is_set():
                     unavailable.set()
                     stats["llm_status"] = f"unavailable: {str(e)[:160]}"
                     print(f"LLM unavailable ({str(e)[:160]}); using keyword tags for the rest of this run")
                 return {}, 0
-            print(f"batch failed ({str(e)[:120]}); retrying one-by-one")
-            res = {}
-            for item in batch:
-                try:
-                    res.update(_call([item]))
-                except Exception as e2:  # noqa: BLE001
-                    print(f"  post {item[0]} failed: {str(e2)[:120]}")
-            return res, 1
+            # Retry as two halves (recursively), not one post at a time: with 50-post batches a
+            # per-post retry would spend 50 requests, more than a free key's whole daily quota.
+            print(f"batch of {len(batch)} failed ({str(e)[:120]}); retrying in halves")
+            if len(batch) == 1:
+                return {}, 1
+            mid = len(batch) // 2
+            (r1, _), (r2, _) = run_batch(batch[:mid]), run_batch(batch[mid:])
+            return {**r1, **r2}, 1
 
     batches = [todo[i:i + BATCH_SIZE] for i in range(0, len(todo), BATCH_SIZE)]
     if client:
@@ -220,7 +242,7 @@ def tag_posts(posts: list[dict], use_llm: bool = True, workers: int = 4) -> dict
                     if hid in res:
                         r = res[hid]
                         cache[hid] = {"role": r["role"], "llm_cities": r["cities"], "level": r["level"],
-                                      "tagged_by": MODEL}
+                                      "llm_skills": r.get("skills", []), "tagged_by": MODEL}
                         stats["llm_tagged"] += 1
                 if n % 5 == 4:
                     _save_cache(cache)  # checkpoint
@@ -234,6 +256,10 @@ def tag_posts(posts: list[dict], use_llm: bool = True, workers: int = 4) -> dict
             b = baseline_tag(p)
             p.update({"role": b["role"], "llm_cities": None, "level": None, "tagged_by": "rules"})
             stats["fallback"] += 1
+        # skills: the LLM's reading of the JD, grounded: a technical skill the post never mentions is
+        # dropped (no invented skills). Without LLM tags, keep the keyword skills run.py computed.
+        p["skills"], p["skills_source"] = final_skills(p.get("llm_skills"), p["title"], p.get("description", ""),
+                                                       p["company"])
         # deterministic alias map wins when the raw location names known cities
         alias = cities_from_alias(p.get("location", ""))
         p["cities"] = alias or p.get("llm_cities") or ["India (unspecified)"]

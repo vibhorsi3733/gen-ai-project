@@ -140,7 +140,7 @@ def main(use_llm: bool = True) -> int:
 
     enrich_descriptions(posts)
     for p in posts:
-        p["skills"] = extract_skills(p["title"], p.get("description", ""))
+        p["skills"] = extract_skills(p["title"], p.get("description", ""), p["company"])  # LLM may replace
 
     stats = tag_posts(posts, use_llm=use_llm)
     stats["senior_title_dropped"] = len(senior)
@@ -183,7 +183,7 @@ def main(use_llm: bool = True) -> int:
         return 1
 
     public_fields = ["id", "source", "company", "title", "location", "url", "posted_at", "role", "cities",
-                     "city_source", "level", "skills", "rule_fresher", "tagged_by", "first_seen"]
+                     "city_source", "level", "skills", "skills_source", "rule_fresher", "tagged_by", "first_seen"]
     out = [{k: p.get(k) for k in public_fields} for p in posts]
     rank = {"Internship": 0, "Fresher": 1, "Early career": 2, "Experienced": 3}
     out.sort(key=lambda p: (rank[p["level"]], p["first_seen"], p["company"]))
