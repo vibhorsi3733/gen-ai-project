@@ -4,11 +4,11 @@ LLM column: `gemini-3.5-flash-lite`.
 
 ## Summary
 
-| Method | Skills shown | Boilerplate-only | Off-role technical | Human-checked precision |
+| Method | Skills shown | Boilerplate-only | Off-role technical | Reviewer-checked precision |
 |---|---|---|---|---|
-| old | 238 | 4 | 12 | not marked yet |
-| rules | 232 | 0 | 12 | not marked yet |
-| llm | 226 | 0 | 12 | not marked yet |
+| old | 238 | 3 | 12 | 89% of 238 |
+| rules | 233 | 0 | 12 | 91% of 233 |
+| llm | 226 | 0 | 12 | 92% of 226 |
 
 Boilerplate-only and off-role counts are automatic signals, not ground truth: open the review sheet (`eval/skills_review.csv`), mark `correct` y/n, and re-run for a real precision figure.
 
@@ -18,10 +18,10 @@ Role: Software Engineering
 | Skill | old | rules | llm | Evidence in the JD | Flag |
 |---|---|---|---|---|---|
 | REST APIs | ✓ | ✓ | ✓ | Build integrations using REST APIs, web services, Oracle Integration technologies, and external applications. |  |
-| SQL | ✓ | ✓ | ✓ | What We are looking for: Strong experience with Oracle APEX, Oracle Database, SQL, PL/SQL, and Unix scripting. |  |
+| SQL | ✓ | ✓ | ✓ | Strong experience with Oracle APEX, Oracle Database, SQL, PL/SQL, and Unix scripting. |  |
 | Generative AI / LLMs | ✓ | ✓ | ✓ | Knowledge of Oracle Cloud Infrastructure (OCI) and GenAI-based solutions. |  |
 | Data analysis | ✓ | ✓ | ✓ | Experience with Oracle Business Intelligence (OBIEE/OAC) tools and large-scale data analysis. |  |
-| Linux | ✓ | ✓ | ✓ | What We are looking for: Strong experience with Oracle APEX, Oracle Database, SQL, PL/SQL, and Unix scripting. |  |
+| Linux | ✓ | ✓ | ✓ | Strong experience with Oracle APEX, Oracle Database, SQL, PL/SQL, and Unix scripting. |  |
 | Testing / QA | ✓ | ✓ | ✓ | Perform unit testing, defect resolution, application enhancements, and production support activities. |  |
 | Problem solving | ✓ | ✓ | ✓ | Excellent problem-solving, troubleshooting, and stakeholder collaboration skills. |  |
 | Stakeholder management | ✓ | ✓ | ✓ | Excellent problem-solving, troubleshooting, and stakeholder collaboration skills. |  |
@@ -47,10 +47,10 @@ Role: Data / Analytics / ML
 |---|---|---|---|---|---|
 | Python | ✓ | ✓ | ✓ | Knowledge of Excel macro/VBA, Python, and Ad Tech experience is good to have. |  |
 | Excel | ✓ | ✓ | ✓ | Technical skills such as Excel, Looker, MYSQL, forecasting, impact measurement, AB Testing, are a must. |  |
-| Statistics | ✓ | ✓ | ✓ | Qualifications: Should have a bachelor’s or master’s degree in computer science, Data Science, Statistics, Mathematics, Engineering, or a related fiel |  |
-| Machine Learning | ✓ | ✓ | ✓ | About the Role Your role as a Business Intelligence Associate is to work with the product and machine learning team to automate the process of manual  |  |
+| Statistics | ✓ | ✓ | ✓ | Should have a bachelor’s or master’s degree in computer science, Data Science, Statistics, Mathematics, Engineering, or a related field. |  |
+| Machine Learning | ✓ | ✓ | ✓ | Your role as a Business Intelligence Associate is to work with the product and machine learning team to automate the process of manual forecasting and |  |
 | Generative AI / LLMs | ✓ | ✓ | ✓ | Experience with GenAI-based tools like Cursor and Claude will be an added advantage. |  |
-| Data analysis | ✓ | ✓ | ✓ | We'd Love for You to Have Shift Timings - 2.00 PM to 11 PM Proven 4 to 6 years of experience in data analysis, or a similar role, is preferred. |  |
+| Data analysis | ✓ | ✓ | ✓ | Proven 4 to 6 years of experience in data analysis, or a similar role, is preferred. |  |
 | MySQL | ✓ | ✓ | ✓ | Technical skills such as Excel, Looker, MYSQL, forecasting, impact measurement, AB Testing, are a must. |  |
 | Communication | ✓ | ✓ | ✓ | Communication Skills |  |
 | Problem solving | ✓ | ✓ | ✓ | Problem Solving |  |
@@ -84,7 +84,7 @@ Role: Software Engineering
 | Kubernetes | ✓ | ✓ | ✓ | Exposure to Docker, Kubernetes, and CI/CD tools is a plus. |  |
 | CI/CD | ✓ | ✓ | ✓ | Follow engineering best practices for version control, CI/CD, observability, documentation, and production readiness. |  |
 | Git | ✓ | ✓ | ✓ | Follow engineering best practices for version control, CI/CD, observability, documentation, and production readiness. |  |
-| Kafka | ✓ | ✓ | ✓ | Distributed Processing and Streaming Work with distributed data processing technologies such as Apache Spark, PySpark, and Apache Kafka . |  |
+| Kafka | ✓ | ✓ | ✓ | Work with distributed data processing technologies such as Apache Spark, PySpark, and Apache Kafka . |  |
 
 ## Product Management - Payment Product | Experience : 5-8 yrs · Paytm
 Role: Product Management
@@ -159,41 +159,41 @@ Role: Finance / Accounting
 
 | Skill | old | rules | llm | Evidence in the JD | Flag |
 |---|---|---|---|---|---|
-| SQL | ✓ | ✓ | ✓ | Minimum requirements 7+ years of relevant public accounting and/or industry experience Bachelor’s degree in Accounting, Finance, or a related field Pr |  |
-| Accounting (Tally / GST) | ✓ | ✓ | ✓ | What you’ll do Stripe is seeking an experienced accountant to join our world-class accounting team, focusing on products developed by our Bridge subsi |  |
-| Communication | ✓ | ✓ | ✓ | Minimum requirements 7+ years of relevant public accounting and/or industry experience Bachelor’s degree in Accounting, Finance, or a related field Pr |  |
-| Problem solving | ✓ | ✓ | ✓ | Minimum requirements 7+ years of relevant public accounting and/or industry experience Bachelor’s degree in Accounting, Finance, or a related field Pr |  |
+| SQL | ✓ | ✓ | ✓ | Experience with data-querying and analysis tools, including SQL |  |
+| Accounting (Tally / GST) | ✓ | ✓ | ✓ | The Product Accounting team at Stripe supports products across Stripe by providing guidance on accounting implications and enabling teams to make info |  |
+| Communication | ✓ | ✓ | ✓ | Excellent analytical, problem-solving, and communication skills, with the ability to convey financial concepts to both financial and non-financial aud |  |
+| Problem solving | ✓ | ✓ | ✓ | Excellent analytical, problem-solving, and communication skills, with the ability to convey financial concepts to both financial and non-financial aud |  |
 
 ## Full Stack Software Development Engineer II · Sigmoid
 Role: Software Engineering
 
 | Skill | old | rules | llm | Evidence in the JD | Flag |
 |---|---|---|---|---|---|
-| Python | ✓ | ✓ | ✓ | Backend Strong expertise in server-side development using Node.js or Python (FastAPI). |  |
-| JavaScript | ✓ | ✓ | ✓ | Backend Strong expertise in server-side development using Node.js or Python (FastAPI). |  |
-| TypeScript | ✓ | ✓ | ✓ | Requirements & Qualifications Technical Skills Frontend 3–5 years of hands-on experience with React, TypeScript, Tailwind CSS, and modern UI component |  |
-| DSA | ✓ | ✓ | ✓ | Database & API Design Model, query, and optimize relational data structures in PostgreSQL. |  |
-| React | ✓ | ✓ | ✓ | Testing & Quality Assurance Implement comprehensive test suites using Jest, React Testing Library, or backend testing frameworks (e.g., PyTest) to mai |  |
-| Node.js | ✓ | ✓ | ✓ | Backend Strong expertise in server-side development using Node.js or Python (FastAPI). |  |
-| HTML / CSS | ✓ | ✓ | ✓ | Requirements & Qualifications Technical Skills Frontend 3–5 years of hands-on experience with React, TypeScript, Tailwind CSS, and modern UI component |  |
-| Flask / FastAPI | ✓ | ✓ | ✓ | Backend Strong expertise in server-side development using Node.js or Python (FastAPI). |  |
+| Python | ✓ | ✓ | ✓ | Strong expertise in server-side development using Node.js or Python (FastAPI). |  |
+| JavaScript | ✓ | ✓ | ✓ | Strong expertise in server-side development using Node.js or Python (FastAPI). |  |
+| TypeScript | ✓ | ✓ | ✓ | 3–5 years of hands-on experience with React, TypeScript, Tailwind CSS, and modern UI component libraries like Shadcn UI. |  |
+| DSA | ✓ | ✓ | ✓ | Model, query, and optimize relational data structures in PostgreSQL. |  |
+| React | ✓ | ✓ | ✓ | Implement comprehensive test suites using Jest, React Testing Library, or backend testing frameworks (e.g., PyTest) to maintain high code coverage and |  |
+| Node.js | ✓ | ✓ | ✓ | Strong expertise in server-side development using Node.js or Python (FastAPI). |  |
+| HTML / CSS | ✓ | ✓ | ✓ | 3–5 years of hands-on experience with React, TypeScript, Tailwind CSS, and modern UI component libraries like Shadcn UI. |  |
+| Flask / FastAPI | ✓ | ✓ | ✓ | Strong expertise in server-side development using Node.js or Python (FastAPI). |  |
 | REST APIs | ✓ | ✓ | ✓ | Design, build, and maintain clean RESTful APIs and microservices. |  |
-| GraphQL | ✓ | ✓ | ✓ | Architecture & APIs Exposure to GraphQL, microservices architecture, and event-driven patterns (e.g., Kafka, RabbitMQ). |  |
+| GraphQL | ✓ | ✓ | ✓ | Exposure to GraphQL, microservices architecture, and event-driven patterns (e.g., Kafka, RabbitMQ). |  |
 | Microservices | ✓ | ✓ | ✓ | Design, build, and maintain clean RESTful APIs and microservices. |  |
-| AWS | ✓ | ✓ | ✓ | Cloud & DevOps Hands-on experience with containerization (Docker, Kubernetes), CI/CD pipelines, and cloud infrastructure (AWS, GCP, or Azure). |  |
-| Azure | ✓ | ✓ | ✓ | Cloud & DevOps Hands-on experience with containerization (Docker, Kubernetes), CI/CD pipelines, and cloud infrastructure (AWS, GCP, or Azure). |  |
-| GCP | ✓ | ✓ | ✓ | Cloud & DevOps Hands-on experience with containerization (Docker, Kubernetes), CI/CD pipelines, and cloud infrastructure (AWS, GCP, or Azure). |  |
-| Docker | ✓ | ✓ | ✓ | Cloud & DevOps Hands-on experience with containerization (Docker, Kubernetes), CI/CD pipelines, and cloud infrastructure (AWS, GCP, or Azure). |  |
-| Kubernetes | ✓ | ✓ | ✓ | Cloud & DevOps Hands-on experience with containerization (Docker, Kubernetes), CI/CD pipelines, and cloud infrastructure (AWS, GCP, or Azure). |  |
-| CI/CD | ✓ | ✓ | ✓ | Cloud & DevOps Hands-on experience with containerization (Docker, Kubernetes), CI/CD pipelines, and cloud infrastructure (AWS, GCP, or Azure). |  |
-| Testing / QA | ✓ | ✓ | ✓ | Testing & Quality Assurance Implement comprehensive test suites using Jest, React Testing Library, or backend testing frameworks (e.g., PyTest) to mai |  |
-| PostgreSQL | ✓ | ✓ | ✓ | Database & API Design Model, query, and optimize relational data structures in PostgreSQL. |  |
-| MongoDB | ✓ | ✓ | ✓ | Nice to Have Database & Caching Experience with caching strategies using Redis, or exposure to NoSQL databases (e.g., MongoDB). |  |
-| Redis | ✓ | ✓ | ✓ | Nice to Have Database & Caching Experience with caching strategies using Redis, or exposure to NoSQL databases (e.g., MongoDB). |  |
-| Kafka | ✓ | ✓ | ✓ | Architecture & APIs Exposure to GraphQL, microservices architecture, and event-driven patterns (e.g., Kafka, RabbitMQ). |  |
-| NoSQL | ✓ | ✓ | ✓ | Nice to Have Database & Caching Experience with caching strategies using Redis, or exposure to NoSQL databases (e.g., MongoDB). |  |
-| Communication | ✓ | ✓ | ✓ | Communication Exceptional written and verbal communication skills to articulate technical concepts, align with stakeholders, and author quality docume |  |
-| Project management | ✓ | ✓ | ✓ | Agile Execution Actively participate in Agile ceremonies (sprints, stand-ups, retrospectives, and planning) to deliver quality code incrementally. |  |
+| AWS | ✓ | ✓ | ✓ | Hands-on experience with containerization (Docker, Kubernetes), CI/CD pipelines, and cloud infrastructure (AWS, GCP, or Azure). |  |
+| Azure | ✓ | ✓ | ✓ | Hands-on experience with containerization (Docker, Kubernetes), CI/CD pipelines, and cloud infrastructure (AWS, GCP, or Azure). |  |
+| GCP | ✓ | ✓ | ✓ | Hands-on experience with containerization (Docker, Kubernetes), CI/CD pipelines, and cloud infrastructure (AWS, GCP, or Azure). |  |
+| Docker | ✓ | ✓ | ✓ | Hands-on experience with containerization (Docker, Kubernetes), CI/CD pipelines, and cloud infrastructure (AWS, GCP, or Azure). |  |
+| Kubernetes | ✓ | ✓ | ✓ | Hands-on experience with containerization (Docker, Kubernetes), CI/CD pipelines, and cloud infrastructure (AWS, GCP, or Azure). |  |
+| CI/CD | ✓ | ✓ | ✓ | Hands-on experience with containerization (Docker, Kubernetes), CI/CD pipelines, and cloud infrastructure (AWS, GCP, or Azure). |  |
+| Testing / QA | ✓ | ✓ | ✓ | Testing & Quality Assurance |  |
+| PostgreSQL | ✓ | ✓ | ✓ | Model, query, and optimize relational data structures in PostgreSQL. |  |
+| MongoDB | ✓ | ✓ | ✓ | Experience with caching strategies using Redis, or exposure to NoSQL databases (e.g., MongoDB). |  |
+| Redis | ✓ | ✓ | ✓ | Experience with caching strategies using Redis, or exposure to NoSQL databases (e.g., MongoDB). |  |
+| Kafka | ✓ | ✓ | ✓ | Exposure to GraphQL, microservices architecture, and event-driven patterns (e.g., Kafka, RabbitMQ). |  |
+| NoSQL | ✓ | ✓ | ✓ | Experience with caching strategies using Redis, or exposure to NoSQL databases (e.g., MongoDB). |  |
+| Communication | ✓ | ✓ | ✓ | Exceptional written and verbal communication skills to articulate technical concepts, align with stakeholders, and author quality documentation. |  |
+| Project management | ✓ | ✓ | ✓ | Agile Execution |  |
 
 ## Associate Client Partner · Mindtickle
 Role: Customer Support / Success
@@ -213,17 +213,17 @@ Role: Customer Support / Success
 | GCP | ✓ | ✓ | ✓ | Hands-on experience with at least one major cloud platform (AWS, Azure or GCP). | off-role |
 | Kubernetes | ✓ | ✓ | ✓ | Knowledge of Kubernetes (Helm), OTel, Prometheus and API scripting. | off-role |
 | Networking | ✓ | ✓ | ✓ | Real production experience across enterprise infrastructure: operating systems, virtualisation, databases, networking and security. | off-role |
-| Cybersecurity | ✓ | ✓ | ✓ | The Technical Stuff We Would Love to See Experience with Observability or SIEM platforms (e.g. | off-role |
+| Cybersecurity | ✓ | ✓ | ✓ | Experience with Observability or SIEM platforms (e.g. | off-role |
 | Teamwork | ✓ | ✓ | ✓ | A strong team player who collaborates across GTM functions and gets things done with no fuss. |  |
-| Customer handling | ✓ | ✓ | ✓ | What You Will Bring 5 to 6 years in a technical, customer-facing role such as technical account management, customer success engineering, professional |  |
+| Customer handling | ✓ | ✓ | ✓ | 5 to 6 years in a technical, customer-facing role such as technical account management, customer success engineering, professional services, solutions |  |
 
 ## Enterprise Account Executive - TMT · ServiceNow
 Role: Sales / Business Development
 
 | Skill | old | rules | llm | Evidence in the JD | Flag |
 |---|---|---|---|---|---|
-| Problem solving | ✓ | ✓ | ✓ | What you get to do in this role: Develop relationships with multiple C-suite personas (e.g., CFO, CIO, COO, CDO) across all product sales Oversee clie |  |
-| Negotiation | ✓ | ✓ | ✓ | Ability to produce new business, negotiate deals, and maintain healthy C-Level relationships Experience in over achieving sales targets. |  |
+| Problem solving | ✓ | ✓ | ✓ | Experience in leveraging or critically thinking about how to integrate AI into work processes, decision-making, or problem-solving. |  |
+| Negotiation | ✓ | ✓ | ✓ | Ability to produce new business, negotiate deals, and maintain healthy C-Level relationships |  |
 
 ## Sales Engineer · Druva
 Role: Sales / Business Development
@@ -235,7 +235,7 @@ Role: Sales / Business Development
 | Azure | ✓ | ✓ | ✓ | Intermediate-level knowledge of Databases such as MS-SQL, Oracle, Azure SQL. | off-role |
 | Linux | ✓ | ✓ | ✓ | Intermediate level knowledge of operating systems, including MS Windows, Linux,& amp; macOS. | off-role |
 | Networking | ✓ | ✓ | ✓ | Basic understanding of network technologies and protocols – TCP/IP, VLAN, DNS, switches, firewalls, routers, and proxies | off-role |
-| Cybersecurity | ✓ | ✓ | ✓ | Fundamental knowledge of the NIST Cybersecurity 2.0 framework Basic knowledge of cybersecurity solutions in the areas of EDR, XDR, MDR, etc. | off-role |
+| Cybersecurity | ✓ | ✓ | ✓ | Fundamental knowledge of the NIST Cybersecurity 2.0 framework | off-role |
 | Customer handling | ✓ | ✓ | ✓ | 5 to 8 years in technical customer-facing roles with at least 2+ years as a sales engineer working with enterprise software solutions |  |
 
 ## Application Engineer · MongoDB
@@ -243,25 +243,25 @@ Role: Software Engineering
 
 | Skill | old | rules | llm | Evidence in the JD | Flag |
 |---|---|---|---|---|---|
-| Python | ✓ | ✓ | ✓ | This is an excellent opportunity for candidates with strong technical fundamentals and a passion for learning, as the role provides extensive training |  |
-| Java | ✓ | ✓ | ✓ | This is an excellent opportunity for candidates with strong technical fundamentals and a passion for learning, as the role provides extensive training |  |
-| Spring Boot | ✓ | ✓ | ✓ | This is an excellent opportunity for candidates with strong technical fundamentals and a passion for learning, as the role provides extensive training |  |
-| Microservices | ✓ | ✓ | ✓ | This is an excellent opportunity for candidates with strong technical fundamentals and a passion for learning, as the role provides extensive training |  |
-| SQL | ✓ | ✓ | ✓ | Position Summary As an Application Delivery Consultant, you will work closely with customers to deliver tailored solutions for modernizing their legac |  |
+| Python | ✓ | ✓ | ✓ | Exposure to Python and its application in scripting or data processing |  |
+| Java | ✓ | ✓ | ✓ | Apply your knowledge of Java (or similar programming languages) and relational databases to support customer projects |  |
+| Spring Boot | ✓ | ✓ | ✓ | Exposure to one or more enterprise application architectures, such as Spring Boot or Hibernate |  |
+| Microservices | ✓ | ✓ | ✓ | Basic understanding of cloud-native development concepts (e.g., Docker, Kubernetes, or microservices) |  |
+| SQL | ✓ | ✓ | ✓ | As an Application Delivery Consultant, you will work closely with customers to deliver tailored solutions for modernizing their legacy SQL-based syste |  |
 | Generative AI / LLMs | ✓ | ✓ | ✓ | During each project, successful candidates will be required to innovate on potential new GenAI-based solutions for specific challenges in addition to  |  |
-| AWS | ✓ | ✓ | ✓ | This is an excellent opportunity for candidates with strong technical fundamentals and a passion for learning, as the role provides extensive training |  |
-| Azure | ✓ | ✓ | ✓ | This is an excellent opportunity for candidates with strong technical fundamentals and a passion for learning, as the role provides extensive training |  |
-| GCP | ✓ | ✓ | ✓ | This is an excellent opportunity for candidates with strong technical fundamentals and a passion for learning, as the role provides extensive training |  |
-| Docker | ✓ | ✓ | ✓ | This is an excellent opportunity for candidates with strong technical fundamentals and a passion for learning, as the role provides extensive training |  |
-| Kubernetes | ✓ | ✓ | ✓ | This is an excellent opportunity for candidates with strong technical fundamentals and a passion for learning, as the role provides extensive training |  |
-| CI/CD | ✓ | ✓ | ✓ | This is an excellent opportunity for candidates with strong technical fundamentals and a passion for learning, as the role provides extensive training |  |
-| Git | ✓ | ✓ | ✓ | This is an excellent opportunity for candidates with strong technical fundamentals and a passion for learning, as the role provides extensive training |  |
+| AWS | ✓ | ✓ | ✓ | Prior experience with MongoDB and cloud platforms such as AWS, Azure, or GCP |  |
+| Azure | ✓ | ✓ | ✓ | Prior experience with MongoDB and cloud platforms such as AWS, Azure, or GCP |  |
+| GCP | ✓ | ✓ | ✓ | Prior experience with MongoDB and cloud platforms such as AWS, Azure, or GCP |  |
+| Docker | ✓ | ✓ | ✓ | Basic understanding of cloud-native development concepts (e.g., Docker, Kubernetes, or microservices) |  |
+| Kubernetes | ✓ | ✓ | ✓ | Basic understanding of cloud-native development concepts (e.g., Docker, Kubernetes, or microservices) |  |
+| CI/CD | ✓ | ✓ | ✓ | Experience working in Agile teams, with a familiarity with CI/CD pipelines and Git for version control |  |
+| Git | ✓ | ✓ | ✓ | Experience working in Agile teams, with a familiarity with CI/CD pipelines and Git for version control |  |
 | MongoDB | ✓ |  |  | MongoDB Professional Services (PS) works with customers of all shapes and sizes, in all verticals, from tier-1 banks to small web startups, on a varie |  |
-| NoSQL | ✓ | ✓ | ✓ | This is an excellent opportunity for candidates with strong technical fundamentals and a passion for learning, as the role provides extensive training |  |
-| Communication | ✓ | ✓ | ✓ | This is an excellent opportunity for candidates with strong technical fundamentals and a passion for learning, as the role provides extensive training |  |
-| Problem solving | ✓ | ✓ | ✓ | This is an excellent opportunity for candidates with strong technical fundamentals and a passion for learning, as the role provides extensive training |  |
-| Teamwork | ✓ | ✓ | ✓ | This is an excellent opportunity for candidates with strong technical fundamentals and a passion for learning, as the role provides extensive training |  |
-| Stakeholder management | ✓ | ✓ | ✓ | This is an excellent opportunity for candidates with strong technical fundamentals and a passion for learning, as the role provides extensive training |  |
+| NoSQL | ✓ | ✓ | ✓ | Familiarity with MongoDB or similar NoSQL databases |  |
+| Communication | ✓ | ✓ | ✓ | Strong communication skills to engage effectively with team members and stakeholders |  |
+| Problem solving | ✓ | ✓ | ✓ | Excellent problem-solving skills and a collaborative mindset |  |
+| Teamwork | ✓ | ✓ | ✓ | Excellent problem-solving skills and a collaborative mindset |  |
+| Stakeholder management | ✓ | ✓ | ✓ | Strong team leadership and stakeholder engagement skills, with the ability to articulate technical solutions to non-technical audiences |  |
 | Project management | ✓ | ✓ | ✓ | Your role will involve collaborating with bite-size Agile teams, applying best practices, and contributing to system redesigns that leverage MongoDB. |  |
 
 ## Associate of R&D Strategic Finance (FP&A) · Toast
@@ -269,11 +269,11 @@ Role: Finance / Accounting
 
 | Skill | old | rules | llm | Evidence in the JD | Flag |
 |---|---|---|---|---|---|
-| Excel | ✓ | ✓ | ✓ | Able to work 2 pm - 11 pm IST What you'll need to thrive (Requirements) 4+ years of work experience in FP&A, investment banking, consulting, private e |  |
-| MS Office | ✓ | ✓ | ✓ | Able to work 2 pm - 11 pm IST What you'll need to thrive (Requirements) 4+ years of work experience in FP&A, investment banking, consulting, private e |  |
+| Excel | ✓ | ✓ | ✓ | Highly proficient in advanced Excel/Google Sheets and PowerPoint/Google Slides |  |
+| MS Office | ✓ | ✓ | ✓ | Highly proficient in advanced Excel/Google Sheets and PowerPoint/Google Slides |  |
 | Accounting (Tally / GST) | ✓ | ✓ | ✓ | Own headcount tracking, reporting, and reconciliation activities for R&D, conducting trend analysis and collaborating closely with Finance, R&D leader |  |
-| Problem solving | ✓ | ✓ | ✓ | Able to work 2 pm - 11 pm IST What you'll need to thrive (Requirements) 4+ years of work experience in FP&A, investment banking, consulting, private e |  |
-| Teamwork | ✓ |  |  | — | boilerplate-only |
+| Problem solving | ✓ | ✓ | ✓ | Strong analytical skills including financial modeling, data/trend analysis and manipulation of large datasets, with proven ability to summarize comple |  |
+| Teamwork | ✓ | ✓ |  | Team player eager to further develop and grow with us |  |
 
 ## CSR Associate - Impact, Monitoring & Evaluation · Bosch
 Role: Other
@@ -281,7 +281,7 @@ Role: Other
 | Skill | old | rules | llm | Evidence in the JD | Flag |
 |---|---|---|---|---|---|
 | Excel | ✓ | ✓ | ✓ | · Strong analytical and data interpretation skills, with proficiency in MS Excel and PowerPoint for reporting, dashboards and leadership presentations |  |
-| Statistics | ✓ | ✓ | ✓ | Postgraduate degree in Social Work, Development Studies, Rural Management, Economics, Public Policy, Statistics or a related discipline. |  |
+| Statistics | ✓ | ✓ | ✓ | · Postgraduate degree in Social Work, Development Studies, Rural Management, Economics, Public Policy, Statistics or a related discipline. |  |
 | Testing / QA | ✓ | ✓ | ✓ | · Commission and manage independent third-party impact assessments, including scoping, agency selection, methodology review, quality assurance and int |  |
 | MS Office | ✓ | ✓ | ✓ | · Strong analytical and data interpretation skills, with proficiency in MS Excel and PowerPoint for reporting, dashboards and leadership presentations |  |
 | Communication | ✓ | ✓ | ✓ | · Strong stakeholder management and communication skills with NGOs, assessment agencies, auditors and internal leadership. |  |
@@ -300,7 +300,7 @@ Role: Software Engineering
 | Kubernetes | ✓ | ✓ | ✓ | Experience working with Docker and Kubernetes-based environments. |  |
 | CI/CD | ✓ | ✓ | ✓ | Integrate automation deeply into CI/CD pipelines using Jenkins and/or GitHub Actions. |  |
 | Git | ✓ | ✓ | ✓ | Integrate automation deeply into CI/CD pipelines using Jenkins and/or GitHub Actions. |  |
-| Testing / QA | ✓ | ✓ | ✓ | What you will do Lead and standardize test automation practices across teams and services. |  |
+| Testing / QA | ✓ | ✓ | ✓ | Lead and standardize test automation practices across teams and services. |  |
 | Communication | ✓ | ✓ | ✓ | Strong communication skills and the ability to influence quality across teams. |  |
 | Problem solving | ✓ | ✓ | ✓ | Excellent problem-solving skills with the ability to debug complex automation failures. |  |
 
@@ -350,7 +350,7 @@ Role: Finance / Accounting
 | Excel | ✓ | ✓ | ✓ | Proficiency in Microsoft Office Suite (particularly Excel, Word, and Outlook). |  |
 | MS Office | ✓ | ✓ | ✓ | Proficiency in Microsoft Office Suite (particularly Excel, Word, and Outlook). |  |
 | Accounting (Tally / GST) | ✓ | ✓ | ✓ | Eagerness to learn and develop new skills in the accounting field. |  |
-| Communication | ✓ | ✓ | ✓ | Skills: Strong communication skills, both verbal and written. |  |
+| Communication | ✓ | ✓ | ✓ | Strong communication skills, both verbal and written. |  |
 
 ## Security Engineer IV · Meesho
 Role: Software Engineering
@@ -366,14 +366,14 @@ Role: Finance / Accounting
 
 | Skill | old | rules | llm | Evidence in the JD | Flag |
 |---|---|---|---|---|---|
-| Excel | ✓ | ✓ | ✓ | Knowledge of deferred commissions and stock-based compensation would be beneficial Proficient with Microsoft Office Suite (Excel, Word, Powerpoint) Ex |  |
+| Excel | ✓ | ✓ | ✓ | Proficient with Microsoft Office Suite (Excel, Word, Powerpoint) |  |
 | Machine Learning | ✓ | ✓ | ✓ | Notice for New York City Applicants & Employees: Okta may use Automated Employment Decision Tools (AEDT), as defined by New York City Local Law 144, t |  |
-| MS Office | ✓ | ✓ | ✓ | Knowledge of deferred commissions and stock-based compensation would be beneficial Proficient with Microsoft Office Suite (Excel, Word, Powerpoint) Ex |  |
+| MS Office | ✓ | ✓ | ✓ | Proficient with Microsoft Office Suite (Excel, Word, Powerpoint) |  |
 | Accounting (Tally / GST) | ✓ | ✓ | ✓ | This role will be reporting to the International Compensation Accounting Manager. |  |
-| Communication | ✓ | ✓ | ✓ | Knowledge of deferred commissions and stock-based compensation would be beneficial Proficient with Microsoft Office Suite (Excel, Word, Powerpoint) Ex |  |
-| Problem solving | ✓ | ✓ | ✓ | Knowledge of deferred commissions and stock-based compensation would be beneficial Proficient with Microsoft Office Suite (Excel, Word, Powerpoint) Ex |  |
+| Communication | ✓ | ✓ | ✓ | Strong interpersonal and communication skills, both written and verbal |  |
+| Problem solving | ✓ | ✓ | ✓ | Strong problem solving, analytical, and organizational skills |  |
 | Teamwork | ✓ | ✓ | ✓ | The ideal candidate is a detailed-oriented, self-motivated team player, who enjoys working in a challenging and fast-paced environment. |  |
-| Customer handling | ✓ | ✓ | ✓ | What you’ll be doing Perform various GL month-end close activities for the Okta International entities, including preparation of journal entries and b |  |
+| Customer handling | ✓ | ✓ | ✓ | Provide a high level of customer service with finance and non-finance business partners |  |
 
 ## Solution Engineer (Post-sales) · Hevo Data
 Role: Sales / Business Development
@@ -395,8 +395,8 @@ Role: Consulting / Strategy
 | Generative AI / LLMs | ✓ | ✓ | ✓ | Technical Fluency & Architecture Judgment: You understand modern data and AI architectures, including cloud platforms, data pipelines, data models, di |  |
 | ETL / Data pipelines | ✓ | ✓ | ✓ | Technical Fluency & Architecture Judgment: You understand modern data and AI architectures, including cloud platforms, data pipelines, data models, di |  |
 | Testing / QA | ✓ | ✓ | ✓ | End-to-End Product Ownership: Author the PRD, prioritize the engineering backlog, manage scope, and act as the primary hands-on QA tester. |  |
-| Snowflake / BigQuery | ✓ |  |  | You will be the "product manager" for the customer's problem, responsible for the "why" and "what," while our FDEs (Engineers) will be your partners r |  |
-| Communication | ✓ | ✓ | ✓ | What we look for Executive Presence & Communication: You are a trusted advisor with strong executive presence and excellent communication skills. |  |
+| Snowflake / BigQuery | ✓ |  |  | As a Deployment Strategist (DS), you are the critical bridge between a customer's multi-million-dollar business problem and Databricks' technical solu |  |
+| Communication | ✓ | ✓ | ✓ | Executive Presence & Communication: You are a trusted advisor with strong executive presence and excellent communication skills. |  |
 | Customer handling | ✓ | ✓ | ✓ | Relevant Experience: Typically 7+ years of experience delivering complex, customer-facing data, analytics, AI, or software engagements, or equivalent  |  |
 | Project management | ✓ | ✓ | ✓ | Technical Solution Leadership & Delivery: Drive the FDE build team through an agile delivery process, manage stakeholders from the C-suite to individu |  |
 
@@ -405,7 +405,7 @@ Role: Operations / Supply Chain
 
 | Skill | old | rules | llm | Evidence in the JD | Flag |
 |---|---|---|---|---|---|
-| Communication | ✓ | ✓ |  | What You'll Do Own Deal Desk support for larger and more strategic deals in your assigned region, embedded directly with assigned AEs Proactively init |  |
+| Communication | ✓ | ✓ |  | Clear written and verbal communication skills, including comfort joining customer calls when needed |  |
 
 ## Sales Specialist · Experian
 Role: Sales / Business Development
@@ -419,7 +419,7 @@ Role: Content / Writing
 
 | Skill | old | rules | llm | Evidence in the JD | Flag |
 |---|---|---|---|---|---|
-| Adobe Creative Suite | ✓ | ✓ |  | Technical Proficiency: Gain proficiency in video editing software (Adobe Premiere Pro/Final Cut Pro). |  |
+| Adobe Creative Suite | ✓ | ✓ |  | Gain proficiency in video editing software (Adobe Premiere Pro/Final Cut Pro). |  |
 
 ## business development & partnerships · CRED
 Role: Sales / Business Development
@@ -433,17 +433,17 @@ Role: Sales / Business Development
 
 | Skill | old | rules | llm | Evidence in the JD | Flag |
 |---|---|---|---|---|---|
-| Excel | ✓ | ✓ | ✓ | What You'll Do Own sizeable client budgets throughout the entire media buying lifecycle, from media planning, execution, optimization, reporting, anal |  |
+| Excel | ✓ | ✓ | ✓ | Strong Excel skills, including pivot tables, pivot charts, vlookup application knowledge |  |
 | Communication | ✓ | ✓ | ✓ | The successful candidate will have a unique ability to combine their programmatic trading knowledge, technical and creative thinking with strong commu |  |
-| Problem solving | ✓ | ✓ | ✓ | What You'll Do Own sizeable client budgets throughout the entire media buying lifecycle, from media planning, execution, optimization, reporting, anal |  |
+| Problem solving | ✓ | ✓ | ✓ | Outstanding troubleshooting, analytical, and problem-solving abilities, along with an ability to collaborate cross-functionally in a fast-paced enviro |  |
 
 ## Finance Content Creator · Groww
 Role: Content / Writing
 
 | Skill | old | rules | llm | Evidence in the JD | Flag |
 |---|---|---|---|---|---|
-| English proficiency | ✓ | ✓ | ✓ | Key Responsibilities: Present On Camera: Deliver scripts with high energy, excellent voice modulation, and natural expressions Create Engaging Content |  |
-| Hindi / regional language | ✓ | ✓ | ✓ | Key Responsibilities: Present On Camera: Deliver scripts with high energy, excellent voice modulation, and natural expressions Create Engaging Content |  |
+| English proficiency | ✓ | ✓ | ✓ | Languages: Fluency in English and Hindi (bilingual preferred) |  |
+| Hindi / regional language | ✓ | ✓ | ✓ | Languages: Fluency in English and Hindi (bilingual preferred) |  |
 
 ## Practice Counsel · InMobi
 Role: Other
@@ -469,7 +469,7 @@ Role: Sales / Business Development
 
 | Skill | old | rules | llm | Evidence in the JD | Flag |
 |---|---|---|---|---|---|
-| Negotiation | ✓ | ✓ |  | Skillsets: Hustler, Street Smart, Negotiation, Lead generation (cold calling + physical), Knocking |  |
+| Negotiation | ✓ | ✓ |  | Skillsets: Hustler, Street Smart, Negotiation, Lead generation |  |
 
 ## Product & Strategy Associate · Sarvam AI
 Role: Consulting / Strategy
@@ -483,10 +483,10 @@ Role: Marketing
 
 | Skill | old | rules | llm | Evidence in the JD | Flag |
 |---|---|---|---|---|---|
-| Excel | ✓ | ✓ | ✓ | Coordinate logistics, speakers, agendas, and staff for Elastic programs Proficient in spreadsheets, Splash, Tableau, and other marketing-related softw |  |
-| Tableau | ✓ | ✓ | ✓ | Coordinate logistics, speakers, agendas, and staff for Elastic programs Proficient in spreadsheets, Splash, Tableau, and other marketing-related softw |  |
-| CRM (Salesforce etc.) | ✓ | ✓ | ✓ | Things move quickly here but there are always notes, spreadsheets, and lists Proficient with basic spreadsheet and document software, as well as marke |  |
-| Communication | ✓ | ✓ | ✓ | Coordinate logistics, speakers, agendas, and staff for Elastic programs Proficient in spreadsheets, Splash, Tableau, and other marketing-related softw |  |
+| Excel | ✓ | ✓ | ✓ | Proficient in spreadsheets, Splash, Tableau, and other marketing-related software |  |
+| Tableau | ✓ | ✓ | ✓ | Proficient in spreadsheets, Splash, Tableau, and other marketing-related software |  |
+| CRM (Salesforce etc.) | ✓ | ✓ | ✓ | Proficient with basic spreadsheet and document software, as well as marketing-related software like Splash, Salesforce |  |
+| Communication | ✓ | ✓ | ✓ | Excellent communication skills, verbal and written |  |
 | Project management | ✓ | ✓ | ✓ | Project management skills are key. |  |
 
 ## Intermediate Backend Engineer, India · GitLab
@@ -495,7 +495,7 @@ Role: Software Engineering
 | Skill | old | rules | llm | Evidence in the JD | Flag |
 |---|---|---|---|---|---|
 | Rust | ✓ | ✓ | ✓ | Rust, particularly for systems, security, performance, or platform work. |  |
-| Ruby | ✓ | ✓ | ✓ | What you’ll do Own and Ship Features: Design, implement, test, and ship backend features and improvements with minimal guidance, working in Ruby/Rails |  |
+| Ruby | ✓ | ✓ | ✓ | Own and Ship Features: Design, implement, test, and ship backend features and improvements with minimal guidance, working in Ruby/Rails, Go, or any ot |  |
 | Docker | ✓ | ✓ | ✓ | Docker, Kubernetes, Helm, CI/CD, or cloud deployment. |  |
 | Kubernetes | ✓ | ✓ | ✓ | Docker, Kubernetes, Helm, CI/CD, or cloud deployment. |  |
 | CI/CD | ✓ | ✓ | ✓ | Docker, Kubernetes, Helm, CI/CD, or cloud deployment. |  |
@@ -536,13 +536,13 @@ Role: Software Engineering
 |---|---|---|---|---|---|
 | Python | ✓ | ✓ | ✓ | This individual should have a sound understanding of programming principles, experience in programming in Java, Python or similar languages and can ex |  |
 | Java | ✓ | ✓ | ✓ | This individual should have a sound understanding of programming principles, experience in programming in Java, Python or similar languages and can ex |  |
-| C++ | ✓ | ✓ | ✓ | Bengaluru Work Experience : 3 - 5 Years Responsibilities: Good development practices Hands on coder with good experience in programming languages like |  |
-| Scala | ✓ | ✓ | ✓ | Bengaluru Work Experience : 3 - 5 Years Responsibilities: Good development practices Hands on coder with good experience in programming languages like |  |
-| OOP | ✓ | ✓ | ✓ | Years of track record of relevant work experience and a computer Science or related technical discipline is required Experience with functional and ob |  |
-| Spark | ✓ | ✓ | ✓ | Preferred Qualification:- Technical knowledge in Spark, Hadoop & GCS Stack. |  |
-| Testing / QA | ✓ | ✓ | ✓ | Good understanding of programming principles and development practices like checkin policy, unit testing, code deployment Self starter to be able to g |  |
-| Snowflake / BigQuery | ✓ | ✓ | ✓ | Vertica, Snowflake, Druid a plus Development and support experience in Big Data domain Experience in agile methodology Experience with database modeli |  |
-| Communication | ✓ | ✓ | ✓ | Years of track record of relevant work experience and a computer Science or related technical discipline is required Experience with functional and ob |  |
+| C++ | ✓ | ✓ | ✓ | Hands on coder with good experience in programming languages like Java, Python, C++ or Scala. |  |
+| Scala | ✓ | ✓ | ✓ | Hands on coder with good experience in programming languages like Java, Python, C++ or Scala. |  |
+| OOP | ✓ | ✓ | ✓ | Experience with functional and object-oriented programming, Python or Scala a must |  |
+| Spark | ✓ | ✓ | ✓ | Technical knowledge in Spark, Hadoop & GCS Stack. |  |
+| Testing / QA | ✓ | ✓ | ✓ | Good understanding of programming principles and development practices like checkin policy, unit testing, code deployment |  |
+| Snowflake / BigQuery | ✓ | ✓ | ✓ | Vertica, Snowflake, Druid a plus |  |
+| Communication | ✓ | ✓ | ✓ | Effective communication skills (both written and verbal) |  |
 | Project management | ✓ | ✓ | ✓ | Entrepreneurial and Agile : understands the demands of a private, high growth company. |  |
 
 ## Learning Consultant · Mindtickle

@@ -57,7 +57,7 @@ with (ROOT / "eval/labels.csv").open() as f:
 
 arms = {p.stem.removeprefix("preds_"): json.loads(p.read_text()) for p in sorted((ROOT / "eval").glob("preds_*.json"))}
 n = len(gold)
-lines = [f"# Tagging accuracy on {n} hand-labelled posts\n",
+lines = [f"# Tagging accuracy on {n} labelled posts\n", "Gold labels: see eval/ANNOTATION.md (2 independent annotators + adjudication).\n",
          "Accuracy with Wilson 95% confidence interval. `cities` must match the gold set exactly.\n",
          "| Arm | Role | Cities | Role + cities | Level | Cost / 1,000 posts |", "|---|---|---|---|---|---|"]
 correct = {}

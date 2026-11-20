@@ -104,21 +104,37 @@ The design came from two parallel proposals: a data-ingestion plan and an LLM/ev
 13. **The first LLM prompt under-extracted.** "Prefer fewer skills" made the lite model drop SQL for a BI Developer. The fix: the LLM judges keyword candidates instead of extracting freely, and an empty answer with 2+ candidates counts as an omission. Bare-word aliases were tightened too: "algorithm" in a mission statement and "a data structure" in a video editor's duties no longer mean DSA.
 14. **The Gemini free tier allows 20 requests per day per model.** At 10 posts per request, a full run needs about 75 requests. Gemini now uses 50-post batches (about 15 requests for a full run, 1–2 on a normal day), retries a failed batch in halves, and falls back to another model when one's daily quota or capacity runs out (3.8/3.7-flash returned 503/504 for long stretches).
 
-## Accuracy: 50 hand-checked posts
+## Accuracy: 50 checked posts
 
 Method ([eval/](eval/)):
 1. `python -m eval.sample` draws 50 posts, stratified round-robin across the 33 company boards (seed 42). It writes `eval/labels.csv` with **empty** gold columns, so the labeller never sees model output.
-2. I labelled role, cities and level by hand. `uv run --with openpyxl python -m eval.make_sheet` builds `eval/labels.xlsx` with dropdowns limited to the same values the LLM can choose; `python -m eval.import_labels` (same `uv run` prefix) checks the answers and writes them back to `labels.csv`.
+2. **Gold labels:** two independent annotators labelled role, cities, level and each candidate skill. They were separate Claude agents, each blind to the tagger's output and to each other, and they worked from the written taxonomy guideline. They agreed on role 98% (κ 0.98), cities 100%, level 90% (κ 0.79) and skills 98%. The 6 field disagreements and 4 skill splits were adjudicated against the job description, with reasons in [eval/annotations/adjudication.json](eval/annotations/adjudication.json); see [eval/ANNOTATION.md](eval/ANNOTATION.md). The tagger is Gemini and the annotators are Claude, so the model isn't grading itself. **These are AI annotations, not a human hand-check.** A person can overwrite any row in `eval/labels.xlsx` (`uv run --with openpyxl python -m eval.make_sheet` / `eval.import_labels`) and re-score.
 3. `python -m eval.run_models` tags the same 50 posts with whichever model the key selects (or name one: `gemini-3.8-flash`, `claude-opus-5-5`). The keyword baseline is also scored, to show what the LLM adds.
 4. `python -m eval.score` writes [eval/RESULTS.md](eval/RESULTS.md). It reports accuracy with Wilson 95% CIs, the cases where only the LLM or only the baseline is right, every disagreement, and cost per 1,000 posts from logged token usage.
 
-> **Results:** _pending. Filled in from eval/RESULTS.md after the labelled run._
+**Results** (`gemini-3.5-flash-lite`, the model that tagged the live data on 20 Nov; 95% Wilson intervals; n=50):
+
+| | Role | Cities | Role + cities | Level |
+|---|---|---|---|---|
+| Keyword baseline | 64% [50–76] | 92% [81–97] | 60% [46–72] | – |
+| **LLM** | **80% [67–89]** | **98% [90–100]** | **78% [65–87]** | **74% [60–84]** |
+
+- **Paired comparison on role:** on 13 posts only the LLM was right; on 5 only the baseline was.
+- **Where the LLM is wrong:**
+  - "Operations" works as a catch-all (MIS Executive, Marketing Ops, Deal Desk and Personal Assistant all landed there).
+  - Data Engineer is split between Software and Data. The annotators also found that line hard.
+  - Level slips on "II" and "Intermediate" titles that state no years.
+- **Skills precision** (share of shown skills a reviewer marked correct, [eval/SKILLS_AUDIT.md](eval/SKILLS_AUDIT.md)): old whole-page matching 89%, JD scan 91%, LLM judging the JD 92%. Skills taken from company boilerplate fell from 3 to 0.
+
+Full table and every disagreement: [eval/RESULTS.md](eval/RESULTS.md).
 
 ## Cost per 1,000 posts
 
-Cost is **measured, not estimated**. Every API call appends `input_tokens` and `output_tokens` to `data/usage.jsonl`. Thinking tokens are billed as output on both providers and are included. `cost_report()` multiplies by list prices per million input / output tokens: Gemini 3.8 Flash $0.75 / $3.75 (introductory until 31 Dec 2026, then $1.50 / $7.50), Claude Opus 5.5 $4 / $20.
+Cost is **measured, not estimated**. Every API call appends `input_tokens` and `output_tokens` to `data/usage.jsonl`. Thinking tokens are billed as output on both providers and are included. `cost_report()` multiplies by list prices per million input / output tokens: Gemini 3.6 / 3.8 Flash $0.75 / $3.75 (introductory until 31 Dec 2026, then $1.50 / $7.50), Gemini 3.5 Flash-Lite $0.30 / $2.50, Claude Opus 5.5 $4 / $20.
 
-> **Measured:** _pending first LLM run._ The page footer shows the live figure.
+**Measured: $0.33 per 1,000 posts** (`gemini-3.5-flash-lite`). That's about 410 input and 84 output tokens per post, at 50 posts per request, across the 737-post run on 20 Nov and the 50-post eval run. The page footer shows the live figure.
+
+On `gemini-3.6-flash` the same token counts come to about $0.62 per 1,000 posts at the introductory price, or $1.25 from 2027. On `claude-opus-5-5`, with the same prompt, it would be about $3.32 per 1,000 posts, before thinking tokens.
 
 Daily marginal cost is far lower than the per-1,000 figure suggests. The content-hash cache means only new or changed posts are sent, so a typical day sends a few dozen posts, not 750.
 

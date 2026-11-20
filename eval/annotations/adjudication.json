@@ -1,0 +1,12 @@
+{
+ "sr:BoschGroup:744000157755948|role": {"value": "Data / Analytics / ML", "reason": "CSR M&E: day-to-day work is data frameworks, impact measurement and reports"},
+ "gh:gitlab:8869167002|level": {"value": "Experienced", "reason": "'Intermediate-level recruiting experience, owning full-cycle searches independently' = mid-level"},
+ "gh:gitlab:8775507002|level": {"value": "Experienced", "reason": "GitLab 'Intermediate' sits above Junior; asks for professional production backend experience"},
+ "lv:mindtickle:6c638c17-cd92-490a-9e0a-00a2492332fc|level": {"value": "Experienced", "reason": "asks for executive-level comfort and a track record in multi-stakeholder engagements"},
+ "lv:zeta:38accd53-250f-4e8f-b635-261f31f78b65|level": {"value": "Experienced", "reason": "SOC L2 analyst: second-tier role that assumes prior SOC experience"},
+ "gh:stripe:7975698|level": {"value": "Fresher", "reason": "JD states no experience required"},
+ "gh:gitlab:8869167002|skill|Negotiation": {"value": "n", "reason": "no JD sentence asks for negotiation"},
+ "gh:mongodb:8143980|skill|Stakeholder management": {"value": "n", "reason": "evidence sentence is about training, not stakeholders"},
+ "gh:toast:8230746|skill|Accounting (Tally / GST)": {"value": "y", "reason": "owns reconciliation activities"},
+ "gh:databricks:8630011002|skill|Generative AI / LLMs": {"value": "y", "reason": "requires understanding of generative AI applications"}
+}

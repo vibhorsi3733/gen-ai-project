@@ -79,7 +79,7 @@ for p in sample:
         lines.append("| (no skills from any method) | | | | | |")
     lines.append("")
 
-summary = ["## Summary\n", "| Method | Skills shown | Boilerplate-only | Off-role technical | Human-checked precision |",
+summary = ["## Summary\n", "| Method | Skills shown | Boilerplate-only | Off-role technical | Reviewer-checked precision |",
            "|---|---|---|---|---|"]
 for m, f in flags.items():
     marked = [(pid, s) for pid, res in methods[m].items() for s in res if (pid, s) in old_marks]

@@ -148,7 +148,7 @@
   "level": null
  },
  "sr:BoschGroup:744000157755948": {
-  "role": "Other",
+  "role": "Data / Analytics / ML",
   "cities": [
    "Bengaluru"
   ],
@@ -169,7 +169,7 @@
   "level": null
  },
  "sr:NielsenIQ:744000159370550": {
-  "role": "Other",
+  "role": "Data / Analytics / ML",
   "cities": [
    "India (unspecified)"
   ],
@@ -225,7 +225,7 @@
   "level": null
  },
  "sr:Freshworks:744000144466115": {
-  "role": "Other",
+  "role": "Consulting / Strategy",
   "cities": [
    "Chennai"
   ],

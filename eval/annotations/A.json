@@ -1,0 +1,782 @@
+[
+ {
+  "id": "sr:Experian:744000161059610",
+  "role": "Software Engineering",
+  "cities": [
+   "Hyderabad"
+  ],
+  "level": "Experienced",
+  "skills": {
+   "REST APIs": "y",
+   "SQL": "y",
+   "Generative AI / LLMs": "y",
+   "Data analysis": "y",
+   "Linux": "y",
+   "Testing / QA": "y",
+   "Problem solving": "y",
+   "Stakeholder management": "y"
+  },
+  "notes": "BI developer but mostly Oracle APEX app/DB development; Data also plausible. No years stated; 'strong experience' -> Experienced"
+ },
+ {
+  "id": "sr:Swiggy:6000000001568408",
+  "role": "Sales / Business Development",
+  "cities": [
+   "Other India"
+  ],
+  "level": "Early career",
+  "skills": {},
+  "notes": "Empty JD; Swiggy Growth Associate assumed field sales/BD; associate -> Early career"
+ },
+ {
+  "id": "lv:cred:a65bef0e-0f4c-40af-b662-9313f255189e",
+  "role": "Sales / Business Development",
+  "cities": [
+   "Bengaluru"
+  ],
+  "level": "Experienced",
+  "skills": {},
+  "notes": "No years stated; ownership-heavy BD role"
+ },
+ {
+  "id": "gh:pubmatic:5466677008",
+  "role": "Data / Analytics / ML",
+  "cities": [
+   "Pune"
+  ],
+  "level": "Experienced",
+  "skills": {
+   "Python": "y",
+   "Excel": "y",
+   "Statistics": "y",
+   "Machine Learning": "y",
+   "Generative AI / LLMs": "y",
+   "Data analysis": "y",
+   "MySQL": "y",
+   "Communication": "y",
+   "Problem solving": "y"
+  },
+  "notes": ""
+ },
+ {
+  "id": "gh:groww:4714061101",
+  "role": "Finance / Accounting",
+  "cities": [
+   "Bengaluru"
+  ],
+  "level": "Early career",
+  "skills": {},
+  "notes": "Investment product research; 2-8 yrs (min 2) -> Early career"
+ },
+ {
+  "id": "gh:inmobi:7747785",
+  "role": "Data / Analytics / ML",
+  "cities": [
+   "Other India"
+  ],
+  "level": "Experienced",
+  "skills": {
+   "Python": "y",
+   "Java": "y",
+   "Scala": "y",
+   "REST APIs": "y",
+   "Microservices": "y",
+   "SQL": "y",
+   "Machine Learning": "n",
+   "Generative AI / LLMs": "n",
+   "Spark": "y",
+   "ETL / Data pipelines": "y",
+   "AWS": "y",
+   "Azure": "y",
+   "GCP": "y",
+   "Docker": "y",
+   "Kubernetes": "y",
+   "CI/CD": "y",
+   "Git": "y",
+   "Kafka": "y"
+  },
+  "notes": "Data engineer: Data vs Software Eng ambiguous; SDE II, years not visible"
+ },
+ {
+  "id": "lv:paytm:dcc0e5d5-79c9-4021-84be-a435f54c71d3",
+  "role": "Product Management",
+  "cities": [
+   "Delhi NCR"
+  ],
+  "level": "Experienced",
+  "skills": {
+   "Accounting (Tally / GST)": "n"
+  },
+  "notes": ""
+ },
+ {
+  "id": "wk:apna:EDEA1176E8",
+  "role": "Data / Analytics / ML",
+  "cities": [
+   "Bengaluru"
+  ],
+  "level": "Fresher",
+  "skills": {
+   "Python": "y",
+   "Excel": "y",
+   "MS Office": "y"
+  },
+  "notes": "0-2 years, open to freshers"
+ },
+ {
+  "id": "ab:sarvam:2dcb062d-e42b-408d-be15-59ddde900984",
+  "role": "Data / Analytics / ML",
+  "cities": [
+   "Bengaluru"
+  ],
+  "level": "Experienced",
+  "skills": {
+   "Machine Learning": "y",
+   "Generative AI / LLMs": "y",
+   "PyTorch / TensorFlow": "y",
+   "ETL / Data pipelines": "n"
+  },
+  "notes": ""
+ },
+ {
+  "id": "gh:elastic:8289153",
+  "role": "Marketing",
+  "cities": [
+   "Bengaluru"
+  ],
+  "level": "Early career",
+  "skills": {
+   "CRM (Salesforce etc.)": "y",
+   "Teamwork": "y",
+   "Project management": "y"
+  },
+  "notes": "2+ yrs"
+ },
+ {
+  "id": "gh:gitlab:8869167002",
+  "role": "HR / Recruiting",
+  "cities": [
+   "Remote"
+  ],
+  "level": "Early career",
+  "skills": {
+   "Communication": "y",
+   "Problem solving": "n",
+   "Stakeholder management": "y",
+   "Negotiation": "y"
+  },
+  "notes": "Intermediate level, no years; Negotiation evidence empty (assume offer negotiation)"
+ },
+ {
+  "id": "lv:zeta:4a278744-a77e-4c34-91e5-6247ec99fe11",
+  "role": "Other",
+  "cities": [
+   "Mumbai"
+  ],
+  "level": "Experienced",
+  "skills": {},
+  "notes": "Executive/personal assistant"
+ },
+ {
+  "id": "lv:fampay:01750a61-a53b-433f-8d8c-bfb5a18417f8",
+  "role": "Data / Analytics / ML",
+  "cities": [
+   "Bengaluru"
+  ],
+  "level": "Experienced",
+  "skills": {
+   "Python": "y",
+   "Java": "y",
+   "Scala": "y",
+   "SQL": "y",
+   "Spark": "y",
+   "ETL / Data pipelines": "y",
+   "AWS": "y",
+   "CI/CD": "y",
+   "Git": "y",
+   "Stakeholder management": "y"
+  },
+  "notes": "Data engineer"
+ },
+ {
+  "id": "gh:stripe:8262032",
+  "role": "Finance / Accounting",
+  "cities": [
+   "Bengaluru"
+  ],
+  "level": "Experienced",
+  "skills": {
+   "SQL": "y",
+   "Accounting (Tally / GST)": "y",
+   "Communication": "y",
+   "Problem solving": "y"
+  },
+  "notes": ""
+ },
+ {
+  "id": "gh:sigmoid:8741978002",
+  "role": "Software Engineering",
+  "cities": [
+   "Bengaluru"
+  ],
+  "level": "Experienced",
+  "skills": {
+   "Python": "y",
+   "JavaScript": "y",
+   "TypeScript": "y",
+   "DSA": "n",
+   "React": "y",
+   "Node.js": "y",
+   "HTML / CSS": "y",
+   "Flask / FastAPI": "y",
+   "REST APIs": "y",
+   "GraphQL": "y",
+   "Microservices": "y",
+   "AWS": "y",
+   "Azure": "y",
+   "GCP": "y",
+   "Docker": "y",
+   "Kubernetes": "y",
+   "CI/CD": "y",
+   "Testing / QA": "y",
+   "PostgreSQL": "y",
+   "MongoDB": "y",
+   "Redis": "y",
+   "Kafka": "y",
+   "NoSQL": "y",
+   "Communication": "y",
+   "Project management": "n"
+  },
+  "notes": ""
+ },
+ {
+  "id": "lv:mindtickle:6c638c17-cd92-490a-9e0a-00a2492332fc",
+  "role": "Customer Support / Success",
+  "cities": [
+   "Bengaluru",
+   "Pune"
+  ],
+  "level": "Early career",
+  "skills": {
+   "Stakeholder management": "y"
+  },
+  "notes": "Post-sale enterprise client partner (could be Consulting); Associate title, no years, but role reads senior"
+ },
+ {
+  "id": "gh:sumologic:8305995",
+  "role": "Customer Support / Success",
+  "cities": [
+   "Delhi NCR"
+  ],
+  "level": "Experienced",
+  "skills": {
+   "SQL": "y",
+   "AWS": "y",
+   "Azure": "y",
+   "GCP": "y",
+   "Kubernetes": "y",
+   "Networking": "y",
+   "Cybersecurity": "y",
+   "Teamwork": "y",
+   "Customer handling": "y"
+  },
+  "notes": "Technical account engineer post-sales; 5-6 yrs overrides 'I'"
+ },
+ {
+  "id": "sr:ServiceNow:744000159787259",
+  "role": "Sales / Business Development",
+  "cities": [
+   "Bengaluru"
+  ],
+  "level": "Experienced",
+  "skills": {
+   "Problem solving": "n",
+   "Negotiation": "y"
+  },
+  "notes": ""
+ },
+ {
+  "id": "gh:druva:8857583002",
+  "role": "Sales / Business Development",
+  "cities": [
+   "Pune"
+  ],
+  "level": "Experienced",
+  "skills": {
+   "SQL": "y",
+   "AWS": "y",
+   "Azure": "y",
+   "Linux": "y",
+   "Networking": "y",
+   "Cybersecurity": "y",
+   "Customer handling": "y"
+  },
+  "notes": ""
+ },
+ {
+  "id": "gh:mongodb:8143980",
+  "role": "Software Engineering",
+  "cities": [
+   "Bengaluru"
+  ],
+  "level": "Experienced",
+  "skills": {
+   "Python": "y",
+   "Java": "y",
+   "Spring Boot": "y",
+   "Microservices": "y",
+   "SQL": "y",
+   "Generative AI / LLMs": "y",
+   "AWS": "y",
+   "Azure": "y",
+   "GCP": "y",
+   "Docker": "y",
+   "Kubernetes": "y",
+   "CI/CD": "y",
+   "Git": "y",
+   "MongoDB": "y",
+   "NoSQL": "y",
+   "Communication": "y",
+   "Problem solving": "y",
+   "Teamwork": "y",
+   "Stakeholder management": "n",
+   "Project management": "n"
+  },
+  "notes": ""
+ },
+ {
+  "id": "gh:toast:8230746",
+  "role": "Finance / Accounting",
+  "cities": [
+   "Chennai"
+  ],
+  "level": "Experienced",
+  "skills": {
+   "Excel": "y",
+   "MS Office": "y",
+   "Accounting (Tally / GST)": "y",
+   "Problem solving": "y",
+   "Teamwork": "y"
+  },
+  "notes": ""
+ },
+ {
+  "id": "sr:BoschGroup:744000157755948",
+  "role": "Other",
+  "cities": [
+   "Bengaluru"
+  ],
+  "level": "Experienced",
+  "skills": {
+   "Excel": "y",
+   "Statistics": "n",
+   "Testing / QA": "n",
+   "MS Office": "y",
+   "Communication": "y",
+   "Stakeholder management": "y",
+   "Project management": "y"
+  },
+  "notes": "CSR monitoring & evaluation; data-heavy, Data/Analytics also plausible"
+ },
+ {
+  "id": "gh:hackerrank:8155938",
+  "role": "Software Engineering",
+  "cities": [
+   "Bengaluru"
+  ],
+  "level": "Experienced",
+  "skills": {
+   "JavaScript": "y",
+   "TypeScript": "y",
+   "REST APIs": "y",
+   "Docker": "y",
+   "Kubernetes": "y",
+   "CI/CD": "y",
+   "Git": "y",
+   "Testing / QA": "y",
+   "Communication": "y",
+   "Problem solving": "y"
+  },
+  "notes": ""
+ },
+ {
+  "id": "gh:purestorage:8131754",
+  "role": "Software Engineering",
+  "cities": [
+   "Bengaluru"
+  ],
+  "level": "Experienced",
+  "skills": {
+   "Python": "y",
+   "Java": "y",
+   "C++": "y",
+   "DSA": "y",
+   "OOP": "y",
+   "ETL / Data pipelines": "n",
+   "Linux": "y",
+   "Communication": "y"
+  },
+  "notes": "No years; engineering leader -> Experienced"
+ },
+ {
+  "id": "sr:NielsenIQ:744000159370550",
+  "role": "Other",
+  "cities": [
+   "Other India"
+  ],
+  "level": "Experienced",
+  "skills": {},
+  "notes": "GIS cartographer; Mid-Senior per employment type, no years"
+ },
+ {
+  "id": "gh:zscaler:5272056007",
+  "role": "Sales / Business Development",
+  "cities": [
+   "Mumbai"
+  ],
+  "level": "Experienced",
+  "skills": {
+   "Machine Learning": "y",
+   "Teamwork": "y",
+   "Project management": "n"
+  },
+  "notes": ""
+ },
+ {
+  "id": "gh:zinnia:4726335006",
+  "role": "Operations / Supply Chain",
+  "cities": [
+   "Delhi NCR"
+  ],
+  "level": "Early career",
+  "skills": {
+   "Excel": "y",
+   "Communication": "y"
+  },
+  "notes": "Insurance new-business processing; associate, no years"
+ },
+ {
+  "id": "gh:rubrik:8305308",
+  "role": "Finance / Accounting",
+  "cities": [
+   "Bengaluru"
+  ],
+  "level": "Internship",
+  "skills": {
+   "Excel": "y",
+   "MS Office": "y",
+   "Accounting (Tally / GST)": "y",
+   "Communication": "y"
+  },
+  "notes": "Payroll industrial trainee in Finance dept (HR also plausible)"
+ },
+ {
+  "id": "lv:meesho:f4e2e8e1-6863-4fe0-85fb-7840189cad3f",
+  "role": "Software Engineering",
+  "cities": [
+   "Bengaluru"
+  ],
+  "level": "Experienced",
+  "skills": {
+   "CI/CD": "y",
+   "Cybersecurity": "y",
+   "Teamwork": "n"
+  },
+  "notes": "Security Engineer IV, no years"
+ },
+ {
+  "id": "gh:okta:8323989",
+  "role": "Finance / Accounting",
+  "cities": [
+   "Bengaluru"
+  ],
+  "level": "Early career",
+  "skills": {
+   "Excel": "y",
+   "Machine Learning": "n",
+   "MS Office": "y",
+   "Accounting (Tally / GST)": "y",
+   "Communication": "y",
+   "Problem solving": "y",
+   "Teamwork": "y",
+   "Customer handling": "n"
+  },
+  "notes": "2-4 yrs (min 2)"
+ },
+ {
+  "id": "lv:hevodata:86fd190d-754d-45b6-9f04-59585dc6d15b",
+  "role": "Sales / Business Development",
+  "cities": [
+   "Pune"
+  ],
+  "level": "Experienced",
+  "skills": {
+   "ETL / Data pipelines": "y"
+  },
+  "notes": "Post-sales solution engineer; rule maps solutions engineers to Sales, Customer Success plausible"
+ },
+ {
+  "id": "gh:databricks:8630011002",
+  "role": "Product Management",
+  "cities": [
+   "India (unspecified)"
+  ],
+  "level": "Experienced",
+  "skills": {
+   "Python": "y",
+   "Java": "y",
+   "SQL": "y",
+   "Excel": "n",
+   "Machine Learning": "y",
+   "Generative AI / LLMs": "y",
+   "ETL / Data pipelines": "y",
+   "Testing / QA": "y",
+   "Snowflake / BigQuery": "n",
+   "Communication": "y",
+   "Customer handling": "y",
+   "Project management": "y"
+  },
+  "notes": "Deployment strategist = field PM; Consulting also plausible"
+ },
+ {
+  "id": "sr:Freshworks:744000144466115",
+  "role": "Sales / Business Development",
+  "cities": [
+   "Chennai"
+  ],
+  "level": "Experienced",
+  "skills": {
+   "Communication": "y"
+  },
+  "notes": "Deal desk / sales ops; Operations plausible"
+ },
+ {
+  "id": "sr:Experian:744000159304482",
+  "role": "Sales / Business Development",
+  "cities": [
+   "Mumbai"
+  ],
+  "level": "Experienced",
+  "skills": {},
+  "notes": ""
+ },
+ {
+  "id": "sr:Swiggy:6000000001433948",
+  "role": "Content / Writing",
+  "cities": [
+   "Mumbai"
+  ],
+  "level": "Early career",
+  "skills": {
+   "Adobe Creative Suite": "y"
+  },
+  "notes": "Video editor: Content vs Design; no years, junior wording"
+ },
+ {
+  "id": "lv:cred:09022710-e79a-4cf0-8060-df0e1cd64263",
+  "role": "Sales / Business Development",
+  "cities": [
+   "Bengaluru"
+  ],
+  "level": "Experienced",
+  "skills": {},
+  "notes": "No years stated"
+ },
+ {
+  "id": "gh:pubmatic:5435973008",
+  "role": "Marketing",
+  "cities": [
+   "Delhi NCR"
+  ],
+  "level": "Experienced",
+  "skills": {
+   "Excel": "y",
+   "Communication": "y",
+   "Problem solving": "y"
+  },
+  "notes": "Programmatic media trading (ad ops)"
+ },
+ {
+  "id": "gh:groww:5000706101",
+  "role": "Content / Writing",
+  "cities": [
+   "Bengaluru"
+  ],
+  "level": "Early career",
+  "skills": {
+   "English proficiency": "y",
+   "Hindi / regional language": "y"
+  },
+  "notes": ""
+ },
+ {
+  "id": "gh:inmobi:8207330",
+  "role": "Other",
+  "cities": [
+   "Bengaluru"
+  ],
+  "level": "Experienced",
+  "skills": {
+   "Machine Learning": "n",
+   "Generative AI / LLMs": "n",
+   "Negotiation": "y"
+  },
+  "notes": "Legal counsel"
+ },
+ {
+  "id": "lv:paytm:cca996fb-c2b7-46a7-8280-c793670aa81f",
+  "role": "Customer Support / Success",
+  "cities": [
+   "Mumbai"
+  ],
+  "level": "Early career",
+  "skills": {
+   "CRM (Salesforce etc.)": "y",
+   "Communication": "y",
+   "Problem solving": "y",
+   "Teamwork": "y"
+  },
+  "notes": ""
+ },
+ {
+  "id": "wk:apna:F3523C51BC",
+  "role": "Sales / Business Development",
+  "cities": [
+   "Other India"
+  ],
+  "level": "Fresher",
+  "skills": {
+   "Negotiation": "y"
+  },
+  "notes": ""
+ },
+ {
+  "id": "ab:sarvam:786e9a1b-e52d-4075-932d-66e4ad8e06c2",
+  "role": "Consulting / Strategy",
+  "cities": [
+   "Bengaluru"
+  ],
+  "level": "Early career",
+  "skills": {
+   "Stakeholder management": "y"
+  },
+  "notes": "CEO's office product & strategy; PM plausible"
+ },
+ {
+  "id": "gh:elastic:8263255",
+  "role": "Marketing",
+  "cities": [
+   "Bengaluru"
+  ],
+  "level": "Early career",
+  "skills": {
+   "Excel": "y",
+   "Tableau": "y",
+   "CRM (Salesforce etc.)": "y",
+   "Communication": "y",
+   "Project management": "y"
+  },
+  "notes": "2-3 yrs (min 2)"
+ },
+ {
+  "id": "gh:gitlab:8775507002",
+  "role": "Software Engineering",
+  "cities": [
+   "Bengaluru"
+  ],
+  "level": "Early career",
+  "skills": {
+   "Rust": "y",
+   "Ruby": "y",
+   "Docker": "y",
+   "Kubernetes": "y",
+   "CI/CD": "y",
+   "PostgreSQL": "y",
+   "Communication": "y"
+  },
+  "notes": "Intermediate, no years"
+ },
+ {
+  "id": "lv:zeta:38accd53-250f-4e8f-b635-261f31f78b65",
+  "role": "Software Engineering",
+  "cities": [
+   "Hyderabad"
+  ],
+  "level": "Experienced",
+  "skills": {
+   "AWS": "y",
+   "Kubernetes": "y",
+   "Cybersecurity": "y"
+  },
+  "notes": "SOC L2 analyst (security -> SE); Analyst II, no years"
+ },
+ {
+  "id": "lv:fampay:9b8d4eaa-cd29-4aec-8dcc-a33fd78d5657",
+  "role": "Software Engineering",
+  "cities": [
+   "Bengaluru"
+  ],
+  "level": "Experienced",
+  "skills": {
+   "Node.js": "n",
+   "Kubernetes": "y"
+  },
+  "notes": "SDE 2, no years visible"
+ },
+ {
+  "id": "gh:stripe:7975698",
+  "role": "Customer Support / Success",
+  "cities": [
+   "Bengaluru"
+  ],
+  "level": "Fresher",
+  "skills": {
+   "Excel": "n",
+   "Communication": "y",
+   "Problem solving": "y",
+   "Customer handling": "y"
+  },
+  "notes": "No experience required; 'Associate'"
+ },
+ {
+  "id": "gh:sigmoid:4808098002",
+  "role": "Software Engineering",
+  "cities": [
+   "Bengaluru"
+  ],
+  "level": "Experienced",
+  "skills": {
+   "Python": "y",
+   "Java": "y",
+   "C++": "y",
+   "Scala": "y",
+   "OOP": "y",
+   "Spark": "y",
+   "Testing / QA": "y",
+   "Snowflake / BigQuery": "y",
+   "Communication": "y",
+   "Project management": "n"
+  },
+  "notes": ""
+ },
+ {
+  "id": "lv:mindtickle:e5f69583-dd88-4b86-af6b-5582df1548d8",
+  "role": "Content / Writing",
+  "cities": [
+   "Pune"
+  ],
+  "level": "Experienced",
+  "skills": {},
+  "notes": "Learning/enablement content design; very short JD"
+ },
+ {
+  "id": "sr:ServiceNow:744000161219059",
+  "role": "Software Engineering",
+  "cities": [
+   "Hyderabad"
+  ],
+  "level": "Experienced",
+  "skills": {},
+  "notes": "Empty JD; level guessed"
+ }
+]
