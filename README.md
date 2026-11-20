@@ -99,7 +99,7 @@ The design came from two parallel proposals: a data-ingestion plan and an LLM/ev
 
 Method ([eval/](eval/)):
 1. `python -m eval.sample` draws 50 posts, stratified round-robin across the 33 company boards (seed 42). It writes `eval/labels.csv` with **empty** gold columns, so the labeller never sees model output.
-2. I labelled role, cities and level by hand in `labels.csv`.
+2. I labelled role, cities and level by hand. `uv run --with openpyxl python -m eval.make_sheet` builds `eval/labels.xlsx` with dropdowns limited to the same values the LLM can choose; `python -m eval.import_labels` (same `uv run` prefix) checks the answers and writes them back to `labels.csv`.
 3. `python -m eval.run_models claude-opus-5-5` tags the same 50 posts. The keyword baseline is also scored, to show what the LLM adds.
 4. `python -m eval.score` writes [eval/RESULTS.md](eval/RESULTS.md). It reports accuracy with Wilson 95% CIs, the cases where only the LLM or only the baseline is right, every disagreement, and cost per 1,000 posts from logged token usage.
 
@@ -115,14 +115,38 @@ Daily marginal cost is far lower than the per-1,000 figure suggests. The content
 
 ## Run it yourself
 
+Needs Python 3.11+ (CI uses 3.12).
+
 ```bash
 pip install -r requirements.txt
-export ANTHROPIC_API_KEY=...           # without it the pipeline falls back to keyword tags
+cp .env.example .env                   # optional: put ANTHROPIC_API_KEY in .env
 python -m pipeline.run                 # writes site/jobs.json + site/meta.json
 python -m http.server -d site 8000     # open http://localhost:8000
 ```
 
-Repo secrets for the daily workflow: `ANTHROPIC_API_KEY` (required for LLM tags). `ADZUNA_APP_ID` / `ADZUNA_APP_KEY` are optional. The repo variable `TAG_MODEL` is optional (default `claude-opus-5-5`).
+### LLM on or off
+
+The key is optional. The pipeline decides on every run:
+
+| Situation | What happens |
+|---|---|
+| `ANTHROPIC_API_KEY` set and valid | Claude tags new or changed posts. Cached tags are reused. |
+| No key | Keyword tags (the current flow). No API calls and no cost. |
+| Key invalid, no credit, or model not available | One call fails, the run logs `LLM unavailable`, and every remaining post gets keyword tags. Posts tagged by keywords aren't cached, so the LLM tries them again once the key works. |
+
+`data/run_report.json` records which case applied (`tagging.llm_status`), and the page footer shows which tagger produced the data.
+
+Where the key goes:
+- **Locally:** in `.env` (git-ignored; template in [.env.example](.env.example)). Variables already set in your shell take priority over `.env`.
+- **Daily workflow:** as a repository secret. Run `gh secret set ANTHROPIC_API_KEY`, or use Settings → Secrets and variables → Actions. `ADZUNA_APP_ID` / `ADZUNA_APP_KEY` are optional. The repo variable `TAG_MODEL` is optional (default `claude-opus-5-5`).
+
+### Dependencies
+
+[requirements.in](requirements.in) lists the direct dependencies. [requirements.txt](requirements.txt) is the fully pinned lock that CI installs. To upgrade, edit `requirements.in`, then run `uv pip compile requirements.in -o requirements.txt --python-version 3.12`.
+
+### When a job board goes down
+
+If a board fails on a run (timeout, 404, 5xx), its posts from the last good run are kept, because an outage doesn't mean the jobs closed. That lasts **3 days** (`CARRY_DAYS` in [run.py](pipeline/run.py)). After that, the board's posts are dropped, so a renamed slug or a company that changed ATS can't keep stale jobs on the page. `data/source_health.json` and the run report list every failing board, its error, and how many days it has been down.
 
 ## Files
 
@@ -135,4 +159,4 @@ Repo secrets for the daily workflow: `ANTHROPIC_API_KEY` (required for LLM tags)
 | [pipeline/baseline.py](pipeline/baseline.py) | Keyword tagger (eval baseline and no-key fallback) |
 | [pipeline/run.py](pipeline/run.py) | Orchestration, filters, guard, publish |
 | [eval/](eval/) | Sampling, model runs, scoring |
-| `data/` | Run report, duplicates log, tag cache, usage log, first-seen state |
+| `data/` | Run report, duplicates log, tag cache, usage log, first-seen state, failing-source health, archive |

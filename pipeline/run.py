@@ -3,7 +3,8 @@
 Usage:  python -m pipeline.run [--no-llm]
 Writes: site/jobs.json, site/meta.json (served by GitHub Pages)
         data/posts.json (last good snapshot), data/state.json (first/last seen),
-        data/run_report.json, data/dupes.json, data/tags_cache.json, data/usage.jsonl
+        data/run_report.json, data/dupes.json, data/tags_cache.json, data/usage.jsonl,
+        data/source_health.json (boards currently failing, and since when)
 """
 import argparse
 import json
@@ -23,6 +24,7 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA, SITE = ROOT / "data", ROOT / "site"
 MIN_ENTRY = 150         # below this, keep yesterday's site instead of publishing a broken one
 MAX_DROP = 0.40         # or if the entry-level count falls more than 40% vs the last good run
+CARRY_DAYS = 3          # a failing board's posts are kept for this many days, then dropped
 
 SENIOR = re.compile(r"(?<![a-z])(senior|sr\.?|lead|staff|principal|director|head|leader|vp|architect|manager|mgr|tl|stl)\b", re.I)
 PLACEHOLDER = re.compile(r"(don.t see|general application|talent (pool|community)|future opportunit|expression of interest|open application)", re.I)
@@ -100,7 +102,20 @@ def main(use_llm: bool = True) -> int:
     # A source that errored this run keeps its previous posts (an outage is not an expiry).
     prev = load(DATA / "posts.json", [])
     failed_sources = {k for k, v in report.items() if not v.get("ok")}
-    carried = [p for p in prev if p.get("_board") in failed_sources]
+    # ...but only for a few days: a board that stays down (slug renamed, company moved ATS)
+    # must not keep showing its old, possibly closed, jobs forever.
+    health = load(DATA / "source_health.json", {})
+    health = {k: v for k, v in health.items() if k in failed_sources}  # recovered -> reset
+    for k in failed_sources:
+        health.setdefault(k, {"failing_since": today})
+        health[k]["error"] = report[k].get("error", "")
+        health[k]["days_failing"] = (now.date() - datetime.strptime(health[k]["failing_since"], "%Y-%m-%d").date()).days
+    expired = {k for k, v in health.items() if v["days_failing"] >= CARRY_DAYS}
+    carried = [p for p in prev if p.get("_board") in failed_sources - expired]
+    DATA.mkdir(exist_ok=True)
+    (DATA / "source_health.json").write_text(json.dumps(health, indent=1, sort_keys=True))
+    if expired:
+        print(f"sources down for {CARRY_DAYS}+ days, their posts are dropped: {sorted(expired)}")
     for p in raw:
         p["_board"] = p["id"].split(":")[0] + ":" + p["id"].split(":")[1] if not p["id"].startswith("az:") else "adzuna"
     # normalise board key to match report keys
@@ -159,6 +174,7 @@ def main(use_llm: bool = True) -> int:
     (DATA / "run_report.json").write_text(json.dumps({"at": now.isoformat(), "sources": report, "tagging": stats,
                                                       "entry_level": len(entry), "intern_or_fresher": len(strict),
                                                       "published": len(posts),
+                                                      "carried_over": len(carried), "failing_sources": health,
                                                       "guard": guard_msg}, indent=1))
     (DATA / "dupes.json").write_text(json.dumps(dupes, indent=1, ensure_ascii=False))
     if guard_msg:

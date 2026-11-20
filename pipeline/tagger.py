@@ -8,9 +8,11 @@ Cost levers:
 Every call's token usage is appended to data/usage.jsonl, so cost is measured, not estimated.
 """
 import hashlib
+import itertools
 import json
 import os
 import re
+import threading
 import time
 from pathlib import Path
 
@@ -150,6 +152,13 @@ def _call(client: anthropic.Anthropic, batch: list[tuple[str, dict]], model: str
     return {k: v for k, v in items.items() if k in want}
 
 
+def _fatal(e: Exception) -> bool:
+    """Errors that will fail every call the same way, so retrying is pointless."""
+    if isinstance(e, (anthropic.AuthenticationError, anthropic.PermissionDeniedError, anthropic.NotFoundError)):
+        return True
+    return isinstance(e, anthropic.BadRequestError) and "credit" in str(e).lower()
+
+
 def tag_posts(posts: list[dict], use_llm: bool = True, workers: int = 4) -> dict:
     """Mutates posts in place with tag fields. Returns run stats."""
     from concurrent.futures import ThreadPoolExecutor
@@ -163,13 +172,25 @@ def tag_posts(posts: list[dict], use_llm: bool = True, workers: int = 4) -> dict
     stats = {"total": len(posts), "cache_hits": len(posts) - len(todo), "llm_tagged": 0, "fallback": 0,
              "batch_retries": 0}
 
-    use_llm = use_llm and bool(todo) and bool(os.environ.get("ANTHROPIC_API_KEY") or os.environ.get("ANTHROPIC_AUTH_TOKEN"))
+    has_key = bool(os.environ.get("ANTHROPIC_API_KEY") or os.environ.get("ANTHROPIC_AUTH_TOKEN"))
+    stats["llm_status"] = ("disabled (--no-llm)" if not use_llm else "no API key" if not has_key
+                           else "nothing new to tag" if not todo else "ok")
+    use_llm = use_llm and bool(todo) and has_key
     client = anthropic.Anthropic(max_retries=4) if use_llm else None
+    unavailable = threading.Event()  # set on a bad key / no credit / unknown model -> stop calling
 
     def run_batch(batch):
+        if unavailable.is_set():
+            return {}, 0
         try:
             return _call(client, batch), 0
         except Exception as e:  # noqa: BLE001 - retry each post alone, then fall back
+            if _fatal(e):
+                if not unavailable.is_set():
+                    unavailable.set()
+                    stats["llm_status"] = f"unavailable: {str(e)[:160]}"
+                    print(f"LLM unavailable ({str(e)[:160]}); using keyword tags for the rest of this run")
+                return {}, 0
             print(f"batch failed ({str(e)[:120]}); retrying one-by-one")
             res = {}
             for item in batch:
@@ -181,8 +202,12 @@ def tag_posts(posts: list[dict], use_llm: bool = True, workers: int = 4) -> dict
 
     batches = [todo[i:i + BATCH_SIZE] for i in range(0, len(todo), BATCH_SIZE)]
     if client:
+        # First batch alone: a bad key or empty balance fails here once, not hundreds of times.
+        first = [(batches[0], run_batch(batches[0]))]
+        rest = batches[1:] if not unavailable.is_set() else []
         with ThreadPoolExecutor(max_workers=workers) as pool:
-            for n, (batch, (res, retried)) in enumerate(zip(batches, pool.map(run_batch, batches))):
+            results = itertools.chain(first, zip(rest, pool.map(run_batch, rest)))  # lazy: checkpoints still fire
+            for n, (batch, (res, retried)) in enumerate(results):
                 stats["batch_retries"] += retried
                 for hid, _ in batch:
                     if hid in res:
