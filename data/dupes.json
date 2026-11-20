@@ -239,13 +239,6 @@
  },
  {
   "reason": "key",
-  "title": "Product Data & Change Management specialist (Power tools)",
-  "company": "Bosch",
-  "source": "SmartRecruiters",
-  "dup_of": "Product Data & Change Management specialist (Power tools)"
- },
- {
-  "reason": "key",
   "title": "Senior Android Developer_ECT",
   "company": "Bosch",
   "source": "SmartRecruiters",
@@ -715,10 +708,10 @@
  },
  {
   "reason": "key",
-  "title": "Senior Software Engineer",
+  "title": "Senior Software engineer - Advanced Threat Protection",
   "company": "Okta",
   "source": "Greenhouse",
-  "dup_of": "Senior Software Engineer"
+  "dup_of": "Senior Software Engineer - Advanced Threat Protection"
  },
  {
   "reason": "key",
@@ -834,13 +827,6 @@
  },
  {
   "reason": "key",
-  "title": "MTS-Exa   ",
-  "company": "Pure Storage",
-  "source": "Greenhouse",
-  "dup_of": "MTS-Exa   "
- },
- {
-  "reason": "key",
   "title": "Member of Technical Staff - FlashArray",
   "company": "Pure Storage",
   "source": "Greenhouse",
@@ -858,14 +844,21 @@
   "title": "Member of Technical Staff, FA Files",
   "company": "Pure Storage",
   "source": "Greenhouse",
-  "dup_of": "Member of Technical Staff, FA Files"
+  "dup_of": "Member Of Technical Staff, FA Files"
  },
  {
   "reason": "key",
   "title": "Member of Technical Staff, FA Files",
   "company": "Pure Storage",
   "source": "Greenhouse",
-  "dup_of": "Member of Technical Staff, FA Files"
+  "dup_of": "Member Of Technical Staff, FA Files"
+ },
+ {
+  "reason": "key",
+  "title": "Member of Technical Staff, FA Files",
+  "company": "Pure Storage",
+  "source": "Greenhouse",
+  "dup_of": "Member Of Technical Staff, FA Files"
  },
  {
   "reason": "key",
@@ -894,6 +887,13 @@
   "company": "Pure Storage",
   "source": "Greenhouse",
   "dup_of": "Member of Technical Staff, Kernel"
+ },
+ {
+  "reason": "key",
+  "title": "Member of Technical staff, Backend (Product Security)",
+  "company": "Pure Storage",
+  "source": "Greenhouse",
+  "dup_of": "Member of Technical Staff, Backend (Product Security) "
  },
  {
   "reason": "key",
@@ -957,20 +957,6 @@
   "company": "ServiceNow",
   "source": "SmartRecruiters",
   "dup_of": "Sr Software Engineer"
- },
- {
-  "reason": "key",
-  "title": "Sr Staff Software Engineer",
-  "company": "ServiceNow",
-  "source": "SmartRecruiters",
-  "dup_of": "Sr Staff Software Engineer"
- },
- {
-  "reason": "key",
-  "title": "Staff Software Engineer",
-  "company": "ServiceNow",
-  "source": "SmartRecruiters",
-  "dup_of": "Staff Software Engineer"
  },
  {
   "reason": "key",
@@ -1240,13 +1226,6 @@
  },
  {
   "reason": "key",
-  "title": "Growth Manager I",
-  "company": "Swiggy",
-  "source": "SmartRecruiters",
-  "dup_of": "Growth Manager I"
- },
- {
-  "reason": "key",
   "title": "Growth Manager II",
   "company": "Swiggy",
   "source": "SmartRecruiters",
@@ -1356,13 +1335,6 @@
   "company": "Swiggy",
   "source": "SmartRecruiters",
   "dup_of": "Sales Manager - II"
- },
- {
-  "reason": "key",
-  "title": "Sales Manager I",
-  "company": "Swiggy",
-  "source": "SmartRecruiters",
-  "dup_of": "Sales Manager I"
  },
  {
   "reason": "key",
