@@ -1,5 +1,6 @@
 # Direct dependencies. requirements.txt is the pinned lock generated from this file:
 #   uv pip compile requirements.in -o requirements.txt --python-version 3.12
 anthropic==2.8.0
+google-genai==2.33.0
 requests==2.34.2
 rapidfuzz==3.14.5

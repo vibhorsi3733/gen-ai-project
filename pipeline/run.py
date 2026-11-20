@@ -188,7 +188,7 @@ def main(use_llm: bool = True) -> int:
     out.sort(key=lambda p: (rank[p["level"]], p["first_seen"], p["company"]))
     SITE.mkdir(exist_ok=True)
     (SITE / "jobs.json").write_text(json.dumps(out, ensure_ascii=False, separators=(",", ":")))
-    cost = cost_report()
+    cost = cost_report(MODEL) if MODEL else {}
     sources = sorted({p["source"] for p in posts})
     (SITE / "meta.json").write_text(json.dumps({
         "updated_at": now.isoformat(), "total_posts": len(posts), "entry_posts": len(entry),

@@ -10,28 +10,29 @@ Every call's token usage is appended to data/usage.jsonl, so cost is measured, n
 import hashlib
 import itertools
 import json
-import os
 import re
 import threading
 import time
 from pathlib import Path
 
-import anthropic
-
+from . import llm
 from .baseline import baseline_tag
 from .taxonomy import CITIES, LEVELS, ROLES, cities_from_alias
 
 PROMPT_VERSION = "v2"
-MODEL = os.environ.get("TAG_MODEL") or "claude-opus-5-5"
-EFFORT = os.environ.get("TAG_EFFORT") or "low"
+# Claude or Gemini, whichever key is present (see llm.resolve). None -> keyword tags only.
+PROVIDER, MODEL, PROVIDER_NOTE = llm.resolve()
 BATCH_SIZE = 10
 EXCERPT_CHARS = 1200
 
-# USD per 1M tokens (input, output). Anthropic first-party prices, Nov 2026.
+# USD per 1M tokens (input, output), list prices Nov 2026. Thinking tokens bill as output on both.
 PRICES = {
     "claude-opus-5-5": (4.00, 20.00),
     "claude-sonnet-5-5": (2.00, 10.00),
     "claude-haiku-5-5": (0.10, 0.50),
+    "gemini-3.8-flash": (0.75, 3.75),   # introductory until 2026-12-31; $1.50 / $7.50 from 2027-01-01
+    "gemini-3.6-flash": (0.75, 3.75),   # same introductory schedule
+    "gemini-2.5-flash": (0.30, 2.50),
 }
 
 DATA = Path(__file__).resolve().parent.parent / "data"
@@ -100,7 +101,7 @@ def excerpt(desc: str) -> str:
 def content_hash(post: dict) -> str:
     key = "|".join([post["title"].strip().lower(), post["company"].strip().lower(),
                     post.get("location", "").strip().lower(), excerpt(post.get("description", "")),
-                    PROMPT_VERSION, MODEL])
+                    PROMPT_VERSION, MODEL or "none"])
     return hashlib.sha256(key.encode()).hexdigest()[:20]
 
 
@@ -121,26 +122,17 @@ def _render(batch: list[tuple[str, dict]]) -> str:
     return "Label these posts (one JSON object per line):\n" + "\n".join(lines)
 
 
-def _call(client: anthropic.Anthropic, batch: list[tuple[str, dict]], model: str = None) -> dict[str, dict]:
+def _call(batch: list[tuple[str, dict]], model: str = None) -> dict[str, dict]:
     model = model or MODEL
-    t0 = time.time()
-    resp = client.messages.create(
-        model=model,
-        max_tokens=8000,
-        system=SYSTEM,
-        output_config={"effort": EFFORT, "format": {"type": "json_schema", "schema": OUTPUT_SCHEMA}},
-        messages=[{"role": "user", "content": _render(batch)}],
-    )
-    u = resp.usage
+    r = llm.generate_json(model, SYSTEM, _render(batch), OUTPUT_SCHEMA)
     DATA.mkdir(exist_ok=True)
     with USAGE_PATH.open("a") as f:
-        f.write(json.dumps({"ts": int(time.time()), "model": model, "posts": len(batch),
-                            "input_tokens": u.input_tokens, "output_tokens": u.output_tokens,
-                            "latency_s": round(time.time() - t0, 2), "stop_reason": resp.stop_reason}) + "\n")
-    if resp.stop_reason != "end_turn":
-        raise ValueError(f"stop_reason={resp.stop_reason}")
-    text = next(b.text for b in resp.content if b.type == "text")
-    items = {it["id"]: it for it in json.loads(text)["items"]}
+        f.write(json.dumps({"ts": int(time.time()), "provider": r["provider"], "model": model, "posts": len(batch),
+                            "input_tokens": r["input_tokens"], "output_tokens": r["output_tokens"],
+                            "latency_s": r["latency_s"], "stop_reason": r["finish"]}) + "\n")
+    if not r["ok"]:
+        raise ValueError(f"finish={r['finish']}")
+    items = {it["id"]: it for it in json.loads(r["text"])["items"]}
     want = {hid for hid, _ in batch}
     if set(items) != want:  # model dropped/duplicated/invented ids -> caller retries per post
         missing = want - set(items)
@@ -150,13 +142,6 @@ def _call(client: anthropic.Anthropic, batch: list[tuple[str, dict]], model: str
         if not it["cities"]:
             it["cities"] = ["India (unspecified)"]
     return {k: v for k, v in items.items() if k in want}
-
-
-def _fatal(e: Exception) -> bool:
-    """Errors that will fail every call the same way, so retrying is pointless."""
-    if isinstance(e, (anthropic.AuthenticationError, anthropic.PermissionDeniedError, anthropic.NotFoundError)):
-        return True
-    return isinstance(e, anthropic.BadRequestError) and "credit" in str(e).lower()
 
 
 def tag_posts(posts: list[dict], use_llm: bool = True, workers: int = 4) -> dict:
@@ -172,20 +157,19 @@ def tag_posts(posts: list[dict], use_llm: bool = True, workers: int = 4) -> dict
     stats = {"total": len(posts), "cache_hits": len(posts) - len(todo), "llm_tagged": 0, "fallback": 0,
              "batch_retries": 0}
 
-    has_key = bool(os.environ.get("ANTHROPIC_API_KEY") or os.environ.get("ANTHROPIC_AUTH_TOKEN"))
-    stats["llm_status"] = ("disabled (--no-llm)" if not use_llm else "no API key" if not has_key
-                           else "nothing new to tag" if not todo else "ok")
-    use_llm = use_llm and bool(todo) and has_key
-    client = anthropic.Anthropic(max_retries=4) if use_llm else None
+    stats["llm_status"] = ("disabled (--no-llm)" if not use_llm else PROVIDER_NOTE if not PROVIDER
+                           else "nothing new to tag" if not todo else f"ok: {MODEL} ({PROVIDER_NOTE})")
+    stats["model"] = MODEL
+    client = use_llm and bool(todo) and PROVIDER is not None
     unavailable = threading.Event()  # set on a bad key / no credit / unknown model -> stop calling
 
     def run_batch(batch):
         if unavailable.is_set():
             return {}, 0
         try:
-            return _call(client, batch), 0
+            return _call(batch), 0
         except Exception as e:  # noqa: BLE001 - retry each post alone, then fall back
-            if _fatal(e):
+            if llm.is_fatal(e):
                 if not unavailable.is_set():
                     unavailable.set()
                     stats["llm_status"] = f"unavailable: {str(e)[:160]}"
@@ -195,7 +179,7 @@ def tag_posts(posts: list[dict], use_llm: bool = True, workers: int = 4) -> dict
             res = {}
             for item in batch:
                 try:
-                    res.update(_call(client, [item]))
+                    res.update(_call([item]))
                 except Exception as e2:  # noqa: BLE001
                     print(f"  post {item[0]} failed: {str(e2)[:120]}")
             return res, 1

@@ -3,7 +3,7 @@
 A live page of fresher jobs and internships in India.
 - Collected every day from public company career-board APIs.
 - De-duplicated.
-- Tagged by role, city and experience level with an LLM (Claude).
+- Tagged by role, city and experience level with an LLM (Gemini or Claude, whichever key is set).
 - Searchable in the browser.
 
 **Live page:** https://vibhorsi3733.github.io/gen-ai-project/
@@ -28,7 +28,7 @@ A live page of fresher jobs and internships in India.
  Drop obvious senior titles + "general application" placeholders (regex)      │    754 candidates
         │
         ▼
- tagger.py → Claude, 10 posts per call, JSON-schema output with enums
+ tagger.py → Gemini or Claude (llm.py), 10 posts per call, JSON-schema output with enums
              role (14) · cities[] (11) · level (Internship/Fresher/Early career/Experienced)
              content-hash cache → only new or changed posts are sent each day
              every call's token usage is logged → measured cost
@@ -100,14 +100,14 @@ The design came from two parallel proposals: a data-ingestion plan and an LLM/ev
 Method ([eval/](eval/)):
 1. `python -m eval.sample` draws 50 posts, stratified round-robin across the 33 company boards (seed 42). It writes `eval/labels.csv` with **empty** gold columns, so the labeller never sees model output.
 2. I labelled role, cities and level by hand. `uv run --with openpyxl python -m eval.make_sheet` builds `eval/labels.xlsx` with dropdowns limited to the same values the LLM can choose; `python -m eval.import_labels` (same `uv run` prefix) checks the answers and writes them back to `labels.csv`.
-3. `python -m eval.run_models claude-opus-5-5` tags the same 50 posts. The keyword baseline is also scored, to show what the LLM adds.
+3. `python -m eval.run_models` tags the same 50 posts with whichever model the key selects (or name one: `gemini-3.8-flash`, `claude-opus-5-5`). The keyword baseline is also scored, to show what the LLM adds.
 4. `python -m eval.score` writes [eval/RESULTS.md](eval/RESULTS.md). It reports accuracy with Wilson 95% CIs, the cases where only the LLM or only the baseline is right, every disagreement, and cost per 1,000 posts from logged token usage.
 
 > **Results:** _pending. Filled in from eval/RESULTS.md after the labelled run._
 
 ## Cost per 1,000 posts
 
-Cost is **measured, not estimated**. Every API call appends `input_tokens` and `output_tokens` to `data/usage.jsonl`. The thinking tokens Opus 5.5 always uses are billed as output and included. `cost_report()` multiplies by list prices (Opus 5.5: $4 / $20 per million input / output tokens).
+Cost is **measured, not estimated**. Every API call appends `input_tokens` and `output_tokens` to `data/usage.jsonl`. Thinking tokens are billed as output on both providers and are included. `cost_report()` multiplies by list prices per million input / output tokens: Gemini 3.8 Flash $0.75 / $3.75 (introductory until 31 Dec 2026, then $1.50 / $7.50), Claude Opus 5.5 $4 / $20.
 
 > **Measured:** _pending first LLM run._ The page footer shows the live figure.
 
@@ -126,19 +126,23 @@ python -m http.server -d site 8000     # open http://localhost:8000
 
 ### LLM on or off
 
-The key is optional. The pipeline decides on every run:
+Two providers are supported through [pipeline/llm.py](pipeline/llm.py), with the same prompt and the same JSON schema. **Both keys are optional; one is enough.** The pipeline decides on every run:
 
-| Situation | What happens |
+| Keys set | What happens |
 |---|---|
-| `ANTHROPIC_API_KEY` set and valid | Claude tags new or changed posts. Cached tags are reused. |
-| No key | Keyword tags (the current flow). No API calls and no cost. |
-| Key invalid, no credit, or model not available | One call fails, the run logs `LLM unavailable`, and every remaining post gets keyword tags. Posts tagged by keywords aren't cached, so the LLM tries them again once the key works. |
+| `GEMINI_API_KEY` only | Gemini tags new or changed posts (default `gemini-3.8-flash`, thinking level low). |
+| `ANTHROPIC_API_KEY` only | Claude tags them (default `claude-opus-5-5`, effort low). |
+| Both | Claude, unless `LLM_PROVIDER=gemini` or `TAG_MODEL=gemini-…`. |
+| Neither | Keyword tags. No API calls and no cost. |
+| Key invalid, no credit, unknown model, or daily quota used up | One call fails, the run logs `LLM unavailable`, and every remaining post gets keyword tags. Posts tagged by keywords aren't cached, so the LLM tries them again once the key works. |
+
+Cached tags are keyed by model, so switching provider re-tags each post once.
 
 `data/run_report.json` records which case applied (`tagging.llm_status`), and the page footer shows which tagger produced the data.
 
 Where the key goes:
 - **Locally:** in `.env` (git-ignored; template in [.env.example](.env.example)). Variables already set in your shell take priority over `.env`.
-- **Daily workflow:** as a repository secret. Run `gh secret set ANTHROPIC_API_KEY`, or use Settings → Secrets and variables → Actions. `ADZUNA_APP_ID` / `ADZUNA_APP_KEY` are optional. The repo variable `TAG_MODEL` is optional (default `claude-opus-5-5`).
+- **Daily workflow:** as a repository secret. Run `gh secret set GEMINI_API_KEY` (or `ANTHROPIC_API_KEY`), or use Settings → Secrets and variables → Actions. `ADZUNA_APP_ID` / `ADZUNA_APP_KEY` are optional. The repo variables `LLM_PROVIDER` and `TAG_MODEL` are optional.
 
 ### Dependencies
 
@@ -154,7 +158,8 @@ If a board fails on a run (timeout, 404, 5xx), its posts from the last good run 
 |---|---|
 | [pipeline/sources.py](pipeline/sources.py) | Fetchers for Greenhouse, Lever, SmartRecruiters, Workable, Ashby and Adzuna |
 | [pipeline/dedup.py](pipeline/dedup.py) | Three-layer dedup |
-| [pipeline/tagger.py](pipeline/tagger.py) | Claude tagging, cache, usage logging, cost |
+| [pipeline/llm.py](pipeline/llm.py) | Provider layer: picks Gemini or Claude from the keys, one call shape for both, fatal-error detection |
+| [pipeline/tagger.py](pipeline/tagger.py) | LLM tagging, cache, usage logging, cost |
 | [pipeline/taxonomy.py](pipeline/taxonomy.py) | Role, city and level label sets plus the city alias map |
 | [pipeline/baseline.py](pipeline/baseline.py) | Keyword tagger (eval baseline and no-key fallback) |
 | [pipeline/run.py](pipeline/run.py) | Orchestration, filters, guard, publish |
