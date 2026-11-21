@@ -1,64 +1,64 @@
 {
- "at": "2026-11-20T09:45:54.588144+00:00",
+ "at": "2026-11-21T07:30:36.971883+00:00",
  "sources": {
   "greenhouse:databricks": {
    "ok": true,
-   "total": 898,
+   "total": 897,
    "india": 77
   },
   "greenhouse:okta": {
    "ok": true,
-   "total": 365,
+   "total": 372,
    "india": 103
   },
   "greenhouse:zscaler": {
    "ok": true,
-   "total": 376,
+   "total": 386,
    "india": 101
   },
   "greenhouse:mongodb": {
    "ok": true,
-   "total": 413,
+   "total": 417,
    "india": 70
   },
   "greenhouse:purestorage": {
    "ok": true,
-   "total": 403,
-   "india": 64
+   "total": 401,
+   "india": 65
   },
   "greenhouse:stripe": {
    "ok": true,
-   "total": 773,
+   "total": 778,
    "india": 47
   },
   "greenhouse:inmobi": {
    "ok": true,
-   "total": 77,
-   "india": 48
+   "total": 75,
+   "india": 47
   },
   "greenhouse:gitlab": {
    "ok": true,
    "total": 246,
-   "india": 32
+   "india": 31
   },
   "greenhouse:sigmoid": {
    "ok": true,
-   "total": 45,
-   "india": 40
+   "total": 47,
+   "india": 42
   },
   "greenhouse:rubrik": {
    "ok": true,
-   "total": 204,
-   "india": 40
+   "total": 207,
+   "india": 41
   },
   "greenhouse:toast": {
    "ok": true,
-   "total": 328,
-   "india": 23
+   "total": 326,
+   "india": 25
   },
   "greenhouse:elastic": {
    "ok": true,
-   "total": 370,
+   "total": 382,
    "india": 14
   },
   "greenhouse:hackerrank": {
@@ -73,7 +73,7 @@
   },
   "greenhouse:druva": {
    "ok": true,
-   "total": 27,
+   "total": 29,
    "india": 10
   },
   "greenhouse:groww": {
@@ -83,8 +83,8 @@
   },
   "lever:paytm": {
    "ok": true,
-   "total": 197,
-   "india": 172
+   "total": 199,
+   "india": 174
   },
   "lever:meesho": {
    "ok": true,
@@ -98,8 +98,8 @@
   },
   "lever:zeta": {
    "ok": true,
-   "total": 32,
-   "india": 28
+   "total": 33,
+   "india": 29
   },
   "lever:fampay": {
    "ok": true,
@@ -108,18 +108,18 @@
   },
   "lever:mindtickle": {
    "ok": true,
-   "total": 20,
-   "india": 17
+   "total": 19,
+   "india": 16
   },
   "lever:cred": {
    "ok": true,
-   "total": 10,
-   "india": 9
+   "total": 11,
+   "india": 10
   },
   "smartrecruiters:Swiggy": {
    "ok": true,
-   "total": 179,
-   "india": 179
+   "total": 173,
+   "india": 173
   },
   "smartrecruiters:BoschGroup": {
    "ok": true,
@@ -148,8 +148,8 @@
   },
   "ashby:sarvam": {
    "ok": true,
-   "total": 44,
-   "india": 44
+   "total": 43,
+   "india": 43
   },
   "smartrecruiters:NielsenIQ": {
    "ok": true,
@@ -163,7 +163,7 @@
   },
   "greenhouse:pubmatic": {
    "ok": true,
-   "total": 79,
+   "total": 78,
    "india": 31
   },
   "adzuna": {
@@ -174,19 +174,19 @@
   }
  },
  "tagging": {
-  "total": 737,
+  "total": 741,
   "cache_hits": 0,
-  "llm_tagged": 737,
-  "fallback": 0,
+  "llm_tagged": 0,
+  "fallback": 741,
   "batch_retries": 0,
-  "llm_status": "ok: gemini-3.5-flash-lite (gemini key found; gemini-3.6-flash (429 quota), gemini-3.8-flash (429 quota) unavailable -> using gemini-3.5-flash-lite)",
-  "model": "gemini-3.5-flash-lite",
-  "senior_title_dropped": 1174,
+  "llm_status": "no API key (set ANTHROPIC_API_KEY or GEMINI_API_KEY)",
+  "model": null,
+  "senior_title_dropped": 1180,
   "placeholder_dropped": 1
  },
- "entry_level": 212,
- "intern_or_fresher": 83,
- "published": 737,
+ "entry_level": 741,
+ "intern_or_fresher": 116,
+ "published": 741,
  "carried_over": 0,
  "failing_sources": {},
  "guard": null

@@ -113,6 +113,13 @@
  },
  {
   "reason": "key",
+  "title": "Expert Autosar Architect (Classic + Adaptive) - AS",
+  "company": "Bosch",
+  "source": "SmartRecruiters",
+  "dup_of": "Expert Autosar Architect (Classic + Adaptive) - AS"
+ },
+ {
+  "reason": "key",
   "title": "Full Stack with C# & Angular, Pune",
   "company": "Bosch",
   "source": "SmartRecruiters",
@@ -138,27 +145,6 @@
   "company": "Bosch",
   "source": "SmartRecruiters",
   "dup_of": "GenAI/Agentic AI specialists"
- },
- {
-  "reason": "key",
-  "title": "Hardware Engineer",
-  "company": "Bosch",
-  "source": "SmartRecruiters",
-  "dup_of": "Hardware Engineer"
- },
- {
-  "reason": "key",
-  "title": "Hardware Engineer",
-  "company": "Bosch",
-  "source": "SmartRecruiters",
-  "dup_of": "Hardware Engineer"
- },
- {
-  "reason": "key",
-  "title": "Hardware Engineer",
-  "company": "Bosch",
-  "source": "SmartRecruiters",
-  "dup_of": "Hardware Engineer"
  },
  {
   "reason": "key",
@@ -229,13 +215,6 @@
   "company": "Bosch",
   "source": "SmartRecruiters",
   "dup_of": "Power BI Developer"
- },
- {
-  "reason": "key",
-  "title": "Process Expert – Logistics Invoice Verification (IN & DE  Process)",
-  "company": "Bosch",
-  "source": "SmartRecruiters",
-  "dup_of": "Process Expert – Logistics Invoice Verification (IN & DE  Process)"
  },
  {
   "reason": "key",
@@ -341,20 +320,6 @@
   "company": "Bosch",
   "source": "SmartRecruiters",
   "dup_of": "ServiceNow Developer – Service Catalog & Employee Portal"
- },
- {
-  "reason": "key",
-  "title": "Specialist Hardware Engineer",
-  "company": "Bosch",
-  "source": "SmartRecruiters",
-  "dup_of": "Specialist Hardware Engineer"
- },
- {
-  "reason": "key",
-  "title": "Specialist Hardware Engineer",
-  "company": "Bosch",
-  "source": "SmartRecruiters",
-  "dup_of": "Specialist Hardware Engineer"
  },
  {
   "reason": "key",
@@ -659,6 +624,13 @@
  },
  {
   "reason": "key",
+  "title": "Software Engineer",
+  "company": "NielsenIQ",
+  "source": "SmartRecruiters",
+  "dup_of": "Software Engineer"
+ },
+ {
+  "reason": "key",
   "title": "Engineering Manager  ",
   "company": "Okta",
   "source": "Greenhouse",
@@ -715,17 +687,17 @@
  },
  {
   "reason": "key",
-  "title": "Senior Software engineer - Advanced Threat Protection",
-  "company": "Okta",
-  "source": "Greenhouse",
-  "dup_of": "Senior Software Engineer - Advanced Threat Protection"
- },
- {
-  "reason": "key",
   "title": "Staff Site Reliability Engineer ",
   "company": "Okta",
   "source": "Greenhouse",
   "dup_of": "Staff Site Reliability Engineer"
+ },
+ {
+  "reason": "key",
+  "title": "Staff Software Engineer",
+  "company": "Okta",
+  "source": "Greenhouse",
+  "dup_of": "Staff Software Engineer"
  },
  {
   "reason": "key",
@@ -939,45 +911,17 @@
  },
  {
   "reason": "key",
-  "title": "Sr Software Engineer",
+  "title": "Senior Solution Sales Executive",
   "company": "ServiceNow",
   "source": "SmartRecruiters",
-  "dup_of": "Sr Software Engineer"
+  "dup_of": "Senior Solution Sales Executive"
  },
  {
   "reason": "key",
-  "title": "Sr Software Engineer",
+  "title": "Senior Solution Sales Executive",
   "company": "ServiceNow",
   "source": "SmartRecruiters",
-  "dup_of": "Sr Software Engineer"
- },
- {
-  "reason": "key",
-  "title": "Sr Software Engineer",
-  "company": "ServiceNow",
-  "source": "SmartRecruiters",
-  "dup_of": "Sr Software Engineer"
- },
- {
-  "reason": "key",
-  "title": "Sr Software Engineer",
-  "company": "ServiceNow",
-  "source": "SmartRecruiters",
-  "dup_of": "Sr Software Engineer"
- },
- {
-  "reason": "key",
-  "title": "Staff Software Engineer",
-  "company": "ServiceNow",
-  "source": "SmartRecruiters",
-  "dup_of": "Staff Software Engineer"
- },
- {
-  "reason": "key",
-  "title": "Staff Software Engineer",
-  "company": "ServiceNow",
-  "source": "SmartRecruiters",
-  "dup_of": "Staff Software Engineer"
+  "dup_of": "Senior Solution Sales Executive"
  },
  {
   "reason": "key",
@@ -1321,20 +1265,6 @@
   "company": "Swiggy",
   "source": "SmartRecruiters",
   "dup_of": "Sales Manager"
- },
- {
-  "reason": "key",
-  "title": "Sales Manager - II",
-  "company": "Swiggy",
-  "source": "SmartRecruiters",
-  "dup_of": "Sales Manager - II"
- },
- {
-  "reason": "key",
-  "title": "Sales Manager - II",
-  "company": "Swiggy",
-  "source": "SmartRecruiters",
-  "dup_of": "Sales Manager - II"
  },
  {
   "reason": "key",
