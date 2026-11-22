@@ -1,9 +1,9 @@
 {
- "at": "2026-11-21T07:30:36.971883+00:00",
+ "at": "2026-11-22T07:12:05.544453+00:00",
  "sources": {
   "greenhouse:databricks": {
    "ok": true,
-   "total": 897,
+   "total": 895,
    "india": 77
   },
   "greenhouse:okta": {
@@ -13,7 +13,7 @@
   },
   "greenhouse:zscaler": {
    "ok": true,
-   "total": 386,
+   "total": 387,
    "india": 101
   },
   "greenhouse:mongodb": {
@@ -28,7 +28,7 @@
   },
   "greenhouse:stripe": {
    "ok": true,
-   "total": 778,
+   "total": 777,
    "india": 47
   },
   "greenhouse:inmobi": {
@@ -48,12 +48,12 @@
   },
   "greenhouse:rubrik": {
    "ok": true,
-   "total": 207,
-   "india": 41
+   "total": 208,
+   "india": 42
   },
   "greenhouse:toast": {
    "ok": true,
-   "total": 326,
+   "total": 325,
    "india": 25
   },
   "greenhouse:elastic": {
@@ -78,8 +78,8 @@
   },
   "greenhouse:groww": {
    "ok": true,
-   "total": 9,
-   "india": 9
+   "total": 8,
+   "india": 8
   },
   "lever:paytm": {
    "ok": true,
@@ -118,8 +118,8 @@
   },
   "smartrecruiters:Swiggy": {
    "ok": true,
-   "total": 173,
-   "india": 173
+   "total": 174,
+   "india": 174
   },
   "smartrecruiters:BoschGroup": {
    "ok": true,
@@ -128,8 +128,8 @@
   },
   "smartrecruiters:ServiceNow": {
    "ok": true,
-   "total": 79,
-   "india": 79
+   "total": 80,
+   "india": 80
   },
   "smartrecruiters:Freshworks": {
    "ok": true,
@@ -148,13 +148,13 @@
   },
   "ashby:sarvam": {
    "ok": true,
-   "total": 43,
-   "india": 43
+   "total": 42,
+   "india": 42
   },
   "smartrecruiters:NielsenIQ": {
    "ok": true,
-   "total": 77,
-   "india": 77
+   "total": 74,
+   "india": 74
   },
   "greenhouse:zinnia": {
    "ok": true,
@@ -174,19 +174,19 @@
   }
  },
  "tagging": {
-  "total": 741,
+  "total": 740,
   "cache_hits": 0,
   "llm_tagged": 0,
-  "fallback": 741,
+  "fallback": 740,
   "batch_retries": 0,
   "llm_status": "no API key (set ANTHROPIC_API_KEY or GEMINI_API_KEY)",
   "model": null,
-  "senior_title_dropped": 1180,
+  "senior_title_dropped": 1176,
   "placeholder_dropped": 1
  },
- "entry_level": 741,
- "intern_or_fresher": 116,
- "published": 741,
+ "entry_level": 740,
+ "intern_or_fresher": 114,
+ "published": 740,
  "carried_over": 0,
  "failing_sources": {},
  "guard": null
