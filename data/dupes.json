@@ -106,13 +106,6 @@
  },
  {
   "reason": "key",
-  "title": "Embedded_C++ Developer_EBH",
-  "company": "Bosch",
-  "source": "SmartRecruiters",
-  "dup_of": "Embedded_C++ Developer_EBH"
- },
- {
-  "reason": "key",
   "title": "Expert Autosar Architect (Classic + Adaptive) - AS",
   "company": "Bosch",
   "source": "SmartRecruiters",
@@ -159,13 +152,6 @@
   "company": "Bosch",
   "source": "SmartRecruiters",
   "dup_of": "IN_Bosch Rexroth India_Engineer / Executive_Design"
- },
- {
-  "reason": "key",
-  "title": "IN_RBAI_Engineer_FA Testing & Inspection Maintenance",
-  "company": "Bosch",
-  "source": "SmartRecruiters",
-  "dup_of": "IN_RBAI_Engineer_FA Testing & Inspection Maintenance"
  },
  {
   "reason": "key",
@@ -302,6 +288,13 @@
  },
  {
   "reason": "key",
+  "title": "Senior_Project_Manager_EBH",
+  "company": "Bosch",
+  "source": "SmartRecruiters",
+  "dup_of": "Senior Project Manager_EBH"
+ },
+ {
+  "reason": "key",
   "title": "ServiceNow Automation Developer",
   "company": "Bosch",
   "source": "SmartRecruiters",
@@ -320,6 +313,20 @@
   "company": "Bosch",
   "source": "SmartRecruiters",
   "dup_of": "ServiceNow Developer – Service Catalog & Employee Portal"
+ },
+ {
+  "reason": "key",
+  "title": "Software_Architect_EBH_10+Years",
+  "company": "Bosch",
+  "source": "SmartRecruiters",
+  "dup_of": "Software_Architect_EBH_10+Years"
+ },
+ {
+  "reason": "key",
+  "title": "Software_Architect_EBH_10+Years",
+  "company": "Bosch",
+  "source": "SmartRecruiters",
+  "dup_of": "Software_Architect_EBH_10+Years"
  },
  {
   "reason": "key",
@@ -638,6 +645,13 @@
  },
  {
   "reason": "key",
+  "title": "Manager, Engineering",
+  "company": "Okta",
+  "source": "Greenhouse",
+  "dup_of": "Manager, Engineering"
+ },
+ {
+  "reason": "key",
   "title": "Principal Software Engineer",
   "company": "Okta",
   "source": "Greenhouse",
@@ -670,6 +684,13 @@
   "company": "Okta",
   "source": "Greenhouse",
   "dup_of": "Senior Site Reliability Engineer"
+ },
+ {
+  "reason": "key",
+  "title": "Senior Software Engineer",
+  "company": "Okta",
+  "source": "Greenhouse",
+  "dup_of": "Senior Software Engineer"
  },
  {
   "reason": "key",
@@ -803,13 +824,6 @@
   "company": "Pure Storage",
   "source": "Greenhouse",
   "dup_of": "MTS - Performance Engineering"
- },
- {
-  "reason": "key",
-  "title": "Member of Technical Staff - FlashArray",
-  "company": "Pure Storage",
-  "source": "Greenhouse",
-  "dup_of": "Member of Technical Staff - FlashArray"
  },
  {
   "reason": "key",
@@ -1149,6 +1163,13 @@
  },
  {
   "reason": "key",
+  "title": "Account Manager",
+  "company": "Swiggy",
+  "source": "SmartRecruiters",
+  "dup_of": "Account Manager"
+ },
+ {
+  "reason": "key",
   "title": "Associate Account Manager",
   "company": "Swiggy",
   "source": "SmartRecruiters",
@@ -1174,6 +1195,13 @@
   "company": "Swiggy",
   "source": "SmartRecruiters",
   "dup_of": "Captain 2"
+ },
+ {
+  "reason": "key",
+  "title": "Growth Manager I",
+  "company": "Swiggy",
+  "source": "SmartRecruiters",
+  "dup_of": "Growth Manager I"
  },
  {
   "reason": "key",
@@ -1233,13 +1261,6 @@
  },
  {
   "reason": "key",
-  "title": "Key Account Manager I",
-  "company": "Swiggy",
-  "source": "SmartRecruiters",
-  "dup_of": "Key Account Manager I"
- },
- {
-  "reason": "key",
   "title": "Sales Manager",
   "company": "Swiggy",
   "source": "SmartRecruiters",
@@ -1276,13 +1297,6 @@
  {
   "reason": "key",
   "title": "Sales Manager",
-  "company": "Swiggy",
-  "source": "SmartRecruiters",
-  "dup_of": "Sales Manager"
- },
- {
-  "reason": "key",
-  "title": "Sales Manager ",
   "company": "Swiggy",
   "source": "SmartRecruiters",
   "dup_of": "Sales Manager"
@@ -1300,13 +1314,6 @@
   "company": "Swiggy",
   "source": "SmartRecruiters",
   "dup_of": "Sales Manager - II"
- },
- {
-  "reason": "key",
-  "title": "Sales Manager I",
-  "company": "Swiggy",
-  "source": "SmartRecruiters",
-  "dup_of": "Sales Manager I"
  },
  {
   "reason": "key",
@@ -1489,13 +1496,6 @@
   "company": "Zscaler",
   "source": "Greenhouse",
   "dup_of": "Principal Software Development Engineer - Rust"
- },
- {
-  "reason": "key",
-  "title": "Senior Staff Software Development Engineer",
-  "company": "Zscaler",
-  "source": "Greenhouse",
-  "dup_of": " Senior Staff Software Development Engineer "
  },
  {
   "reason": "key",
