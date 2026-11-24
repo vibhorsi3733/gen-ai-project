@@ -1,10 +1,10 @@
 [
  {
   "reason": "key",
-  "title": "Application Engineering ADAS",
+  "title": " Area Manager – Sales, Workshop Concepts & Services",
   "company": "Bosch",
   "source": "SmartRecruiters",
-  "dup_of": "Application Engineering ADAS"
+  "dup_of": " Area Manager – Sales, Workshop Concepts & Services"
  },
  {
   "reason": "key",
@@ -29,10 +29,10 @@
  },
  {
   "reason": "key",
-  "title": "Application SW Developer (Model-based) for Steering Platform ",
+  "title": "Application Engineering ADAS",
   "company": "Bosch",
   "source": "SmartRecruiters",
-  "dup_of": "Application SW Developer (Model-based) for Steering Platform "
+  "dup_of": "Application Engineering ADAS"
  },
  {
   "reason": "key",
@@ -78,17 +78,17 @@
  },
  {
   "reason": "key",
-  "title": "D365 F&O SCM Consultant",
-  "company": "Bosch",
-  "source": "SmartRecruiters",
-  "dup_of": "D365 F&O SCM Consultant"
- },
- {
-  "reason": "key",
   "title": "D365 F&O Technical Consultant",
   "company": "Bosch",
   "source": "SmartRecruiters",
   "dup_of": "D365 F&O Technical Consultant"
+ },
+ {
+  "reason": "key",
+  "title": "Deputy Manager_eAxle System Architect",
+  "company": "Bosch",
+  "source": "SmartRecruiters",
+  "dup_of": "Deputy Manager_eAxle System Architect"
  },
  {
   "reason": "key",
@@ -103,13 +103,6 @@
   "company": "Bosch",
   "source": "SmartRecruiters",
   "dup_of": "Embedded_C++ Developer_EBH"
- },
- {
-  "reason": "key",
-  "title": "Expert Autosar Architect (Classic + Adaptive) - AS",
-  "company": "Bosch",
-  "source": "SmartRecruiters",
-  "dup_of": "Expert Autosar Architect (Classic + Adaptive) - AS"
  },
  {
   "reason": "key",
@@ -260,6 +253,13 @@
  },
  {
   "reason": "key",
+  "title": "Senior Engineer_eAxle lab Technician",
+  "company": "Bosch",
+  "source": "SmartRecruiters",
+  "dup_of": "Senior Engineer_eAxle lab Technician"
+ },
+ {
+  "reason": "key",
   "title": "Senior Python Developer_EDC3",
   "company": "Bosch",
   "source": "SmartRecruiters",
@@ -313,6 +313,13 @@
   "company": "Bosch",
   "source": "SmartRecruiters",
   "dup_of": "ServiceNow Developer – Service Catalog & Employee Portal"
+ },
+ {
+  "reason": "key",
+  "title": "Software_Architect_EBH_10+Years",
+  "company": "Bosch",
+  "source": "SmartRecruiters",
+  "dup_of": "Software_Architect_EBH_10+Years"
  },
  {
   "reason": "key",
@@ -512,6 +519,13 @@
  },
  {
   "reason": "key",
+  "title": "Analytics Consultant",
+  "company": "Experian",
+  "source": "SmartRecruiters",
+  "dup_of": "Analytics Consultant"
+ },
+ {
+  "reason": "key",
   "title": "Product Manager",
   "company": "Experian",
   "source": "SmartRecruiters",
@@ -540,13 +554,6 @@
  },
  {
   "reason": "key",
-  "title": "Senior Software Engineer",
-  "company": "Experian",
-  "source": "SmartRecruiters",
-  "dup_of": "Senior Software Engineer"
- },
- {
-  "reason": "key",
   "title": "Lead - Solution Engineer",
   "company": "Freshworks",
   "source": "SmartRecruiters",
@@ -572,13 +579,6 @@
   "company": "Freshworks",
   "source": "SmartRecruiters",
   "dup_of": "Lead - Solution Engineer"
- },
- {
-  "reason": "key",
-  "title": "Lead Analyst - Programmatic Buying",
-  "company": "InMobi",
-  "source": "Greenhouse",
-  "dup_of": "Lead Analyst - Programmatic Buying"
  },
  {
   "reason": "key",
@@ -638,6 +638,13 @@
  },
  {
   "reason": "key",
+  "title": "Sr. Customer Support Analyst",
+  "company": "NielsenIQ",
+  "source": "SmartRecruiters",
+  "dup_of": "Sr. Customer Support Analyst"
+ },
+ {
+  "reason": "key",
   "title": "Engineering Manager  ",
   "company": "Okta",
   "source": "Greenhouse",
@@ -649,6 +656,13 @@
   "company": "Okta",
   "source": "Greenhouse",
   "dup_of": "Manager, Engineering"
+ },
+ {
+  "reason": "key",
+  "title": "Principal Software Engineer",
+  "company": "Okta",
+  "source": "Greenhouse",
+  "dup_of": "Principal Software Engineer"
  },
  {
   "reason": "key",
@@ -684,13 +698,6 @@
   "company": "Okta",
   "source": "Greenhouse",
   "dup_of": "Senior Site Reliability Engineer"
- },
- {
-  "reason": "key",
-  "title": "Senior Software Engineer",
-  "company": "Okta",
-  "source": "Greenhouse",
-  "dup_of": "Senior Software Engineer"
  },
  {
   "reason": "key",
@@ -817,13 +824,6 @@
   "company": "Pure Storage",
   "source": "Greenhouse",
   "dup_of": "Engineering Manager - Flash Array"
- },
- {
-  "reason": "key",
-  "title": "MTS - Performance Engineering",
-  "company": "Pure Storage",
-  "source": "Greenhouse",
-  "dup_of": "MTS - Performance Engineering"
  },
  {
   "reason": "key",
@@ -1247,13 +1247,6 @@
  },
  {
   "reason": "key",
-  "title": "Growth Manager II",
-  "company": "Swiggy",
-  "source": "SmartRecruiters",
-  "dup_of": "Growth Manager II"
- },
- {
-  "reason": "key",
   "title": "Key Account Manager ",
   "company": "Swiggy",
   "source": "SmartRecruiters",
@@ -1314,13 +1307,6 @@
   "company": "Swiggy",
   "source": "SmartRecruiters",
   "dup_of": "Sales Manager - II"
- },
- {
-  "reason": "key",
-  "title": "Sales Manager I",
-  "company": "Swiggy",
-  "source": "SmartRecruiters",
-  "dup_of": "Sales Manager I"
  },
  {
   "reason": "key",
@@ -1496,6 +1482,13 @@
   "company": "Zscaler",
   "source": "Greenhouse",
   "dup_of": "Principal Software Development Engineer - Rust"
+ },
+ {
+  "reason": "key",
+  "title": "Senior Staff Software Development Engineer",
+  "company": "Zscaler",
+  "source": "Greenhouse",
+  "dup_of": " Senior Staff Software Development Engineer "
  },
  {
   "reason": "key",
