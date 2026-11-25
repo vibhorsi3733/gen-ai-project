@@ -36,6 +36,13 @@
  },
  {
   "reason": "key",
+  "title": "Application SW Developer (Model-based) for Steering Platform ",
+  "company": "Bosch",
+  "source": "SmartRecruiters",
+  "dup_of": "Application SW Developer (Model-based) for Steering Platform "
+ },
+ {
+  "reason": "key",
   "title": "Audio techstack: Automotive Android and QNX developer",
   "company": "Bosch",
   "source": "SmartRecruiters",
@@ -47,13 +54,6 @@
   "company": "Bosch",
   "source": "SmartRecruiters",
   "dup_of": "BGSW_2026_Sr.SAP_EWM-MFS_Consultant"
- },
- {
-  "reason": "key",
-  "title": "Build & Artifact_Engineer_EPS1",
-  "company": "Bosch",
-  "source": "SmartRecruiters",
-  "dup_of": "Build & Artifact Engineer_EPS1"
  },
  {
   "reason": "key",
@@ -75,6 +75,13 @@
   "company": "Bosch",
   "source": "SmartRecruiters",
   "dup_of": "C++ experts for ADAS HiL Framework development"
+ },
+ {
+  "reason": "key",
+  "title": "D365 F&O SCM Consultant",
+  "company": "Bosch",
+  "source": "SmartRecruiters",
+  "dup_of": "D365 F&O SCM Consultant"
  },
  {
   "reason": "key",
@@ -201,6 +208,13 @@
   "company": "Bosch",
   "source": "SmartRecruiters",
   "dup_of": "Senior Android Developer_ECT"
+ },
+ {
+  "reason": "key",
+  "title": "Senior Business Accountant- Cash and Bank",
+  "company": "Bosch",
+  "source": "SmartRecruiters",
+  "dup_of": "Senior Business Accountant- Cash and Bank"
  },
  {
   "reason": "key",
@@ -376,13 +390,6 @@
   "company": "Bosch",
   "source": "SmartRecruiters",
   "dup_of": "Sr.Data Engineer"
- },
- {
-  "reason": "key",
-  "title": "System Architect",
-  "company": "Bosch",
-  "source": "SmartRecruiters",
-  "dup_of": "System Architect"
  },
  {
   "reason": "key",
@@ -638,6 +645,13 @@
  },
  {
   "reason": "key",
+  "title": "Software Engineer",
+  "company": "NielsenIQ",
+  "source": "SmartRecruiters",
+  "dup_of": "Software Engineer"
+ },
+ {
+  "reason": "key",
   "title": "Sr. Customer Support Analyst",
   "company": "NielsenIQ",
   "source": "SmartRecruiters",
@@ -848,13 +862,6 @@
  },
  {
   "reason": "key",
-  "title": "Member of Technical Staff, FA Files",
-  "company": "Pure Storage",
-  "source": "Greenhouse",
-  "dup_of": "Member Of Technical Staff, FA Files"
- },
- {
-  "reason": "key",
   "title": "Member of Technical Staff, Kernel",
   "company": "Pure Storage",
   "source": "Greenhouse",
@@ -901,6 +908,20 @@
   "company": "Pure Storage",
   "source": "Greenhouse",
   "dup_of": "ServiceNow Platform Support"
+ },
+ {
+  "reason": "key",
+  "title": "Senior AI Engineer - Enterprise Agentic Systems",
+  "company": "Rubrik",
+  "source": "Greenhouse",
+  "dup_of": "Senior AI Engineer - Enterprise Agentic Systems"
+ },
+ {
+  "reason": "key",
+  "title": "Senior AI Engineer - Enterprise Agentic Systems",
+  "company": "Rubrik",
+  "source": "Greenhouse",
+  "dup_of": "Senior AI Engineer - Enterprise Agentic Systems"
  },
  {
   "reason": "key",
@@ -1289,13 +1310,6 @@
  },
  {
   "reason": "key",
-  "title": "Sales Manager",
-  "company": "Swiggy",
-  "source": "SmartRecruiters",
-  "dup_of": "Sales Manager"
- },
- {
-  "reason": "key",
   "title": "Sales Manager ",
   "company": "Swiggy",
   "source": "SmartRecruiters",
@@ -1307,20 +1321,6 @@
   "company": "Swiggy",
   "source": "SmartRecruiters",
   "dup_of": "Sales Manager - II"
- },
- {
-  "reason": "key",
-  "title": "Sales Manager I",
-  "company": "Swiggy",
-  "source": "SmartRecruiters",
-  "dup_of": "Sales Manager I"
- },
- {
-  "reason": "key",
-  "title": "Sales Manager I",
-  "company": "Swiggy",
-  "source": "SmartRecruiters",
-  "dup_of": "Sales Manager I"
  },
  {
   "reason": "key",
@@ -1503,6 +1503,13 @@
   "company": "Zscaler",
   "source": "Greenhouse",
   "dup_of": " Senior Staff Software Development Engineer "
+ },
+ {
+  "reason": "key",
+  "title": "Sr. Staff Software Development Engineer",
+  "company": "Zscaler",
+  "source": "Greenhouse",
+  "dup_of": "Sr. Staff Software Development Engineer"
  },
  {
   "reason": "key",
