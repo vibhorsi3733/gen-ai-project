@@ -36,13 +36,6 @@
  },
  {
   "reason": "key",
-  "title": "Application SW Developer (Model-based) for Steering Platform ",
-  "company": "Bosch",
-  "source": "SmartRecruiters",
-  "dup_of": "Application SW Developer (Model-based) for Steering Platform "
- },
- {
-  "reason": "key",
   "title": "Audio techstack: Automotive Android and QNX developer",
   "company": "Bosch",
   "source": "SmartRecruiters",
@@ -75,13 +68,6 @@
   "company": "Bosch",
   "source": "SmartRecruiters",
   "dup_of": "C++ experts for ADAS HiL Framework development"
- },
- {
-  "reason": "key",
-  "title": "D365 F&O SCM Consultant",
-  "company": "Bosch",
-  "source": "SmartRecruiters",
-  "dup_of": "D365 F&O SCM Consultant"
  },
  {
   "reason": "key",
@@ -208,6 +194,13 @@
   "company": "Bosch",
   "source": "SmartRecruiters",
   "dup_of": "Senior Android Developer_ECT"
+ },
+ {
+  "reason": "key",
+  "title": "Senior Autosar Architect (Classic + Adaptive)",
+  "company": "Bosch",
+  "source": "SmartRecruiters",
+  "dup_of": "Senior Autosar Architect (Classic + Adaptive)"
  },
  {
   "reason": "key",
@@ -460,20 +453,6 @@
   "company": "Databricks",
   "source": "Greenhouse",
   "dup_of": "Deployment Strategist"
- },
- {
-  "reason": "key",
-  "title": "Senior Software Engineer (App-Framework)",
-  "company": "Databricks",
-  "source": "Greenhouse",
-  "dup_of": "Senior Software Engineer (App-Framework)"
- },
- {
-  "reason": "key",
-  "title": "Senior Software Engineer - Backend",
-  "company": "Databricks",
-  "source": "Greenhouse",
-  "dup_of": "Senior Software Engineer (Backend)"
  },
  {
   "reason": "key",
@@ -841,6 +820,13 @@
  },
  {
   "reason": "key",
+  "title": "Member of Technical Staff ",
+  "company": "Pure Storage",
+  "source": "Greenhouse",
+  "dup_of": "Member of Technical Staff"
+ },
+ {
+  "reason": "key",
   "title": "Member of Technical Staff - FlashArray ",
   "company": "Pure Storage",
   "source": "Greenhouse",
@@ -859,6 +845,13 @@
   "company": "Pure Storage",
   "source": "Greenhouse",
   "dup_of": "Member Of Technical Staff, FA Files"
+ },
+ {
+  "reason": "key",
+  "title": "Member of Technical Staff, Flash Array (Files)",
+  "company": "Pure Storage",
+  "source": "Greenhouse",
+  "dup_of": "Member of Technical Staff - Flash Array (Files)"
  },
  {
   "reason": "key",
@@ -992,6 +985,13 @@
   "company": "ServiceNow",
   "source": "SmartRecruiters",
   "dup_of": "Staff Software Engineer"
+ },
+ {
+  "reason": "key",
+  "title": "SDC Recruiter",
+  "company": "Stripe",
+  "source": "Greenhouse",
+  "dup_of": "SDC Recruiter"
  },
  {
   "reason": "key",
@@ -1254,6 +1254,20 @@
  },
  {
   "reason": "key",
+  "title": "Growth Manager I",
+  "company": "Swiggy",
+  "source": "SmartRecruiters",
+  "dup_of": "Growth Manager I"
+ },
+ {
+  "reason": "key",
+  "title": "Growth Manager I",
+  "company": "Swiggy",
+  "source": "SmartRecruiters",
+  "dup_of": "Growth Manager I"
+ },
+ {
+  "reason": "key",
   "title": "Growth Manager II",
   "company": "Swiggy",
   "source": "SmartRecruiters",
@@ -1265,6 +1279,27 @@
   "company": "Swiggy",
   "source": "SmartRecruiters",
   "dup_of": "Growth Manager II"
+ },
+ {
+  "reason": "key",
+  "title": "Growth Manager II ",
+  "company": "Swiggy",
+  "source": "SmartRecruiters",
+  "dup_of": "Growth Manager II"
+ },
+ {
+  "reason": "key",
+  "title": "Key Account Manager ",
+  "company": "Swiggy",
+  "source": "SmartRecruiters",
+  "dup_of": "Key Account Manager "
+ },
+ {
+  "reason": "key",
+  "title": "Key Account Manager ",
+  "company": "Swiggy",
+  "source": "SmartRecruiters",
+  "dup_of": "Key Account Manager "
  },
  {
   "reason": "key",
@@ -1321,13 +1356,6 @@
   "company": "Swiggy",
   "source": "SmartRecruiters",
   "dup_of": "Sales Manager - II"
- },
- {
-  "reason": "key",
-  "title": "Sales Manager I",
-  "company": "Swiggy",
-  "source": "SmartRecruiters",
-  "dup_of": "Sales Manager I"
  },
  {
   "reason": "key",
@@ -1524,13 +1552,6 @@
   "company": "Zscaler",
   "source": "Greenhouse",
   "dup_of": "Sr. Staff Software Development Engineer"
- },
- {
-  "reason": "key",
-  "title": "Staff Software Development Engineer",
-  "company": "Zscaler",
-  "source": "Greenhouse",
-  "dup_of": "Staff Software Development Engineer"
  },
  {
   "reason": "key",
