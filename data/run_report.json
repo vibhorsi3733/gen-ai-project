@@ -1,40 +1,40 @@
 {
- "at": "2026-11-26T08:41:46.600063+00:00",
+ "at": "2026-11-27T08:53:02.083587+00:00",
  "sources": {
   "greenhouse:databricks": {
    "ok": true,
-   "total": 878,
-   "india": 62
+   "total": 879,
+   "india": 59
   },
   "greenhouse:okta": {
    "ok": true,
    "total": 362,
-   "india": 103
+   "india": 104
   },
   "greenhouse:zscaler": {
    "ok": true,
-   "total": 389,
+   "total": 387,
    "india": 102
   },
   "greenhouse:mongodb": {
    "ok": true,
-   "total": 422,
-   "india": 71
+   "total": 421,
+   "india": 73
   },
   "greenhouse:purestorage": {
    "ok": true,
-   "total": 394,
-   "india": 64
+   "total": 398,
+   "india": 63
   },
   "greenhouse:stripe": {
    "ok": true,
-   "total": 772,
-   "india": 46
+   "total": 767,
+   "india": 45
   },
   "greenhouse:inmobi": {
    "ok": true,
-   "total": 62,
-   "india": 37
+   "total": 63,
+   "india": 38
   },
   "greenhouse:gitlab": {
    "ok": true,
@@ -48,17 +48,17 @@
   },
   "greenhouse:rubrik": {
    "ok": true,
-   "total": 218,
-   "india": 45
+   "total": 222,
+   "india": 46
   },
   "greenhouse:toast": {
    "ok": true,
-   "total": 299,
-   "india": 20
+   "total": 300,
+   "india": 21
   },
   "greenhouse:elastic": {
    "ok": true,
-   "total": 392,
+   "total": 375,
    "india": 16
   },
   "greenhouse:hackerrank": {
@@ -68,7 +68,7 @@
   },
   "greenhouse:sumologic": {
    "ok": true,
-   "total": 27,
+   "total": 26,
    "india": 10
   },
   "greenhouse:druva": {
@@ -78,18 +78,18 @@
   },
   "greenhouse:groww": {
    "ok": true,
-   "total": 8,
-   "india": 8
+   "total": 9,
+   "india": 9
   },
   "lever:paytm": {
    "ok": true,
-   "total": 193,
-   "india": 169
+   "total": 198,
+   "india": 175
   },
   "lever:meesho": {
    "ok": true,
-   "total": 49,
-   "india": 49
+   "total": 60,
+   "india": 60
   },
   "lever:hevodata": {
    "ok": true,
@@ -103,23 +103,23 @@
   },
   "lever:fampay": {
    "ok": true,
-   "total": 12,
-   "india": 12
+   "total": 13,
+   "india": 13
   },
   "lever:mindtickle": {
    "ok": true,
-   "total": 20,
-   "india": 17
+   "total": 17,
+   "india": 16
   },
   "lever:cred": {
    "ok": true,
-   "total": 11,
-   "india": 10
+   "total": 10,
+   "india": 9
   },
   "smartrecruiters:Swiggy": {
    "ok": true,
-   "total": 152,
-   "india": 152
+   "total": 148,
+   "india": 148
   },
   "smartrecruiters:BoschGroup": {
    "ok": true,
@@ -133,13 +133,13 @@
   },
   "smartrecruiters:Freshworks": {
    "ok": true,
-   "total": 31,
-   "india": 31
+   "total": 30,
+   "india": 30
   },
   "smartrecruiters:Experian": {
    "ok": true,
-   "total": 45,
-   "india": 45
+   "total": 44,
+   "india": 44
   },
   "workable:apna": {
    "ok": true,
@@ -148,18 +148,18 @@
   },
   "ashby:sarvam": {
    "ok": true,
-   "total": 39,
-   "india": 39
+   "total": 38,
+   "india": 38
   },
   "smartrecruiters:NielsenIQ": {
    "ok": true,
-   "total": 85,
-   "india": 85
+   "total": 80,
+   "india": 80
   },
   "greenhouse:zinnia": {
    "ok": true,
-   "total": 23,
-   "india": 13
+   "total": 25,
+   "india": 15
   },
   "greenhouse:pubmatic": {
    "ok": true,
@@ -174,19 +174,19 @@
   }
  },
  "tagging": {
-  "total": 732,
+  "total": 735,
   "cache_hits": 0,
   "llm_tagged": 0,
-  "fallback": 732,
+  "fallback": 735,
   "batch_retries": 0,
   "llm_status": "no API key (set ANTHROPIC_API_KEY or GEMINI_API_KEY)",
   "model": null,
-  "senior_title_dropped": 1133,
+  "senior_title_dropped": 1138,
   "placeholder_dropped": 1
  },
- "entry_level": 732,
- "intern_or_fresher": 112,
- "published": 732,
+ "entry_level": 735,
+ "intern_or_fresher": 115,
+ "published": 735,
  "carried_over": 0,
  "failing_sources": {},
  "guard": null

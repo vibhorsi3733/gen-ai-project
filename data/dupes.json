@@ -50,20 +50,6 @@
  },
  {
   "reason": "key",
-  "title": "C# & C++ developer",
-  "company": "Bosch",
-  "source": "SmartRecruiters",
-  "dup_of": "C# & C++ developer"
- },
- {
-  "reason": "key",
-  "title": "C# & C++ developer",
-  "company": "Bosch",
-  "source": "SmartRecruiters",
-  "dup_of": "C# & C++ developer"
- },
- {
-  "reason": "key",
   "title": "C++ experts for ADAS HiL Framework development",
   "company": "Bosch",
   "source": "SmartRecruiters",
@@ -82,6 +68,13 @@
   "company": "Bosch",
   "source": "SmartRecruiters",
   "dup_of": "Deputy Manager_eAxle System Architect"
+ },
+ {
+  "reason": "key",
+  "title": "Embedded SW Developer",
+  "company": "Bosch",
+  "source": "SmartRecruiters",
+  "dup_of": "Embedded SW Developer"
  },
  {
   "reason": "key",
@@ -127,6 +120,20 @@
  },
  {
   "reason": "key",
+  "title": "Generative AI & Agent Systems Engineer",
+  "company": "Bosch",
+  "source": "SmartRecruiters",
+  "dup_of": "Generative AI & Agent Systems Engineer"
+ },
+ {
+  "reason": "key",
+  "title": "Generative AI & Agent Systems Engineer",
+  "company": "Bosch",
+  "source": "SmartRecruiters",
+  "dup_of": "Generative AI & Agent Systems Engineer"
+ },
+ {
+  "reason": "key",
   "title": "HiL Test Engineer",
   "company": "Bosch",
   "source": "SmartRecruiters",
@@ -145,6 +152,13 @@
   "company": "Bosch",
   "source": "SmartRecruiters",
   "dup_of": "IN_RBAI_Maintenance Engineer_Charcon_Mechanical"
+ },
+ {
+  "reason": "key",
+  "title": "IN_RBIN_Assistant Manager/ Deputy Manager_Project Management_NaP/MFC",
+  "company": "Bosch",
+  "source": "SmartRecruiters",
+  "dup_of": "IN_RBIN_Assistant Manager/ Deputy Manager_Project Management_NaP/MFC"
  },
  {
   "reason": "key",
@@ -225,10 +239,10 @@
  },
  {
   "reason": "key",
-  "title": "Senior Developer(SAP DM Support) - ECF2",
+  "title": "Senior Developer -  Flutter",
   "company": "Bosch",
   "source": "SmartRecruiters",
-  "dup_of": "Senior Developer(SAP DM Support) - ECF2"
+  "dup_of": "Senior Developer -  Flutter"
  },
  {
   "reason": "key",
@@ -414,6 +428,13 @@
  },
  {
   "reason": "key",
+  "title": "System Requirement Engineer",
+  "company": "Bosch",
+  "source": "SmartRecruiters",
+  "dup_of": "System Requirement Engineer"
+ },
+ {
+  "reason": "key",
   "title": "Technical Project Manager-AI",
   "company": "Bosch",
   "source": "SmartRecruiters",
@@ -540,10 +561,10 @@
  },
  {
   "reason": "key",
-  "title": "Lead - Solution Engineer",
-  "company": "Freshworks",
+  "title": "Senior Software Engineer",
+  "company": "Experian",
   "source": "SmartRecruiters",
-  "dup_of": "Lead - Solution Engineer"
+  "dup_of": "Senior Software Engineer"
  },
  {
   "reason": "key",
@@ -565,6 +586,20 @@
   "company": "Freshworks",
   "source": "SmartRecruiters",
   "dup_of": "Lead - Solution Engineer"
+ },
+ {
+  "reason": "key",
+  "title": "Lead - Solution Engineer",
+  "company": "Freshworks",
+  "source": "SmartRecruiters",
+  "dup_of": "Lead - Solution Engineer"
+ },
+ {
+  "reason": "key",
+  "title": "Senior Associate - Deal Desk",
+  "company": "InMobi",
+  "source": "Greenhouse",
+  "dup_of": "Senior Associate - Deal Desk"
  },
  {
   "reason": "key",
@@ -614,13 +649,6 @@
   "company": "NielsenIQ",
   "source": "SmartRecruiters",
   "dup_of": "Research Analyst"
- },
- {
-  "reason": "key",
-  "title": "Software Engineer",
-  "company": "NielsenIQ",
-  "source": "SmartRecruiters",
-  "dup_of": "Software Engineer"
  },
  {
   "reason": "key",
@@ -757,6 +785,13 @@
  },
  {
   "reason": "key",
+  "title": "Staff Software Engineer",
+  "company": "Okta",
+  "source": "Greenhouse",
+  "dup_of": "Staff Software Engineer"
+ },
+ {
+  "reason": "key",
   "title": "Staff Software Engineer ",
   "company": "Okta",
   "source": "Greenhouse",
@@ -806,24 +841,10 @@
  },
  {
   "reason": "key",
-  "title": "Legal Contracts",
-  "company": "Paytm",
-  "source": "Lever",
-  "dup_of": "Legal Contracts"
- },
- {
-  "reason": "key",
   "title": "Engineering Manager - Flash Array ",
   "company": "Pure Storage",
   "source": "Greenhouse",
   "dup_of": "Engineering Manager - Flash Array"
- },
- {
-  "reason": "key",
-  "title": "Member of Technical Staff ",
-  "company": "Pure Storage",
-  "source": "Greenhouse",
-  "dup_of": "Member of Technical Staff"
  },
  {
   "reason": "key",
@@ -845,13 +866,6 @@
   "company": "Pure Storage",
   "source": "Greenhouse",
   "dup_of": "Member Of Technical Staff, FA Files"
- },
- {
-  "reason": "key",
-  "title": "Member of Technical Staff, Flash Array (Files)",
-  "company": "Pure Storage",
-  "source": "Greenhouse",
-  "dup_of": "Member of Technical Staff - Flash Array (Files)"
  },
  {
   "reason": "key",
@@ -1184,10 +1198,10 @@
  },
  {
   "reason": "key",
-  "title": "Account Manager",
+  "title": "Associate Account Manager",
   "company": "Swiggy",
   "source": "SmartRecruiters",
-  "dup_of": "Account Manager"
+  "dup_of": "Associate Account Manager"
  },
  {
   "reason": "key",
@@ -1216,13 +1230,6 @@
   "company": "Swiggy",
   "source": "SmartRecruiters",
   "dup_of": "Captain 2"
- },
- {
-  "reason": "key",
-  "title": "Growth Manager I",
-  "company": "Swiggy",
-  "source": "SmartRecruiters",
-  "dup_of": "Growth Manager I"
  },
  {
   "reason": "key",
@@ -1356,13 +1363,6 @@
   "company": "Swiggy",
   "source": "SmartRecruiters",
   "dup_of": "Sales Manager - II"
- },
- {
-  "reason": "key",
-  "title": "Sales Manager I",
-  "company": "Swiggy",
-  "source": "SmartRecruiters",
-  "dup_of": "Sales Manager I"
  },
  {
   "reason": "key",
