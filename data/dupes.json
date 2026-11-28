@@ -57,6 +57,20 @@
  },
  {
   "reason": "key",
+  "title": "D365 F&O SCM Consultant",
+  "company": "Bosch",
+  "source": "SmartRecruiters",
+  "dup_of": "D365 F&O SCM Consultant"
+ },
+ {
+  "reason": "key",
+  "title": "D365 F&O Technical Consultant",
+  "company": "Bosch",
+  "source": "SmartRecruiters",
+  "dup_of": "D365 F&O Technical Consultant"
+ },
+ {
+  "reason": "key",
   "title": "D365 F&O Technical Consultant",
   "company": "Bosch",
   "source": "SmartRecruiters",
@@ -631,13 +645,6 @@
  },
  {
   "reason": "key",
-  "title": "Software Engineer 3",
-  "company": "MongoDB",
-  "source": "Greenhouse",
-  "dup_of": "Software Engineer 3"
- },
- {
-  "reason": "key",
   "title": "Staff Engineer",
   "company": "MongoDB",
   "source": "Greenhouse",
@@ -649,13 +656,6 @@
   "company": "NielsenIQ",
   "source": "SmartRecruiters",
   "dup_of": "Research Analyst"
- },
- {
-  "reason": "key",
-  "title": "Software Engineer",
-  "company": "NielsenIQ",
-  "source": "SmartRecruiters",
-  "dup_of": "Software Engineer"
  },
  {
   "reason": "key",
@@ -1195,6 +1195,13 @@
   "company": "Swiggy",
   "source": "SmartRecruiters",
   "dup_of": "Account Manager"
+ },
+ {
+  "reason": "key",
+  "title": "Assistant Manager- CX & Ops",
+  "company": "Swiggy",
+  "source": "SmartRecruiters",
+  "dup_of": "Assistant Manager - CX & Ops"
  },
  {
   "reason": "key",
